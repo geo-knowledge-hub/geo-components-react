@@ -10,6 +10,7 @@ import React, { Component } from 'react';
 
 import PropTypes from 'prop-types';
 
+import "glider-js/glider.min.css";
 import Glider from 'react-glider';
 
 /**
@@ -22,20 +23,25 @@ import Glider from 'react-glider';
  */
 export class ControlledEngagementPrioritiesCarousel extends Component {
   render() {
-    const { glinderProps, engagementPriorities, carouselImageClass } =
-      this.props;
+    const {
+      glinderProps,
+      engagementPriorities,
+      carouselImageClass,
+      carouselContainerClass,
+    } = this.props;
 
     return (
       <Glider {...glinderProps}>
         {engagementPriorities.map((engagementPriority) => {
           return (
             <a
+              key={engagementPriority.id}
               href={`/search?q=metadata.subjects.id:${engagementPriority.id}&l=list&p=1&s=10&sort=newest`}
             >
-              <div class="slide">
+              <div className={`glider-slide ${carouselContainerClass}`}>
                 <img
                   src={engagementPriority.props.icon}
-                  class={carouselImageClass}
+                  className={carouselImageClass}
                 />
               </div>
             </a>
@@ -49,11 +55,12 @@ export class ControlledEngagementPrioritiesCarousel extends Component {
 ControlledEngagementPrioritiesCarousel.propTypes = {
   glinderProps: PropTypes.object,
   engagementPriorities: PropTypes.array,
+
   carouselImageClass: PropTypes.string,
+  carouselContainerClass: PropTypes.string,
 };
 
 ControlledEngagementPrioritiesCarousel.defaultProps = {
-  engagementPriorities: [],
   glinderProps: {
     draggable: true,
     dragVelocity: 3,
@@ -65,5 +72,9 @@ ControlledEngagementPrioritiesCarousel.defaultProps = {
     iconLeft: '«',
     iconRight: '»',
   },
+
+  engagementPriorities: [],
+
   carouselImageClass: 'carousel-image',
+  carouselContainerClass: 'carousel-container',
 };
