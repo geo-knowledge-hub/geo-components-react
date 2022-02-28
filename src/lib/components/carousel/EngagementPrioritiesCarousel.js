@@ -24,14 +24,14 @@ import Glider from 'react-glider';
 export class EngagementPrioritiesCarousel extends Component {
   render() {
     const {
-      glinderProps,
+      gliderProps,
       engagementPriorities,
       carouselImageClass,
       carouselContainerClass,
     } = this.props;
 
     return (
-      <Glider {...glinderProps}>
+      <Glider {...gliderProps}>
         {engagementPriorities.map((engagementPriority) => {
           return (
             <a
@@ -53,7 +53,7 @@ export class EngagementPrioritiesCarousel extends Component {
 }
 
 EngagementPrioritiesCarousel.propTypes = {
-  glinderProps: PropTypes.object,
+  gliderProps: PropTypes.object,
   engagementPriorities: PropTypes.array,
 
   carouselImageClass: PropTypes.string,
@@ -61,7 +61,7 @@ EngagementPrioritiesCarousel.propTypes = {
 };
 
 EngagementPrioritiesCarousel.defaultProps = {
-  glinderProps: {
+  gliderProps: {
     draggable: true,
     dragVelocity: 3,
     hasDots: true,
