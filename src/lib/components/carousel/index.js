@@ -6,4 +6,4 @@
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
-export { ControlledEngagementPrioritiesCarousel } from './ControlledEngagementPrioritiesCarousel';
+export { EngagementPrioritiesCarousel } from './EngagementPrioritiesCarousel';

@@ -10,7 +10,7 @@ import React, { Component } from 'react';
 
 import PropTypes from 'prop-types';
 
-import "glider-js/glider.min.css";
+import 'glider-js/glider.min.css';
 import Glider from 'react-glider';
 
 /**
@@ -21,7 +21,7 @@ import Glider from 'react-glider';
  * are implemented based on the subjects. In the future, this will be
  * change.
  */
-export class ControlledEngagementPrioritiesCarousel extends Component {
+export class EngagementPrioritiesCarousel extends Component {
   render() {
     const {
       glinderProps,
@@ -52,7 +52,7 @@ export class ControlledEngagementPrioritiesCarousel extends Component {
   }
 }
 
-ControlledEngagementPrioritiesCarousel.propTypes = {
+EngagementPrioritiesCarousel.propTypes = {
   glinderProps: PropTypes.object,
   engagementPriorities: PropTypes.array,
 
@@ -60,7 +60,7 @@ ControlledEngagementPrioritiesCarousel.propTypes = {
   carouselContainerClass: PropTypes.string,
 };
 
-ControlledEngagementPrioritiesCarousel.defaultProps = {
+EngagementPrioritiesCarousel.defaultProps = {
   glinderProps: {
     draggable: true,
     dragVelocity: 3,
