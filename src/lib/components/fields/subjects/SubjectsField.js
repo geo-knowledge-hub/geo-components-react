@@ -10,6 +10,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import _set from 'lodash/set';
+import _first from 'lodash/first';
 
 import { Field, getIn } from 'formik';
 
@@ -49,13 +50,20 @@ export class SubjectsField extends Component {
     return `${prefix}${searchQuery}`;
   };
 
-  transformIntoReference = (values, reference) => {
-    return values.map(
-      (val) =>
-        _first(
-          reference.filter((initialVal) => initialVal.subject === val.subject)
-        ) || val
-    );
+  transformIntoInitialValues = (values) => {
+    return values.map((val) => {
+      let newValue = val;
+
+      if (val.id) {
+        newValue =
+          _first(
+            this.props.initialValues.filter(
+              (initialVal) => initialVal.id === val.id
+            )
+          ) || val;
+      }
+      return newValue;
+    });
   };
 
   render() {
@@ -120,7 +128,14 @@ export class SubjectsField extends Component {
                 })}
                 suggestionAPIUrl="/api/subjects"
                 onValueChange={({ formikProps }, selectedSuggestions) => {
-                  const currentSelectedValues = getIn(values, fieldPath, [])
+                  // transforming and filtering the available values
+                  // note: this is a temporary solution since the InvenioRDM don't provides
+                  //       the custom fields. In the future, using the powerful of the InvenioRDM
+                  //       custom field, we will have specific vocabularies and field in the
+                  //       metadata model.
+                  const currentStoredValues = this.transformIntoInitialValues(
+                    getIn(values, fieldPath, [])
+                  )
                     .map((val) =>
                       !val.scheme ? _set(val, 'scheme', 'custom') : val
                     )
@@ -131,11 +146,15 @@ export class SubjectsField extends Component {
                           .includes(suggestion.scheme)
                     );
 
+                  // transforming the selected field
+                  const currentSelectedValues =
+                    this.transformIntoInitialValues(selectedSuggestions);
+
                   formikProps.form.setFieldValue(
                     fieldPath,
                     // save the suggestion objects so we can extract information
                     // about which value added by the user
-                    [...currentSelectedValues, ...selectedSuggestions]
+                    [...currentStoredValues, ...currentSelectedValues]
                   );
                 }}
                 value={getIn(values, fieldPath, []).map((val) => val.subject)}

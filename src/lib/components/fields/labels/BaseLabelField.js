@@ -102,7 +102,7 @@ export class BaseLabelField extends Component {
                 })}
                 suggestionAPIUrl="/api/subjects"
                 onValueChange={({ formikProps }, selectedSuggestions) => {
-                  const currentSelectedValues = this.transformIntoInitialValues(
+                  const currentStoredValues = this.transformIntoInitialValues(
                     getIn(values, fieldPath, [])
                   )
                     .filter(
@@ -112,14 +112,14 @@ export class BaseLabelField extends Component {
                       val.scheme ? val : _set(val, 'scheme', 'custom')
                     );
 
-                  const selectedSuggestionsValues =
+                  const currentSelectedValues =
                     this.transformIntoInitialValues(selectedSuggestions);
 
                   formikProps.form.setFieldValue(
                     fieldPath,
                     // save the suggestion objects so we can extract information
                     // about which value added by the user
-                    [...currentSelectedValues, ...selectedSuggestionsValues]
+                    [...currentStoredValues, ...currentSelectedValues]
                   );
                 }}
                 value={getIn(values, fieldPath, []).map((val) => val.subject)}
