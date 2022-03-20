@@ -40,7 +40,10 @@
     "semantic-ui-react": "^2.1.0",
     "yup": "^0.28.0",
     "react-glider": "^3.0.1",
-    "natsort": "^2.0.3"
+    "natsort": "^2.0.3",
+    "pure-react-carousel": "^1.28.1",
+    "@ckeditor/ckeditor5-build-classic": "^16.0.0",
+    "@ckeditor/ckeditor5-react": "^2.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.0",
@@ -76,7 +79,10 @@
     "rollup-plugin-url": "^3.0.0",
     "semantic-ui-css": "^2.4.0",
     "semantic-ui-react": "^2.1.0",
-    "yup": "^0.28.0"
+    "yup": "^0.28.0",
+    "pure-react-carousel": "^1.28.1",
+    "@ckeditor/ckeditor5-build-classic": "^16.0.0",
+    "@ckeditor/ckeditor5-react": "^2.1.0"
   },
   "browserslist": {
     "production": [
