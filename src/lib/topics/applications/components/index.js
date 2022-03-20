@@ -6,5 +6,6 @@
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
-export * from './base';
-export * from './topics';
+export * from './CardSlide';
+export * from './CardDotGroup';
+export * from './RelatedApplicationCarousel';
