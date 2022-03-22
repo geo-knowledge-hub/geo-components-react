@@ -6,5 +6,8 @@
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
+import 'glider-js/glider.min.css';
+import 'pure-react-carousel/dist/react-carousel.es.css';
+
 export * from './base';
 export * from './topics';

@@ -10,7 +10,6 @@ import React, { Component } from 'react';
 
 import PropTypes from 'prop-types';
 
-import 'glider-js/glider.min.css';
 import Glider from 'react-glider';
 
 /**

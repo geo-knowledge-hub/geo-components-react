@@ -8,4 +8,4 @@
 
 export * from './CardSlide';
 export * from './CardDotGroup';
-export * from './RelatedApplicationCarousel';
+export * from './UserStoriesCarousel';
