@@ -1,6 +1,6 @@
 /*
  * This file is part of GEO-Labels-React.
- * Copyright (C) 2022 CERN.
+ * Copyright (C) 2022 GEO Secretariat.
  *
  * GEO-Labels-React is free software; you can redistribute it and/or modify it
  * under the terms of the MIT License; see LICENSE file for more details.
@@ -10,35 +10,32 @@ import React, { Component } from 'react';
 
 import PropTypes from 'prop-types';
 
-import { BaseLabelField } from './BaseLabelField';
+import { BaseLabelField } from '../../../../../base';
 
-/**
- * Target Audience Field for the GEO Knowledge Hub pages.
- */
-export class TargetAudienceField extends Component {
+export class EngagementPrioritiesField extends Component {
   render() {
     const { subjectProps } = this.props;
 
     return (
       <BaseLabelField
-        label={'Target audience'}
-        labelIcon={'user'}
+        label={'Engagement Priorities'}
+        labelIcon={'tag'}
         multiple={true}
         clearable={true}
-        placeholder={'Search for a specific target audience'}
+        placeholder={'Search for a Engagement Priority by name'}
         {...subjectProps}
       />
     );
   }
 }
 
-TargetAudienceField.propTypes = {
+EngagementPrioritiesField.propTypes = {
   subjectProps: PropTypes.object,
 };
 
-TargetAudienceField.defaultProps = {
+EngagementPrioritiesField.defaultProps = {
   subjectProps: {
-    scheme: 'TU',
+    scheme: 'EP',
     fieldPath: 'metadata.subjects',
   },
 };
