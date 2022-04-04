@@ -6,4 +6,6 @@
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
-export * from './fields';
+export { CardSlide } from './CardSlide';
+export { CardDotGroup } from './CardDotGroup';
+export { UserStoriesCarousel } from './UserStoriesCarousel';

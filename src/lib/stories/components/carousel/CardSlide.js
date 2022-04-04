@@ -13,11 +13,11 @@ import { Card } from 'semantic-ui-react';
 import { Slide } from 'pure-react-carousel';
 
 /**
- * Semantic UI Card component customized to `pure-react-carousel`
+ * @name CardSlide
+ * @summary Semantic UI Card component customized to `pure-react-carousel`
  *
- * Note:
- *  This component is based on `layershifter` example.
- *  (https://github.com/layershifter/semantic-ui-react-with-pure-react-carousel)
+ * @note This component is based on `layershifter` example.
+ *       (https://github.com/layershifter/semantic-ui-react-with-pure-react-carousel)
  */
 export const CardSlide = ({ index, ...cardProps }) => (
   <Slide index={index}>

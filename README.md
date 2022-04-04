@@ -1,9 +1,3 @@
-# GEO Labels React
+# GEO Components React
 
-React components to support the Labeling system used in the GEO Knowledge Hub. Currently, the following label systems are supported:
-
-- `Target Audience`: Target Audience of a record/resource;
-- `Engagement Priorities Topics`: Topics related to Global Development frameworks such as;
-  - Sustainable Development Goal (SDG);
-  - Minamata Framework;
-  - Paris Agreement.
+React components library used to create the GEO Knowledge Hub interfaces. The components are separated by the themes they reference within the platform.

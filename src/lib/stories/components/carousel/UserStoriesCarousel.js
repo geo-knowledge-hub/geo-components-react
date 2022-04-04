@@ -16,7 +16,9 @@ import { CardSlide } from './CardSlide';
 import { CardDotGroup } from './CardDotGroup';
 
 /**
- * User Story Carousel.
+ * @name UserStoriesCarousel
+ * @summary User Story Carousel.
+ *
  */
 export const UserStoriesCarousel = ({
   userStories,
@@ -52,11 +54,8 @@ export const UserStoriesCarousel = ({
 
 UserStoriesCarousel.propTypes = {
   userStories: PropTypes.array.isRequired,
-
   carouselProps: PropTypes.object,
-
   cardGroupProps: PropTypes.object,
-
   cardCarouselProps: PropTypes.object,
 };
 
