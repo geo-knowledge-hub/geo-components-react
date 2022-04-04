@@ -35,7 +35,7 @@ export class EngagementPrioritiesCarousel extends Component {
           return (
             <a
               key={engagementPriority.id}
-              href={`/search?q=metadata.subjects.id:${engagementPriority.id}&l=list&p=1&s=10&sort=newest`}
+              href={`/search?q=metadata.engagement_priorities.id:${engagementPriority.id}&l=list&p=1&s=10&sort=newest`}
             >
               <div className={`glider-slide ${carouselContainerClass}`}>
                 <img
