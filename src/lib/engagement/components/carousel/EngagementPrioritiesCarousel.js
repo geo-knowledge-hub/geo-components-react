@@ -7,18 +7,18 @@
  */
 
 import React, { Component } from 'react';
-
 import PropTypes from 'prop-types';
 
 import Glider from 'react-glider';
 
 /**
- * Component to create image carousel using vocabulary-controlled
- * engagement priorities.
+ * @name EngagementPrioritiesCarousel
+ * @description Component to create image carousel using vocabulary-controlled
+ *              engagement priorities.
  *
- * Note: This component assumes that the engagement priorities labels
- * are implemented based on the subjects. In the future, this will be
- * change.
+ * @note This component assumes that the engagement priorities labels
+ *       are implemented based on the subjects. In the future, this will be
+ *       change.
  */
 export class EngagementPrioritiesCarousel extends Component {
   render() {

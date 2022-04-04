@@ -13,7 +13,8 @@ import { Dot } from 'pure-react-carousel';
 import { Button, Container } from 'semantic-ui-react';
 
 /**
- * Slide selector component.
+ * @name CardDotGroup
+ * @summary Slide selector component.
  *
  * Note:
  *  This component is based on `layershifter` example.

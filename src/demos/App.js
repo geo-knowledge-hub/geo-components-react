@@ -8,31 +8,6 @@
 
 import React from 'react';
 
-import { RelatedApplicationCarousel } from '../lib';
-
-const App = () => {
-  const relatedApplications = [
-    {
-      title: 'component example test 1',
-      url: '/',
-    },
-    {
-      title: 'component example test 2',
-      url: '/',
-    },
-    {
-      title: 'component example test 3',
-      url: '/',
-    },
-    {
-      title: 'component example test 4',
-      url: '/',
-    },
-  ];
-
-  return (
-    <RelatedApplicationCarousel relatedApplications={relatedApplications} />
-  );
-};
+const App = () => <></>;
 
 export default App;
