@@ -1,8 +1,8 @@
 /*
- * This file is part of geo-knowledge-hub.
- * Copyright (C) 2021-2022 GEO Secretariat.
+ * This file is part of GEO-Components-React.
+ * Copyright (C) 2022 GEO Secretariat.
  *
- * geo-knowledge-hub is free software; you can redistribute it and/or modify it
+ * GEO-Components-React is free software; you can redistribute it and/or modify it
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 

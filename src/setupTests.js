@@ -1,9 +1,8 @@
-
 /*
- * This file is part of GEO-Labels-React.
+ * This file is part of GEO-Components-React.
  * Copyright (C) 2022 GEO Secretariat.
  *
- * GEO-Labels-React is free software; you can redistribute it and/or modify it
+ * GEO-Components-React is free software; you can redistribute it and/or modify it
  * under the terms of the MIT License; see LICENSE file for more details.
  * 
  * Code adapted from: https://github.com/inveniosoftware/react-invenio-deposit/blob/84956cbf2e2bc28cf6a9834ecc5df37c824bd6ff/src/setupTests.js
