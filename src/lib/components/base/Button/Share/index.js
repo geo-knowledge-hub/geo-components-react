@@ -6,4 +6,6 @@
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
-export * from './components';
+export { ShareEmailButton } from './ShareEmailButton';
+export { ShareTwitterButton } from './ShareTwitterButton';
+export { ShareFacebookButton } from './ShareFacebookButton';

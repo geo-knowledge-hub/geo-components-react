@@ -6,8 +6,13 @@
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
-import 'glider-js/glider.min.css';
-import 'pure-react-carousel/dist/react-carousel.es.css';
+// Temporary: avoiding breaking
+//            changes to test the component
+export {
+  UserStoriesCarousel,
+  EngagementPrioritiesCarousel,
+} from './components/base';
 
-export * from './stories';
-export * from './engagement';
+export { base } from './components';
+export { front } from './components';
+export { detail } from './components';

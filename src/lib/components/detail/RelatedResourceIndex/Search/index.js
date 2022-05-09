@@ -6,4 +6,7 @@
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
-export * from './carousel';
+export { SearchBar } from './SearchBar';
+export { SearchMenu } from './SearchMenu';
+export { Pagination } from './Pagination';
+export { TypeSelectorItem } from './TypeSelectorItem';

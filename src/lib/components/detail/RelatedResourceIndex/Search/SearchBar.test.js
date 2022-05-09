@@ -6,4 +6,13 @@
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
-export { EngagementPrioritiesCarousel } from './EngagementPrioritiesCarousel';
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import { SearchBar } from './SearchBar';
+
+it('renders without crashing without props', () => {
+  const div = document.createElement('div');
+
+  ReactDOM.render(<SearchBar />, div);
+});
