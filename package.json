@@ -1,6 +1,6 @@
 {
   "name": "@geo-knowledge-hub/geo-components-react",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "main": "dist/cjs/index.js",
   "browser": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -25,7 +25,6 @@
     "lint": "eslint src/**/*.js",
     "format": "prettier --config ./.prettierrc --ignore-path ./.prettierignore --write \"src/**/*.js\""
   },
-  "dependencies": {},
   "peerDependencies": {
     "@babel/runtime": "^7.9.0",
     "axios": "^0.21.0",
@@ -41,7 +40,12 @@
     "semantic-ui-react": "^2.1.0",
     "yup": "^0.28.0",
     "@ckeditor/ckeditor5-build-classic": "^16.0.0",
-    "@ckeditor/ckeditor5-react": "^2.1.0"
+    "@ckeditor/ckeditor5-react": "^2.1.0",
+    "minisearch": "^4.0.3",
+    "react-minisearch": "^5.0.0-beta1",
+    "react-table": "^7.7.0",
+    "styled-components": "^5.3.5",
+    "react-share": "^4.4.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.0",
@@ -83,7 +87,12 @@
     "yup": "^0.28.0",
     "pure-react-carousel": "^1.28.1",
     "@ckeditor/ckeditor5-build-classic": "^16.0.0",
-    "@ckeditor/ckeditor5-react": "^2.1.0"
+    "@ckeditor/ckeditor5-react": "^2.1.0",
+    "minisearch": "^4.0.3",
+    "react-minisearch": "^5.0.0-beta1",
+    "react-table": "^7.7.0",
+    "styled-components": "^5.3.5",
+    "react-share": "^4.4.0"
   },
   "browserslist": {
     "production": [
