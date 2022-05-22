@@ -1,0 +1,146 @@
+{
+    "hits": {
+        "hits": [
+            {
+                "id": "sendai-framework",
+                "revision_id": 1,
+                "type": "engagementprioritiestypes",
+                "title": {
+                    "en": "Sendai Framework"
+                },
+                "links": {
+                    "self": "https://api-mock/api/vocabularies/engagementprioritiestypes/sendai-framework"
+                },
+                "props": {
+                    "type": "sendai-framework",
+                    "subtype": "",
+                    "uri": "",
+                    "icon": "/assets/engagement-priorities/sendai-framework/sendai-framework-logo.png",
+                    "description_short": "",
+                    "description_long": "",
+                    "is_subtype": "false",
+                    "has_subtype": "false"
+                },
+                "created": "2022-05-18T02:11:09.354153+00:00",
+                "updated": "2022-05-18T02:11:09.373052+00:00"
+            },
+            {
+                "id": "sdg",
+                "revision_id": 1,
+                "type": "engagementprioritiestypes",
+                "title": {
+                    "en": "Sustainable Development Goals (SDGs)"
+                },
+                "links": {
+                    "self": "https://api-mock/api/vocabularies/engagementprioritiestypes/sdg"
+                },
+                "props": {
+                    "type": "sdg",
+                    "subtype": "",
+                    "icon": "/assets/engagement-priorities/sdg/sdg-logo.png",
+                    "uri": "https://sdgs.un.org/goals",
+                    "description": "The 2030 Agenda for Sustainable Development, adopted by all United Nations Member States in 2015, provides a shared blueprint for peace and prosperity for people and the planet, now and into the future. At its heart are the 17 Sustainable Development Goals (SDGs), which are an urgent call for action by all countries - developed and developing - in a global partnership. They recognize that ending poverty and other deprivations must go hand-in-hand with strategies that improve health and education, reduce inequality, and spur economic growth \u2013 all while tackling climate change and working to preserve our oceans and forests.",
+                    "is_subtype": "false",
+                    "has_subtype": "true"
+                },
+                "created": "2022-05-18T02:11:09.331204+00:00",
+                "updated": "2022-05-18T02:11:09.351099+00:00"
+            },
+            {
+                "id": "new-urban-agenda",
+                "revision_id": 1,
+                "type": "engagementprioritiestypes",
+                "title": {
+                    "en": "New Urban Agenda"
+                },
+                "links": {
+                    "self": "https://api-mock/api/vocabularies/engagementprioritiestypes/new-urban-agenda"
+                },
+                "props": {
+                    "type": "new-urban-agenda",
+                    "subtype": "",
+                    "uri": "https://unhabitat.org/about-us/new-urban-agenda",
+                    "icon": "/assets/engagement-priorities/new-urban-agenda/new-urban-agenda-logo.png",
+                    "description_short": "",
+                    "description_long": "",
+                    "is_subtype": "false",
+                    "has_subtype": "false"
+                },
+                "created": "2022-05-18T02:11:09.354617+00:00",
+                "updated": "2022-05-18T02:11:09.373152+00:00"
+            },
+            {
+                "id": "sdg-indicator",
+                "revision_id": 1,
+                "type": "engagementprioritiestypes",
+                "title": {
+                    "en": "SDG Indicator"
+                },
+                "links": {
+                    "self": "https://api-mock/api/vocabularies/engagementprioritiestypes/sdg-indicator"
+                },
+                "props": {
+                    "type": "sdg-indicator",
+                    "subtype": "",
+                    "icon": "",
+                    "uri": "https://sdgs.un.org/goals",
+                    "description": "",
+                    "is_subtype": "false",
+                    "has_subtype": "true"
+                },
+                "created": "2022-05-18T02:11:09.343821+00:00",
+                "updated": "2022-05-18T02:11:09.361274+00:00"
+            },
+            {
+                "id": "paris-agreement",
+                "revision_id": 1,
+                "type": "engagementprioritiestypes",
+                "title": {
+                    "en": "Paris Agreement"
+                },
+                "links": {
+                    "self": "https://api-mock/api/vocabularies/engagementprioritiestypes/paris-agreement"
+                },
+                "props": {
+                    "type": "paris-agreement",
+                    "subtype": "",
+                    "uri": "https://unfccc.int/process-and-meetings/the-paris-agreement/the-paris-agreement",
+                    "icon": "/assets/engagement-priorities/paris-agreement/paris-agreement-logo.png",
+                    "description_short": "The Paris Agreement is a legally binding international treaty on climate change. It was adopted by 196 Parties at COP 21 in Paris, on 12 December 2015 and entered into force on 4 November 2016.",
+                    "description_long": "The Paris Agreement is a legally binding international treaty on climate change. It was adopted by 196 Parties at COP 21 in Paris, on 12 December 2015 and entered into force on 4 November 2016.",
+                    "is_subtype": "false",
+                    "has_subtype": "false"
+                },
+                "created": "2022-05-18T02:11:09.359249+00:00",
+                "updated": "2022-05-18T02:11:09.383623+00:00"
+            },
+            {
+                "id": "sdg-target",
+                "revision_id": 1,
+                "type": "engagementprioritiestypes",
+                "title": {
+                    "en": "SDG Target"
+                },
+                "links": {
+                    "self": "https://api-mock/api/vocabularies/engagementprioritiestypes/sdg-target"
+                },
+                "props": {
+                    "type": "sdg-target",
+                    "subtype": "",
+                    "icon": "",
+                    "uri": "https://sdgs.un.org/goals",
+                    "description": "",
+                    "is_subtype": "false",
+                    "has_subtype": "true"
+                },
+                "created": "2022-05-18T02:11:09.339324+00:00",
+                "updated": "2022-05-18T02:11:09.362766+00:00"
+            }
+        ],
+        "total": 6
+    },
+    "sortBy": "bestmatch",
+    "links": {
+        "self": "https://api-mock/api/vocabularies/engagementprioritiestypes?page=1&q=props.is_subtype%3A%22false%22&size=25&sort=bestmatch"
+    }
+}

@@ -6,4 +6,5 @@
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
-export * from './components';
+export { ImageCarousel } from './ImageCarousel';
+export { ContentCarousel } from './ContentCarousel';

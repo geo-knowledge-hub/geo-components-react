@@ -6,4 +6,14 @@
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
-export * from './components';
+import { createContext } from 'react';
+
+/**
+ * Context
+ */
+export const IndexContext = createContext({});
+
+/**
+ * Context Provider
+ */
+export const IndexContextProvider = IndexContext.Provider;

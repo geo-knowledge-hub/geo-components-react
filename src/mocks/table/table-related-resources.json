@@ -1,0 +1,1647 @@
+[
+    {
+        "description": "<p>GEOGloWS ECMWF Streamflow Services delivering hydrologic simulation and forecasting for every river in the world.&nbsp;</p><p>The Hydroinformatics lab of the Brigham Young University Civil &amp; Environmental Engineering Department is one of the leaders in this relatively new and emerging field. The Hydroinformatics lab has been a driving force in the GEOGloWS Partnership. The partnership, funded through NASA-SERVIR and GEO projects, with data from ECMWF, has helped the BYU lab to develop a system that delivers a 40-year historical hydrologic simulation and a daily 15-day ensemble forecast on every river in the world, accessible through web services to every local water manager.</p>",
+        "id": "enq54-k4y43",
+        "resource_type": "Video/Audio",
+        "title": "The Hydroinformatics Lab of the Brigham Young University Civil & Environmental Engineering Dept",
+        "ui": {
+            "access_status": {
+                "description_l10n": "No files are available for this record.",
+                "embargo_date_l10n": null,
+                "icon": "tag",
+                "id": "metadata-only",
+                "message_class": "",
+                "title_l10n": "Metadata-only"
+            },
+            "contributors": {
+                "affiliations": [],
+                "contributors": [
+                    {
+                        "person_or_org": {
+                            "name": "WebsEdge Science",
+                            "type": "organizational"
+                        },
+                        "role": {
+                            "@v": "c600dd00-02b4-451e-aabb-5801c6eec10c::1",
+                            "id": "distributor",
+                            "title": "Distributor"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "Advancing Earth and space science (AGU)",
+                            "type": "organizational"
+                        },
+                        "role": {
+                            "@v": "634e33b9-5a96-4fc0-bfe2-f2b5d961ce58::1",
+                            "id": "producer",
+                            "title": "Producer"
+                        }
+                    }
+                ]
+            },
+            "created_date_l10n_long": "May 19, 2022",
+            "creators": {
+                "affiliations": [],
+                "creators": [
+                    {
+                        "person_or_org": {
+                            "name": "Environmental Systems Research Institute (ESRI)",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "Brigham Young University (BYU)",
+                            "type": "organizational"
+                        },
+                        "role": {
+                            "@v": "344977b2-fa74-4081-b242-138c8833cf21::1",
+                            "id": "hostinginstitution",
+                            "title": "Hosting institution"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "Work Bank (WB)",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "Aquaveo, LLC",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "NASA SERVIR",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "National Oceanic and Atmospheric Administration (NOAA)",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "National Aeronautics and Space Administration (NASA)",
+                            "type": "organizational"
+                        }
+                    }
+                ]
+            },
+            "description_stripped": "GEOGloWS ECMWF Streamflow Services delivering hydrologic simulation and forecasting for every river in the world. \nThe Hydroinformatics lab of the Brigham Young University Civil & Environmental Engineering Department is one of the leaders in this relatively new and emerging field. The Hydroinformatics lab has been a driving force in the GEOGloWS Partnership. The partnership, funded through NASA-SERVIR and GEO projects, with data from ECMWF, has helped the BYU lab to develop a system that delivers a 40-year historical hydrologic simulation and a daily 15-day ensemble forecast on every river in the world, accessible through web services to every local water manager.",
+            "languages": [
+                {
+                    "id": "eng",
+                    "title_l10n": "English"
+                }
+            ],
+            "publication_date_l10n_long": "April 8, 2022",
+            "publication_date_l10n_medium": "Apr 8, 2022",
+            "related_identifiers": [
+                {
+                    "identifier": "10.5072/739wn-ykk86",
+                    "relation_type": {
+                        "id": "ispartof",
+                        "title_l10n": "Is part of"
+                    },
+                    "resource_type": {
+                        "id": "knowledge",
+                        "title_l10n": "Knowledge Package"
+                    },
+                    "scheme": "doi"
+                },
+                {
+                    "identifier": "https://www.youtube.com/watch?v=PLG8U8AQmXY",
+                    "relation_type": {
+                        "id": "references",
+                        "title_l10n": "References"
+                    },
+                    "resource_type": {
+                        "id": "video",
+                        "title_l10n": "Video/Audio"
+                    },
+                    "scheme": "url"
+                }
+            ],
+            "resource_type": {
+                "id": "video",
+                "title_l10n": "Video/Audio"
+            },
+            "rights": [
+                {
+                    "description_l10n": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited.",
+                    "icon": "cc-by-icon",
+                    "id": "cc-by-4.0",
+                    "props": {
+                        "scheme": "spdx",
+                        "url": "https://creativecommons.org/licenses/by/4.0/legalcode"
+                    },
+                    "title_l10n": "Creative Commons Attribution 4.0 International"
+                }
+            ],
+            "updated_date_l10n_long": "May 19, 2022",
+            "version": "v1"
+        },
+        "url": "/records/enq54-k4y43"
+    },
+    {
+        "description": "<p>GEOGloWS helps to organize the international community engaged in the hydrologic sciences, observations, and their application to forecasting and provides a forum for government-to-government collaboration, and engagement with the academic and private sectors to achieve the delivery of actionable water information.&nbsp;</p><p>Since the formal creation of the initiative in 2017, the most significant element of GEOGloWS has been the application of Earth Observations (EO) to create a system that forecasts flow on every river of the world while also providing a 40-year simulated historical flow.</p>",
+        "id": "yjnfj-vxb24",
+        "resource_type": "Video/Audio",
+        "title": "GEOGloWS ECMWF Streamflow Service | Forecasting streamflows around the world",
+        "ui": {
+            "access_status": {
+                "description_l10n": "No files are available for this record.",
+                "embargo_date_l10n": null,
+                "icon": "tag",
+                "id": "metadata-only",
+                "message_class": "",
+                "title_l10n": "Metadata-only"
+            },
+            "contributors": {
+                "affiliations": [],
+                "contributors": [
+                    {
+                        "person_or_org": {
+                            "name": "One World Network",
+                            "type": "organizational"
+                        },
+                        "role": {
+                            "@v": "c600dd00-02b4-451e-aabb-5801c6eec10c::1",
+                            "id": "distributor",
+                            "title": "Distributor"
+                        }
+                    }
+                ]
+            },
+            "created_date_l10n_long": "May 19, 2022",
+            "creators": {
+                "affiliations": [],
+                "creators": [
+                    {
+                        "person_or_org": {
+                            "name": "Environmental Systems Research Institute (ESRI)",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "Brigham Young University (BYU)",
+                            "type": "organizational"
+                        },
+                        "role": {
+                            "@v": "344977b2-fa74-4081-b242-138c8833cf21::1",
+                            "id": "hostinginstitution",
+                            "title": "Hosting institution"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "Work Bank (WB)",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "Aquaveo, LLC",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "NASA SERVIR",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "National Oceanic and Atmospheric Administration (NOAA)",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "National Aeronautics and Space Administration (NASA)",
+                            "type": "organizational"
+                        }
+                    }
+                ]
+            },
+            "description_stripped": "GEOGloWS helps to organize the international community engaged in the hydrologic sciences, observations, and their application to forecasting and provides a forum for government-to-government collaboration, and engagement with the academic and private sectors to achieve the delivery of actionable water information. \nSince the formal creation of the initiative in 2017, the most significant element of GEOGloWS has been the application of Earth Observations (EO) to create a system that forecasts flow on every river of the world while also providing a 40-year simulated historical flow.",
+            "languages": [
+                {
+                    "id": "eng",
+                    "title_l10n": "English"
+                }
+            ],
+            "publication_date_l10n_long": "April 8, 2022",
+            "publication_date_l10n_medium": "Apr 8, 2022",
+            "related_identifiers": [
+                {
+                    "identifier": "10.5072/739wn-ykk86",
+                    "relation_type": {
+                        "id": "ispartof",
+                        "title_l10n": "Is part of"
+                    },
+                    "resource_type": {
+                        "id": "knowledge",
+                        "title_l10n": "Knowledge Package"
+                    },
+                    "scheme": "doi"
+                },
+                {
+                    "identifier": "https://www.youtube.com/watch?v=v8FhgV4cBnI",
+                    "relation_type": {
+                        "id": "isvariantformof",
+                        "title_l10n": "Is variant form of"
+                    },
+                    "resource_type": {
+                        "id": "video",
+                        "title_l10n": "Video/Audio"
+                    },
+                    "scheme": "url"
+                }
+            ],
+            "resource_type": {
+                "id": "video",
+                "title_l10n": "Video/Audio"
+            },
+            "rights": [
+                {
+                    "description_l10n": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited.",
+                    "icon": "cc-by-icon",
+                    "id": "cc-by-4.0",
+                    "props": {
+                        "scheme": "spdx",
+                        "url": "https://creativecommons.org/licenses/by/4.0/legalcode"
+                    },
+                    "title_l10n": "Creative Commons Attribution 4.0 International"
+                }
+            ],
+            "updated_date_l10n_long": "May 19, 2022",
+            "version": "v1"
+        },
+        "url": "/records/yjnfj-vxb24"
+    },
+    {
+        "description": "<p>In this inspirational note, Dr. Cloke helps, through a wonderfully descriptive narrative, realize that water plays a role in everyone's lives and the human responsibility for water sustainability. She highlights the unique and \"crucial position of GEOGloWS strengthening collaboration, focusing on opening and sharing, and its ability to integrate big data, global earth system infrastructure with global policy, local expertise, and most importantly, local requirements.\"&nbsp;</p>",
+        "id": "f6np7-dyg20",
+        "resource_type": "Video/Audio",
+        "title": "GEOGloWS - Keynote GEO Symposium 2021",
+        "ui": {
+            "access_status": {
+                "description_l10n": "No files are available for this record.",
+                "embargo_date_l10n": null,
+                "icon": "tag",
+                "id": "metadata-only",
+                "message_class": "",
+                "title_l10n": "Metadata-only"
+            },
+            "created_date_l10n_long": "May 19, 2022",
+            "creators": {
+                "affiliations": [
+                    [
+                        1,
+                        "University of Reading",
+                        null
+                    ]
+                ],
+                "creators": [
+                    {
+                        "affiliations": [
+                            [
+                                1,
+                                "University of Reading"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "Cloke",
+                            "given_name": "Hanna",
+                            "name": "Cloke, Hanna",
+                            "type": "personal"
+                        }
+                    }
+                ]
+            },
+            "description_stripped": "In this inspirational note, Dr. Cloke helps, through a wonderfully descriptive narrative, realize that water plays a role in everyone's lives and the human responsibility for water sustainability. She highlights the unique and \"crucial position of GEOGloWS strengthening collaboration, focusing on opening and sharing, and its ability to integrate big data, global earth system infrastructure with global policy, local expertise, and most importantly, local requirements.\" ",
+            "languages": [
+                {
+                    "id": "eng",
+                    "title_l10n": "English"
+                }
+            ],
+            "publication_date_l10n_long": "April 8, 2022",
+            "publication_date_l10n_medium": "Apr 8, 2022",
+            "related_identifiers": [
+                {
+                    "identifier": "10.5072/739wn-ykk86",
+                    "relation_type": {
+                        "id": "ispartof",
+                        "title_l10n": "Is part of"
+                    },
+                    "resource_type": {
+                        "id": "knowledge",
+                        "title_l10n": "Knowledge Package"
+                    },
+                    "scheme": "doi"
+                },
+                {
+                    "identifier": "https://www.youtube.com/watch?v=8n1HqO2fyec",
+                    "relation_type": {
+                        "id": "documents",
+                        "title_l10n": "Documents"
+                    },
+                    "resource_type": {
+                        "id": "video",
+                        "title_l10n": "Video/Audio"
+                    },
+                    "scheme": "url"
+                }
+            ],
+            "resource_type": {
+                "id": "video",
+                "title_l10n": "Video/Audio"
+            },
+            "rights": [
+                {
+                    "description_l10n": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited.",
+                    "icon": "cc-by-icon",
+                    "id": "cc-by-4.0",
+                    "props": {
+                        "scheme": "spdx",
+                        "url": "https://creativecommons.org/licenses/by/4.0/legalcode"
+                    },
+                    "title_l10n": "Creative Commons Attribution 4.0 International"
+                }
+            ],
+            "updated_date_l10n_long": "May 19, 2022",
+            "version": "v1"
+        },
+        "url": "/records/f6np7-dyg20"
+    },
+    {
+        "description": "<p>In this registry are available materials that help users understand how the geoglows Python Package can be used.</p><p>Currently, the materials made available relate to the following subjects:</p><ul><li>Retrieve &amp; plot GEOGloWS model data</li><li>Finding Stream ID #'s programatically</li><li>Bias Evaluation and Calibration at a point</li><li>Generate/Download High Res Plot Images</li></ul>",
+        "id": "x44c5-9xc48",
+        "resource_type": "Jupyter Notebook",
+        "title": "geoglows Python Package User Guide",
+        "ui": {
+            "access_status": {
+                "description_l10n": "The record and files are publicly accessible.",
+                "embargo_date_l10n": null,
+                "icon": "unlock",
+                "id": "open",
+                "message_class": "",
+                "title_l10n": "Open"
+            },
+            "contributors": {
+                "affiliations": [],
+                "contributors": [
+                    {
+                        "person_or_org": {
+                            "name": "European Centre for Medium-Range Weather Forecasts (ECMWF)",
+                            "type": "organizational"
+                        },
+                        "role": {
+                            "@v": "db5ea9db-07ac-4cbe-af03-f54c06095772::1",
+                            "id": "hostinginstitution",
+                            "title": "Hosting institution"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "Brigham Young University (BYU)",
+                            "type": "organizational"
+                        },
+                        "role": {
+                            "@v": "db5ea9db-07ac-4cbe-af03-f54c06095772::1",
+                            "id": "hostinginstitution",
+                            "title": "Hosting institution"
+                        }
+                    }
+                ]
+            },
+            "created_date_l10n_long": "May 19, 2022",
+            "creators": {
+                "affiliations": [],
+                "creators": [
+                    {
+                        "person_or_org": {
+                            "family_name": "Hales",
+                            "given_name": "Riley",
+                            "name": "Hales, Riley",
+                            "type": "personal"
+                        }
+                    }
+                ]
+            },
+            "description_stripped": "In this registry are available materials that help users understand how the geoglows Python Package can be used.\nCurrently, the materials made available relate to the following subjects:\n\nRetrieve & plot GEOGloWS model data\nFinding Stream ID #'s programatically\nBias Evaluation and Calibration at a point\nGenerate/Download High Res Plot Images",
+            "publication_date_l10n_long": "March 24, 2022",
+            "publication_date_l10n_medium": "Mar 24, 2022",
+            "related_identifiers": [
+                {
+                    "identifier": "10.5072/739wn-ykk86",
+                    "relation_type": {
+                        "id": "ispartof",
+                        "title_l10n": "Is part of"
+                    },
+                    "resource_type": {
+                        "id": "knowledge",
+                        "title_l10n": "Knowledge Package"
+                    },
+                    "scheme": "doi"
+                },
+                {
+                    "identifier": "https://geoglows.readthedocs.io/en/latest/index.html#demos",
+                    "relation_type": {
+                        "id": "isversionof",
+                        "title_l10n": "Is version of"
+                    },
+                    "resource_type": {
+                        "id": "publication-softwaredocumentation",
+                        "title_l10n": "Software documentation"
+                    },
+                    "scheme": "url"
+                }
+            ],
+            "resource_type": {
+                "id": "software-jupyter",
+                "title_l10n": "Jupyter Notebook"
+            },
+            "rights": [
+                {
+                    "description_l10n": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited.",
+                    "icon": "cc-by-icon",
+                    "id": "cc-by-4.0",
+                    "props": {
+                        "scheme": "spdx",
+                        "url": "https://creativecommons.org/licenses/by/4.0/legalcode"
+                    },
+                    "title_l10n": "Creative Commons Attribution 4.0 International"
+                }
+            ],
+            "updated_date_l10n_long": "May 19, 2022",
+            "version": "v1"
+        },
+        "url": "/records/x44c5-9xc48"
+    },
+    {
+        "description": "<p>The <a href=\"https://geoglows.ecmwf.int/\">GEOGloWS ECMWF Streamflow System</a> represents a daily 51-member ensemble streamflow forecast for over 1 million reaches across the globe. Gridded surface runoff, provided by the European Centre for Medium-range Weather Forecasting (ECMWF), is downscaled and routed to the streams using the Routing Application for Parallel computation of Discharge (RAPID). This animation layer shows the first 6-days of a 15-day forecast at 3-hr intervals. Additionally, a 40-yr historical simulation was produced based on ECMWF's ERA5 dataset. From this historical simulation , return periods for each reach are calculated and used to color the stream segments when/where events exceed these thresholds.</p><h3>What can you do with this layer?</h3><p>This map service is designed for fast data visualization. Identify features by clicking on the map to reveal the pre-configured pop-ups. View the forecast data sequentially&nbsp;using the time slider, which is set to three hour intervals by default by Enabling Time Animation. This layer type is not recommended for use in analysis.</p><h3>Which datasets are available?</h3><p>Into the ESRI Living Atlas mapping service, the following datasets are available:</p><ul><li><a href=\"https://www.arcgis.com/home/item.html?id=fcc7fd564c6441fba3b310d2281173b7\">Global Stream Flow Web Map</a></li><li><a href=\"https://www.arcgis.com/home/item.html?id=5c2e6d2137bb4d2187db387979db2f31#\">GEOGloWS ECMWF Streamflow System (6 Day Forecast)</a></li><li><a href=\"https://www.arcgis.com/home/item.html?id=259e39b329e3494e965d9286687c18c5\">India: GEOGloWS ECMWF Streamflow System (6 Day Forecast)</a></li></ul>",
+        "id": "4xtt8-v1187",
+        "resource_type": "Web Portal",
+        "title": "Mapping Service (Esri Living Atlas)",
+        "ui": {
+            "access_status": {
+                "description_l10n": "No files are available for this record.",
+                "embargo_date_l10n": null,
+                "icon": "tag",
+                "id": "metadata-only",
+                "message_class": "",
+                "title_l10n": "Metadata-only"
+            },
+            "created_date_l10n_long": "May 19, 2022",
+            "creators": {
+                "affiliations": [],
+                "creators": [
+                    {
+                        "person_or_org": {
+                            "name": "European Centre for Medium-Range Weather Forecasts (ECMW)",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "National Oceanic and Atmospheric Administration (NOAA)",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "Environmental Systems Research Institute (ESRI)",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "Brigham Young University (BYU)",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "Centre national d'études spatiales (CNES)",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "Work Bank (WB)",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "Joint Research Centre (JRC)",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "Copernicus",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "United States Agency For International Development (USAID)",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "International Centre for Integrated Mountain Development (ICIMOD)",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "National Aeronautics and Space Administration (NASA)",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "Microsoft Azure",
+                            "type": "organizational"
+                        }
+                    }
+                ]
+            },
+            "description_stripped": "The GEOGloWS ECMWF Streamflow System represents a daily 51-member ensemble streamflow forecast for over 1 million reaches across the globe. Gridded surface runoff, provided by the European Centre for Medium-range Weather Forecasting (ECMWF), is downscaled and routed to the streams using the Routing Application for Parallel computation of Discharge (RAPID). This animation layer shows the first 6-days of a 15-day forecast at 3-hr intervals. Additionally, a 40-yr historical simulation was produced based on ECMWF's ERA5 dataset. From this historical simulation , return periods for each reach are calculated and used to color the stream segments when/where events exceed these thresholds.\nWhat can you do with this layer?\nThis map service is designed for fast data visualization. Identify features by clicking on the map to reveal the pre-configured pop-ups. View the forecast data sequentially using the time slider, which is set to three hour intervals by default by Enabling Time Animation. This layer type is not recommended for use in analysis.\nWhich datasets are available?\nInto the ESRI Living Atlas mapping service, the following datasets are available:\n\nGlobal Stream Flow Web Map\nGEOGloWS ECMWF Streamflow System (6 Day Forecast)\nIndia: GEOGloWS ECMWF Streamflow System (6 Day Forecast)",
+            "publication_date_l10n_long": "March 24, 2022",
+            "publication_date_l10n_medium": "Mar 24, 2022",
+            "related_identifiers": [
+                {
+                    "identifier": "10.5072/739wn-ykk86",
+                    "relation_type": {
+                        "id": "ispartof",
+                        "title_l10n": "Is part of"
+                    },
+                    "resource_type": {
+                        "id": "knowledge",
+                        "title_l10n": "Knowledge Package"
+                    },
+                    "scheme": "doi"
+                },
+                {
+                    "identifier": "https://www.arcgis.com/home/item.html?id=fcc7fd564c6441fba3b310d2281173b7",
+                    "relation_type": {
+                        "id": "describes",
+                        "title_l10n": "Describes"
+                    },
+                    "resource_type": {
+                        "id": "software-dataservice",
+                        "title_l10n": "Data Service"
+                    },
+                    "scheme": "url"
+                },
+                {
+                    "identifier": "https://www.arcgis.com/home/item.html?id=5c2e6d2137bb4d2187db387979db2f31",
+                    "relation_type": {
+                        "id": "describes",
+                        "title_l10n": "Describes"
+                    },
+                    "resource_type": {
+                        "id": "software-dataservice",
+                        "title_l10n": "Data Service"
+                    },
+                    "scheme": "url"
+                },
+                {
+                    "identifier": "https://www.arcgis.com/home/item.html?id=259e39b329e3494e965d9286687c18c5",
+                    "relation_type": {
+                        "id": "describes",
+                        "title_l10n": "Describes"
+                    },
+                    "resource_type": {
+                        "id": "software-dataservice",
+                        "title_l10n": "Data Service"
+                    },
+                    "scheme": "url"
+                }
+            ],
+            "resource_type": {
+                "id": "software-webportal",
+                "title_l10n": "Web Portal"
+            },
+            "rights": [
+                {
+                    "description_l10n": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited.",
+                    "icon": "cc-by-icon",
+                    "id": "cc-by-4.0",
+                    "props": {
+                        "scheme": "spdx",
+                        "url": "https://creativecommons.org/licenses/by/4.0/legalcode"
+                    },
+                    "title_l10n": "Creative Commons Attribution 4.0 International"
+                }
+            ],
+            "updated_date_l10n_long": "May 19, 2022",
+            "version": "v1"
+        },
+        "url": "/records/4xtt8-v1187"
+    },
+    {
+        "description": "<p>A REST API to access high resolution streamflow forecasts from around the world. The forecasts are derived using GloFAS runoff and RAPID routing. Using the REST API you can query and download information for any stream based on forming a query with parameters as part of the URL.</p><p>A complete documentation about the REST&nbsp;API is available on <a href=\"https://geoglows.ecmwf.int/documentation\">https://geoglows.ecmwf.int/documentation</a></p><p><br>&nbsp;</p>",
+        "id": "0bmxe-s2s90",
+        "resource_type": "Data Service",
+        "title": "Data Service (REST API)",
+        "ui": {
+            "access_status": {
+                "description_l10n": "No files are available for this record.",
+                "embargo_date_l10n": null,
+                "icon": "tag",
+                "id": "metadata-only",
+                "message_class": "",
+                "title_l10n": "Metadata-only"
+            },
+            "created_date_l10n_long": "May 19, 2022",
+            "creators": {
+                "affiliations": [],
+                "creators": [
+                    {
+                        "person_or_org": {
+                            "name": "European Centre for Medium-Range Weather Forecasts (ECMWF)",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "Aquaveo, LLC",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "Environmental Systems Research Institute (ESRI)",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "Brigham Young University (BYU)",
+                            "type": "organizational"
+                        }
+                    }
+                ]
+            },
+            "description_stripped": "A REST API to access high resolution streamflow forecasts from around the world. The forecasts are derived using GloFAS runoff and RAPID routing. Using the REST API you can query and download information for any stream based on forming a query with parameters as part of the URL.\nA complete documentation about the REST API is available on https://geoglows.ecmwf.int/documentation\n ",
+            "publication_date_l10n_long": "March 23, 2022",
+            "publication_date_l10n_medium": "Mar 23, 2022",
+            "related_identifiers": [
+                {
+                    "identifier": "10.5072/739wn-ykk86",
+                    "relation_type": {
+                        "id": "ispartof",
+                        "title_l10n": "Is part of"
+                    },
+                    "resource_type": {
+                        "id": "knowledge",
+                        "title_l10n": "Knowledge Package"
+                    },
+                    "scheme": "doi"
+                },
+                {
+                    "identifier": "https://geoglows.ecmwf.int/documentation",
+                    "relation_type": {
+                        "id": "isdocumentedby",
+                        "title_l10n": "Is documented by"
+                    },
+                    "resource_type": {
+                        "id": "publication-softwaredocumentation",
+                        "title_l10n": "Software documentation"
+                    },
+                    "scheme": "url"
+                },
+                {
+                    "identifier": "https://github.com/BYU-Hydroinformatics/geoglows-rest-api",
+                    "relation_type": {
+                        "id": "isvariantformof",
+                        "title_l10n": "Is variant form of"
+                    },
+                    "scheme": "url"
+                }
+            ],
+            "resource_type": {
+                "id": "software-dataservice",
+                "title_l10n": "Data Service"
+            },
+            "rights": [
+                {
+                    "description_l10n": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited.",
+                    "icon": "cc-by-icon",
+                    "id": "cc-by-4.0",
+                    "props": {
+                        "scheme": "spdx",
+                        "url": "https://creativecommons.org/licenses/by/4.0/legalcode"
+                    },
+                    "title_l10n": "Creative Commons Attribution 4.0 International"
+                }
+            ],
+            "updated_date_l10n_long": "May 19, 2022",
+            "version": "v1"
+        },
+        "url": "/records/0bmxe-s2s90"
+    },
+    {
+        "description": "<p>The <a href=\"https://geoglows.readthedocs.io/en/latest/\">geoglows &nbsp;</a>is an official Python client for the GEOGloWS data service. This Python package contains functions for retrieving data from the REST service, generating plots, and performing some post processing.</p><p>&nbsp;</p><p>&nbsp;</p>",
+        "id": "kth90-fyq84",
+        "resource_type": "Source Code",
+        "title": "geoglows Python Package",
+        "ui": {
+            "access_status": {
+                "description_l10n": "No files are available for this record.",
+                "embargo_date_l10n": null,
+                "icon": "tag",
+                "id": "metadata-only",
+                "message_class": "",
+                "title_l10n": "Metadata-only"
+            },
+            "contributors": {
+                "affiliations": [],
+                "contributors": [
+                    {
+                        "person_or_org": {
+                            "name": "European Centre for Medium-Range Weather Forecasts (ECMWF)",
+                            "type": "organizational"
+                        },
+                        "role": {
+                            "@v": "db5ea9db-07ac-4cbe-af03-f54c06095772::1",
+                            "id": "hostinginstitution",
+                            "title": "Hosting institution"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "Brigham Young University (BYU)",
+                            "type": "organizational"
+                        },
+                        "role": {
+                            "@v": "db5ea9db-07ac-4cbe-af03-f54c06095772::1",
+                            "id": "hostinginstitution",
+                            "title": "Hosting institution"
+                        }
+                    }
+                ]
+            },
+            "created_date_l10n_long": "May 19, 2022",
+            "creators": {
+                "affiliations": [],
+                "creators": [
+                    {
+                        "person_or_org": {
+                            "family_name": "Hales",
+                            "given_name": "Riley",
+                            "name": "Hales, Riley",
+                            "type": "personal"
+                        }
+                    }
+                ]
+            },
+            "description_stripped": "The geoglows  is an official Python client for the GEOGloWS data service. This Python package contains functions for retrieving data from the REST service, generating plots, and performing some post processing.\n \n ",
+            "publication_date_l10n_long": "March 23, 2022",
+            "publication_date_l10n_medium": "Mar 23, 2022",
+            "related_identifiers": [
+                {
+                    "identifier": "10.5072/739wn-ykk86",
+                    "relation_type": {
+                        "id": "ispartof",
+                        "title_l10n": "Is part of"
+                    },
+                    "resource_type": {
+                        "id": "knowledge",
+                        "title_l10n": "Knowledge Package"
+                    },
+                    "scheme": "doi"
+                },
+                {
+                    "identifier": "https://geoglows.readthedocs.io/en/latest/",
+                    "relation_type": {
+                        "id": "describes",
+                        "title_l10n": "Describes"
+                    },
+                    "scheme": "url"
+                }
+            ],
+            "resource_type": {
+                "id": "software-source",
+                "title_l10n": "Source Code"
+            },
+            "updated_date_l10n_long": "May 19, 2022",
+            "version": "v1"
+        },
+        "url": "/records/kth90-fyq84"
+    },
+    {
+        "description": "<p>The global <a href=\"https://github.com/BYU-Hydroinformatics/geoglows_hydroviewer\">HydroViewer </a>is where the global streamflow network can be viewed in its entirety. Streamflow data, including forecasts and historical data, can be viewed by interacting with the displayed spatial data.</p><p>The HydroViewer&nbsp;provides an interactive map interface for:</p><ol><li>Viewing animated streamflow forecast maps provided by an ESRI Dynamic Mapping Service from the Living Atlas;</li><li>Retrieving streamflow data for particular river segments via the Streamflow REST API hosted by ECMWF;</li><li>Performing post-processing streamflow calibration using measured discharge including integration with selected national discharge gauge networks.</li></ol><p>Provides a utility for creating hydroviewers for subsets of the global model:</p><ol><li>Clip global model shapefiles to extents of:<ul><li>Boundaries drawn on a map</li><li>A shapefile or geojson of boundaries</li><li>Predefined country or world region borders (ESRI Living Atlas)</li></ul></li><li>Export clipped shapefiles:<ul><li>To a specified geoserver</li><li>As a zip archive</li><li>As a Hydroshare resource (requires log in to tethys via hydroshare)</li></ul></li><li>Export the fully functioning hydroviewer as an HTML file.</li></ol><p>&nbsp;</p><p>A complete step-by-step on how use the HydroViewer&nbsp;can be founded in the following page: <a href=\"https://training.geoglows.org/en/latest/content/streamflow-model/geoglows-hydroviewer.html#visualize-and-obtain-data \">https://training.geoglows.org/en/latest/content/streamflow-model/geoglows-hydroviewer.html#visualize-and-obtain-data</a></p>",
+        "id": "15v0w-k8m23",
+        "resource_type": "Web Portal",
+        "title": "GEOGloWS ECMWF Streamflow Hydroviewer",
+        "ui": {
+            "access_status": {
+                "description_l10n": "The record and files are publicly accessible.",
+                "embargo_date_l10n": null,
+                "icon": "unlock",
+                "id": "open",
+                "message_class": "",
+                "title_l10n": "Open"
+            },
+            "created_date_l10n_long": "May 19, 2022",
+            "creators": {
+                "affiliations": [],
+                "creators": [
+                    {
+                        "person_or_org": {
+                            "name": "Aquaveo, LLC",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "GEOGloWS",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "Brigham Young University (BYU)",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "Environmental Systems Research Institute (ESRI)",
+                            "type": "organizational"
+                        }
+                    },
+                    {
+                        "person_or_org": {
+                            "name": "European Centre for Medium-range Weather Forecasts (ECMWF)",
+                            "type": "organizational"
+                        }
+                    }
+                ]
+            },
+            "description_stripped": "The global HydroViewer is where the global streamflow network can be viewed in its entirety. Streamflow data, including forecasts and historical data, can be viewed by interacting with the displayed spatial data.\nThe HydroViewer provides an interactive map interface for:\n\nViewing animated streamflow forecast maps provided by an ESRI Dynamic Mapping Service from the Living Atlas;\nRetrieving streamflow data for particular river segments via the Streamflow REST API hosted by ECMWF;\nPerforming post-processing streamflow calibration using measured discharge including integration with selected national discharge gauge networks.\nProvides a utility for creating hydroviewers for subsets of the global model:\n\nClip global model shapefiles to extents of:\n\nBoundaries drawn on a map\nA shapefile or geojson of boundaries\nPredefined country or world region borders (ESRI Living Atlas)\nExport clipped shapefiles:\n\nTo a specified geoserver\nAs a zip archive\nAs a Hydroshare resource (requires log in to tethys via hydroshare)\nExport the fully functioning hydroviewer as an HTML file.\n \nA complete step-by-step on how use the HydroViewer can be founded in the following page: https://training.geoglows.org/en/latest/content/streamflow-model/geoglows-hydroviewer.html#visualize-and-obtain-data",
+            "publication_date_l10n_long": "March 23, 2022",
+            "publication_date_l10n_medium": "Mar 23, 2022",
+            "related_identifiers": [
+                {
+                    "identifier": "10.5072/739wn-ykk86",
+                    "relation_type": {
+                        "id": "ispartof",
+                        "title_l10n": "Is part of"
+                    },
+                    "resource_type": {
+                        "id": "knowledge",
+                        "title_l10n": "Knowledge Package"
+                    },
+                    "scheme": "doi"
+                },
+                {
+                    "identifier": "https://geoglows.apps.aquaveo.com/apps/geoglows-hydroviewer/",
+                    "relation_type": {
+                        "id": "describes",
+                        "title_l10n": "Describes"
+                    },
+                    "resource_type": {
+                        "id": "software-webportal",
+                        "title_l10n": "Web Portal"
+                    },
+                    "scheme": "url"
+                },
+                {
+                    "identifier": "https://training.geoglows.org/en/latest/content/streamflow-model/geoglows-hydroviewer.html#visualize-and-obtain-data",
+                    "relation_type": {
+                        "id": "isdescribedby",
+                        "title_l10n": "Is described by"
+                    },
+                    "resource_type": {
+                        "id": "publication-trainingmaterial",
+                        "title_l10n": "Training material"
+                    },
+                    "scheme": "url"
+                }
+            ],
+            "resource_type": {
+                "id": "software-webportal",
+                "title_l10n": "Web Portal"
+            },
+            "rights": [
+                {
+                    "description_l10n": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited.",
+                    "icon": "cc-by-icon",
+                    "id": "cc-by-4.0",
+                    "props": {
+                        "scheme": "spdx",
+                        "url": "https://creativecommons.org/licenses/by/4.0/legalcode"
+                    },
+                    "title_l10n": "Creative Commons Attribution 4.0 International"
+                }
+            ],
+            "updated_date_l10n_long": "May 19, 2022",
+            "version": "v1"
+        },
+        "url": "/records/15v0w-k8m23"
+    },
+    {
+        "description": "<p>Global or national scale flood <a href=\"https://www.sciencedirect.com/topics/earth-and-planetary-sciences/early-warning-system\">early warning systems</a> (FEWS) can benefit developing countries and ungauged regions that lack <a href=\"https://www.sciencedirect.com/topics/computer-science/observational-data\">observational data</a>, computational infrastructure, and/or the human capacity for <a href=\"https://www.sciencedirect.com/topics/earth-and-planetary-sciences/streamflow\">streamflow</a> modelling. Existing land surface models (LSM) typically generate forecasts using coarse resolution grid cells which, at least for streamflow, have little value when used for flood warning at local scales. We present the design and development of a new automated computational system, using existing, well-established <a href=\"https://www.sciencedirect.com/topics/computer-science/open-source-software\">open source software</a> tools that quickly downscales (or maps) the runoff generated from such coarse grid-based LSMs onto high-resolution vector-based stream networks then routes the results using a vector-based river routing model. We conducted experiments using the ERA-Interim/Land reanalysis data – a 35-year retrospective gridded runoff data product from the European Center for Medium-range Weather Forecasts (ECMWF) – to assess our fast downscaling system. The accuracy of our approach is comparable to the Global Flood Awareness System (GloFAS) – a well-established gridded routing model using the same forcings – but our method provides streamflow predictions on significantly higher resolution stream networks. We found that the river network resolution has negligible effect on the simulated streamflow with our model routing. In other words, we can forecast streamflow for very small stream segments and potentially improve local flood awareness and response much more successfully than previously possible using readily available climate forcings from LSMs.</p><p><a href=\"https://www.sciencedirect.com/science/article/abs/pii/S1364815219304232#!\">A systems approach to routing global gridded runoff through local high-resolution stream networks for flood early warning systems - ScienceDirect</a></p>",
+        "id": "0hv03-f9f56",
+        "resource_type": "Publication",
+        "title": "A Systems Approach to Routing Global Gridded Runoff through Local High-Resolution Stream Networks for Flood Early Warning Systems",
+        "ui": {
+            "access_status": {
+                "description_l10n": "No files are available for this record.",
+                "embargo_date_l10n": null,
+                "icon": "tag",
+                "id": "metadata-only",
+                "message_class": "",
+                "title_l10n": "Metadata-only"
+            },
+            "created_date_l10n_long": "May 19, 2022",
+            "creators": {
+                "affiliations": [
+                    [
+                        1,
+                        "Civil and Environmental Engineering, Brigham Young University, Provo, UT, USA",
+                        null
+                    ],
+                    [
+                        2,
+                        "Jet Propulsion Laboratory, California Institute of Technology, Pasadena, CA, USA",
+                        null
+                    ],
+                    [
+                        3,
+                        "Aquaveo, LLC, Provo, UT, USA",
+                        null
+                    ],
+                    [
+                        4,
+                        "International Centre for Integrated Mountain Development (ICIMOD), Kathmandu, Nepal",
+                        null
+                    ]
+                ],
+                "creators": [
+                    {
+                        "affiliations": [
+                            [
+                                1,
+                                "Civil and Environmental Engineering, Brigham Young University, Provo, UT, USA"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "Xiaohui",
+                            "given_name": "Qiao",
+                            "name": "Xiaohui, Qiao",
+                            "type": "personal"
+                        },
+                        "role": {
+                            "@v": "d83c19da-f6fd-47b4-a036-edf7e61cd446::1",
+                            "id": "editor",
+                            "title": "Editor"
+                        }
+                    },
+                    {
+                        "affiliations": [
+                            [
+                                1,
+                                "Civil and Environmental Engineering, Brigham Young University, Provo, UT, USA"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "Nelson",
+                            "given_name": "E. James",
+                            "name": "Nelson, E. James",
+                            "type": "personal"
+                        },
+                        "role": {
+                            "@v": "d83c19da-f6fd-47b4-a036-edf7e61cd446::1",
+                            "id": "editor",
+                            "title": "Editor"
+                        }
+                    },
+                    {
+                        "affiliations": [
+                            [
+                                1,
+                                "Civil and Environmental Engineering, Brigham Young University, Provo, UT, USA"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "P. Ames",
+                            "given_name": "Daniel",
+                            "name": "P. Ames, Daniel",
+                            "type": "personal"
+                        },
+                        "role": {
+                            "@v": "d83c19da-f6fd-47b4-a036-edf7e61cd446::1",
+                            "id": "editor",
+                            "title": "Editor"
+                        }
+                    },
+                    {
+                        "affiliations": [
+                            [
+                                1,
+                                "Civil and Environmental Engineering, Brigham Young University, Provo, UT, USA"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "Li",
+                            "given_name": "Zhiyu",
+                            "name": "Li, Zhiyu",
+                            "type": "personal"
+                        },
+                        "role": {
+                            "@v": "d83c19da-f6fd-47b4-a036-edf7e61cd446::1",
+                            "id": "editor",
+                            "title": "Editor"
+                        }
+                    },
+                    {
+                        "affiliations": [
+                            [
+                                2,
+                                "Jet Propulsion Laboratory, California Institute of Technology, Pasadena, CA, USA"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "H. David",
+                            "given_name": "Cédric",
+                            "name": "H. David, Cédric",
+                            "type": "personal"
+                        },
+                        "role": {
+                            "@v": "d83c19da-f6fd-47b4-a036-edf7e61cd446::1",
+                            "id": "editor",
+                            "title": "Editor"
+                        }
+                    },
+                    {
+                        "affiliations": [
+                            [
+                                1,
+                                "Civil and Environmental Engineering, Brigham Young University, Provo, UT, USA"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "P. Williams",
+                            "given_name": "Gustavious",
+                            "name": "P. Williams, Gustavious",
+                            "type": "personal"
+                        },
+                        "role": {
+                            "@v": "d83c19da-f6fd-47b4-a036-edf7e61cd446::1",
+                            "id": "editor",
+                            "title": "Editor"
+                        }
+                    },
+                    {
+                        "affiliations": [
+                            [
+                                1,
+                                "Civil and Environmental Engineering, Brigham Young University, Provo, UT, USA"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "Wade",
+                            "given_name": "Roberts",
+                            "name": "Wade, Roberts",
+                            "type": "personal"
+                        },
+                        "role": {
+                            "@v": "d83c19da-f6fd-47b4-a036-edf7e61cd446::1",
+                            "id": "editor",
+                            "title": "Editor"
+                        }
+                    },
+                    {
+                        "affiliations": [
+                            [
+                                1,
+                                "Civil and Environmental Engineering, Brigham Young University, Provo, UT, USA"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "Lozano",
+                            "given_name": "Jorge Luis Sánchez",
+                            "name": "Lozano, Jorge Luis Sánchez",
+                            "type": "personal"
+                        },
+                        "role": {
+                            "@v": "d83c19da-f6fd-47b4-a036-edf7e61cd446::1",
+                            "id": "editor",
+                            "title": "Editor"
+                        }
+                    },
+                    {
+                        "affiliations": [
+                            [
+                                1,
+                                "Civil and Environmental Engineering, Brigham Young University, Provo, UT, USA"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "Edwards",
+                            "given_name": "Chris",
+                            "name": "Edwards, Chris",
+                            "type": "personal"
+                        },
+                        "role": {
+                            "@v": "d83c19da-f6fd-47b4-a036-edf7e61cd446::1",
+                            "id": "editor",
+                            "title": "Editor"
+                        }
+                    },
+                    {
+                        "affiliations": [
+                            [
+                                3,
+                                "Aquaveo, LLC, Provo, UT, USA"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "Souffront",
+                            "given_name": "Michael",
+                            "name": "Souffront, Michael",
+                            "type": "personal"
+                        },
+                        "role": {
+                            "@v": "d83c19da-f6fd-47b4-a036-edf7e61cd446::1",
+                            "id": "editor",
+                            "title": "Editor"
+                        }
+                    },
+                    {
+                        "affiliations": [
+                            [
+                                4,
+                                "International Centre for Integrated Mountain Development (ICIMOD), Kathmandu, Nepal"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "Matin",
+                            "given_name": "Mir A.",
+                            "name": "Matin, Mir A.",
+                            "type": "personal"
+                        },
+                        "role": {
+                            "@v": "d83c19da-f6fd-47b4-a036-edf7e61cd446::1",
+                            "id": "editor",
+                            "title": "Editor"
+                        }
+                    }
+                ]
+            },
+            "description_stripped": "Global or national scale flood early warning systems (FEWS) can benefit developing countries and ungauged regions that lack observational data, computational infrastructure, and/or the human capacity for streamflow modelling. Existing land surface models (LSM) typically generate forecasts using coarse resolution grid cells which, at least for streamflow, have little value when used for flood warning at local scales. We present the design and development of a new automated computational system, using existing, well-established open source software tools that quickly downscales (or maps) the runoff generated from such coarse grid-based LSMs onto high-resolution vector-based stream networks then routes the results using a vector-based river routing model. We conducted experiments using the ERA-Interim/Land reanalysis data – a 35-year retrospective gridded runoff data product from the European Center for Medium-range Weather Forecasts (ECMWF) – to assess our fast downscaling system. The accuracy of our approach is comparable to the Global Flood Awareness System (GloFAS) – a well-established gridded routing model using the same forcings – but our method provides streamflow predictions on significantly higher resolution stream networks. We found that the river network resolution has negligible effect on the simulated streamflow with our model routing. In other words, we can forecast streamflow for very small stream segments and potentially improve local flood awareness and response much more successfully than previously possible using readily available climate forcings from LSMs.\nA systems approach to routing global gridded runoff through local high-resolution stream networks for flood early warning systems - ScienceDirect",
+            "languages": [
+                {
+                    "id": "eng",
+                    "title_l10n": "English"
+                }
+            ],
+            "publication_date_l10n_long": "October 1, 2019",
+            "publication_date_l10n_medium": "Oct 1, 2019",
+            "related_identifiers": [
+                {
+                    "identifier": "10.5072/739wn-ykk86",
+                    "relation_type": {
+                        "id": "ispartof",
+                        "title_l10n": "Is part of"
+                    },
+                    "resource_type": {
+                        "id": "knowledge",
+                        "title_l10n": "Knowledge Package"
+                    },
+                    "scheme": "doi"
+                },
+                {
+                    "identifier": "10.1016/j.envsoft.2019.104501",
+                    "relation_type": {
+                        "id": "isidenticalto",
+                        "title_l10n": "Is identical to"
+                    },
+                    "resource_type": {
+                        "id": "publication",
+                        "title_l10n": "Publication"
+                    },
+                    "scheme": "doi"
+                }
+            ],
+            "resource_type": {
+                "id": "publication",
+                "title_l10n": "Publication"
+            },
+            "updated_date_l10n_long": "May 19, 2022",
+            "version": "v1"
+        },
+        "url": "/records/0hv03-f9f56"
+    },
+    {
+        "description": "<p>Numerical models have become essential tools for simulating and forecasting hydro-meteorological variability, and to help better understand the Earth's water cycle across temporal and spatial scales. Hydrologic outputs from these numerical models are widely available and represent valuable alternatives for supporting water management in regions where observations are scarce, including in transboundary river basins where data sharing is limited. Yet, the wide range of existing Land Surface Model (LSM) outputs makes the choice of datasets challenging in the absence of detailed analysis of the hydrological variability and quantification of associated physical processes. Here we focus on two of the world's most populated transboundary river basins—the combined Ganges-Brahmaputra-Meghna (GBM) in South Asia and the Mekong in Southeast Asia—where downstream countries are particularly vulnerable to water related disasters in the absence of upstream hydro-meteorological information. In this study, several freely-available global LSM outputs are obtained from NASA's Global Land Data Assimilation System (GLDAS) and from the European Centre for Medium-Range Weather Forecasts (ECMWF) Re-Analysis-interim/Land (ERA-interim/Land) and used to compute river discharge across these transboundary basins using a river network routing model. Simulations are then compared to historical discharge to assess runoff data quality and identify best-performing models with implications for the terrestrial water balance. This analysis examines the effects of meteorological inputs, land surface models, and their spatio-temporal resolution, as well as river network fineness and routing model parameters on hydrologic modeling performance. Our results indicate that the most recent runoff datasets yield the most accurate simulations in most cases, and suggest that meteorological inputs and the selection of the LSM may together be the most influential factors affecting discharge simulations. Conversely, the spatial and temporal resolution of the LSM and river model might have the least impact on the quality of simulated discharge, although the routing model parameters affect the timing of hydrographs.</p>",
+        "id": "dyd3p-cyn90",
+        "resource_type": "Journal article",
+        "title": "Evaluation of Available Global Runoff Datasets Through a River Model in Support of Transboundary Water Management in South and Southeast Asia",
+        "ui": {
+            "access_status": {
+                "description_l10n": "The record and files are publicly accessible.",
+                "embargo_date_l10n": null,
+                "icon": "unlock",
+                "id": "open",
+                "message_class": "",
+                "title_l10n": "Open"
+            },
+            "created_date_l10n_long": "May 19, 2022",
+            "creators": {
+                "affiliations": [
+                    [
+                        1,
+                        "Jet Propulsion Laboratory, California Institute of Technology",
+                        null
+                    ],
+                    [
+                        2,
+                        "Department of Geography, Texas A&M University, College Station",
+                        null
+                    ],
+                    [
+                        3,
+                        "Department of Civil and Environmental Engineering, Brigham Young University",
+                        null
+                    ],
+                    [
+                        4,
+                        "International Centre for Integrated Mountain Development",
+                        null
+                    ]
+                ],
+                "creators": [
+                    {
+                        "affiliations": [
+                            [
+                                1,
+                                "Jet Propulsion Laboratory, California Institute of Technology"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "Sikder",
+                            "given_name": "Safat",
+                            "name": "Sikder, Safat",
+                            "type": "personal"
+                        }
+                    },
+                    {
+                        "affiliations": [
+                            [
+                                1,
+                                "Jet Propulsion Laboratory, California Institute of Technology"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "David",
+                            "given_name": "Cedric",
+                            "name": "David, Cedric",
+                            "type": "personal"
+                        }
+                    },
+                    {
+                        "affiliations": [
+                            [
+                                2,
+                                "Department of Geography, Texas A&M University, College Station"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "H. Allen",
+                            "given_name": "George",
+                            "name": "H. Allen, George",
+                            "type": "personal"
+                        }
+                    },
+                    {
+                        "affiliations": [
+                            [
+                                3,
+                                "Department of Civil and Environmental Engineering, Brigham Young University"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "Qiao",
+                            "given_name": "Xiaohui",
+                            "name": "Qiao, Xiaohui",
+                            "type": "personal"
+                        }
+                    },
+                    {
+                        "affiliations": [
+                            [
+                                3,
+                                "Department of Civil and Environmental Engineering, Brigham Young University"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "Nelson",
+                            "given_name": "James",
+                            "name": "Nelson, James",
+                            "type": "personal"
+                        }
+                    },
+                    {
+                        "affiliations": [
+                            [
+                                4,
+                                "International Centre for Integrated Mountain Development"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "Matin",
+                            "given_name": "Mir",
+                            "name": "Matin, Mir",
+                            "type": "personal"
+                        }
+                    }
+                ]
+            },
+            "description_stripped": "Numerical models have become essential tools for simulating and forecasting hydro-meteorological variability, and to help better understand the Earth's water cycle across temporal and spatial scales. Hydrologic outputs from these numerical models are widely available and represent valuable alternatives for supporting water management in regions where observations are scarce, including in transboundary river basins where data sharing is limited. Yet, the wide range of existing Land Surface Model (LSM) outputs makes the choice of datasets challenging in the absence of detailed analysis of the hydrological variability and quantification of associated physical processes. Here we focus on two of the world's most populated transboundary river basins—the combined Ganges-Brahmaputra-Meghna (GBM) in South Asia and the Mekong in Southeast Asia—where downstream countries are particularly vulnerable to water related disasters in the absence of upstream hydro-meteorological information. In this study, several freely-available global LSM outputs are obtained from NASA's Global Land Data Assimilation System (GLDAS) and from the European Centre for Medium-Range Weather Forecasts (ECMWF) Re-Analysis-interim/Land (ERA-interim/Land) and used to compute river discharge across these transboundary basins using a river network routing model. Simulations are then compared to historical discharge to assess runoff data quality and identify best-performing models with implications for the terrestrial water balance. This analysis examines the effects of meteorological inputs, land surface models, and their spatio-temporal resolution, as well as river network fineness and routing model parameters on hydrologic modeling performance. Our results indicate that the most recent runoff datasets yield the most accurate simulations in most cases, and suggest that meteorological inputs and the selection of the LSM may together be the most influential factors affecting discharge simulations. Conversely, the spatial and temporal resolution of the LSM and river model might have the least impact on the quality of simulated discharge, although the routing model parameters affect the timing of hydrographs.",
+            "publication_date_l10n_long": "March 23, 2022",
+            "publication_date_l10n_medium": "Mar 23, 2022",
+            "related_identifiers": [
+                {
+                    "identifier": "10.5072/739wn-ykk86",
+                    "relation_type": {
+                        "id": "ispartof",
+                        "title_l10n": "Is part of"
+                    },
+                    "resource_type": {
+                        "id": "knowledge",
+                        "title_l10n": "Knowledge Package"
+                    },
+                    "scheme": "doi"
+                },
+                {
+                    "identifier": "10.5072/2avj0-jhk33",
+                    "relation_type": {
+                        "id": "ispartof",
+                        "title_l10n": "Is part of"
+                    },
+                    "resource_type": {
+                        "id": "knowledge",
+                        "title_l10n": "Knowledge Package"
+                    },
+                    "scheme": "doi"
+                }
+            ],
+            "resource_type": {
+                "id": "publication-article",
+                "title_l10n": "Journal article"
+            },
+            "rights": [
+                {
+                    "description_l10n": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited.",
+                    "icon": "cc-by-icon",
+                    "id": "cc-by-4.0",
+                    "props": {
+                        "scheme": "spdx",
+                        "url": "https://creativecommons.org/licenses/by/4.0/legalcode"
+                    },
+                    "title_l10n": "Creative Commons Attribution 4.0 International"
+                }
+            ],
+            "updated_date_l10n_long": "May 19, 2022",
+            "version": "v1"
+        },
+        "url": "/records/dyd3p-cyn90"
+    },
+    {
+        "description": "<p>Hydrologic modeling can be used to aid in decision-making at the local scale. Developed countries usually have their own hydrologic models; however, developing countries often have limited hydrologic modeling capabilities due to factors such as the maintenance, computational costs, and technical capacity needed to run models. A global streamflow prediction system (GSPS) would help decrease vulnerabilities in developing countries and fill gaps in areas where no local models exist by providing extensive results that can be filtered for specific locations. However, large-scale forecasting systems come with their own challenges. These New hydroinformatic challenges can prevent these models from reaching their full potential of becoming useful in the decision making process. This article discusses these challenges along with the background leading to the development of a large-scale streamflow prediction system. In addition, we present a large-scale streamflow prediction system developed using the GloFAS-RAPID model. The developed model covers Africa, North America, South America, and South Asia. The results from this model are made available using a Hydrologic Modeling as a Service approach (HMaaS) as an answer to some of the discussed challenges. In contrast to the traditional modeling approach, which makes results available only to those with the resources necessary to run hydrologic models, the HMaaS approach makes results available using web services that can be accessed by anyone with an internet connection. Web applications and services for providing improved data accessibility, and addressing the discussed hydroinformamtic challenges are also presented. The HydroViewer app, a custom application to display model results and facilitate data consumption and integration at the local level is presented. We also conducted validation tests to ensure that model results are acceptable. Some of the countries where the presented services and applications have been tested include Argentina, Bangladesh, Colombia, Peru, Nepal, and the Dominican Republic. Overall, a HMaaS approach to operationalize a GSPS and provide meaningful and easily accessible results at the local level is provided with the potential to allow decision makers to focus on solving some of the most pressing water-related issues we face as a society.</p>",
+        "id": "w82hd-7jy14",
+        "resource_type": "Journal article",
+        "title": "Hydrologic Modeling as a Service (HMaaS): A New Approach to Address Hydroinformatic Challenges in Developing Countries",
+        "ui": {
+            "access_status": {
+                "description_l10n": "The record and files are publicly accessible.",
+                "embargo_date_l10n": null,
+                "icon": "unlock",
+                "id": "open",
+                "message_class": "",
+                "title_l10n": "Open"
+            },
+            "created_date_l10n_long": "May 19, 2022",
+            "creators": {
+                "affiliations": [
+                    [
+                        1,
+                        "Aquaveo, LLC",
+                        null
+                    ],
+                    [
+                        2,
+                        "Department of Civil and Environmental Engineering, Brigham Young University",
+                        null
+                    ],
+                    [
+                        3,
+                        "International Centre for Integrated Mountain Development (ICIMOD)",
+                        null
+                    ],
+                    [
+                        4,
+                        "National Oceanic and Atmospheric Administration (NOAA)",
+                        null
+                    ]
+                ],
+                "creators": [
+                    {
+                        "affiliations": [
+                            [
+                                1,
+                                "Aquaveo, LLC"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "Souffront Alcantara",
+                            "given_name": "Michael Antonio",
+                            "name": "Souffront Alcantara, Michael Antonio",
+                            "type": "personal"
+                        }
+                    },
+                    {
+                        "affiliations": [
+                            [
+                                2,
+                                "Department of Civil and Environmental Engineering, Brigham Young University"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "Nelson",
+                            "given_name": "James",
+                            "name": "Nelson, James",
+                            "type": "personal"
+                        }
+                    },
+                    {
+                        "affiliations": [
+                            [
+                                3,
+                                "International Centre for Integrated Mountain Development (ICIMOD)"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "Shakya",
+                            "given_name": "Kiran",
+                            "name": "Shakya, Kiran",
+                            "type": "personal"
+                        }
+                    },
+                    {
+                        "affiliations": [
+                            [
+                                2,
+                                "Department of Civil and Environmental Engineering, Brigham Young University"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "Edwards",
+                            "given_name": "Christopher",
+                            "name": "Edwards, Christopher",
+                            "type": "personal"
+                        }
+                    },
+                    {
+                        "affiliations": [
+                            [
+                                2,
+                                "Department of Civil and Environmental Engineering, Brigham Young University"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "Roberts",
+                            "given_name": "Wade",
+                            "name": "Roberts, Wade",
+                            "type": "personal"
+                        }
+                    },
+                    {
+                        "affiliations": [
+                            [
+                                1,
+                                "Aquaveo, LLC"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "Krewson",
+                            "given_name": "Corey",
+                            "name": "Krewson, Corey",
+                            "type": "personal"
+                        }
+                    },
+                    {
+                        "affiliations": [
+                            [
+                                2,
+                                "Department of Civil and Environmental Engineering, Brigham Young University"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "Ames",
+                            "given_name": "Daniel",
+                            "name": "Ames, Daniel",
+                            "type": "personal"
+                        }
+                    },
+                    {
+                        "affiliations": [
+                            [
+                                2,
+                                "Department of Civil and Environmental Engineering, Brigham Young University"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "Jones",
+                            "given_name": "Norman",
+                            "name": "Jones, Norman",
+                            "type": "personal"
+                        }
+                    },
+                    {
+                        "affiliations": [
+                            [
+                                4,
+                                "National Oceanic and Atmospheric Administration (NOAA)"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "family_name": "Gutierrez",
+                            "given_name": "Angelica",
+                            "name": "Gutierrez, Angelica",
+                            "type": "personal"
+                        }
+                    }
+                ]
+            },
+            "description_stripped": "Hydrologic modeling can be used to aid in decision-making at the local scale. Developed countries usually have their own hydrologic models; however, developing countries often have limited hydrologic modeling capabilities due to factors such as the maintenance, computational costs, and technical capacity needed to run models. A global streamflow prediction system (GSPS) would help decrease vulnerabilities in developing countries and fill gaps in areas where no local models exist by providing extensive results that can be filtered for specific locations. However, large-scale forecasting systems come with their own challenges. These New hydroinformatic challenges can prevent these models from reaching their full potential of becoming useful in the decision making process. This article discusses these challenges along with the background leading to the development of a large-scale streamflow prediction system. In addition, we present a large-scale streamflow prediction system developed using the GloFAS-RAPID model. The developed model covers Africa, North America, South America, and South Asia. The results from this model are made available using a Hydrologic Modeling as a Service approach (HMaaS) as an answer to some of the discussed challenges. In contrast to the traditional modeling approach, which makes results available only to those with the resources necessary to run hydrologic models, the HMaaS approach makes results available using web services that can be accessed by anyone with an internet connection. Web applications and services for providing improved data accessibility, and addressing the discussed hydroinformamtic challenges are also presented. The HydroViewer app, a custom application to display model results and facilitate data consumption and integration at the local level is presented. We also conducted validation tests to ensure that model results are acceptable. Some of the countries where the presented services and applications have been tested include Argentina, Bangladesh, Colombia, Peru, Nepal, and the Dominican Republic. Overall, a HMaaS approach to operationalize a GSPS and provide meaningful and easily accessible results at the local level is provided with the potential to allow decision makers to focus on solving some of the most pressing water-related issues we face as a society.",
+            "publication_date_l10n_long": "March 23, 2022",
+            "publication_date_l10n_medium": "Mar 23, 2022",
+            "related_identifiers": [
+                {
+                    "identifier": "10.5072/739wn-ykk86",
+                    "relation_type": {
+                        "id": "ispartof",
+                        "title_l10n": "Is part of"
+                    },
+                    "resource_type": {
+                        "id": "knowledge",
+                        "title_l10n": "Knowledge Package"
+                    },
+                    "scheme": "doi"
+                },
+                {
+                    "identifier": "10.3389/fenvs.2019.00158",
+                    "relation_type": {
+                        "id": "isidenticalto",
+                        "title_l10n": "Is identical to"
+                    },
+                    "resource_type": {
+                        "id": "publication-article",
+                        "title_l10n": "Journal article"
+                    },
+                    "scheme": "doi"
+                }
+            ],
+            "resource_type": {
+                "id": "publication-article",
+                "title_l10n": "Journal article"
+            },
+            "rights": [
+                {
+                    "description_l10n": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited.",
+                    "icon": "cc-by-icon",
+                    "id": "cc-by-4.0",
+                    "props": {
+                        "scheme": "spdx",
+                        "url": "https://creativecommons.org/licenses/by/4.0/legalcode"
+                    },
+                    "title_l10n": "Creative Commons Attribution 4.0 International"
+                }
+            ],
+            "updated_date_l10n_long": "May 19, 2022",
+            "version": "v1"
+        },
+        "url": "/records/w82hd-7jy14"
+    }
+]

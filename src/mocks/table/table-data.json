@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Name A",
+        "role": "Role A",
+        "type": "Type A"
+    },
+    {
+        "name": "Name B",
+        "role": "Role B",
+        "type": "Type C"
+    }
+]

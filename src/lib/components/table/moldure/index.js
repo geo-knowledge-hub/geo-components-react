@@ -6,4 +6,5 @@
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
-export * from './components';
+export { SortableTable } from './SortableTable';
+export { PaginableTable } from './PaginableTable';

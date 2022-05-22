@@ -6,4 +6,9 @@
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
-export * from './components';
+export { SearchBar } from './SearchBar';
+export { SearchMenu } from './SearchMenu';
+export { Pagination } from './Pagination';
+export { TypeSelectorCard } from './TypeSelectorCard';
+
+export * from './results';

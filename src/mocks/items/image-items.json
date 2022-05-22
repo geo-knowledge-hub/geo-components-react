@@ -1,0 +1,29 @@
+[
+    {
+        "id": "elliotImage",
+        "props": {
+            "icon": "/assets/avatars/elliot.jpg"
+        },
+        "title": {
+            "en": "Elliot"
+        }
+    },
+    {
+        "id": "steveImage",
+        "props": {
+            "icon": "/assets/avatars/steve.jpg"
+        },
+        "title": {
+            "en": "Steve"
+        }
+    },
+    {
+        "id": "mollyImage",
+        "props": {
+            "icon": "/assets/avatars/molly.png"
+        },
+        "title": {
+            "en": "Molly"
+        }
+    }
+]

@@ -1,0 +1,402 @@
+{
+    "hits": {
+        "hits": [
+            {
+                "id": "sdg-goal-2",
+                "revision_id": 1,
+                "type": "engagementprioritiestypes",
+                "title": {
+                    "en": "(SDG) Goal 2 - Zero Hunger"
+                },
+                "links": {
+                    "self": "https://api-mock/api/vocabularies/engagementprioritiestypes/sdg-goal-2"
+                },
+                "props": {
+                    "description_long": "End hunger, achieve food security and improved nutrition and promote sustainable agriculture",
+                    "description_short": "Zero Hunger",
+                    "icon": "/assets/engagement-priorities/sdg/goals/goal-2_icon.png",
+                    "subtype": "sdg-goal",
+                    "type": "sdg",
+                    "uri": "https://sdgs.un.org/goals/goal2",
+                    "is_subtype": "true",
+                    "has_subtype": "false"
+                },
+                "created": "2022-05-18T02:11:09.377416+00:00",
+                "updated": "2022-05-18T02:11:09.395016+00:00"
+            },
+            {
+                "id": "sdg-goal-17",
+                "revision_id": 1,
+                "type": "engagementprioritiestypes",
+                "title": {
+                    "en": "(SDG) Goal 17 - Partnerships for the goals"
+                },
+                "links": {
+                    "self": "https://api-mock/api/vocabularies/engagementprioritiestypes/sdg-goal-17"
+                },
+                "props": {
+                    "description_long": "Strengthen the means of implementation and revitalize the global partnership for sustainable development",
+                    "description_short": "Partnerships for the goals",
+                    "icon": "/assets/engagement-priorities/sdg/goals/goal-17_icon.png",
+                    "subtype": "sdg-goal",
+                    "type": "sdg",
+                    "uri": "https://sdgs.un.org/goals/goal17",
+                    "is_subtype": "true",
+                    "has_subtype": "false"
+                },
+                "created": "2022-05-18T02:11:09.527969+00:00",
+                "updated": "2022-05-18T02:11:09.546781+00:00"
+            },
+            {
+                "id": "sdg-goal-16",
+                "revision_id": 1,
+                "type": "engagementprioritiestypes",
+                "title": {
+                    "en": "(SDG) Goal 16 - Peace And Justice - Strong Institutions"
+                },
+                "links": {
+                    "self": "https://api-mock/api/vocabularies/engagementprioritiestypes/sdg-goal-16"
+                },
+                "props": {
+                    "description_long": "Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels",
+                    "description_short": "Peace And Justice - Strong Institutions",
+                    "icon": "/assets/engagement-priorities/sdg/goals/goal-16_icon.png",
+                    "subtype": "sdg-goal",
+                    "type": "sdg",
+                    "uri": "https://sdgs.un.org/goals/goal16",
+                    "is_subtype": "true",
+                    "has_subtype": "false"
+                },
+                "created": "2022-05-18T02:11:09.522338+00:00",
+                "updated": "2022-05-18T02:11:09.545069+00:00"
+            },
+            {
+                "id": "sdg-goal-15",
+                "revision_id": 1,
+                "type": "engagementprioritiestypes",
+                "title": {
+                    "en": "(SDG) Goal 15 - Life on land"
+                },
+                "links": {
+                    "self": "https://api-mock/api/vocabularies/engagementprioritiestypes/sdg-goal-15"
+                },
+                "props": {
+                    "description_long": "Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss",
+                    "description_short": "Life on land",
+                    "icon": "/assets/engagement-priorities/sdg/goals/goal-15_icon.png",
+                    "subtype": "sdg-goal",
+                    "type": "sdg",
+                    "uri": "https://sdgs.un.org/goals/goal15",
+                    "is_subtype": "true",
+                    "has_subtype": "false"
+                },
+                "created": "2022-05-18T02:11:09.522263+00:00",
+                "updated": "2022-05-18T02:11:09.545784+00:00"
+            },
+            {
+                "id": "sdg-goal-1",
+                "revision_id": 1,
+                "type": "engagementprioritiestypes",
+                "title": {
+                    "en": "(SDG) Goal 1 - No Poverty"
+                },
+                "links": {
+                    "self": "https://api-mock/api/vocabularies/engagementprioritiestypes/sdg-goal-1"
+                },
+                "props": {
+                    "description_long": "End poverty in all its forms everywhere",
+                    "description_short": "No Poverty",
+                    "icon": "/assets/engagement-priorities/sdg/goals/goal-1_icon.png",
+                    "subtype": "sdg-goal",
+                    "type": "sdg",
+                    "uri": "https://sdgs.un.org/goals/goal1",
+                    "is_subtype": "true",
+                    "has_subtype": "false"
+                },
+                "created": "2022-05-18T02:11:09.374650+00:00",
+                "updated": "2022-05-18T02:11:09.389008+00:00"
+            },
+            {
+                "id": "sdg-goal-3",
+                "revision_id": 1,
+                "type": "engagementprioritiestypes",
+                "title": {
+                    "en": "(SDG) Goal 3 - Good Health and Well-being"
+                },
+                "links": {
+                    "self": "https://api-mock/api/vocabularies/engagementprioritiestypes/sdg-goal-3"
+                },
+                "props": {
+                    "description_long": "Ensure healthy lives and promote well-being for all at all ages",
+                    "description_short": "Good Health and Well-being",
+                    "icon": "/assets/engagement-priorities/sdg/goals/goal-3_icon.png",
+                    "subtype": "sdg-goal",
+                    "type": "sdg",
+                    "uri": "https://sdgs.un.org/goals/goal3",
+                    "is_subtype": "true",
+                    "has_subtype": "false"
+                },
+                "created": "2022-05-18T02:11:09.429852+00:00",
+                "updated": "2022-05-18T02:11:09.454802+00:00"
+            },
+            {
+                "id": "sdg-goal-5",
+                "revision_id": 1,
+                "type": "engagementprioritiestypes",
+                "title": {
+                    "en": "(SDG) Goal 5 - Gender Equality"
+                },
+                "links": {
+                    "self": "https://api-mock/api/vocabularies/engagementprioritiestypes/sdg-goal-5"
+                },
+                "props": {
+                    "description_long": "Achieve gender equality and empower all women and girls",
+                    "description_short": "Gender Equality",
+                    "icon": "/assets/engagement-priorities/sdg/goals/goal-5_icon.png",
+                    "subtype": "sdg-goal",
+                    "type": "sdg",
+                    "uri": "https://sdgs.un.org/goals/goal5",
+                    "is_subtype": "true",
+                    "has_subtype": "false"
+                },
+                "created": "2022-05-18T02:11:09.450908+00:00",
+                "updated": "2022-05-18T02:11:09.471075+00:00"
+            },
+            {
+                "id": "sdg-goal-8",
+                "revision_id": 1,
+                "type": "engagementprioritiestypes",
+                "title": {
+                    "en": "(SDG) Goal 8 - Decent jobs and economic growth"
+                },
+                "links": {
+                    "self": "https://api-mock/api/vocabularies/engagementprioritiestypes/sdg-goal-8"
+                },
+                "props": {
+                    "description_long": "Promote sustained, inclusive and sustainable economic growth, full and productive",
+                    "description_short": "Decent jobs and economic growth",
+                    "icon": "/assets/engagement-priorities/sdg/goals/goal-8_icon.png",
+                    "subtype": "sdg-goal",
+                    "type": "sdg",
+                    "uri": "https://sdgs.un.org/goals/goal8",
+                    "is_subtype": "true",
+                    "has_subtype": "false"
+                },
+                "created": "2022-05-18T02:11:09.450481+00:00",
+                "updated": "2022-05-18T02:11:09.477352+00:00"
+            },
+            {
+                "id": "sdg-goal-10",
+                "revision_id": 1,
+                "type": "engagementprioritiestypes",
+                "title": {
+                    "en": "(SDG) Goal 10 - Reduced inequalities"
+                },
+                "links": {
+                    "self": "https://api-mock/api/vocabularies/engagementprioritiestypes/sdg-goal-10"
+                },
+                "props": {
+                    "description_long": "Reduce inequality within and among countries",
+                    "description_short": "Reduced inequalities",
+                    "icon": "/assets/engagement-priorities/sdg/goals/goal-10_icon.png",
+                    "subtype": "sdg-goal",
+                    "type": "sdg",
+                    "uri": "https://sdgs.un.org/goals/goal10",
+                    "is_subtype": "true",
+                    "has_subtype": "false"
+                },
+                "created": "2022-05-18T02:11:09.451065+00:00",
+                "updated": "2022-05-18T02:11:09.481321+00:00"
+            },
+            {
+                "id": "sdg-goal-4",
+                "revision_id": 1,
+                "type": "engagementprioritiestypes",
+                "title": {
+                    "en": "(SDG) Goal 4 - Quality Education"
+                },
+                "links": {
+                    "self": "https://api-mock/api/vocabularies/engagementprioritiestypes/sdg-goal-4"
+                },
+                "props": {
+                    "description_long": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities ",
+                    "description_short": "Quality Education",
+                    "icon": "/assets/engagement-priorities/sdg/goals/goal-4_icon.png",
+                    "subtype": "sdg-goal",
+                    "type": "sdg",
+                    "uri": "https://sdgs.un.org/goals/goal4",
+                    "is_subtype": "true",
+                    "has_subtype": "false"
+                },
+                "created": "2022-05-18T02:11:09.444570+00:00",
+                "updated": "2022-05-18T02:11:09.476785+00:00"
+            },
+            {
+                "id": "sdg-goal-9",
+                "revision_id": 1,
+                "type": "engagementprioritiestypes",
+                "title": {
+                    "en": "(SDG) Goal 9 - Industry, innovation and infrastructure"
+                },
+                "links": {
+                    "self": "https://api-mock/api/vocabularies/engagementprioritiestypes/sdg-goal-9"
+                },
+                "props": {
+                    "description_long": "Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation",
+                    "description_short": "Industry, innovation and infrastructure",
+                    "icon": "/assets/engagement-priorities/sdg/goals/goal-9_icon.png",
+                    "subtype": "sdg-goal",
+                    "type": "sdg",
+                    "uri": "https://sdgs.un.org/goals/goal9",
+                    "is_subtype": "true",
+                    "has_subtype": "false"
+                },
+                "created": "2022-05-18T02:11:09.450941+00:00",
+                "updated": "2022-05-18T02:11:09.481646+00:00"
+            },
+            {
+                "id": "sdg-goal-6",
+                "revision_id": 1,
+                "type": "engagementprioritiestypes",
+                "title": {
+                    "en": "(SDG) Goal 6 - Clean water and sanitation"
+                },
+                "links": {
+                    "self": "https://api-mock/api/vocabularies/engagementprioritiestypes/sdg-goal-6"
+                },
+                "props": {
+                    "description_long": "Ensure availability and sustainable management of water and sanitation for all",
+                    "description_short": "Clean water and sanitation",
+                    "icon": "/assets/engagement-priorities/sdg/goals/goal-6_icon.png",
+                    "subtype": "sdg-goal",
+                    "type": "sdg",
+                    "uri": "https://sdgs.un.org/goals/goal6",
+                    "is_subtype": "true",
+                    "has_subtype": "false"
+                },
+                "created": "2022-05-18T02:11:09.452829+00:00",
+                "updated": "2022-05-18T02:11:09.488798+00:00"
+            },
+            {
+                "id": "sdg-goal-7",
+                "revision_id": 1,
+                "type": "engagementprioritiestypes",
+                "title": {
+                    "en": "(SDG) Goal 7 - Affordable and clean energy"
+                },
+                "links": {
+                    "self": "https://api-mock/api/vocabularies/engagementprioritiestypes/sdg-goal-7"
+                },
+                "props": {
+                    "description_long": "Ensure access to affordable, reliable, sustainable and modern energy for all",
+                    "description_short": "Affordable and clean energy",
+                    "icon": "/assets/engagement-priorities/sdg/goals/goal-7_icon.png",
+                    "subtype": "sdg-goal",
+                    "type": "sdg",
+                    "uri": "https://sdgs.un.org/goals/goal7",
+                    "is_subtype": "true",
+                    "has_subtype": "false"
+                },
+                "created": "2022-05-18T02:11:09.462886+00:00",
+                "updated": "2022-05-18T02:11:09.489222+00:00"
+            },
+            {
+                "id": "sdg-goal-11",
+                "revision_id": 1,
+                "type": "engagementprioritiestypes",
+                "title": {
+                    "en": "(SDG) Goal 11 - Sustainable cities and communities"
+                },
+                "links": {
+                    "self": "https://api-mock/api/vocabularies/engagementprioritiestypes/sdg-goal-11"
+                },
+                "props": {
+                    "description_long": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+                    "description_short": "Sustainable cities and communities",
+                    "icon": "/assets/engagement-priorities/sdg/goals/goal-11_icon.png",
+                    "subtype": "sdg-goal",
+                    "type": "sdg",
+                    "uri": "https://sdgs.un.org/goals/goal11",
+                    "is_subtype": "true",
+                    "has_subtype": "false"
+                },
+                "created": "2022-05-18T02:11:09.495808+00:00",
+                "updated": "2022-05-18T02:11:09.524125+00:00"
+            },
+            {
+                "id": "sdg-goal-12",
+                "revision_id": 1,
+                "type": "engagementprioritiestypes",
+                "title": {
+                    "en": "(SDG) Goal 12 - Responsible consumption and production"
+                },
+                "links": {
+                    "self": "https://api-mock/api/vocabularies/engagementprioritiestypes/sdg-goal-12"
+                },
+                "props": {
+                    "description_long": "Ensure sustainable consumption and production patterns",
+                    "description_short": "Responsible consumption and production",
+                    "icon": "/assets/engagement-priorities/sdg/goals/goal-12_icon.png",
+                    "subtype": "sdg-goal",
+                    "type": "sdg",
+                    "uri": "https://sdgs.un.org/goals/goal12",
+                    "is_subtype": "true",
+                    "has_subtype": "false"
+                },
+                "created": "2022-05-18T02:11:09.505670+00:00",
+                "updated": "2022-05-18T02:11:09.524373+00:00"
+            },
+            {
+                "id": "sdg-goal-13",
+                "revision_id": 1,
+                "type": "engagementprioritiestypes",
+                "title": {
+                    "en": "(SDG) Goal 13 - Climate action"
+                },
+                "links": {
+                    "self": "https://api-mock/api/vocabularies/engagementprioritiestypes/sdg-goal-13"
+                },
+                "props": {
+                    "description_long": "Take urgent action to combat climate change and its impacts",
+                    "description_short": "Climate action",
+                    "icon": "/assets/engagement-priorities/sdg/goals/goal-13_icon.png",
+                    "subtype": "sdg-goal",
+                    "type": "sdg",
+                    "uri": "https://sdgs.un.org/goals/goal13",
+                    "is_subtype": "true",
+                    "has_subtype": "false"
+                },
+                "created": "2022-05-18T02:11:09.515078+00:00",
+                "updated": "2022-05-18T02:11:09.538942+00:00"
+            },
+            {
+                "id": "sdg-goal-14",
+                "revision_id": 1,
+                "type": "engagementprioritiestypes",
+                "title": {
+                    "en": "(SDG) Goal 14 - Life below water"
+                },
+                "links": {
+                    "self": "https://api-mock/api/vocabularies/engagementprioritiestypes/sdg-goal-14"
+                },
+                "props": {
+                    "description_long": "Conserve and sustainably use the oceans, seas and marine resources for sustainable development",
+                    "description_short": "Life below water",
+                    "icon": "/assets/engagement-priorities/sdg/goals/goal-14_icon.png",
+                    "subtype": "sdg-goal",
+                    "type": "sdg",
+                    "uri": "https://sdgs.un.org/goals/goal14",
+                    "is_subtype": "true",
+                    "has_subtype": "false"
+                },
+                "created": "2022-05-18T02:11:09.516827+00:00",
+                "updated": "2022-05-18T02:11:09.545515+00:00"
+            }
+        ],
+        "total": 17
+    },
+    "sortBy": "bestmatch",
+    "links": {
+        "self": "https://api-mock/api/vocabularies/engagementprioritiestypes?page=1&q=props.is_subtype%3A%22true%22%20AND%20props.subtype%3A%22sdg-goal%22&size=25&sort=bestmatch"
+    }
+}
