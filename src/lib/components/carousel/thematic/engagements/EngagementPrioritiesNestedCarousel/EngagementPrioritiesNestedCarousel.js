@@ -34,7 +34,7 @@ export const EngagementPrioritiesNestedCarousel = ({
   mainCarouselProps,
   nestedCarouselProps,
   nestedCarouselContainerProps,
-  dataProxyProcessor,
+  proxies,
 }) => {
   const componentTheme = useTheme();
 
@@ -47,24 +47,32 @@ export const EngagementPrioritiesNestedCarousel = ({
 
   // getting data from Vocabulary API (only supertypes)
   useEffect(() => {
-    fetchVocabulary(ENGAGEMENT_PRIORITIES_VOCABULARY_NAME, {
+    let searchParams = {
       params: {
         q: 'props.is_subtype:"false"',
         size: 25, // temporary
       },
-    }).then((vocabularyData) => {
-      const vocabularyDataFiltered =
-        vocabularyData.filter(
-          (x) => !(['', null].indexOf(x.props.icon) > -1)
-        ) || [];
+    };
 
-      // Temporary
-      setVocabulariesData(
-        dataProxyProcessor
-          ? dataProxyProcessor(vocabularyDataFiltered)
-          : vocabularyDataFiltered
-      );
-    });
+    searchParams = proxies.prepareSearchParams
+      ? proxies.prepareSearchParams(searchParams, true)
+      : searchParams;
+
+    fetchVocabulary(ENGAGEMENT_PRIORITIES_VOCABULARY_NAME, searchParams).then(
+      (vocabularyData) => {
+        const vocabularyDataFiltered =
+          vocabularyData.filter(
+            (x) => !(['', null].indexOf(x.props.icon) > -1)
+          ) || [];
+
+        // Temporary
+        setVocabulariesData(
+          proxies.dataProxyProcessor
+            ? proxies.dataProxyProcessor(vocabularyDataFiltered)
+            : vocabularyDataFiltered
+        );
+      }
+    );
   }, []);
 
   // getting data from Vocabulary API (subtype selected by the users)
@@ -75,19 +83,27 @@ export const EngagementPrioritiesNestedCarousel = ({
       subTypeVocabulariesData[subTypeSelected] !== undefined;
 
     if (!dataAlreadyLoaded) {
-      fetchVocabulary(ENGAGEMENT_PRIORITIES_VOCABULARY_NAME, {
+      let searchParams = {
         params: {
           q: `props.is_subtype:"true" AND props.subtype:"${subTypeSelected}"`,
           size: 25, // temporary
         },
-      }).then((vocabularyData) => {
-        setSubTypeVocabulariesData({
-          ...subTypeVocabulariesData,
-          [subTypeSelected]: dataProxyProcessor
-            ? dataProxyProcessor(vocabularyData) // Temporary
-            : vocabularyData,
-        });
-      });
+      };
+
+      searchParams = proxies.prepareSearchParams
+        ? proxies.prepareSearchParams(searchParams, false)
+        : searchParams;
+
+      fetchVocabulary(ENGAGEMENT_PRIORITIES_VOCABULARY_NAME, searchParams).then(
+        (vocabularyData) => {
+          setSubTypeVocabulariesData({
+            ...subTypeVocabulariesData,
+            [subTypeSelected]: proxies.dataProxyProcessor
+              ? proxies.dataProxyProcessor(vocabularyData) // Temporary
+              : vocabularyData,
+          });
+        }
+      );
     }
   }, [subTypeSelected]);
 
@@ -165,5 +181,9 @@ EngagementPrioritiesNestedCarousel.propTypes = {
   mainCarouselProps: PropTypes.object,
   nestedCarouselProps: PropTypes.object,
   nestedCarouselContainerProps: PropTypes.object,
-  dataProxyProcessor: PropTypes.func,
+  proxies: PropTypes.object,
+};
+
+EngagementPrioritiesNestedCarousel.defaultProps = {
+  proxies: {},
 };
