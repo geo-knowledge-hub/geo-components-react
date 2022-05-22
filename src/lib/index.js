@@ -6,13 +6,4 @@
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
-// Temporary: avoiding breaking
-//            changes to test the component
-export {
-  UserStoriesCarousel,
-  EngagementPrioritiesCarousel,
-} from './components/base';
-
-export { base } from './components';
-export { front } from './components';
-export { detail } from './components';
+export * from './components';

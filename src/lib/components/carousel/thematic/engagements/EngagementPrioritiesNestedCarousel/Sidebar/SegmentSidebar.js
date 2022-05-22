@@ -6,5 +6,15 @@
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
-export * from './carousel';
-export * from './table';
+import React from 'react';
+
+import { Segment, Sidebar } from 'semantic-ui-react';
+
+/**
+ * Segment Sidebar component.
+ */
+export const SegmentSidebar = ({ children, ...props }) => (
+  <Sidebar as={Segment} {...props}>
+    {children}
+  </Sidebar>
+);

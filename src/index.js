@@ -11,8 +11,8 @@ import ReactDOM from 'react-dom';
 
 import App from './demos/App';
 
-import 'glider-js/glider.min.css';
 import 'semantic-ui-css/semantic.min.css';
 import 'pure-react-carousel/dist/react-carousel.es.css';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
