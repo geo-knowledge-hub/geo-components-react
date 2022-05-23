@@ -81,7 +81,7 @@ export const RelatedResourceTable = ({
   // controlling the pagination state when a search is performed
   useEffect(() => {
     setPaginationConfig({ ...paginationConfig, currentPage: 1 });
-  }, [searchBarContent]);
+  }, [searchBarContent, activeResourceType, paginationConfig.pageSize]);
 
   // selecting the records data
   const recordsDataRaw = searchBarContent ? searchResults : records;
