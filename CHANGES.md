@@ -1,5 +1,9 @@
 # Changes
 
+## Version 0.3.1 (2022-05-23)
+
+- Fixed pagination error ([#18](https://github.com/geo-knowledge-hub/geo-components-react/issues/18)) in the `RelatedResourceTable` component.
+
 ## Version 0.3.0 (2022-05-22)
 
 - Package structure reorganized. With this change, the package is divided by component type, and for each type, there are the base components, their derivations, and thematic uses. For example, for table components, you have the following structure:
