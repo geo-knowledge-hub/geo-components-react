@@ -1,8 +1,9 @@
 # Changes
 
-## Version 0.3.1 (2022-05-23)
+## Version 0.3.1 (2022-05-24)
 
-- Fixed pagination error ([#18](https://github.com/geo-knowledge-hub/geo-components-react/issues/18)) in the `RelatedResourceTable` component.
+- Fixed pagination error ([#18](https://github.com/geo-knowledge-hub/geo-components-react/issues/18)) in the `RelatedResourceTable` component;
+- Added GEO Work Programme Badge in the `RelatedResourceTable` results item.
 
 ## Version 0.3.0 (2022-05-22)
 

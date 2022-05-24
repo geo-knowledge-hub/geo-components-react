@@ -8,6 +8,8 @@
 
 import React from 'react';
 
+import _get from 'lodash/get';
+
 import styled from '@emotion/styled';
 import { Item, Label } from 'semantic-ui-react';
 
@@ -40,6 +42,19 @@ export const RecordListItem = ({ recordData }) => (
           size={'tiny'}
           color="blue"
           content={recordData.ui.publication_date_l10n_medium}
+        />
+
+        <Label
+          size={'tiny'}
+          color="grey"
+          content={_get(
+            // getting only the acronym (between '(' and ')')
+            recordData.ui.geo_work_programme_activity.title_l10n.match(
+              /\(([^)]+)\)/
+            ),
+            1,
+            null
+          )}
         />
 
         <Label
