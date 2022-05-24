@@ -145,7 +145,11 @@
                 }
             ],
             "updated_date_l10n_long": "May 19, 2022",
-            "version": "v1"
+            "version": "v1",
+            "geo_work_programme_activity": {
+                "id": "geo-activities-geo-darma",
+                "title_l10n": "Data Access for Risk Management (GEO-DARMA)"
+            }
         },
         "url": "/records/enq54-k4y43"
     },
@@ -284,7 +288,11 @@
                 }
             ],
             "updated_date_l10n_long": "May 19, 2022",
-            "version": "v1"
+            "version": "v1",
+            "geo_work_programme_activity": {
+                "id": "geo-activities-geo-darma",
+                "title_l10n": "Data Access for Risk Management (GEO-DARMA)"
+            }
         },
         "url": "/records/yjnfj-vxb24"
     },
@@ -380,7 +388,11 @@
                 }
             ],
             "updated_date_l10n_long": "May 19, 2022",
-            "version": "v1"
+            "version": "v1",
+            "geo_work_programme_activity": {
+                "id": "geo-activities-geo-darma",
+                "title_l10n": "Data Access for Risk Management (GEO-DARMA)"
+            }
         },
         "url": "/records/f6np7-dyg20"
     },
@@ -485,7 +497,11 @@
                 }
             ],
             "updated_date_l10n_long": "May 19, 2022",
-            "version": "v1"
+            "version": "v1",
+            "geo_work_programme_activity": {
+                "id": "geo-activities-geo-darma",
+                "title_l10n": "Data Access for Risk Management (GEO-DARMA)"
+            }
         },
         "url": "/records/x44c5-9xc48"
     },
@@ -651,7 +667,11 @@
                 }
             ],
             "updated_date_l10n_long": "May 19, 2022",
-            "version": "v1"
+            "version": "v1",
+            "geo_work_programme_activity": {
+                "id": "geo-activities-geo-darma",
+                "title_l10n": "Data Access for Risk Management (GEO-DARMA)"
+            }
         },
         "url": "/records/4xtt8-v1187"
     },
@@ -753,7 +773,11 @@
                 }
             ],
             "updated_date_l10n_long": "May 19, 2022",
-            "version": "v1"
+            "version": "v1",
+            "geo_work_programme_activity": {
+                "id": "geo-activities-geo-darma",
+                "title_l10n": "Data Access for Risk Management (GEO-DARMA)"
+            }
         },
         "url": "/records/0bmxe-s2s90"
     },
@@ -842,7 +866,11 @@
                 "title_l10n": "Source Code"
             },
             "updated_date_l10n_long": "May 19, 2022",
-            "version": "v1"
+            "version": "v1",
+            "geo_work_programme_activity": {
+                "id": "geo-activities-gfoi",
+                "title_l10n": "Global Forest Observation Initiative (GFOI)"
+            }
         },
         "url": "/records/kth90-fyq84"
     },
@@ -954,7 +982,11 @@
                 }
             ],
             "updated_date_l10n_long": "May 19, 2022",
-            "version": "v1"
+            "version": "v1",
+            "geo_work_programme_activity": {
+                "id": "geo-activities-gfoi",
+                "title_l10n": "Global Forest Observation Initiative (GFOI)"
+            }
         },
         "url": "/records/15v0w-k8m23"
     },
@@ -1248,7 +1280,11 @@
                 "title_l10n": "Publication"
             },
             "updated_date_l10n_long": "May 19, 2022",
-            "version": "v1"
+            "version": "v1",
+            "geo_work_programme_activity": {
+                "id": "geo-activities-gfoi",
+                "title_l10n": "Global Forest Observation Initiative (GFOI)"
+            }
         },
         "url": "/records/0hv03-f9f56"
     },
@@ -1423,7 +1459,11 @@
                 }
             ],
             "updated_date_l10n_long": "May 19, 2022",
-            "version": "v1"
+            "version": "v1",
+            "geo_work_programme_activity": {
+                "id": "geo-activities-gfoi",
+                "title_l10n": "Global Forest Observation Initiative (GFOI)"
+            }
         },
         "url": "/records/dyd3p-cyn90"
     },
@@ -1640,7 +1680,11 @@
                 }
             ],
             "updated_date_l10n_long": "May 19, 2022",
-            "version": "v1"
+            "version": "v1",
+            "geo_work_programme_activity": {
+                "id": "geo-activities-gfoi",
+                "title_l10n": "Global Forest Observation Initiative (GFOI)"
+            }
         },
         "url": "/records/w82hd-7jy14"
     }
