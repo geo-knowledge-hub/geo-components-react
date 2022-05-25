@@ -1,5 +1,9 @@
 # Changes
 
+## Version 0.3.2 (2022-05-25)
+
+- Fixed empty field error ([#24](https://github.com/geo-knowledge-hub/geo-components-react/issues/24)) in the `RelatedResourceTable` and `UserStoryCarousel` components.
+
 ## Version 0.3.1 (2022-05-24)
 
 - Fixed pagination error ([#18](https://github.com/geo-knowledge-hub/geo-components-react/issues/18)) in the `RelatedResourceTable` component;
