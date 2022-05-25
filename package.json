@@ -1,6 +1,6 @@
 {
   "name": "@geo-knowledge-hub/geo-components-react",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "main": "dist/cjs/index.js",
   "browser": "dist/cjs/index.js",
   "module": "dist/esm/index.js",

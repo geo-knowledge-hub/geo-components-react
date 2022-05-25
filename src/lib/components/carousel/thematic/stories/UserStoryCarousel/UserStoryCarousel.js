@@ -49,17 +49,17 @@ export const UserStoryCarousel = ({ userStories, ...carouselProps }) => {
                 color: '#444447',
               }}
             >
-              {_truncate(content.title, { length: 180 })}
+              {_truncate(_get(content, 'title', ''), { length: 180 })}
             </Card.Header>
             <Divider />
             <Card.Description style={{ textAlign: 'justify' }}>
-              {_truncate(content.ui.description_stripped, {
+              {_truncate(_get(content, 'ui.description_stripped', ''), {
                 length: 140,
               })}
             </Card.Description>
           </Card.Content>
           <Card.Content extra>
-            <a href={content.url}>
+            <a href={_get(content, 'url', '')}>
               <Button size={'tiny'}>Learn more</Button>
             </a>
           </Card.Content>
