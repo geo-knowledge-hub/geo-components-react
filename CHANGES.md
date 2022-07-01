@@ -1,5 +1,13 @@
 # Changes
 
+## Version 0.3.3 (2022-06-30)
+
+- Adding Formik fields for the GEO Knowledge Hub forms ([#28](https://github.com/geo-knowledge-hub/geo-components-react/issues/28))
+	- `Engagement Priority field`: Enable users to select multiple engagement priorities available in the instance;
+	- `Target Audience field`: Enable users to select target audiences;
+	- `Work Programme`: Enable users to choose one GEO Work Programme Activity.
+- These fields are imported from [GEO Deposit React](https://github.com/geo-knowledge-hub/geo-deposit-react)
+
 ## Version 0.3.2 (2022-05-25)
 
 - Fixed empty field error ([#24](https://github.com/geo-knowledge-hub/geo-components-react/issues/24)) in the `RelatedResourceTable` and `UserStoryCarousel` components.
