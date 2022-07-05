@@ -9,6 +9,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
+import { Formik } from 'formik';
 import { ThemeProvider } from '@emotion/react';
 import { CarouselProvider } from 'pure-react-carousel';
 
@@ -73,6 +74,23 @@ const wrapperGlobalCarouselProvider =
     );
 
 /**
+ * @name wrapperFormikProvider
+ *
+ * @description Wrapper for custom formik render.
+ *
+ * This wrapper functions generate a customizable ``Formik`` context provider
+ * to be used with the ``testing-library`` ``render`` function.
+ *
+ * @param {Object} options object for the ``Formik`` context provider.
+ *
+ * @returns function callback to wrap the Rendered component.
+ */
+const wrapperFormikProvider =
+  (options) =>
+  ({ children }) =>
+    <Formik {...options}>{children}</Formik>;
+
+/**
  * @name customThemeRender
  * @description Custom render method for the ``testing-library``.
  */
@@ -101,6 +119,16 @@ const customCarouselRender = (
   });
 
 /**
+ * @name customFormikRender
+ * @description Custom render method for the ``testing-library``
+ */
+const customFormikRender = (ui, formikOptions = {}, renderOptions = {}) =>
+  render(ui, {
+    wrapper: wrapperFormikProvider(formikOptions),
+    ...renderOptions,
+  });
+
+/**
  * @name customContextRender
  * @description Custom render method for the ``testing-library``
  */
@@ -125,4 +153,5 @@ export {
   customThemeRender as renderWithThemeProvider,
   customContextRender as renderWithCustomContext,
   customCarouselRender as renderWithCarouselProvider,
+  customFormikRender as renderWithFormikProvider,
 };

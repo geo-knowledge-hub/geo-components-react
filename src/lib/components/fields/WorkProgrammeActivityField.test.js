@@ -7,26 +7,17 @@
  */
 
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-import { Formik } from 'formik';
 import { WorkProgrammeActivityField } from './WorkProgrammeActivityField';
+import { renderWithFormikProvider } from '@tests/renders';
 
-it('renders without crashing without props', () => {
-  const div = document.createElement('div');
-
-  ReactDOM.render(
-    <Formik>{(props) => <WorkProgrammeActivityField />}</Formik>,
-    div
-  );
-});
-
-it('renders without crashing with all props', () => {
-  const div = document.createElement('div');
-
-  ReactDOM.render(
-    <Formik>
-      {(props) => (
+describe('WorkProgrammeActivityField tests', () => {
+  describe('Render tests', () => {
+    it('should render without crashing', () => {
+      renderWithFormikProvider(<WorkProgrammeActivityField />);
+    });
+    it('should render with props without crashing', () => {
+      renderWithFormikProvider(
         <WorkProgrammeActivityField
           fieldPath={'metadata.geo_work_programme_activity'}
           label={'GEO Work Programme Activity'}
@@ -38,8 +29,7 @@ it('renders without crashing with all props', () => {
             'Start typing to search for a GEO Work Programme Activity'
           }
         />
-      )}
-    </Formik>,
-    div
-  );
+      );
+    });
+  });
 });
