@@ -8,14 +8,14 @@
 
 import React from 'react';
 
-import { SubjectsField } from './SubjectsField';
+import { ControlledSubjects } from './ControlledSubjects';
 import { renderWithFormikProvider } from '@tests/renders';
 
-describe('SubjectsField tests', () => {
+describe('ControlledSubjects tests', () => {
   describe('Render tests', () => {
     it('should render without crashing with props', () => {
       renderWithFormikProvider(
-        <SubjectsField
+        <ControlledSubjects
           initialOptions={null}
           limitToOptions={[
             {

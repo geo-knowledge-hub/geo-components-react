@@ -8,14 +8,20 @@
 
 import React from 'react';
 
-import { VocabularySuggestionField } from './VocabularySuggestionField';
+import { BasicSubjectsField } from './BasicSubjectsField';
 import { renderWithFormikProvider } from '@tests/renders';
 
-describe('VocabularySuggestionField tests', () => {
+describe('BasicSubjectsField tests', () => {
   describe('Render tests', () => {
     it('should render without crashing', () => {
+      renderWithFormikProvider(<BasicSubjectsField />);
+    });
+    it('should render with props without crashing', () => {
       renderWithFormikProvider(
-        <VocabularySuggestionField fieldPath={'fieldPath'} label={'Vocabulary Fields'} labelIcon={''} />
+        <BasicSubjectsField
+          fieldPath={'metadata.resource_type'}
+          label={'Resource type'}
+        />
       );
     });
   });
