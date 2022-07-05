@@ -7,13 +7,14 @@
  */
 
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-import { Formik } from 'formik';
 import { RemoteSelectField } from './RemoteSelectField';
+import { renderWithFormikProvider } from '@tests/renders';
 
-it('renders without crashing without props', () => {
-  const div = document.createElement('div');
-
-  ReactDOM.render(<Formik>{(props) => <RemoteSelectField />}</Formik>, div);
+describe('RemoteSelectField tests', () => {
+  describe('Render tests', () => {
+    it('should render without crashing', () => {
+      renderWithFormikProvider(<RemoteSelectField />);
+    });
+  });
 });

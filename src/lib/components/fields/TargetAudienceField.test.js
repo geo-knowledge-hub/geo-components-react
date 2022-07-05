@@ -7,23 +7,17 @@
  */
 
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-import { Formik } from 'formik';
 import { TargetAudienceField } from './TargetAudienceField';
+import { renderWithFormikProvider } from '@tests/renders';
 
-it('renders without crashing without props', () => {
-  const div = document.createElement('div');
-
-  ReactDOM.render(<Formik>{(props) => <TargetAudienceField />}</Formik>, div);
-});
-
-it('renders without crashing with all props', () => {
-  const div = document.createElement('div');
-
-  ReactDOM.render(
-    <Formik>
-      {(props) => (
+describe('TargetAudienceField tests', () => {
+  describe('Render tests', () => {
+    it('should render without crashing', () => {
+      renderWithFormikProvider(<TargetAudienceField />);
+    });
+    it('renders without crashing with all props', () => {
+      renderWithFormikProvider(
         <TargetAudienceField
           fieldPath={'metadata.target_audiences'}
           label={'Target Audiences'}
@@ -34,8 +28,7 @@ it('renders without crashing with all props', () => {
           placeholder={'Search for Target Audiences'}
           noQueryMessage={'Start typing to search for Target Audience'}
         />
-      )}
-    </Formik>,
-    div
-  );
+      );
+    });
+  });
 });

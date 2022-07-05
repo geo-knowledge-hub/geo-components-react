@@ -7,26 +7,17 @@
  */
 
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-import { Formik } from 'formik';
 import { EngagementPriorityField } from './EngagementPriorityField';
+import { renderWithFormikProvider } from '@tests/renders';
 
-it('renders without crashing without props', () => {
-  const div = document.createElement('div');
-
-  ReactDOM.render(
-    <Formik>{(props) => <EngagementPriorityField />}</Formik>,
-    div
-  );
-});
-
-it('renders without crashing with all props', () => {
-  const div = document.createElement('div');
-
-  ReactDOM.render(
-    <Formik>
-      {(props) => (
+describe('EngagementPriorityField tests', () => {
+  describe('Render tests', () => {
+    it('should render without crashing', () => {
+      renderWithFormikProvider(<EngagementPriorityField />);
+    });
+    it('renders without crashing with all props', () => {
+      renderWithFormikProvider(
         <EngagementPriorityField
           fieldPath={'metadata.engagement_priorities'}
           label={'Engagement Priorities'}
@@ -37,8 +28,7 @@ it('renders without crashing with all props', () => {
           placeholder={'Search for Engagement Priorities'}
           noQueryMessage={'Start typing to search for an engagement priority'}
         />
-      )}
-    </Formik>,
-    div
-  );
+      );
+    });
+  });
 });

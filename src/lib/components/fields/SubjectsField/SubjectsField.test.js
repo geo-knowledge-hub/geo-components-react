@@ -7,17 +7,14 @@
  */
 
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-import { Formik } from 'formik';
 import { SubjectsField } from './SubjectsField';
+import { renderWithFormikProvider } from '@tests/renders';
 
-it('renders without crashing with required props', () => {
-  const div = document.createElement('div');
-
-  ReactDOM.render(
-    <Formik>
-      {(props) => (
+describe('SubjectsField tests', () => {
+  describe('Render tests', () => {
+    it('should render without crashing with props', () => {
+      renderWithFormikProvider(
         <SubjectsField
           initialOptions={null}
           limitToOptions={[
@@ -31,8 +28,7 @@ it('renders without crashing with required props', () => {
             },
           ]}
         />
-      )}
-    </Formik>,
-    div
-  );
+      );
+    });
+  });
 });

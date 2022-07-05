@@ -7,18 +7,16 @@
  */
 
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-import { Formik } from 'formik';
 import { VocabularySuggestionField } from './VocabularySuggestionField';
+import { renderWithFormikProvider } from '@tests/renders';
 
-it('renders without crashing without props', () => {
-  const div = document.createElement('div');
-
-  ReactDOM.render(
-    <Formik>
-      {(props) => <VocabularySuggestionField fieldPath={'fieldPath'} />}
-    </Formik>,
-    div
-  );
+describe('VocabularySuggestionField tests', () => {
+  describe('Render tests', () => {
+    it('should render without crashing', () => {
+      renderWithFormikProvider(
+        <VocabularySuggestionField fieldPath={'fieldPath'} />
+      );
+    });
+  });
 });

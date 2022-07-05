@@ -139,7 +139,8 @@
       "enzyme-to-json/serializer"
     ],
     "moduleNameMapper": {
-      "@translations/i18next": "<rootDir>/src/lib/i18next"
+      "@translations/i18next": "<rootDir>/src/lib/i18next",
+      "@tests/renders": "<rootDir>/src/setupTestRenders"
     }
   }
 }
