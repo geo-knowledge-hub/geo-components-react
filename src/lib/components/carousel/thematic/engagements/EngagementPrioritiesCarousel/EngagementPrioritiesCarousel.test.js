@@ -17,7 +17,6 @@ import engagementImageItems from '../../../../../../mocks/items/engagement-image
 
 describe('EngagementPrioritiesCarousel tests', () => {
   describe('Render tests', () => {
-
     it('should render with the required props without crashing', () => {
       renderWithThemeProvider(
         <EngagementPrioritiesCarousel

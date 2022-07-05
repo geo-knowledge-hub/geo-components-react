@@ -14,24 +14,24 @@ import { translations } from './translations/messages';
 import { Trans as ReactTrans } from 'react-i18next';
 
 const options = {
-    fallbackLng: 'en', // fallback keys
-    returnEmptyString: false,
-    debug: process.env.NODE_ENV === 'development',
-    resources: translations,
-    keySeparator: false,
-    nsSeparator: false,
-    // specify language detection order
-    detection: {
-        order: ['htmlTag'],
-        // cache user language off
-        caches: [],
-    },
-    react: {
-        // Set empty - to allow html tags convert to trans tags
-        // HTML TAG | Trans TAG
-        //  <span>  | <1>
-        transKeepBasicHtmlNodesFor: [],
-    },
+  fallbackLng: 'en', // fallback keys
+  returnEmptyString: false,
+  debug: process.env.NODE_ENV === 'development',
+  resources: translations,
+  keySeparator: false,
+  nsSeparator: false,
+  // specify language detection order
+  detection: {
+    order: ['htmlTag'],
+    // cache user language off
+    caches: [],
+  },
+  react: {
+    // Set empty - to allow html tags convert to trans tags
+    // HTML TAG | Trans TAG
+    //  <span>  | <1>
+    transKeepBasicHtmlNodesFor: [],
+  },
 };
 // i18next instance creation
 // https://www.i18next.com/overview/api#instance-creation

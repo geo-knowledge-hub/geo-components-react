@@ -14,17 +14,17 @@ import { VocabularySuggestionField } from './VocabularySuggestionField';
 import { i18next } from '@translations/i18next';
 
 /**
- * @name EngagementPriorityField
- * @summary Engagement Priority Formik Field.
+ * Engagement Priority formik field.
+ * @constructor
  *
- * @note This component is based on `LanguagesField` provided by
- *       the `react-invenio-deposit` library.
+ * @param {String} fieldPath Path where the field data will be stored in the Formik data.
+ * @param {Object} fieldProps (Spread) Extra parameters for the `VocabularySuggestionField`.
  */
 export const EngagementPriorityField = ({ fieldPath, ...fieldProps }) => {
   return (
     <VocabularySuggestionField
       fieldPath={fieldPath}
-      suggestionAPIUrl="/api/vocabularies/engagementprioritiestypes"
+      suggestionAPIUrl='/api/vocabularies/engagementprioritiestypes'
       suggestionAPIHeaders={{
         Accept: 'application/vnd.inveniordm.v1+json',
       }}
@@ -46,11 +46,13 @@ EngagementPriorityField.propTypes = {
 
 EngagementPriorityField.defaultProps = {
   fieldPath: 'metadata.engagement_priorities',
-  label: 'Engagement Priorities',
+  label: i18next.t('Engagement Priorities'),
   labelIcon: 'flag',
   multiple: true,
   clearable: true,
   required: true,
-  placeholder: 'Search for Engagement Priorities',
-  noQueryMessage: 'Start typing to search for an engagement priority',
+  placeholder: i18next.t('Search for Engagement Priorities'),
+  noQueryMessage: i18next.t(
+    'Start typing to search for an engagement priority'
+  ),
 };

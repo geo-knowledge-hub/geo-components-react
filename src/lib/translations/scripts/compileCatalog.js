@@ -13,28 +13,28 @@ const { languages } = require('../../../../package').config;
 // it accepts the same options as the cli.
 // https://github.com/i18next/i18next-gettext-converter#options
 const options = {
-    /* you options here */
+  /* you options here */
 };
 
 function save(target) {
-    return (result) => {
-        writeFileSync(target, result);
-    };
+  return (result) => {
+    writeFileSync(target, result);
+  };
 }
 
 if ('lang' === process.argv[2]) {
-    const lang = process.argv[3];
-    gettextToI18next(
-        lang,
-        readFileSync(`src/lib/translations/messages/${lang}/messages.po`),
-        options
-    ).then(save(`src/lib/translations/messages/${lang}/translations.json`));
+  const lang = process.argv[3];
+  gettextToI18next(
+    lang,
+    readFileSync(`src/lib/translations/messages/${lang}/messages.po`),
+    options
+  ).then(save(`src/lib/translations/messages/${lang}/translations.json`));
 } else {
-    for (const lang of languages) {
-        gettextToI18next(
-            lang,
-            readFileSync(`src/lib/translations/messages/${lang}/messages.po`),
-            options
-        ).then(save(`src/lib/translations/messages/${lang}/translations.json`));
-    }
+  for (const lang of languages) {
+    gettextToI18next(
+      lang,
+      readFileSync(`src/lib/translations/messages/${lang}/messages.po`),
+      options
+    ).then(save(`src/lib/translations/messages/${lang}/translations.json`));
+  }
 }

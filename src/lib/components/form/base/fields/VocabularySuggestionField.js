@@ -7,18 +7,20 @@
  */
 
 import React from 'react';
-
 import PropTypes from 'prop-types';
+
 import { FieldLabel, RemoteSelectField } from 'react-invenio-forms';
 
-import { i18next } from '@translations/i18next';
-
 /**
- * @name VocabularySuggestionField
- * @summary Base class for Formik Fields based on Vucabulary Suggestion.
+ * Base vocabulary suggestion Formik field.
  *
- * @description This field allow users to select on or more values from a list
- *              based on a controlled vocabularty in the server.
+ * This field allows users to select on or more values from a list
+ * based on a controlled vocabulary in a server.
+ *
+ * @param {String} fieldPath Path where the field data will be stored in the Formik data.
+ * @param {String} label Field Label
+ * @param {String} labelIcon Field icon
+ * @param {Object} fieldProps (Spread) Extra parameters for the `RemoteSelectField`.
  *
  * @note This component is based on `LanguagesField` provided by
  *       the `react-invenio-deposit` library.
@@ -27,30 +29,20 @@ export const VocabularySuggestionField = ({
   fieldPath,
   label,
   labelIcon,
-  required,
-  multiple,
-  placeholder,
-  clearable,
-  suggestionAPIUrl,
   ...fieldProps
 }) => {
   return (
     <RemoteSelectField
       fieldPath={fieldPath}
-      suggestionAPIUrl={suggestionAPIUrl}
       suggestionAPIHeaders={{
         Accept: 'application/vnd.inveniordm.v1+json',
       }}
-      placeholder={placeholder}
-      required={required}
-      clearable={clearable}
-      multiple={multiple}
       label={<FieldLabel htmlFor={fieldPath} icon={labelIcon} label={label} />}
       serializeSuggestions={(data) => {
         return data.map((obj) => ({
           key: obj.id,
           value: obj.id,
-          text: obj.title_l10n,
+          text: obj.title_l10n, // returned by default in the vocabularies when `vnd.inveniordm` is used.
         }));
       }}
       {...fieldProps}
@@ -60,11 +52,6 @@ export const VocabularySuggestionField = ({
 
 VocabularySuggestionField.propTypes = {
   fieldPath: PropTypes.string.isRequired,
-  label: PropTypes.string,
-  labelIcon: PropTypes.string,
-  required: PropTypes.bool,
-  multiple: PropTypes.bool,
-  clearable: PropTypes.bool,
-  placeholder: PropTypes.string,
-  value: PropTypes.object,
+  label: PropTypes.string.isRequired,
+  labelIcon: PropTypes.string.isRequired,
 };

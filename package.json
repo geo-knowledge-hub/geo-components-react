@@ -140,7 +140,8 @@
     ],
     "moduleNameMapper": {
       "@translations/i18next": "<rootDir>/src/lib/i18next",
-      "@tests/renders": "<rootDir>/src/setupTestRenders"
+      "@tests/renders": "<rootDir>/src/setupTestRenders",
+      "@tests/mock/(.*)/(.*)":  "<rootDir>/src/mocks/$1/$2"
     }
   }
 }

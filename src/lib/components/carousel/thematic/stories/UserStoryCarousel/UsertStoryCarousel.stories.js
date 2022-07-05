@@ -49,6 +49,6 @@ UserStoryCarousel.args = {
   userStories: userStoriesData,
   carouselProviderProps: {
     visibleSlides: 2,
-    naturalSlideHeight: 1
+    naturalSlideHeight: 1,
   },
 };

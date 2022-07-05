@@ -14,17 +14,17 @@ import { VocabularySuggestionField } from './VocabularySuggestionField';
 import { i18next } from '@translations/i18next';
 
 /**
- * @name TargetAudienceField
- * @summary Target Audience Selection Formik Field.
+ * Target Audience formik field.
+ * @constructor
  *
- * @note This component is based on `LanguagesField` provided by
- *       the `react-invenio-deposit` library.
+ * @param {String} fieldPath Path where the field data will be stored in the Formik data.
+ * @param {Object} fieldProps (Spread) Extra parameters for the `VocabularySuggestionField`.
  */
 export const TargetAudienceField = ({ fieldPath, ...fieldProps }) => {
   return (
     <VocabularySuggestionField
       fieldPath={fieldPath}
-      suggestionAPIUrl="/api/vocabularies/targetaudiencestypes"
+      suggestionAPIUrl='/api/vocabularies/targetaudiencestypes'
       {...fieldProps}
     />
   );
@@ -43,11 +43,11 @@ TargetAudienceField.propTypes = {
 
 TargetAudienceField.defaultProps = {
   fieldPath: 'metadata.target_audiences',
-  label: 'Target Audiences',
+  label: i18next.t( 'Target Audiences'),
   labelIcon: 'users',
   multiple: true,
   clearable: true,
   required: true,
-  placeholder: 'Search for Target Audiences',
-  noQueryMessage: 'Start typing to search for Target Audience',
+  placeholder: i18next.t('Search for Target Audiences'),
+  noQueryMessage: i18next.t( 'Start typing to search for Target Audience'),
 };
