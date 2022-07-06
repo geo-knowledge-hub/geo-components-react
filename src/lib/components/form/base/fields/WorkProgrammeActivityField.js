@@ -48,5 +48,7 @@ WorkProgrammeActivityField.defaultProps = {
   clearable: true,
   required: true,
   placeholder: i18next.t('Search for a GEO Work Programme Activity'),
-  noQueryMessage: i18next.t('Start typing to search for a GEO Work Programme Activity'),
+  noQueryMessage: i18next.t(
+    'Start typing to search for a GEO Work Programme Activity'
+  ),
 };
