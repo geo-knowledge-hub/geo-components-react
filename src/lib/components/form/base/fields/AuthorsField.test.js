@@ -8,17 +8,22 @@
 
 import React from 'react';
 
-import { VocabularySuggestionField } from './VocabularySuggestionField';
+import { AuthorsField } from './AuthorsField';
 import { renderWithFormikProvider } from '@tests/renders';
 
-describe('VocabularySuggestionField tests', () => {
+describe('AuthorsField tests', () => {
   describe('Render tests', () => {
     it('should render without crashing', () => {
+      renderWithFormikProvider(<AuthorsField />);
+    });
+    it('renders without crashing with all props', () => {
       renderWithFormikProvider(
-        <VocabularySuggestionField
-          fieldPath={'fieldPath'}
-          label={'Vocabulary Fields'}
-          labelIcon={''}
+        <AuthorsField
+          fieldPath={'metadata.authors'}
+          labelIcon={'flag'}
+          multiple={true}
+          clearable={true}
+          required={true}
         />
       );
     });

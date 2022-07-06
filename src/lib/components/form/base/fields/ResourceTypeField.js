@@ -24,7 +24,7 @@ export const ResourceTypeField = ({ fieldPath, ...fieldProps }) => {
   return (
     <VocabularySuggestionField
       fieldPath={fieldPath}
-      suggestionAPIUrl='/api/vocabularies/resourcetypes'
+      suggestionAPIUrl="/api/vocabularies/resourcetypes"
       {...fieldProps}
     />
   );

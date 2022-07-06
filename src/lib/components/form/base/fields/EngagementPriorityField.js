@@ -24,10 +24,7 @@ export const EngagementPriorityField = ({ fieldPath, ...fieldProps }) => {
   return (
     <VocabularySuggestionField
       fieldPath={fieldPath}
-      suggestionAPIUrl='/api/vocabularies/engagementprioritiestypes'
-      suggestionAPIHeaders={{
-        Accept: 'application/vnd.inveniordm.v1+json',
-      }}
+      suggestionAPIUrl={'/api/vocabularies/engagementprioritiestypes'}
       {...fieldProps}
     />
   );

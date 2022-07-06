@@ -11,12 +11,13 @@ import React from 'react';
 import { Formik } from 'formik';
 import withMock from 'storybook-addon-mock';
 
-import resourceTypesApiData from '@tests/mock/vocabularies/resourcetypes-api.json';
-import { ResourceTypeField as ResourceTypeFieldComponent } from './ResourceTypeField';
+import namesApiData from '@tests/mock/vocabularies/names-api.json';
+
+import { AuthorsField as AuthorsFieldComponent } from './AuthorsField';
 
 export default {
-  title: 'Form/Fields/Remote Resource Type field',
-  component: ResourceTypeFieldComponent,
+  title: 'Form/Fields/Authors field',
+  component: AuthorsFieldComponent,
   decorators: [withMock],
 };
 
@@ -25,11 +26,11 @@ export default {
  */
 const mockApiConfig = [
   {
-    url: '/api/vocabularies/resourcetypes?size=&suggest=',
+    url: '/api/names?size=&suggest=',
     method: 'GET',
     status: 200,
     response: (request) => {
-      return resourceTypesApiData;
+      return namesApiData;
     },
   },
 ];
@@ -40,7 +41,7 @@ const mockApiConfig = [
 const Template = (args) => (
   <>
     <Formik initialValues={{}}>
-      <ResourceTypeFieldComponent {...args} />
+      <AuthorsFieldComponent {...args} />
     </Formik>
   </>
 );

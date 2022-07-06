@@ -24,7 +24,7 @@ export const TargetAudienceField = ({ fieldPath, ...fieldProps }) => {
   return (
     <VocabularySuggestionField
       fieldPath={fieldPath}
-      suggestionAPIUrl='/api/vocabularies/targetaudiencestypes'
+      suggestionAPIUrl="/api/vocabularies/targetaudiencestypes"
       {...fieldProps}
     />
   );
@@ -43,11 +43,11 @@ TargetAudienceField.propTypes = {
 
 TargetAudienceField.defaultProps = {
   fieldPath: 'metadata.target_audiences',
-  label: i18next.t( 'Target Audiences'),
+  label: i18next.t('Target Audiences'),
   labelIcon: 'users',
   multiple: true,
   clearable: true,
   required: true,
   placeholder: i18next.t('Search for Target Audiences'),
-  noQueryMessage: i18next.t( 'Start typing to search for Target Audience'),
+  noQueryMessage: i18next.t('Start typing to search for Target Audience'),
 };
