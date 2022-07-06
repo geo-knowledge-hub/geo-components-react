@@ -28,9 +28,6 @@
     "storybook-build": "build-storybook",
     "storybook-jest": "jest --json --outputFile=.jest-test-results.json || true"
   },
-  "dependencies": {
-    "@storybook/addon-jest": "^6.5.3"
-  },
   "peerDependencies": {
     "@babel/runtime": "^7.9.0",
     "axios": "^0.21.0",
@@ -54,7 +51,8 @@
     "@emotion/css": "^11.9.0",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
-    "react-lazy-load-image-component": "^1.5.4"
+    "react-lazy-load-image-component": "^1.5.4",
+    "@geo-knowledge-hub/invenio-geographic-components-react": "^0.2.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.0",
@@ -116,7 +114,23 @@
     "semantic-ui-react": "^2.1.0",
     "storybook-addon-mock": "^2.4.0",
     "webpack": "4.42.0",
-    "yup": "^0.28.0"
+    "yup": "^0.28.0",
+    "@storybook/addon-jest": "^6.5.3",
+    "leaflet": "^1.7.1",
+    "leaflet-control-geocoder": "^2.4.0",
+    "leaflet.fullscreen": "^1.6.0",
+    "react-leaflet": "3.1.0",
+    "react-leaflet-fullscreen": "^2.0.2",
+    "@geoman-io/leaflet-geoman-free": "^2.13.0",
+    "@react-leaflet/core": "1.0.2",
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^10.0.1",
+    "@turf/convex": "^6.5.0",
+    "@turf/flip": "^6.5.0",
+    "@turf/bbox-polygon": "^6.5.0",
+    "@turf/centroid": "^6.5.0",
+    "@mapbox/geojsonhint": "^3.0.1",
+    "@geo-knowledge-hub/invenio-geographic-components-react": "^0.2.0"
   },
   "browserslist": {
     "production": [
@@ -141,7 +155,7 @@
     "moduleNameMapper": {
       "@translations/i18next": "<rootDir>/src/lib/i18next",
       "@tests/renders": "<rootDir>/src/setupTestRenders",
-      "@tests/mock/(.*)/(.*)":  "<rootDir>/src/mocks/$1/$2"
+      "@tests/mock/(.*)/(.*)": "<rootDir>/src/mocks/$1/$2"
     }
   }
 }

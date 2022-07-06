@@ -122,7 +122,7 @@ AuthorsField.propTypes = {
 AuthorsField.defaultProps = {
   fieldPath: 'metadata.creators',
   label: i18next.t('Authors'),
-  labelIcon: 'tag',
+  labelIcon: 'user',
   placeholder: i18next.t(
     'Search for persons by name, identifier, or affiliation...'
   ),
