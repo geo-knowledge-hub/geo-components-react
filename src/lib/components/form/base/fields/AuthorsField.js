@@ -129,5 +129,4 @@ AuthorsField.defaultProps = {
   noQueryMessage: i18next.t(
     'Search for persons by name, identifier, or affiliation...'
   ),
-  clearable: true,
 };

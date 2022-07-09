@@ -24,23 +24,33 @@ import {
  * Basic fields for Filter Form components.
  * @constructor
  *
- * @param {Object} fieldsConfig Configuration object for the fields used in the form which includes:
+ * @param {Object} fieldConfig Configuration object for the fields used in the form which includes:
  *                                - AuthorsField (key: `authors`)
- *                                - WorkProgrammeActivityField (key: `programmeActivity`)
+ *                                - WorkProgrammeActivityField (key: `programmeActivities`)
  *                                - EngagementPriorityField (key: `engagementPriorities`)
- *                                - TargetAudienceField (key: `targetAudience`)
- *                                - ResourceTypeField (key: `resourceType`)
+ *                                - TargetAudienceField (key: `targetAudiences`)
+ *                                - ResourceTypeField (key: `resourceTypes`)
+ *                                - BasicSubjectsField (key: `subjects`)
  *
  * @param fieldsConfig
  * @returns {JSX.Element}
  */
-export const BasicFilterForm = ({ fieldsConfig }) => {
+export const BasicFilterForm = ({ fieldPathPrefix, ...fieldConfig }) => {
+  // Auxiliary functions
+  const generateFieldPathWithPrefix = (value) => `${fieldPathPrefix}.${value}`;
+
   return (
     <>
       <Grid verticalAlign="middle" centered>
         <Grid.Row>
           <Grid.Column width={16}>
-            <AuthorsField fluid required={false} {...fieldsConfig.authors} />
+            <AuthorsField
+              fluid
+              clearable={true}
+              required={false}
+              fieldPath={generateFieldPathWithPrefix('authors')}
+              {...fieldConfig.authors}
+            />
           </Grid.Column>
         </Grid.Row>
 
@@ -48,8 +58,11 @@ export const BasicFilterForm = ({ fieldsConfig }) => {
           <Grid.Column width={16}>
             <WorkProgrammeActivityField
               fluid
+              multiple={true}
+              clearable={true}
               required={false}
-              {...fieldsConfig.programmeActivity}
+              fieldPath={generateFieldPathWithPrefix('programmeActivities')}
+              {...fieldConfig.programmeActivities}
             />
           </Grid.Column>
         </Grid.Row>
@@ -60,16 +73,22 @@ export const BasicFilterForm = ({ fieldsConfig }) => {
           <Grid.Column>
             <EngagementPriorityField
               fluid
+              multiple={true}
+              clearable={true}
               required={false}
-              {...fieldsConfig.engagementPriorities}
+              fieldPath={generateFieldPathWithPrefix('engagementPriorities')}
+              {...fieldConfig.engagementPriorities}
             />
           </Grid.Column>
 
           <Grid.Column>
             <TargetAudienceField
               fluid
+              multiple={true}
+              clearable={true}
               required={false}
-              {...fieldsConfig.targetAudience}
+              fieldPath={generateFieldPathWithPrefix('targetAudiencies')}
+              {...fieldConfig.targetAudiences}
             />
           </Grid.Column>
         </Grid.Row>
@@ -78,13 +97,23 @@ export const BasicFilterForm = ({ fieldsConfig }) => {
           <Grid.Column>
             <ResourceTypeField
               fluid
+              multiple={true}
+              clearable={true}
               required={false}
-              {...fieldsConfig.resourceType}
+              fieldPath={generateFieldPathWithPrefix('resourceTypes')}
+              {...fieldConfig.resourceTypes}
             />
           </Grid.Column>
 
           <Grid.Column>
-            <BasicSubjectsField fluid required={false} />
+            <BasicSubjectsField
+              fluid
+              multiple={true}
+              clearable={true}
+              required={false}
+              fieldPath={generateFieldPathWithPrefix('subjects')}
+              {...fieldConfig.subjects}
+            />
           </Grid.Column>
         </Grid.Row>
       </Grid>
@@ -93,16 +122,18 @@ export const BasicFilterForm = ({ fieldsConfig }) => {
 };
 
 BasicFilterForm.propTypes = {
-  fieldsConfig: PropTypes.shape({
+  fieldPathPrefix: PropTypes.string.isRequired,
+  fieldConfig: PropTypes.shape({
     authors: PropTypes.object,
-    programmeActivity: PropTypes.object,
+    programmeActivities: PropTypes.object,
     engagementPriorities: PropTypes.object,
-    targetAudience: PropTypes.object,
-    resourceType: PropTypes.object,
+    targetAudiences: PropTypes.object,
+    resourceTypes: PropTypes.object,
     subjects: PropTypes.object,
   }),
 };
 
 BasicFilterForm.defaultProps = {
-  fieldsConfig: {},
+  fieldPathPrefix: 'form',
+  fieldConfig: {},
 };

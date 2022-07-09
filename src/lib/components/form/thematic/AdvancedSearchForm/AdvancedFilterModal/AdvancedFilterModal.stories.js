@@ -8,19 +8,22 @@
 
 import React from 'react';
 
-import { Formik } from 'formik';
-
 import withMock from 'storybook-addon-mock';
+
+import { Formik } from 'formik';
+import { Button } from 'semantic-ui-react';
+
+import { Global } from '@emotion/react';
 
 import subjectsApiData from '@tests/mock/vocabularies/subjects-api.json';
 import resourceTypesApiData from '@tests/mock/vocabularies/resourcetypes-api.json';
 import namesApiData from '@tests/mock/vocabularies/names-api.json';
 
-import { BasicFilterForm as BasicFilterFormComponent } from './BasicFilterForm';
+import { AdvancedFilterModal as AdvancedFilterModalComponent } from './AdvancedFilterModal';
 
 export default {
-  title: 'Form/Search/Basic Filter form',
-  component: BasicFilterFormComponent,
+  title: 'Form/Search/Advanced filter modal',
+  component: AdvancedFilterModalComponent,
   decorators: [withMock],
 };
 
@@ -59,8 +62,17 @@ const mockApiConfig = [
  */
 const Template = (args) => (
   <>
+    <Global
+      styles={{
+        '.leaflet-container': {
+          height: '40vh',
+          zIndex: 0,
+        },
+      }}
+    />
+
     <Formik initialValues={{}}>
-      <BasicFilterFormComponent {...args} />
+      <AdvancedFilterModalComponent {...args} />
     </Formik>
   </>
 );
@@ -69,7 +81,13 @@ const Template = (args) => (
  * Component stories
  */
 export const Basic = Template.bind({});
-Basic.args = {};
+Basic.args = {
+  modalTrigger: <Button content={'Open modal'} />,
+  formOnApplyFilter: (values) => {
+    console.log('User defined values');
+    console.log(values);
+  },
+};
 
 Basic.parameters = {
   mockData: mockApiConfig,

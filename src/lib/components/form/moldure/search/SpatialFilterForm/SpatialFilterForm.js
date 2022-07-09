@@ -9,11 +9,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { MapContainer } from 'react-leaflet';
-import {
-  BaseMapLayers,
-  GeometryEditorControl,
-} from '@geo-knowledge-hub/invenio-geographic-components-react';
+import { GeometryField } from '@geo-knowledge-hub/invenio-geographic-components-react';
 
 /**
  * Basic Spatial form to create filter components.
@@ -27,32 +23,59 @@ import {
  *                           `mapContainer` property. This configuration will be
  *                           used to define the initial properties of the Leaflet
  *                           Map Container like initial `center position` and `zoom`
- * @param fieldsConfig
+ * @param fieldConfig
  * @returns {JSX.Element}
  */
-export const SpatialFilterForm = ({ mapConfig }) => {
+export const SpatialFilterForm = ({ fieldPathPrefix, ...fieldConfig }) => {
+  // Defining the geometry field path (Customizable)
+  const fieldPath = `${fieldPathPrefix}.geometry`;
+
   return (
-    <MapContainer {...mapConfig.mapContainer}>
-      <BaseMapLayers {...mapConfig.baseMapLayers} />
-      <GeometryEditorControl {...mapConfig.editor} />
-    </MapContainer>
+    <GeometryField
+      fieldPath={fieldPath}
+      menu={false}
+      interactiveMapConfig={{
+        mapConfig: {
+          mapContainer: {
+            center: [30, -50],
+            zoom: 1,
+            zoomControl: true,
+          },
+          geometryEditorConfig: {
+            toolbarConfig: {
+              positions: {
+                draw: 'topleft',
+                edit: 'topright',
+              },
+              drawText: false,
+              drawCircleMarker: false,
+              drawCircle: false,
+              drawPolyline: false,
+              drawPolygon: false,
+              cutPolygon: false,
+              controlOrder: [
+                'drawMarker',
+                'drawRectangle',
+                'editMode',
+                'dragMode',
+                'rotateMode',
+                'removalMode',
+              ],
+            },
+          },
+        },
+      }}
+      {...fieldConfig}
+    />
   );
 };
 
 SpatialFilterForm.propTypes = {
-  mapConfig: PropTypes.shape({
-    mapContainer: PropTypes.object.isRequired,
-    baseMapLayers: PropTypes.object,
-    editor: PropTypes.object,
-  }).isRequired,
+  fieldPathPrefix: PropTypes.string.isRequired,
+  fieldConfig: PropTypes.object,
 };
 
 SpatialFilterForm.defaultProps = {
-  mapConfig: {
-    mapContainer: {
-      center: [30, -50],
-      zoom: 1,
-      zoomControl: true,
-    },
-  },
+  fieldPathPrefix: 'form',
+  fieldConfig: {},
 };

@@ -15,7 +15,7 @@ import resourceTypesApiData from '@tests/mock/vocabularies/resourcetypes-api.jso
 import { ResourceTypeField as ResourceTypeFieldComponent } from './ResourceTypeField';
 
 export default {
-  title: 'Form/Fields/Remote Resource Type field',
+  title: 'Form/Fields/Resource Type field',
   component: ResourceTypeFieldComponent,
   decorators: [withMock],
 };
