@@ -14,7 +14,7 @@ import { Tab } from 'semantic-ui-react';
 import { BasicFilterFormPane, SpatialFilterFormPane } from './panes';
 
 /**
- * Advanced filter tabs.
+ * Modal tabs for the Filter builder.
  * @constructor
  *
  * @param {Object} tabConfig Configuration object for the Semantic UI `Tab` component.
@@ -24,7 +24,7 @@ import { BasicFilterFormPane, SpatialFilterFormPane } from './panes';
  *                                  - `spatialFormPane`: Must define the configuration object for the `SpatialFilterFormPane` factory.
  * @returns {JSX.Element}
  */
-export const AdvancedFilterTabs = ({ tabConfig, tabPaneConfig }) => {
+export const ModalTabs = ({ tabConfig, tabPaneConfig }) => {
   const panes = [
     BasicFilterFormPane(tabPaneConfig.basicFormPane),
     SpatialFilterFormPane(tabPaneConfig.spatialFormPane),
@@ -33,12 +33,12 @@ export const AdvancedFilterTabs = ({ tabConfig, tabPaneConfig }) => {
   return <Tab {...tabConfig} panes={panes} />;
 };
 
-AdvancedFilterTabs.propTypes = {
+ModalTabs.propTypes = {
   tabConfig: PropTypes.object,
   tabPaneConfig: PropTypes.object,
 };
 
-AdvancedFilterTabs.defaultProps = {
+ModalTabs.defaultProps = {
   tabConfig: {
     menu: {
       secondary: true,

@@ -15,6 +15,7 @@ import { GeometryField } from '@geo-knowledge-hub/invenio-geographic-components-
  * Basic Spatial form to create filter components.
  * @constructor
  *
+ * @param {String} fieldPathPrefix Prefix used in the storage to store the field values.
  * @param {Object} mapConfig Configuration object for the `invenio-geographic-components-react`
  *                           used in the form which includes:
  *                                - BaseMapLayers (key: `baseMapLayers`)
@@ -23,7 +24,6 @@ import { GeometryField } from '@geo-knowledge-hub/invenio-geographic-components-
  *                           `mapContainer` property. This configuration will be
  *                           used to define the initial properties of the Leaflet
  *                           Map Container like initial `center position` and `zoom`
- * @param fieldConfig
  * @returns {JSX.Element}
  */
 export const SpatialFilterForm = ({ fieldPathPrefix, ...fieldConfig }) => {

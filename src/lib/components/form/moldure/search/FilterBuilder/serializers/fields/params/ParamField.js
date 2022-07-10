@@ -6,4 +6,15 @@
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
-export { FilterBuilder } from './FilterBuilder';
+import { Field } from '../internal';
+
+/**
+ * Base `param` field value.
+ */
+export class ParamField extends Field {
+  constructor(storageField, parameterName) {
+    super('param', storageField);
+
+    this.parameterName = parameterName;
+  }
+}

@@ -6,4 +6,7 @@
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
-export { BasicFilterForm } from './BasicFilterForm';
+export { ArgField } from './ArgField';
+export { MultiVocabularyField } from './MultiVocabularyField';
+export { VocabularyField } from './VocabularyField';
+export { ValueField } from './ValueField';

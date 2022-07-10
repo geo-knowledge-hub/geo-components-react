@@ -18,12 +18,15 @@ import { Global } from '@emotion/react';
 import subjectsApiData from '@tests/mock/vocabularies/subjects-api.json';
 import resourceTypesApiData from '@tests/mock/vocabularies/resourcetypes-api.json';
 import namesApiData from '@tests/mock/vocabularies/names-api.json';
+import programmeActivityApiData from '@tests/mock/vocabularies/programmeactivities-api.json';
+import targetAudiencesApiData from '@tests/mock/vocabularies/targetaudiencestypes-api.json';
+import engagementPrioritiesApiData from '@tests/mock/vocabularies/engagementprioritiestypes-api.json';
 
-import { AdvancedFilterModal as AdvancedFilterModalComponent } from './AdvancedFilterModal';
+import { FilterBuilder as FilterBuilderComponent } from './FilterBuilder';
 
 export default {
-  title: 'Form/Search/Advanced filter modal',
-  component: AdvancedFilterModalComponent,
+  title: 'Form/Search/Filter builder',
+  component: FilterBuilderComponent,
   decorators: [withMock],
 };
 
@@ -55,6 +58,30 @@ const mockApiConfig = [
       return namesApiData;
     },
   },
+  {
+    url: '/api/vocabularies/geowptypes?size=&suggest=',
+    method: 'GET',
+    status: 200,
+    response: (request) => {
+      return programmeActivityApiData;
+    },
+  },
+  {
+    url: '/api/vocabularies/targetaudiencestypes?size=&suggest=',
+    method: 'GET',
+    status: 200,
+    response: (request) => {
+      return targetAudiencesApiData;
+    },
+  },
+  {
+    url: '/api/vocabularies/engagementprioritiestypes?size=&suggest=',
+    method: 'GET',
+    status: 200,
+    response: (request) => {
+      return engagementPrioritiesApiData;
+    },
+  },
 ];
 
 /**
@@ -72,7 +99,7 @@ const Template = (args) => (
     />
 
     <Formik initialValues={{}}>
-      <AdvancedFilterModalComponent {...args} />
+      <FilterBuilderComponent {...args} />
     </Formik>
   </>
 );

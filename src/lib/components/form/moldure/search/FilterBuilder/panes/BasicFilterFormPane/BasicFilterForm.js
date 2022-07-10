@@ -18,12 +18,13 @@ import {
   WorkProgrammeActivityField,
   ResourceTypeField,
   AuthorsField,
-} from '../../../base';
+} from '../../../../../base';
 
 /**
  * Basic fields for Filter Form components.
  * @constructor
  *
+ * @param {String} fieldPathPrefix Prefix used in the storage to store the field values.
  * @param {Object} fieldConfig Configuration object for the fields used in the form which includes:
  *                                - AuthorsField (key: `authors`)
  *                                - WorkProgrammeActivityField (key: `programmeActivities`)
@@ -32,7 +33,6 @@ import {
  *                                - ResourceTypeField (key: `resourceTypes`)
  *                                - BasicSubjectsField (key: `subjects`)
  *
- * @param fieldsConfig
  * @returns {JSX.Element}
  */
 export const BasicFilterForm = ({ fieldPathPrefix, ...fieldConfig }) => {
@@ -87,7 +87,7 @@ export const BasicFilterForm = ({ fieldPathPrefix, ...fieldConfig }) => {
               multiple={true}
               clearable={true}
               required={false}
-              fieldPath={generateFieldPathWithPrefix('targetAudiencies')}
+              fieldPath={generateFieldPathWithPrefix('targetAudiences')}
               {...fieldConfig.targetAudiences}
             />
           </Grid.Column>

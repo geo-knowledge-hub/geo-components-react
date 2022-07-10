@@ -8,15 +8,15 @@
 
 import React from 'react';
 
-import { AdvancedFilterModal } from './AdvancedFilterModal';
-import { render } from '@tests/renders';
+import { ModalTabs } from './ModalTabs';
+import { renderWithFormikProvider } from '@tests/renders';
 
-describe('AdvancedFilterModal tests', () => {
+describe('ModalTabs tests', () => {
   describe('Render tests', () => {
     it('should render without crashing', () => {
-      render(
+      renderWithFormikProvider(
         <>
-          <AdvancedFilterModal formOnApplyFilter={(values) => {}} />
+          <ModalTabs />
         </>
       );
     });

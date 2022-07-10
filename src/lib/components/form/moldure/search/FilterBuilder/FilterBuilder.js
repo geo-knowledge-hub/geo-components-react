@@ -14,19 +14,21 @@ import { Formik } from 'formik';
 import { Button, Form, Modal } from 'semantic-ui-react';
 
 import { i18next } from '@translations/i18next';
-import { AdvancedFilterTabs } from './AdvancedFilterTabs';
+
+import { ModalTabs } from './ModalTabs';
+import { StaticQueryStringSerializer } from './serializers';
 
 /**
- * Advanced Filter modal component.
+ * Filter Builder modal component.
  * @constructor
  *
- * @param {String} modalTitle Modal title
- * @param {React.ReactNode} modalTrigger Element to be rendered in-place where the modal is defined.
+ * @param {String} modalTitle Filter builder Modal title
+ * @param {React.ReactNode} modalTrigger Element used to open the Filter builder modal.
  * @param {Object} formInitialValues Initial values for the Formik Form.
  * @param {Function} formOnApplyFilter Function to be called when the filters are defined.
  * @returns {JSX.Element}
  */
-export const AdvancedFilterModal = ({
+export const FilterBuilder = ({
   modalTitle,
   modalTrigger,
   formInitialValues,
@@ -34,14 +36,24 @@ export const AdvancedFilterModal = ({
 }) => {
   // States
   const [modalOpen, setModalOpen] = useState(false);
-  const [filterBuilderEnabled, setFilterBuilderEnabled] = useState(false);
+  const [advancedFilterModeEnabled, setAdvancedFilterModeEnabled] =
+    useState(false);
 
   // Auxiliary functions
-  const enableFilterBuilder = () => setFilterBuilderEnabled(true);
-  const disableFilterBuilder = () => setFilterBuilderEnabled(false);
+  const enableAdvancedFilter = () => setAdvancedFilterModeEnabled(true);
+  const disableAdvancedFilter = () => setAdvancedFilterModeEnabled(false);
 
   const openModal = () => setModalOpen(true);
   const closeModal = () => setModalOpen(false);
+
+  const serializeQuery = (values) => {
+    // todo: implement the advanced mode. By now, only the simple version is
+    //       supported.
+
+    // basic serializer (static)
+    const staticSerializer = new StaticQueryStringSerializer();
+    return staticSerializer.serialize(values);
+  };
 
   return (
     <Formik initialValues={formInitialValues} onSubmit={() => {}}>
@@ -55,24 +67,24 @@ export const AdvancedFilterModal = ({
           <Modal.Header>{modalTitle}</Modal.Header>
           <Modal.Content>
             <Form onSubmit={handleSubmit}>
-              <AdvancedFilterTabs />
+              <ModalTabs />
             </Form>
           </Modal.Content>
           <Modal.Actions>
-            {filterBuilderEnabled ? (
+            {advancedFilterModeEnabled ? (
               <Button
                 name={'enableFilter'}
-                onClick={disableFilterBuilder}
+                onClick={disableAdvancedFilter}
                 icon={'cogs'}
-                content={i18next.t('Basic filters')}
+                content={i18next.t('Basic mode')}
                 floated={'left'}
               />
             ) : (
               <Button
                 name={'disableFilter'}
-                onClick={enableFilterBuilder}
+                onClick={enableAdvancedFilter}
                 icon={'cogs'}
-                content={i18next.t('Filter builder')}
+                content={i18next.t('Advanced mode')}
                 floated={'left'}
                 disabled={true}
               />
@@ -84,8 +96,8 @@ export const AdvancedFilterModal = ({
               icon={'checkmark'}
               type={'submit'}
               onClick={() => {
-                closeModal();
-                formOnApplyFilter(values);
+                // closeModal();
+                formOnApplyFilter(serializeQuery(values));
               }}
               positive
             />
@@ -96,14 +108,14 @@ export const AdvancedFilterModal = ({
   );
 };
 
-AdvancedFilterModal.propTypes = {
+FilterBuilder.propTypes = {
   modalTitle: PropTypes.string.isRequired,
   modalTrigger: PropTypes.node.isRequired,
   formInitialValues: PropTypes.object,
   formOnApplyFilter: PropTypes.func.isRequired,
 };
 
-AdvancedFilterModal.defaultProps = {
+FilterBuilder.defaultProps = {
   modalTitle: i18next.t('Search filter'),
   formInitialValues: {},
 };

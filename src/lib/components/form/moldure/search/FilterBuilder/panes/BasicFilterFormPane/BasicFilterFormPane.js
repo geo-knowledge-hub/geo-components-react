@@ -12,19 +12,19 @@ import { Tab } from 'semantic-ui-react';
 
 import { i18next } from '@translations/i18next';
 
-import { SpatialFilterForm as SpatialFilterFormField } from '../../../../moldure';
+import { BasicFilterForm as BasicFilterFormField } from './BasicFilterForm';
 
 /**
- * Spatial Filter Form pane factory.
+ * Basic Filter Form pane factory.
  * @constructor
  *
  * @param {String} paneTitle Title of the generated `Pane` to be used in the Semantic UI `Tab` component.
  * @param {Object} paneConfig Configuration object for the generated `Tab.Pane`.
- * @param {Object} fieldConfig Configuration object for the `SpatialFilterForm` Component.
+ * @param {Object} fieldConfig Configuration object for the `BasicFilterFormField` Component.
  * @returns {{menuItem: *, render: (function())}}
  */
-export const SpatialFilterFormPane = ({
-  paneTitle = i18next.t('Spatial filter'),
+export const BasicFilterFormPane = ({
+  paneTitle = i18next.t('Basic filter'),
   paneConfig = {},
   fieldConfig = {},
 }) => {
@@ -32,7 +32,7 @@ export const SpatialFilterFormPane = ({
     menuItem: paneTitle,
     render: () => (
       <Tab.Pane {...paneConfig}>
-        <SpatialFilterFormField {...fieldConfig} />
+        <BasicFilterFormField {...fieldConfig} />
       </Tab.Pane>
     ),
   };

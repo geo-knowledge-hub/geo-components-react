@@ -70,7 +70,7 @@ export const AuthorsField = ({ fieldPath, ...fieldProps }) => {
       // generating the serialized object.
       return {
         text: author.name,
-        value: author.id,
+        value: authorObject.key,
         extra: author,
         key: author.id,
         content: (
