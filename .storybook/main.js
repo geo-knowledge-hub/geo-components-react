@@ -28,6 +28,24 @@ module.exports = {
       '@tests/mock': path.resolve(__dirname, '../src/mocks'),
     };
 
+    // react-leaflet
+    // see: https://stackoverflow.com/questions/70036039/react-storybook-not-running-after-installation-of-react-leaflet-version-3
+    config.module.rules.push({
+      test: /\.jsx?$/,
+      exclude: (filename) => {
+        return /node_modules/.test(filename) && !/react-leaflet/.test(filename);
+      },
+      loader: require.resolve('babel-loader'),
+      options: {
+        plugins: ['@babel/plugin-proposal-nullish-coalescing-operator'],
+      },
+    });
+
+    // geojsonhint
+    config.node = {
+      fs: 'empty',
+    };
+
     return config;
   },
 };

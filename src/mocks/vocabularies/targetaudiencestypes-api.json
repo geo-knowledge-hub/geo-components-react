@@ -1,0 +1,282 @@
+{
+  "hits": {
+    "hits": [
+      {
+        "title_l10n": "Admin Officer Spatial Planning",
+        "id": "tu-admin-officer-spatial-planning",
+        "props": {
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "target-audience"
+        }
+      },
+      {
+        "title_l10n": "Administrative Officer in the spatial planning domain",
+        "id": "tu-administrative-officer",
+        "props": {
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "target-audience"
+        }
+      },
+      {
+        "title_l10n": "Aggregator for energy trading",
+        "id": "tu-aggregator-for-energy-trading",
+        "props": {
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "target-audience"
+        }
+      },
+      {
+        "title_l10n": "Agriculture and Forest Departments",
+        "id": "tu-agriculture-forest-departments",
+        "props": {
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "target-audience"
+        }
+      },
+      {
+        "title_l10n": "Aquaculture expert",
+        "id": "tu-aquaculture-expert",
+        "props": {
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "target-audience"
+        }
+      },
+      {
+        "title_l10n": "Climate Researcher",
+        "id": "tu-climate-researcher",
+        "props": {
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "target-audience"
+        }
+      },
+      {
+        "title_l10n": "Coastal Ecosystems Research Community",
+        "id": "tu-coastal-ecosystems-research-community",
+        "props": {
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "target-audience"
+        }
+      },
+      {
+        "title_l10n": "Coastal Monitoring and Resilience Organisations",
+        "id": "tu-coastal-monitoring-and-resilience-organisations",
+        "props": {
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "target-audience"
+        }
+      },
+      {
+        "title_l10n": "Conservation Advocacy Community",
+        "id": "tu-conservation-advocacy-community",
+        "props": {
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "target-audience"
+        }
+      },
+      {
+        "title_l10n": "Conservation Policy Community",
+        "id": "tu-conservation-policy-community",
+        "props": {
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "target-audience"
+        }
+      },
+      {
+        "title_l10n": "Conservationists",
+        "id": "tu-conservationists",
+        "props": {
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "target-audience"
+        }
+      },
+      {
+        "title_l10n": "Crisis manager",
+        "id": "tu-crisis-manager",
+        "props": {
+          "description_long": "A person who manages crisis and disasters",
+          "description_short": "A person who manages crisis and disasters",
+          "icon": "",
+          "subtype": "",
+          "type": "target-audience"
+        }
+      },
+      {
+        "title_l10n": "Decision Maker",
+        "id": "tu-geo-decisionmaker",
+        "props": {
+          "description_long": "A person who makes decision based on Earth Observation applications and insights",
+          "description_short": "A person who makes decision based on Earth Observation applications and insights",
+          "icon": "",
+          "subtype": "",
+          "type": "target-audience"
+        }
+      },
+      {
+        "title_l10n": "Digital Cartography Technician",
+        "id": "tu-digital-cartography-technician",
+        "props": {
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "target-audience"
+        }
+      },
+      {
+        "title_l10n": "Earth Observation Analyst",
+        "id": "tu-geo-eoanalyst",
+        "props": {
+          "description_long": "A person who makes Earth Observation Analysis",
+          "description_short": "A person who makes Earth Observation Analysis",
+          "icon": "",
+          "subtype": "",
+          "type": "target-audience"
+        }
+      },
+      {
+        "title_l10n": "Earth Observation Scientist",
+        "id": "tu-geo-eoscientist",
+        "props": {
+          "description_long": "A person who makes Earth Observation Science",
+          "description_short": "A person who makes Earth Observation Science",
+          "icon": "",
+          "subtype": "",
+          "type": "target-audience"
+        }
+      },
+      {
+        "title_l10n": "Earth Observation Student",
+        "id": "tu-geo-eostudent",
+        "props": {
+          "description_long": "A person who studies Earth Observation",
+          "description_short": "A person who studies Earth Observation",
+          "icon": "",
+          "subtype": "",
+          "type": "target-audience"
+        }
+      },
+      {
+        "title_l10n": "Environmental Protection Agencies",
+        "id": "tu-environmental-protection-agencies",
+        "props": {
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "target-audience"
+        }
+      },
+      {
+        "title_l10n": "Environmental Resource Manager",
+        "id": "tu-environmental-resource-manager",
+        "props": {
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "target-audience"
+        }
+      },
+      {
+        "title_l10n": "Farmers",
+        "id": "tu-farmers",
+        "props": {
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "target-audience"
+        }
+      },
+      {
+        "title_l10n": "GIS Technical experts in emergency management",
+        "id": "tu-gis-technical-expert-emergency-management",
+        "props": {
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "target-audience"
+        }
+      },
+      {
+        "title_l10n": "GIS Technical experts in forestry",
+        "id": "tu-gis-technical-expert-forestry",
+        "props": {
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "target-audience"
+        }
+      },
+      {
+        "title_l10n": "GIS Technical experts in national agencies for agricultural",
+        "id": "tu-gis-technical-expert-national-agricultural",
+        "props": {
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "target-audience"
+        }
+      },
+      {
+        "title_l10n": "Geographer",
+        "id": "tu-geographer",
+        "props": {
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "target-audience"
+        }
+      },
+      {
+        "title_l10n": "Grid Operators",
+        "id": "tu-grid-operator",
+        "props": {
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "target-audience"
+        }
+      }
+    ],
+    "total": 45
+  }
+}

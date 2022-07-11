@@ -11,12 +11,12 @@ import React from 'react';
 import { Formik } from 'formik';
 import withMock from 'storybook-addon-mock';
 
-import resourceTypesApiData from '@tests/mock/vocabularies/resourcetypes-api.json';
-import { ResourceTypeField as ResourceTypeFieldComponent } from './ResourceTypeField';
+import programmeActivityApiData from '@tests/mock/vocabularies/programmeactivities-api.json';
+import { WorkProgrammeActivityField as WorkProgrammeActivityFieldComponent } from './WorkProgrammeActivityField';
 
 export default {
-  title: 'Form/Fields/Resource Type field',
-  component: ResourceTypeFieldComponent,
+  title: 'Form/Fields/Programme Activity field',
+  component: WorkProgrammeActivityFieldComponent,
   decorators: [withMock],
 };
 
@@ -25,11 +25,11 @@ export default {
  */
 const mockApiConfig = [
   {
-    url: '/api/vocabularies/resourcetypes?size=&suggest=',
+    url: '/api/vocabularies/geowptypes?size=&suggest=',
     method: 'GET',
     status: 200,
     response: (request) => {
-      return resourceTypesApiData;
+      return programmeActivityApiData;
     },
   },
 ];
@@ -40,7 +40,7 @@ const mockApiConfig = [
 const Template = (args) => (
   <>
     <Formik initialValues={{}}>
-      <ResourceTypeFieldComponent {...args} />
+      <WorkProgrammeActivityFieldComponent {...args} />
     </Formik>
   </>
 );

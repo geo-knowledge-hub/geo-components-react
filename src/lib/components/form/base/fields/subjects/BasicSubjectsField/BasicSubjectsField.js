@@ -30,6 +30,7 @@ export const BasicSubjectsField = ({ fieldPath, ...fieldProps }) => {
           <VocabularySuggestionField
             fieldPath={fieldPath}
             multiple={true} // We are using `value` array. So, this option must be `true`.
+            allowAdditions={true}
             suggestionAPIUrl="/api/vocabularies/subjects"
             suggestionAPIHeaders={{
               Accept: 'application/json',
@@ -79,5 +80,4 @@ BasicSubjectsField.defaultProps = {
   labelIcon: 'tag',
   placeholder: i18next.t('Search for a Subject'),
   noQueryMessage: i18next.t('Start typing to search for a Subject'),
-  allowAdditions: true,
 };

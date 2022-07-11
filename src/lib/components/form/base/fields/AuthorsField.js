@@ -70,7 +70,7 @@ export const AuthorsField = ({ fieldPath, ...fieldProps }) => {
       // generating the serialized object.
       return {
         text: author.name,
-        value: author.id,
+        value: authorObject.key,
         extra: author,
         key: author.id,
         content: (
@@ -122,12 +122,11 @@ AuthorsField.propTypes = {
 AuthorsField.defaultProps = {
   fieldPath: 'metadata.creators',
   label: i18next.t('Authors'),
-  labelIcon: 'tag',
+  labelIcon: 'user',
   placeholder: i18next.t(
     'Search for persons by name, identifier, or affiliation...'
   ),
   noQueryMessage: i18next.t(
     'Search for persons by name, identifier, or affiliation...'
   ),
-  clearable: true,
 };

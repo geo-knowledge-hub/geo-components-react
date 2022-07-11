@@ -1,0 +1,332 @@
+{
+  "hits": {
+    "hits": [
+      {
+        "title_l10n": "Advancing Communication Infrastructure and Services (ACIS)",
+        "id": "geo-activities-acis",
+        "props": {
+          "acronym": "ACIS",
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "geo-work-programme-activities",
+          "uri": "www.earthobservations.org/documents/gwp20_22/ACIS.pdf"
+        }
+      },
+      {
+        "title_l10n": "African Group on Earth Observations (AFRIGEO)",
+        "id": "geo-activities-afrigeo",
+        "props": {
+          "acronym": "AFRIGEO",
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "geo-work-programme-activities",
+          "uri": "www.earthobservations.org/documents/gwp20_22/AFRIGEO.pdf"
+        }
+      },
+      {
+        "title_l10n": "Americas Group on Earth Observations (AMERIGEO)",
+        "id": "geo-activities-amerigeo",
+        "props": {
+          "acronym": "AMERIGEO",
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "geo-work-programme-activities",
+          "uri": "www.earthobservations.org/documents/gwp20_22/AMERIGEO.pdf"
+        }
+      },
+      {
+        "title_l10n": "AquaWatch (AQUAWATCH)",
+        "id": "geo-activities-aquawatch",
+        "props": {
+          "acronym": "AQUAWATCH",
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "geo-work-programme-activities",
+          "uri": "www.earthobservations.org/documents/gwp20_22/AQUAWATCH.pdf"
+        }
+      },
+      {
+        "title_l10n": "Arctic GEOSS (ARCTIC-GEOSS)",
+        "id": "geo-activities-arctic-geoss",
+        "props": {
+          "acronym": "ARCTIC-GEOSS",
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "geo-work-programme-activities",
+          "uri": "www.earthobservations.org/documents/gwp20_22/ARCTIC-GEOSS.pdf"
+        }
+      },
+      {
+        "title_l10n": "Asia-Oceania Group on Earth Observations (AOGEO)",
+        "id": "geo-activities-aogeo",
+        "props": {
+          "acronym": "AOGEO",
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "geo-work-programme-activities",
+          "uri": "www.earthobservations.org/documents/gwp20_22/AOGEO.pdf"
+        }
+      },
+      {
+        "title_l10n": "Chinese High-resolution Satellite Data Resources (CSDR)",
+        "id": "geo-activities-csdr",
+        "props": {
+          "acronym": "CSDR",
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "geo-work-programme-activities",
+          "uri": "www.earthobservations.org/documents/gwp20_22/CSDR.pdf"
+        }
+      },
+      {
+        "title_l10n": "Climate Observation, Simulation and Impacts (CLIMATE-OBS)",
+        "id": "geo-activities-climate-obs",
+        "props": {
+          "acronym": "CLIMATE-OBS",
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "geo-work-programme-activities",
+          "uri": "www.earthobservations.org/documents/gwp20_22/CLIMATE-OBS.pdf"
+        }
+      },
+      {
+        "title_l10n": "Copernicus Atmosphere Monitoring Service (CAMS)",
+        "id": "geo-activities-cams",
+        "props": {
+          "acronym": "CAMS",
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "geo-work-programme-activities",
+          "uri": "www.earthobservations.org/documents/gwp20_22/CAMS.pdf"
+        }
+      },
+      {
+        "title_l10n": "Copernicus Climate Change Service (C3S)",
+        "id": "geo-activities-c3s",
+        "props": {
+          "acronym": "C3S",
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "geo-work-programme-activities",
+          "uri": "www.earthobservations.org/documents/gwp20_22/C3S.pdf"
+        }
+      },
+      {
+        "title_l10n": "Data Access for Risk Management (GEO-DARMA)",
+        "id": "geo-activities-geo-darma",
+        "props": {
+          "acronym": "GEO-DARMA",
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "geo-work-programme-activities",
+          "uri": "www.earthobservations.org/documents/gwp20_22/GEO-DARMA.pdf"
+        }
+      },
+      {
+        "title_l10n": "Data Integration and Analysis System (DIAS)",
+        "id": "geo-activities-dias",
+        "props": {
+          "acronym": "DIAS",
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "geo-work-programme-activities",
+          "uri": "www.earthobservations.org/documents/gwp20_22/DIAS.pdf"
+        }
+      },
+      {
+        "title_l10n": "Digital Earth Africa (DE-AFRICA)",
+        "id": "geo-activities-de-africa",
+        "props": {
+          "acronym": "DE-AFRICA",
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "geo-work-programme-activities",
+          "uri": "www.earthobservations.org/documents/gwp20_22/DE-AFRICA.pdf"
+        }
+      },
+      {
+        "title_l10n": "Digital Earth Pacific (DE-PACIFIC)",
+        "id": "geo-activities-de-pacific",
+        "props": {
+          "acronym": "DE-PACIFIC",
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "geo-work-programme-activities",
+          "uri": "www.earthobservations.org/documents/gwp20_22/DE-PACIFIC.pdf"
+        }
+      },
+      {
+        "title_l10n": "Earth Observation Industrial Innovation Platform for Sustainable Development (EO-IIP)",
+        "id": "geo-activities-eo-iip",
+        "props": {
+          "acronym": "EO-IIP",
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "geo-work-programme-activities",
+          "uri": "www.earthobservations.org/documents/gwp20_22/EO-IIP.pdf"
+        }
+      },
+      {
+        "title_l10n": "Earth Observation and Copernicus in support of Sendai Monitoring (EO4SENDAI-MONITORING)",
+        "id": "geo-activities-eo4sendai-monitoring",
+        "props": {
+          "acronym": "EO4SENDAI-MONITORING",
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "geo-work-programme-activities",
+          "uri": "www.earthobservations.org/documents/gwp20_22/EO4SENDAI-MONITORING.pdf"
+        }
+      },
+      {
+        "title_l10n": "Earth Observations for Disaster Risk Management (EO4DRM)",
+        "id": "geo-activities-eo4drm",
+        "props": {
+          "acronym": "EO4DRM",
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "geo-work-programme-activities",
+          "uri": "www.earthobservations.org/documents/gwp20_22/EO4DRM.pdf"
+        }
+      },
+      {
+        "title_l10n": "Earth Observations for Ecosystem Accounting (EO4EA)",
+        "id": "geo-activities-eo4ea",
+        "props": {
+          "acronym": "EO4EA",
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "geo-work-programme-activities",
+          "uri": "www.earthobservations.org/documents/gwp20_22/EO4EA.pdf"
+        }
+      },
+      {
+        "title_l10n": "Earth Observations for Health (EO4HEALTH)",
+        "id": "geo-activities-eo4health",
+        "props": {
+          "acronym": "EO4HEALTH",
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "geo-work-programme-activities",
+          "uri": "www.earthobservations.org/documents/gwp20_22/EO4HEALTH.pdf"
+        }
+      },
+      {
+        "title_l10n": "Earth Observations for Managing Mineral and Non-Renewable Energy Resources (EO4MIN)",
+        "id": "geo-activities-eo4min",
+        "props": {
+          "acronym": "EO4MIN",
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "geo-work-programme-activities",
+          "uri": "www.earthobservations.org/documents/gwp20_22/EO4MIN.pdf"
+        }
+      },
+      {
+        "title_l10n": "Earth Observations for the Atlantic Region (ATLANTIC-EO)",
+        "id": "geo-activities-atlantic-eo",
+        "props": {
+          "acronym": "ATLANTIC-EO",
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "geo-work-programme-activities",
+          "uri": "www.earthobservations.org/documents/gwp20_22/ATLANTIC-EO.pdf"
+        }
+      },
+      {
+        "title_l10n": "Earth Observations for the Sustainable Development Goals (EO4SDG)",
+        "id": "geo-activities-eo4sdg",
+        "props": {
+          "acronym": "EO4SDG",
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "geo-work-programme-activities",
+          "uri": "www.earthobservations.org/documents/gwp20_22/EO4SDG.pdf"
+        }
+      },
+      {
+        "title_l10n": "Earth Observations for the Water-Energy-Food Nexus (EO4WEF)",
+        "id": "geo-activities-eo4wef",
+        "props": {
+          "acronym": "EO4WEF",
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "geo-work-programme-activities",
+          "uri": "www.earthobservations.org/documents/gwp20_22/eo_for_wef_ip.pdf"
+        }
+      },
+      {
+        "title_l10n": "Enhancing Food Security in African Agricultural Systems with the Support of Remote Sensing (AFRICULTURES)",
+        "id": "geo-activities-africultures",
+        "props": {
+          "acronym": "AFRICULTURES",
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "geo-work-programme-activities",
+          "uri": "www.earthobservations.org/documents/gwp20_22/AFRICULTURES.pdf"
+        }
+      },
+      {
+        "title_l10n": "European Group on Earth Observations (EUROGEO)",
+        "id": "geo-activities-eurogeo",
+        "props": {
+          "acronym": "EUROGEO",
+          "description_long": "",
+          "description_short": "",
+          "icon": "",
+          "subtype": "",
+          "type": "geo-work-programme-activities",
+          "uri": "www.earthobservations.org/documents/gwp20_22/EUROGEO.pdf"
+        }
+      }
+    ],
+    "total": 64
+  }
+}
