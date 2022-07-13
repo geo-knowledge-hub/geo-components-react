@@ -10,7 +10,6 @@
  * Query String serializer.
  */
 export class QueryStringSerializer {
-
   /**
    * @constructor
    */

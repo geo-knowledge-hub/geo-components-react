@@ -24,7 +24,7 @@ import { BasicFilterFormPane, SpatialFilterFormPane } from './panes';
  *                                  - `spatialFormPane`: Must define the configuration object for the `SpatialFilterFormPane` factory.
  * @returns {JSX.Element}
  */
-export const ModalTabs = ({ tabConfig, tabPaneConfig }) => {
+export const FilterTabs = ({ tabConfig, tabPaneConfig }) => {
   const panes = [
     BasicFilterFormPane(tabPaneConfig.basicFormPane),
     SpatialFilterFormPane(tabPaneConfig.spatialFormPane),
@@ -33,12 +33,12 @@ export const ModalTabs = ({ tabConfig, tabPaneConfig }) => {
   return <Tab {...tabConfig} panes={panes} />;
 };
 
-ModalTabs.propTypes = {
+FilterTabs.propTypes = {
   tabConfig: PropTypes.object,
   tabPaneConfig: PropTypes.object,
 };
 
-ModalTabs.defaultProps = {
+FilterTabs.defaultProps = {
   tabConfig: {
     menu: {
       secondary: true,

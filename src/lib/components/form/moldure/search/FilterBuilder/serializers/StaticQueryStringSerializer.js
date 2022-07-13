@@ -29,7 +29,6 @@ import {
  *        used in this class don't change dynamically (runtime).
  */
 export class StaticQueryStringSerializer extends QueryStringSerializer {
-
   /**
    * Serialization schema.
    * @type {{resourceTypes: ValueField, programmeActivities: ValueField, subjects: VocabularyField, engagementPriorities: ValueField, geometry: BoundingBoxField, targetAudiences: ValueField, authors: MultiVocabularyField}}
@@ -94,7 +93,7 @@ export class StaticQueryStringSerializer extends QueryStringSerializer {
     searchArgValues = _map(searchArgValues, 'value').join(' AND ') || '';
     searchArgValues = !_isNil(searchElements) ? `q=${searchArgValues}` : '';
 
-    // Processing the arguments for the `Parameters`
+    // Processing the arguments for the `Extra Filters`
     let searchParamValues = searchElements.param || [];
     searchParamValues = _map(searchParamValues, 'value').join(' & ') || '';
 

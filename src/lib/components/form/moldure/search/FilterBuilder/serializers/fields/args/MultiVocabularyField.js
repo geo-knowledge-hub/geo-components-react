@@ -29,6 +29,10 @@ export class MultiVocabularyField extends VocabularyField {
     serializedValue = _compact(serializedValue) || [];
     serializedValue = serializedValue.join(' OR ');
 
+    if (isEmpty(serializedValue)) {
+      return null;
+    }
+
     return {
       type: this.type,
       value: `(${serializedValue})`,

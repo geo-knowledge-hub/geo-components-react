@@ -8,15 +8,15 @@
 
 import React from 'react';
 
-import { ModalTabs } from './ModalTabs';
+import { FilterTabs } from './FilterTabs';
 import { renderWithFormikProvider } from '@tests/renders';
 
-describe('ModalTabs tests', () => {
+describe('FilterTabs tests', () => {
   describe('Render tests', () => {
     it('should render without crashing', () => {
       renderWithFormikProvider(
         <>
-          <ModalTabs />
+          <FilterTabs />
         </>
       );
     });

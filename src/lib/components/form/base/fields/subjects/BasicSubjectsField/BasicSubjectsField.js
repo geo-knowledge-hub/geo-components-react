@@ -42,9 +42,9 @@ export const BasicSubjectsField = ({ fieldPath, ...fieldProps }) => {
             })}
             serializeSuggestions={(data) => {
               return data.map((obj) => ({
-                key: obj.id,
-                value: obj.subject,
-                text: obj.subject, // todo: change to localization string (l10n) when available.
+                key: obj.id || obj.key,
+                value: obj.subject || obj.value,
+                text: obj.subject || obj.text, // todo: change to localization string (l10n) when available.
               }));
             }}
             onValueChange={({ formikProps }, selectedSuggestions) => {

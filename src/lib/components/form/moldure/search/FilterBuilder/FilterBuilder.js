@@ -15,7 +15,7 @@ import { Button, Form, Modal } from 'semantic-ui-react';
 
 import { i18next } from '@translations/i18next';
 
-import { ModalTabs } from './ModalTabs';
+import { FilterTabs } from './FilterTabs';
 import { StaticQueryStringSerializer } from './serializers';
 
 /**
@@ -24,6 +24,7 @@ import { StaticQueryStringSerializer } from './serializers';
  *
  * @param {String} modalTitle Filter builder Modal title
  * @param {React.ReactNode} modalTrigger Element used to open the Filter builder modal.
+ * @param {Object} modalConfig Configuration object for the Modal FilterBuilder.
  * @param {Object} formInitialValues Initial values for the Formik Form.
  * @param {Function} formOnApplyFilter Function to be called when the filters are defined.
  * @returns {JSX.Element}
@@ -31,6 +32,7 @@ import { StaticQueryStringSerializer } from './serializers';
 export const FilterBuilder = ({
   modalTitle,
   modalTrigger,
+  modalConfig,
   formInitialValues,
   formOnApplyFilter,
 }) => {
@@ -59,15 +61,17 @@ export const FilterBuilder = ({
     <Formik initialValues={formInitialValues} onSubmit={() => {}}>
       {({ values, errors, handleSubmit, isSubmitting }) => (
         <Modal
+          closeIcon
           open={modalOpen}
           onOpen={openModal}
           onClose={closeModal}
           trigger={modalTrigger}
+          {...modalConfig}
         >
           <Modal.Header>{modalTitle}</Modal.Header>
           <Modal.Content>
             <Form onSubmit={handleSubmit}>
-              <ModalTabs />
+              <FilterTabs />
             </Form>
           </Modal.Content>
           <Modal.Actions>
@@ -89,14 +93,16 @@ export const FilterBuilder = ({
                 disabled={true}
               />
             )}
-            <Button color="gray">{i18next.t('Cancel')}</Button>
+            <Button color="gray" onClick={closeModal}>
+              {i18next.t('Cancel')}
+            </Button>
             <Button
               content={i18next.t('Use filters')}
               labelPosition={'right'}
               icon={'checkmark'}
               type={'submit'}
               onClick={() => {
-                // closeModal();
+                closeModal();
                 formOnApplyFilter(serializeQuery(values));
               }}
               positive
@@ -111,11 +117,13 @@ export const FilterBuilder = ({
 FilterBuilder.propTypes = {
   modalTitle: PropTypes.string.isRequired,
   modalTrigger: PropTypes.node.isRequired,
+  modalConfig: PropTypes.object,
   formInitialValues: PropTypes.object,
   formOnApplyFilter: PropTypes.func.isRequired,
 };
 
 FilterBuilder.defaultProps = {
   modalTitle: i18next.t('Search filter'),
+  modalConfig: {},
   formInitialValues: {},
 };

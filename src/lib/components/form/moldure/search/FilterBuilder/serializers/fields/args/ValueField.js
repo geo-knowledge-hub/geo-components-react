@@ -24,7 +24,9 @@ export class ValueField extends ArgField {
 
     // extracting the values
     if (Array.isArray(fieldValue)) {
-      fieldValue = fieldValue.join(` ${this.operator} `);
+      fieldValue = fieldValue
+        .map((obj) => obj.value)
+        .join(` ${this.operator} `);
     }
 
     return {

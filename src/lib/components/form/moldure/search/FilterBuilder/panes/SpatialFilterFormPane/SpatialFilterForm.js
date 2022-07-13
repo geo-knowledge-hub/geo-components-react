@@ -12,6 +12,55 @@ import PropTypes from 'prop-types';
 import { GeometryField } from '@geo-knowledge-hub/invenio-geographic-components-react';
 
 /**
+ * Base Layers config
+ */
+const FormTilesConfig = [
+  {
+    baseLayer: {
+      checked: true,
+      name: 'Esri World Street Map',
+    },
+    tileLayer: {
+      url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+      attribution:
+        'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012',
+    },
+  },
+  {
+    baseLayer: {
+      name: 'Open Street Map',
+    },
+    tileLayer: {
+      url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+      attribution:
+        "&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors",
+      maxNativeZoom: 19,
+    },
+  },
+  {
+    baseLayer: {
+      name: 'Esri World Imagery',
+    },
+    tileLayer: {
+      url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+      attribution:
+        'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community',
+    },
+  },
+  {
+    baseLayer: {
+      name: 'OpenTopoMap',
+    },
+    tileLayer: {
+      url: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
+      maxZoom: 17,
+      attribution:
+        'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)',
+    },
+  },
+];
+
+/**
  * Basic Spatial form to create filter components.
  * @constructor
  *
@@ -41,6 +90,9 @@ export const SpatialFilterForm = ({ fieldPathPrefix, ...fieldConfig }) => {
             zoom: 1,
             zoomControl: true,
           },
+          tileLayersConfig: {
+            tileLayers: FormTilesConfig,
+          },
           geometryEditorConfig: {
             toolbarConfig: {
               positions: {
@@ -52,6 +104,7 @@ export const SpatialFilterForm = ({ fieldPathPrefix, ...fieldConfig }) => {
               drawCircle: false,
               drawPolyline: false,
               drawPolygon: false,
+              drawMarker: false,
               cutPolygon: false,
               controlOrder: [
                 'drawMarker',

@@ -15,8 +15,8 @@ import { isEmpty } from '../utils';
 import { ParamField } from './ParamField';
 
 /**
- * Bounding box field. This field is used to serialize a `geometry` (GeoJSON compatible)
- * into a Bounding Box parameter in the URL.
+ * Bounding box field filter. This field is used to serialize a `geometry` (GeoJSON compatible)
+ * into a Bounding Box filter in the URL.
  */
 export class BoundingBoxField extends ParamField {
   serialize(values) {
@@ -44,7 +44,8 @@ export class BoundingBoxField extends ParamField {
 
     const bboxValue = [...topLeftCoords, ...bottomRightCoords];
 
-    const parameterValue = `${this.parameterName}=${bboxValue}`;
+    // The bounding box parameter is a kind of filter (`f=`)
+    const parameterValue = `f=${this.parameterName}:${bboxValue}`;
 
     return {
       type: this.type,
