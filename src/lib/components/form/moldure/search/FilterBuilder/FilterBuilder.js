@@ -16,7 +16,7 @@ import { Button, Form, Modal } from 'semantic-ui-react';
 import { i18next } from '@translations/i18next';
 
 import { FilterTabs } from './FilterTabs';
-import { StaticQueryStringSerializer } from './serializers';
+import { QsParser, StaticQueryStringSerializer } from './serializers';
 
 /**
  * Filter Builder modal component.
@@ -27,6 +27,7 @@ import { StaticQueryStringSerializer } from './serializers';
  * @param {Object} modalConfig Configuration object for the Modal FilterBuilder.
  * @param {Object} formInitialValues Initial values for the Formik Form.
  * @param {Function} formOnApplyFilter Function to be called when the filters are defined.
+ * @param  {Object} serializerFieldTypeNames Object to configure the `QsParser` used during the serialization.
  * @returns {JSX.Element}
  */
 export const FilterBuilder = ({
@@ -35,6 +36,7 @@ export const FilterBuilder = ({
   modalConfig,
   formInitialValues,
   formOnApplyFilter,
+  serializerFieldTypeNames,
 }) => {
   // States
   const [modalOpen, setModalOpen] = useState(false);
@@ -53,7 +55,10 @@ export const FilterBuilder = ({
     //       supported.
 
     // basic serializer (static)
-    const staticSerializer = new StaticQueryStringSerializer();
+    const qsParser = new QsParser(serializerFieldTypeNames);
+    const staticSerializer = new StaticQueryStringSerializer(qsParser);
+
+    // generating!
     return staticSerializer.serialize(values);
   };
 
@@ -103,7 +108,7 @@ export const FilterBuilder = ({
               type={'submit'}
               onClick={() => {
                 closeModal();
-                formOnApplyFilter(serializeQuery(values));
+                formOnApplyFilter(values, serializeQuery(values));
               }}
               positive
             />
@@ -120,10 +125,16 @@ FilterBuilder.propTypes = {
   modalConfig: PropTypes.object,
   formInitialValues: PropTypes.object,
   formOnApplyFilter: PropTypes.func.isRequired,
+  serializerFieldTypeNames: PropTypes.func.isRequired,
 };
 
 FilterBuilder.defaultProps = {
   modalTitle: i18next.t('Search filter'),
   modalConfig: {},
   formInitialValues: {},
+  serializerFieldTypeNames: {
+    // supported types by default.
+    query: 'q',
+    filter: 'f',
+  },
 };

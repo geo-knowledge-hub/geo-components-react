@@ -12,8 +12,8 @@ import { Field } from '../internal';
  * Base `param` field value.
  */
 export class ParamField extends Field {
-  constructor(storageField, parameterName) {
-    super('param', storageField);
+  constructor(storageField, name, parameterName) {
+    super('params', storageField, name);
 
     this.parameterName = parameterName;
   }

@@ -10,3 +10,5 @@ export * from './fields';
 
 export { QueryStringSerializer } from './QueryStringSerializer';
 export { StaticQueryStringSerializer } from './StaticQueryStringSerializer';
+
+export { QsParser } from './QsParser';

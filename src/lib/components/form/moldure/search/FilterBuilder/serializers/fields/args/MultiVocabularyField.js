@@ -8,7 +8,7 @@
 
 import _compact from 'lodash/compact';
 
-import { isEmpty } from '../utils';
+import { isEmpty } from '../toolbox';
 import { VocabularyField } from './VocabularyField';
 
 /**
@@ -33,9 +33,6 @@ export class MultiVocabularyField extends VocabularyField {
       return null;
     }
 
-    return {
-      type: this.type,
-      value: `(${serializedValue})`,
-    };
+    return this.generateValue(`(${serializedValue})`);
   }
 }

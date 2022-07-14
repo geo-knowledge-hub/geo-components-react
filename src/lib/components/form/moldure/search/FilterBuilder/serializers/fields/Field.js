@@ -20,20 +20,41 @@ export class Field {
   // Can be defined as `arg` (Query `q` arguments) or `param` (URL parameter).
   type = null;
 
+  // Name of the field in the query string.
+  name = null;
+
   /**
    * @constructor
    *
    * @param {String} type Type of the field
+   * @param {String} name Name of the field in the query string.
    * @param {String} storageField Path in the storage (e.g., Formik) where the field is defined.
    */
-  constructor(type, storageField) {
+  constructor(type, storageField, name) {
     this.type = type;
+    this.name = name;
     this.storageField = storageField;
+  }
+
+  /**
+   * Field value generator. This is the default method used to generate the
+   * value of the fields.
+   *
+   * @param {Object} value Value to be returned as part of the Field.
+   * @returns {{name: String, type: null, value}}
+   */
+  generateValue(value) {
+    return {
+      type: this.type,
+      name: this.name,
+      value: value,
+    };
   }
 
   /**
    * Serialize the field values.
    * @param {Object} values Values to be serialized.
+   * @returns {{name: String, type: null, value}}
    */
   serialize(values) {
     throw new Error('Not implemented');

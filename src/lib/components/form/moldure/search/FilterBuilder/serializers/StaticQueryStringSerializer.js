@@ -6,20 +6,15 @@
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
-import _map from 'lodash/map';
-import _join from 'lodash/join';
-import _isNil from 'lodash/isNil';
-import _compact from 'lodash/compact';
-import _groupBy from 'lodash/groupBy';
 import _filter from 'lodash/filter';
 
 import { QueryStringSerializer } from './QueryStringSerializer';
 
 import {
+  BoundingBoxField,
+  MultiVocabularyField,
   ValueField,
   VocabularyField,
-  MultiVocabularyField,
-  BoundingBoxField,
 } from './fields';
 
 /**
@@ -73,9 +68,20 @@ export class StaticQueryStringSerializer extends QueryStringSerializer {
   };
 
   /**
+   * @constructor
+   * @param {Object} qsParser `QsParser` instance to be used in the serialization.
+   */
+  constructor(qsParser) {
+    super();
+
+    this.qsParser = qsParser;
+  }
+
+  /**
    * Serialize multiple fields based on `queryStringSchema` definitions.
+   *
    * @param {Object} values Object with the field values to be serialized.
-   * @returns {String} serialized values in the query string format.
+   * @returns {{searchExtraParams: *, searchQueryArgs: {name: string, value: *[]}}} serialized values in the query string format.
    */
   serialize(values) {
     let serializedValues = Object.keys(values.form).map((key) =>
@@ -85,19 +91,7 @@ export class StaticQueryStringSerializer extends QueryStringSerializer {
     // Filtering empty values
     serializedValues = _filter(serializedValues, 'value');
 
-    // Grouping the values by type
-    const searchElements = _groupBy(serializedValues, 'type');
-
-    // Processing the arguments for the `Query search arguments`
-    let searchArgValues = searchElements.arg || [];
-    searchArgValues = _map(searchArgValues, 'value').join(' AND ') || '';
-    searchArgValues = !_isNil(searchElements) ? `q=${searchArgValues}` : '';
-
-    // Processing the arguments for the `Extra Filters`
-    let searchParamValues = searchElements.param || [];
-    searchParamValues = _map(searchParamValues, 'value').join(' & ') || '';
-
     // Generating the final query string.
-    return _join(_compact([searchArgValues, searchParamValues]), '&');
+    return this.qsParser.generateQsObjects(serializedValues);
   }
 }
