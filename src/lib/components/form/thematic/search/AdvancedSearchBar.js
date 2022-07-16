@@ -12,8 +12,8 @@ import PropTypes from 'prop-types';
 import qs from 'qs';
 import _isEmpty from 'lodash/isEmpty';
 
-import { Formik, Form, Field } from 'formik';
-import { Button, Input, Icon } from 'semantic-ui-react';
+import { Formik, Field } from 'formik';
+import { Button, Input, Form, Icon } from 'semantic-ui-react';
 
 import { i18next } from '@translations/i18next';
 
@@ -25,76 +25,97 @@ import { FilterBuilder } from '../../moldure';
  *
  * @param {String} searchPlaceholder Search placeholder.
  * @param {Function} onSearch Function to be called when user click to perform the search.
+ *
+ * @todo
+ *  - Review the structure to create a more simple implementation.
+ *
  * @returns {JSX.Element}
  */
 export const AdvancedSearchBar = ({ searchPlaceholder, onSearch }) => {
+  // States
   const [extraFilters, setExtraFilters] = useState({
-    queryDefinition: {},
+    queryDefinition: {
+      searchQueryArgs: {
+        name: 'q',
+      },
+      searchExtraParams: {},
+    },
     queryFormValues: {},
   });
+
+  // Auxiliary functions
+  const onSubmitFnc = (formikValues) => {
+    const { searchQueryArgs, searchExtraParams } = extraFilters.queryDefinition;
+
+    // Checking the query string arguments.
+    // ToDo: Refactor to simplify the structure.
+    if (!_isEmpty(searchQueryArgs.value) && !_isEmpty(formikValues.q)) {
+      searchQueryArgs.value = `${formikValues.q} AND ${searchQueryArgs.value}`;
+    } else if (_isEmpty(searchQueryArgs.value) && !_isEmpty(formikValues.q)) {
+      searchQueryArgs.value = formikValues.q;
+    } else if (_isEmpty(searchQueryArgs.value)) {
+      searchQueryArgs.value = '';
+    }
+
+    // Checking the parameters
+    searchExtraParams.value = searchExtraParams.value || {};
+
+    // Creating the `qs` object
+    const queryObject = {
+      [searchQueryArgs.name]: searchQueryArgs.value,
+      ...searchExtraParams.value,
+    };
+
+    // Create the query string.
+    const queryString = qs.stringify(queryObject, {
+      arrayFormat: 'repeat',
+    });
+
+    onSearch(queryString);
+  };
 
   return (
     <Formik
       initialValues={{
         q: '',
       }}
-      onSubmit={(formikValues) => {
-        const { searchQueryArgs, searchExtraParams } =
-          extraFilters.queryDefinition;
-
-        // Checking the query string arguments.
-        // ToDo: Refactor to simplify the structure.
-        if (!_isEmpty(searchQueryArgs.value) && !_isEmpty(formikValues.q)) {
-          searchQueryArgs.value = `${formikValues.q} AND ${searchQueryArgs.value}`;
-        } else if (
-          _isEmpty(searchQueryArgs.value) &&
-          !_isEmpty(formikValues.q)
-        ) {
-          searchQueryArgs.value = formikValues.q;
-        } else if (_isEmpty(searchQueryArgs.value)) {
-          searchQueryArgs.value = '';
-        }
-
-        // Checking the parameters
-        searchExtraParams.value = searchExtraParams.value || {};
-
-        // Creating the `qs` object
-        const queryObject = {
-          [searchQueryArgs.name]: searchQueryArgs.value,
-          ...searchExtraParams.value,
-        };
-
-        // Create the query string.
-        const queryString = qs.stringify(queryObject, {
-          arrayFormat: 'repeat',
-        });
-
-        onSearch(queryString);
-      }}
+      onSubmit={(formikValues, formikHelpers) => {}}
     >
-      <Form>
-        <Input type={'text'} fluid big action>
-          <Field type={'text'} name={'q'} placeholder={searchPlaceholder} />
+      {({ values, handleSubmit }) => (
+        <Form onSubmit={handleSubmit}>
+          <Input size={'big'} type={'text'} fluid action>
+            <Field
+              type={'text'}
+              name={'q'}
+              placeholder={searchPlaceholder}
+              className={'form-control search-bar-form'}
+            />
 
-          <FilterBuilder
-            modalTrigger={
-              <Button icon>
-                <Icon name={'filter'} />
-              </Button>
-            }
-            formOnApplyFilter={(formValues, queryValue) => {
-              setExtraFilters({
-                queryDefinition: queryValue,
-                queryFormValues: formValues,
-              });
-            }}
-            formInitialValues={extraFilters.queryFormValues}
-          />
-          <Button icon type={'submit'}>
-            <Icon name={'search'} />
-          </Button>
-        </Input>
-      </Form>
+            <FilterBuilder
+              modalTrigger={
+                <Button icon>
+                  <Icon name={'filter'} />
+                </Button>
+              }
+              formOnApplyFilter={(formValues, queryValue) => {
+                setExtraFilters({
+                  queryDefinition: queryValue,
+                  queryFormValues: formValues,
+                });
+              }}
+              formInitialValues={extraFilters.queryFormValues}
+            />
+            <Button
+              icon
+              type={'submit'}
+              className={'search'}
+              onClick={() => onSubmitFnc(values)}
+            >
+              <Icon name={'search'} />
+            </Button>
+          </Input>
+        </Form>
+      )}
     </Formik>
   );
 };
