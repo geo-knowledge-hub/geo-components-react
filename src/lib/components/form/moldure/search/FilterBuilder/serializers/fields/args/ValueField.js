@@ -8,7 +8,7 @@
 
 import _get from 'lodash/get';
 
-import { isEmpty } from '../utils';
+import { isEmpty } from '../toolbox';
 import { ArgField } from './ArgField';
 
 /**
@@ -24,12 +24,11 @@ export class ValueField extends ArgField {
 
     // extracting the values
     if (Array.isArray(fieldValue)) {
-      fieldValue = fieldValue.join(` ${this.operator} `);
+      fieldValue = fieldValue
+        .map((obj) => obj.value)
+        .join(` ${this.operator} `);
     }
 
-    return {
-      type: this.type,
-      value: `${this.metadataField}:(${fieldValue})`,
-    };
+    return this.generateValue(`${this.metadataField}:(${fieldValue})`);
   }
 }

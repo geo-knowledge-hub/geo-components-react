@@ -8,7 +8,7 @@
 
 import _get from 'lodash/get';
 
-import { isEmpty } from '../utils';
+import { isEmpty } from '../toolbox';
 import { ArgField } from './ArgField';
 
 /**
@@ -61,9 +61,6 @@ export class VocabularyField extends ArgField {
       this.metadataField
     );
 
-    return {
-      type: this.type,
-      value: serializedValue,
-    };
+    return this.generateValue(serializedValue);
   }
 }

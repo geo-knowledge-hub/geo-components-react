@@ -11,14 +11,18 @@ import _get from 'lodash/get';
 import bbox from '@turf/bbox';
 import bboxPolygon from '@turf/bbox-polygon';
 
-import { isEmpty } from '../utils';
+import { isEmpty } from '../toolbox';
 import { ParamField } from './ParamField';
 
 /**
- * Bounding box field. This field is used to serialize a `geometry` (GeoJSON compatible)
- * into a Bounding Box parameter in the URL.
+ * Bounding box field filter. This field is used to serialize a `geometry` (GeoJSON compatible)
+ * into a Bounding Box filter in the URL.
  */
 export class BoundingBoxField extends ParamField {
+  constructor(storageField, parameterName) {
+    super(storageField, 'filter', parameterName);
+  }
+
   serialize(values) {
     let fieldValue = _get(values, this.storageField, null);
 
@@ -44,11 +48,7 @@ export class BoundingBoxField extends ParamField {
 
     const bboxValue = [...topLeftCoords, ...bottomRightCoords];
 
-    const parameterValue = `${this.parameterName}=${bboxValue}`;
-
-    return {
-      type: this.type,
-      value: parameterValue,
-    };
+    // Producing the result.
+    return this.generateValue(`${this.parameterName}:${bboxValue}`);
   }
 }

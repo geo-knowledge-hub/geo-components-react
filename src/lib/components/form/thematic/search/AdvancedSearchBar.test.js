@@ -8,15 +8,15 @@
 
 import React from 'react';
 
-import { ModalTabs } from './ModalTabs';
-import { renderWithFormikProvider } from '@tests/renders';
+import { AdvancedSearchBar } from './AdvancedSearchBar';
+import { render } from '@tests/renders';
 
-describe('ModalTabs tests', () => {
+describe('AdvancedSearchBar tests', () => {
   describe('Render tests', () => {
     it('should render without crashing', () => {
-      renderWithFormikProvider(
+      render(
         <>
-          <ModalTabs />
+          <AdvancedSearchBar onSearch={(values) => {}} />
         </>
       );
     });

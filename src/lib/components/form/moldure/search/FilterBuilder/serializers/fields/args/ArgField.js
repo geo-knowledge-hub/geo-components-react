@@ -13,7 +13,7 @@ import { Field } from '../internal';
  */
 export class ArgField extends Field {
   constructor(storageField, metadataField, operator) {
-    super('arg', storageField);
+    super('args', storageField, 'q');
 
     this.metadataField = metadataField;
     this.operator = operator;

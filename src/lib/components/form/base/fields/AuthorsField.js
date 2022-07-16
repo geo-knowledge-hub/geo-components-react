@@ -71,8 +71,8 @@ export const AuthorsField = ({ fieldPath, ...fieldProps }) => {
       return {
         text: author.name,
         value: authorObject.key,
-        extra: author,
         key: author.id,
+        ...author,
         content: (
           <Header as={'h5'}>
             <Header.Content>{authorObject}</Header.Content>
@@ -98,15 +98,6 @@ export const AuthorsField = ({ fieldPath, ...fieldProps }) => {
               Accept: 'application/json',
             }}
             serializeSuggestions={serializeSuggestions}
-            value={getIn(values, fieldPath, []).map((val) => val.value)}
-            onValueChange={({ formikProps }, selectedSuggestions) => {
-              formikProps.form.setFieldValue(
-                fieldPath,
-                // save the suggestion objects so we can extract information
-                // about which value added by the user
-                selectedSuggestions
-              );
-            }}
             {...fieldProps}
           />
         );

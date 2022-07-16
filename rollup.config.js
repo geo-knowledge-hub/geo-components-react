@@ -15,7 +15,6 @@ import path from 'path';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import postcss from 'rollup-plugin-postcss';
 import json from '@rollup/plugin-json';
-import node from '@rollup/plugin-node-resolve';
 
 import pkg from './package.json';
 
@@ -49,17 +48,18 @@ export default {
       sourceMap: 'inline',
     }),
     localResolve(),
-    resolve(),
+    // configuring resolver for `geojsonhint`:
+    //  - https://github.com/rollup/rollup-plugin-node-resolve/issues/107
+    resolve({
+      preferBuiltins: true,
+      mainFields: ['browser']
+    }),
     babel({
       presets: ['react-app'],
       babelHelpers: 'runtime',
       exclude: 'node_modules/**',
     }),
     commonjs(),
-    node({
-      browser: true,
-      preferBuiltins: false
-    }),
     json(),
   ],
 };

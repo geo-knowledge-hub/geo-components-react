@@ -10,7 +10,6 @@
  * Query String serializer.
  */
 export class QueryStringSerializer {
-
   /**
    * @constructor
    */
@@ -23,6 +22,7 @@ export class QueryStringSerializer {
   /**
    * Serialize fields values.
    * @param {String} values Fields values to be serialized.
+   * @returns {{searchExtraParams: *, searchQueryArgs: {name: string, value: *[]}}} serialized values in the query string format.
    */
   serialize(values) {
     throw new Error('Not implemented.');

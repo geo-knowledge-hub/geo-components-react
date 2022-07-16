@@ -24,10 +24,21 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
+    # Temporary solution: We will remove this after we publish the
+    #                     GEO Knowledge Hub dependencies in the NPM Registry.
+    - name: Start required services
+      run: |
+        ./docker/builder/start.sh
+
     - name: Install & Build
       run: |
+        echo @geo-knowledge-hub:registry=http://127.0.0.1:4873 > ~/.npmrc
         npm install
         npm run build
   
     - name: Test
       run: npm test
+
+    - name: Stop required services
+      run: |
+        ./docker/builder/finish.sh

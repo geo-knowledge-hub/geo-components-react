@@ -8,7 +8,7 @@
 
 import _compact from 'lodash/compact';
 
-import { isEmpty } from '../utils';
+import { isEmpty } from '../toolbox';
 import { VocabularyField } from './VocabularyField';
 
 /**
@@ -29,9 +29,10 @@ export class MultiVocabularyField extends VocabularyField {
     serializedValue = _compact(serializedValue) || [];
     serializedValue = serializedValue.join(' OR ');
 
-    return {
-      type: this.type,
-      value: `(${serializedValue})`,
-    };
+    if (isEmpty(serializedValue)) {
+      return null;
+    }
+
+    return this.generateValue(`(${serializedValue})`);
   }
 }

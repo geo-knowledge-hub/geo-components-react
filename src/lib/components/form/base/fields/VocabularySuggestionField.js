@@ -9,6 +9,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { getIn, Field } from 'formik';
 import { FieldLabel, RemoteSelectField } from 'react-invenio-forms';
 
 /**
@@ -32,21 +33,43 @@ export const VocabularySuggestionField = ({
   ...fieldProps
 }) => {
   return (
-    <RemoteSelectField
-      fieldPath={fieldPath}
-      suggestionAPIHeaders={{
-        Accept: 'application/vnd.inveniordm.v1+json',
+    <Field name={fieldPath}>
+      {({ form: { values } }) => {
+        return (
+          <RemoteSelectField
+            fieldPath={fieldPath}
+            suggestionAPIHeaders={{
+              Accept: 'application/vnd.inveniordm.v1+json',
+            }}
+            label={
+              <FieldLabel htmlFor={fieldPath} icon={labelIcon} label={label} />
+            }
+            serializeSuggestions={(data) => {
+              return data.map((obj) => ({
+                key: obj.id,
+                value: obj.id || obj.value,
+                text: obj.title_l10n || obj.text, // returned by default in the vocabularies when `vnd.inveniordm` is used.
+              }));
+            }}
+            onValueChange={({ formikProps }, selectedSuggestions) => {
+              fieldProps.multiple
+                ? formikProps.form.setFieldValue(fieldPath, selectedSuggestions)
+                : formikProps.form.setFieldValue(
+                    fieldPath,
+                    selectedSuggestions[0]
+                  );
+            }}
+            value={
+              fieldProps.multiple
+                ? getIn(values, fieldPath, []).map((val) => val.value)
+                : getIn(values, fieldPath, {}).value
+            }
+            initialSuggestions={getIn(values, fieldPath, null)}
+            {...fieldProps}
+          />
+        );
       }}
-      label={<FieldLabel htmlFor={fieldPath} icon={labelIcon} label={label} />}
-      serializeSuggestions={(data) => {
-        return data.map((obj) => ({
-          key: obj.id,
-          value: obj.id,
-          text: obj.title_l10n, // returned by default in the vocabularies when `vnd.inveniordm` is used.
-        }));
-      }}
-      {...fieldProps}
-    />
+    </Field>
   );
 };
 
