@@ -89,7 +89,10 @@ do
       npm run build
       npm publish --registry $VERDACCIO_LOCAL_REGISTRY
 
-      cd ..
+      cd ../..
+
+      npm install @geo-knowledge-hub/$PACKAGE_NAME
+      cd build-tmp-dir
   fi
 done
 
