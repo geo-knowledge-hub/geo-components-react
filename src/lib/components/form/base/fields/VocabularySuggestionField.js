@@ -46,6 +46,7 @@ export const VocabularySuggestionField = ({
             }
             serializeSuggestions={(data) => {
               return data.map((obj) => ({
+                id: obj.id,
                 key: obj.id,
                 value: obj.id || obj.value,
                 text: obj.title_l10n || obj.text, // returned by default in the vocabularies when `vnd.inveniordm` is used.
@@ -61,8 +62,8 @@ export const VocabularySuggestionField = ({
             }}
             value={
               fieldProps.multiple
-                ? getIn(values, fieldPath, []).map((val) => val.value)
-                : getIn(values, fieldPath, {}).value
+                ? getIn(values, fieldPath, []).map((val) => val.value || val)
+                : getIn(values, fieldPath, {}).value || getIn(values, fieldPath, {})
             }
             initialSuggestions={getIn(values, fieldPath, null)}
             {...fieldProps}
