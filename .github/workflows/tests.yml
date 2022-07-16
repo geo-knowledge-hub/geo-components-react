@@ -32,6 +32,7 @@ jobs:
 
     - name: Install & Build
       run: |
+        echo @geo-knowledge-hub:registry=http://127.0.0.1:4873 > ~/.npmrc
         npm install
         npm run build
   

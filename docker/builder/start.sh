@@ -49,7 +49,7 @@ npm-cli-login \
     -e $VERDACCIO_EMAIL \
     -r $VERDACCIO_LOCAL_REGISTRY
 
-echo \'@geo-knowledge-hub:registry=${VERDACCIO_DOCKER_REGISTRY}\' > ~/.npmrc
+echo @geo-knowledge-hub:registry=${VERDACCIO_DOCKER_REGISTRY} > ~/.npmrc
 
 #
 # 3. Publishing JavaScript dependencies from `geo-components-react` to verdaccio
