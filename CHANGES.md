@@ -2,15 +2,16 @@
 
 ## Version 0.3.4 (2022-07-17)
 
-- Added Search components
+- Added Search components ([#27](https://github.com/geo-knowledge-hub/geo-components-react/issues/27))
 	- `FilterBuilder`: Generic component to be used as a search query generator for the InvenioRDM Records API. Using this component, the user can create a query by defining parameters in a high-level interface. The following parameters can be used in the component to create queries:
 
 	     - Target audience;
 	     - Engagement Priorities;
-	     - Resource types;
-	     - Users;
+	     - Resource types ([#33](https://github.com/geo-knowledge-hub/geo-components-react/issues/33));
+	     - Subjects ([#34](https://github.com/geo-knowledge-hub/geo-components-react/issues/34));
+	     - Authors ([#35](https://github.com/geo-knowledge-hub/geo-components-react/issues/35));
 	     - GEO Work Programme Activities;
-	     - Spatial search.
+	     - Spatial search .
 
 	- `AdvancedSearchBar`: Based on the `FilterBuilder`, the `AdvancedSearchBar` is a component in which the user can create simple or complex InvenioRDM queries. This component is intended to be used on the Front page of the GEO Knowledge Hub.
 
