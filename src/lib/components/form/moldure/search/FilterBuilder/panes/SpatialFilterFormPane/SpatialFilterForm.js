@@ -83,6 +83,7 @@ export const SpatialFilterForm = ({ fieldPathPrefix, ...fieldConfig }) => {
     <GeometryField
       fieldPath={fieldPath}
       menu={false}
+      uniqueLayer={true}
       interactiveMapConfig={{
         mapConfig: {
           mapContainer: {
@@ -106,6 +107,7 @@ export const SpatialFilterForm = ({ fieldPathPrefix, ...fieldConfig }) => {
               drawPolygon: false,
               drawMarker: false,
               cutPolygon: false,
+              editMode: false,
               controlOrder: [
                 'drawMarker',
                 'drawRectangle',
