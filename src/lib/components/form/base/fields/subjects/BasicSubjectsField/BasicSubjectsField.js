@@ -31,7 +31,7 @@ export const BasicSubjectsField = ({ fieldPath, ...fieldProps }) => {
             fieldPath={fieldPath}
             multiple={true} // We are using `value` array. So, this option must be `true`.
             allowAdditions={true}
-            suggestionAPIUrl="/api/vocabularies/subjects"
+            suggestionAPIUrl="/api/subjects"
             suggestionAPIHeaders={{
               Accept: 'application/json',
             }}
