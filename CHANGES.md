@@ -1,5 +1,9 @@
 # Changes
 
+## Version 0.4.1 (2022-07-19)
+
+- Fixed the URL of the `Subjects API` in the `BasicSubjectsField` component.
+
 ## Version 0.4.0 (2022-07-17)
 
 - Added Search components ([#27](https://github.com/geo-knowledge-hub/geo-components-react/issues/27))
