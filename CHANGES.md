@@ -1,5 +1,9 @@
 # Changes
 
+## Version 0.4.2 (2022-07-21)
+
+- Changed the order of the fields in the `FilterBuilder` component.
+
 ## Version 0.4.1 (2022-07-19)
 
 - Fixed the URL of the `Subjects API` in the `BasicSubjectsField` component.
