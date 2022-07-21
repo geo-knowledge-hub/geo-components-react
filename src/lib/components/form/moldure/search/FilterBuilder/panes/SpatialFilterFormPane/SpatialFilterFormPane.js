@@ -24,7 +24,7 @@ import { SpatialFilterForm as SpatialFilterFormField } from './SpatialFilterForm
  * @returns {{menuItem: *, render: (function())}}
  */
 export const SpatialFilterFormPane = ({
-  paneTitle = i18next.t('Spatial filter'),
+  paneTitle = i18next.t('Spatial extent'),
   paneConfig = {},
   fieldConfig = {},
 }) => {
