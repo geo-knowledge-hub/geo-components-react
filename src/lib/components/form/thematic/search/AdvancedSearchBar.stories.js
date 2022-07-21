@@ -32,7 +32,7 @@ export default {
  */
 const mockApiConfig = [
   {
-    url: '/api/vocabularies/subjects?size=&suggest=',
+    url: '/api/subjects?size=&suggest=',
     method: 'GET',
     status: 200,
     response: (request) => {
