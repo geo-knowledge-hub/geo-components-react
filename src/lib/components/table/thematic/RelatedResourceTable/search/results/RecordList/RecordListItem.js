@@ -53,8 +53,8 @@ export const RecordListItem = ({ recordData }) => {
   return (
     <Item key={recordData.id}>
       <Item.Content>
-        <Item.Header as={'a'} href={recordData.url}>
-          <ItemHeader>{recordData.title}</ItemHeader>
+        <Item.Header as={'a'} href={recordData.links.self_html}>
+          <ItemHeader>{recordData.metadata.title}</ItemHeader>
         </Item.Header>
         <Item.Meta>
           {creators ? (

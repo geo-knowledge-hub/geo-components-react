@@ -38,7 +38,7 @@ const SEARCH_OPTIONS = {
   fields: ['title', 'description'],
   extractField: (document, fieldName) =>
     fieldName.split('.').reduce((doc, key) => doc && doc[key], document),
-  storeFields: ['ui'],
+  storeFields: ['metadata'],
 };
 
 /**
