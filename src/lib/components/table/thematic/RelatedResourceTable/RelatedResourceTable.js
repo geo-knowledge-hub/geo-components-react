@@ -35,7 +35,7 @@ import {
  */
 const SEARCH_OPTIONS = {
   idField: 'id',
-  fields: ['title', 'description'],
+  fields: ['metadata.title', 'metadata.description'],
   extractField: (document, fieldName) =>
     fieldName.split('.').reduce((doc, key) => doc && doc[key], document),
   storeFields: ['metadata'],
