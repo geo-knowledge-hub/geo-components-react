@@ -45,9 +45,9 @@ describe('Table Record Operations utilities tests', () => {
         resourceTypeData
       );
 
-      // Dataset (0) | Publication (3) | Software (5) | Other (3)
+      // Dataset (11) | Publication (11) | Software (0) | Other (2)
       expect(recordGroups.map((x) => x.numberOfRecords)).toEqual(
-        expect.arrayContaining([0, 3, 5, 3])
+        expect.arrayContaining([11, 11, 0, 2])
       );
     });
   });
@@ -69,8 +69,8 @@ describe('Table Record Operations utilities tests', () => {
         ).length,
       ];
 
-      // Dataset (0) | Publication (3)
-      expect(filteredDataResults).toEqual(expect.arrayContaining([0, 3]));
+      // Dataset (11) | Publication (11)
+      expect(filteredDataResults).toEqual(expect.arrayContaining([11, 11]));
     });
   });
 });
