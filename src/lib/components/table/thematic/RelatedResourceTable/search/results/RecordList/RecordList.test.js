@@ -32,7 +32,7 @@ describe('RecordList tests', () => {
       });
 
       const recordsLink = screen.getAllByRole('link');
-      expect(recordsLink).toHaveLength(11); // record links available in the mock data.
+      expect(recordsLink).toHaveLength(24); // record links available in the mock data.
     });
   });
 });
