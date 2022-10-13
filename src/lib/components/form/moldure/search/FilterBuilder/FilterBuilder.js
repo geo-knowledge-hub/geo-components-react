@@ -89,14 +89,17 @@ export const FilterBuilder = ({
                 floated={'left'}
               />
             ) : (
-              <Button
-                name={'disableFilter'}
-                onClick={enableAdvancedFilter}
-                icon={'cogs'}
-                content={i18next.t('Advanced mode')}
-                floated={'left'}
-                disabled={true}
-              />
+              <>
+                {/* Disabled until the advanced filter becomes available (#61) */}
+                {/*<Button*/}
+                {/*    name={'disableFilter'}*/}
+                {/*    onClick={enableAdvancedFilter}*/}
+                {/*    icon={'cogs'}*/}
+                {/*    content={i18next.t('Advanced mode')}*/}
+                {/*    floated={'left'}*/}
+                {/*    disabled={true}*/}
+                {/*/>*/}
+              </>
             )}
             <Button color="gray" onClick={closeModal}>
               {i18next.t('Cancel')}
