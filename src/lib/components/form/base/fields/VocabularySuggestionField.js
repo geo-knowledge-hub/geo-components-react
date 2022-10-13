@@ -63,7 +63,8 @@ export const VocabularySuggestionField = ({
             value={
               fieldProps.multiple
                 ? getIn(values, fieldPath, []).map((val) => val.value || val)
-                : getIn(values, fieldPath, {}).value || getIn(values, fieldPath, {})
+                : getIn(values, fieldPath, {}).value ||
+                  getIn(values, fieldPath, {})
             }
             initialSuggestions={getIn(values, fieldPath, null)}
             {...fieldProps}

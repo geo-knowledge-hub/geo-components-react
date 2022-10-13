@@ -6,6 +6,4 @@
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
-export * from './stories';
-export * from './engagements';
-export * from './links';
+export * from './RelatedLinkCarousel';

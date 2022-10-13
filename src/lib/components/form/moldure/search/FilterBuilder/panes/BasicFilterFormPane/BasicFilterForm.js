@@ -40,86 +40,86 @@ export const BasicFilterForm = ({ fieldPathPrefix, ...fieldConfig }) => {
   const generateFieldPathWithPrefix = (value) => `${fieldPathPrefix}.${value}`;
 
   return (
-      <>
-        <Grid verticalAlign="middle" centered>
-          <Grid.Row>
-            <Grid.Column width={16}>
-              <ResourceTypeField
-                  fluid
-                  multiple={true}
-                  clearable={true}
-                  required={false}
-                  fieldPath={generateFieldPathWithPrefix('resourceTypes')}
-                  {...fieldConfig.resourceTypes}
-              />
-            </Grid.Column>
-          </Grid.Row>
+    <>
+      <Grid verticalAlign="middle" centered>
+        <Grid.Row>
+          <Grid.Column width={16}>
+            <ResourceTypeField
+              fluid
+              multiple={true}
+              clearable={true}
+              required={false}
+              fieldPath={generateFieldPathWithPrefix('resourceTypes')}
+              {...fieldConfig.resourceTypes}
+            />
+          </Grid.Column>
+        </Grid.Row>
 
-          <Grid.Row>
-            <Grid.Column width={16}>
-              <WorkProgrammeActivityField
-                  fluid
-                  multiple={true}
-                  clearable={true}
-                  required={false}
-                  fieldPath={generateFieldPathWithPrefix('programmeActivities')}
-                  {...fieldConfig.programmeActivities}
-              />
-            </Grid.Column>
-          </Grid.Row>
+        <Grid.Row>
+          <Grid.Column width={16}>
+            <WorkProgrammeActivityField
+              fluid
+              multiple={true}
+              clearable={true}
+              required={false}
+              fieldPath={generateFieldPathWithPrefix('programmeActivities')}
+              {...fieldConfig.programmeActivities}
+            />
+          </Grid.Column>
+        </Grid.Row>
 
-          <Grid.Row>
-            <Grid.Column width={16}>
-              <EngagementPriorityField
-                  fluid
-                  multiple={true}
-                  clearable={true}
-                  required={false}
-                  fieldPath={generateFieldPathWithPrefix('engagementPriorities')}
-                  {...fieldConfig.engagementPriorities}
-              />
-            </Grid.Column>
-          </Grid.Row>
+        <Grid.Row>
+          <Grid.Column width={16}>
+            <EngagementPriorityField
+              fluid
+              multiple={true}
+              clearable={true}
+              required={false}
+              fieldPath={generateFieldPathWithPrefix('engagementPriorities')}
+              {...fieldConfig.engagementPriorities}
+            />
+          </Grid.Column>
+        </Grid.Row>
 
-          <Grid.Row>
-            <Grid.Column width={16}>
-              <TargetAudienceField
-                  fluid
-                  multiple={true}
-                  clearable={true}
-                  required={false}
-                  fieldPath={generateFieldPathWithPrefix('targetAudiences')}
-                  {...fieldConfig.targetAudiences}
-              />
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
+        <Grid.Row>
+          <Grid.Column width={16}>
+            <TargetAudienceField
+              fluid
+              multiple={true}
+              clearable={true}
+              required={false}
+              fieldPath={generateFieldPathWithPrefix('targetAudiences')}
+              {...fieldConfig.targetAudiences}
+            />
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
 
-        <Grid columns={2} divided>
-          <Grid.Row>
-            <Grid.Column>
-              <BasicSubjectsField
-                  fluid
-                  multiple={true}
-                  clearable={true}
-                  required={false}
-                  fieldPath={generateFieldPathWithPrefix('subjects')}
-                  {...fieldConfig.subjects}
-              />
-            </Grid.Column>
+      <Grid columns={2} divided>
+        <Grid.Row>
+          <Grid.Column>
+            <BasicSubjectsField
+              fluid
+              multiple={true}
+              clearable={true}
+              required={false}
+              fieldPath={generateFieldPathWithPrefix('subjects')}
+              {...fieldConfig.subjects}
+            />
+          </Grid.Column>
 
-            <Grid.Column>
-              <AuthorsField
-                  fluid
-                  clearable={true}
-                  required={false}
-                  fieldPath={generateFieldPathWithPrefix('authors')}
-                  {...fieldConfig.authors}
-              />
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
-      </>
+          <Grid.Column>
+            <AuthorsField
+              fluid
+              clearable={true}
+              required={false}
+              fieldPath={generateFieldPathWithPrefix('authors')}
+              {...fieldConfig.authors}
+            />
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
+    </>
   );
 };
 
