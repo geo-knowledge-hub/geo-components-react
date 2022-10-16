@@ -20,6 +20,7 @@ import namesApiData from '@tests/mock/vocabularies/names-api.json';
 import programmeActivityApiData from '@tests/mock/vocabularies/programmeactivities-api.json';
 import targetAudiencesApiData from '@tests/mock/vocabularies/targetaudiencestypes-api.json';
 import engagementPrioritiesApiData from '@tests/mock/vocabularies/engagementprioritiestypes-api.json';
+import { Button } from 'semantic-ui-react';
 
 export default {
   title: 'Form/Search/Advanced search bar',
@@ -111,5 +112,29 @@ Basic.args = {
 };
 
 Basic.parameters = {
+  mockData: mockApiConfig,
+};
+
+export const BasicWithDefaultValues = Template.bind({});
+BasicWithDefaultValues.args = {
+  placeholder: 'Search for something',
+  onSearch: (queryObject) => {
+    console.log(queryObject);
+  },
+  formInitialValues: {
+    form: {
+      resourceTypes: [
+        {
+          id: 'knowledge',
+          key: 'knowledge',
+          text: 'Knowledge Package',
+          value: 'knowledge',
+        },
+      ],
+    },
+  },
+};
+
+BasicWithDefaultValues.parameters = {
   mockData: mockApiConfig,
 };

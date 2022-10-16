@@ -25,13 +25,20 @@ import { FilterBuilder } from '../../moldure';
  *
  * @param {String} searchPlaceholder Search placeholder.
  * @param {Function} onSearch Function to be called when user click to perform the search.
+ * @param {Object} formInitialValues initial values for the search component.
+ * @param {Object} filterBuilderProps Configurations for the ``FilterBuilder`` component.
  *
  * @todo
  *  - Review the structure to create a more simple implementation.
  *
  * @returns {JSX.Element}
  */
-export const AdvancedSearchBar = ({ searchPlaceholder, onSearch }) => {
+export const AdvancedSearchBar = ({
+  searchPlaceholder,
+  onSearch,
+  formInitialValues,
+  ...filterBuilderProps
+}) => {
   // States
   const [extraFilters, setExtraFilters] = useState({
     queryDefinition: {
@@ -40,7 +47,7 @@ export const AdvancedSearchBar = ({ searchPlaceholder, onSearch }) => {
       },
       searchExtraParams: {},
     },
-    queryFormValues: {},
+    queryFormValues: formInitialValues,
   });
 
   // Auxiliary functions
@@ -48,7 +55,7 @@ export const AdvancedSearchBar = ({ searchPlaceholder, onSearch }) => {
     const { searchQueryArgs, searchExtraParams } = extraFilters.queryDefinition;
 
     // Checking the query string arguments.
-    // ToDo: Refactor to simplify the structure.
+    // ToDo: Simplify the structure.
     if (!_isEmpty(searchQueryArgs.value) && !_isEmpty(formikValues.q)) {
       searchQueryArgs.value = `${formikValues.q} AND ${searchQueryArgs.value}`;
     } else if (_isEmpty(searchQueryArgs.value) && !_isEmpty(formikValues.q)) {
@@ -104,6 +111,7 @@ export const AdvancedSearchBar = ({ searchPlaceholder, onSearch }) => {
                 });
               }}
               formInitialValues={extraFilters.queryFormValues}
+              {...filterBuilderProps}
             />
             <Button
               icon
