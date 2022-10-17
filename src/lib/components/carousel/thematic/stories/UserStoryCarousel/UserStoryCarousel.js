@@ -60,13 +60,13 @@ export const UserStoryCarousel = ({ userStories, ...carouselProps }) => {
           </Card.Content>
           <Card.Content extra>
             <Grid fluid>
-                <Grid.Row align={"right"}>
-                    <Grid.Column width={16}>
-                        <a href={_get(content, 'url', '')}>
-                            <Button size={'tiny'}>Learn more</Button>
-                        </a>
-                    </Grid.Column>
-                </Grid.Row>
+              <Grid.Row align={'right'}>
+                <Grid.Column width={16}>
+                  <a href={_get(content, 'url', '')}>
+                    <Button size={'tiny'}>Learn more</Button>
+                  </a>
+                </Grid.Column>
+              </Grid.Row>
             </Grid>
           </Card.Content>
         </>

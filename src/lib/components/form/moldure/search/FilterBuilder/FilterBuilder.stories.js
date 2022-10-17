@@ -119,3 +119,28 @@ Basic.args = {
 Basic.parameters = {
   mockData: mockApiConfig,
 };
+
+export const BasicWithDefaultValues = Template.bind({});
+BasicWithDefaultValues.args = {
+  modalTrigger: <Button content={'Open modal'} />,
+  formOnApplyFilter: (values) => {
+    console.log('User defined values');
+    console.log(values);
+  },
+  formInitialValues: {
+    form: {
+      resourceTypes: [
+        {
+          id: 'knowledge',
+          key: 'knowledge',
+          text: 'Knowledge Package',
+          value: 'knowledge',
+        },
+      ],
+    },
+  },
+};
+
+BasicWithDefaultValues.parameters = {
+  mockData: mockApiConfig,
+};
