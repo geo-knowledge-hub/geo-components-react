@@ -49,7 +49,7 @@ export const UserStoryCarousel = ({ userStories, ...carouselProps }) => {
                 color: '#444447',
               }}
             >
-              {_truncate(_get(content, 'title', ''), { length: 180 })}
+              {_truncate(_get(content, 'metadata.title', ''), { length: 140 })}
             </Card.Header>
             <Divider />
             <Card.Description style={{ textAlign: 'justify' }}>
@@ -62,7 +62,7 @@ export const UserStoryCarousel = ({ userStories, ...carouselProps }) => {
             <Grid fluid>
               <Grid.Row align={'right'}>
                 <Grid.Column width={16}>
-                  <a href={_get(content, 'url', '')}>
+                  <a href={_get(content, 'links.self_html', '')}>
                     <Button size={'tiny'}>Learn more</Button>
                   </a>
                 </Grid.Column>
