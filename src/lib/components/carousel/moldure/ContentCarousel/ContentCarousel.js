@@ -10,6 +10,7 @@ import React from 'react';
 
 import { useTheme } from '@emotion/react';
 
+import { Card } from 'semantic-ui-react';
 import { CarouselProvider, Slider } from 'pure-react-carousel';
 import { ControlDotButtonGroup, SlideCard } from '../../base';
 

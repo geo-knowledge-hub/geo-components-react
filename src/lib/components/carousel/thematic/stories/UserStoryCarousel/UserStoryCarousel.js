@@ -12,7 +12,7 @@ import PropTypes from 'prop-types';
 import _get from 'lodash/get';
 import _truncate from 'lodash/truncate';
 
-import { Card, Divider, Button } from 'semantic-ui-react';
+import { Card, Divider, Button, Grid } from 'semantic-ui-react';
 
 import { ContentCarousel } from '../../../moldure';
 
@@ -49,7 +49,7 @@ export const UserStoryCarousel = ({ userStories, ...carouselProps }) => {
                 color: '#444447',
               }}
             >
-              {_truncate(_get(content, 'title', ''), { length: 180 })}
+              {_truncate(_get(content, 'metadata.title', ''), { length: 140 })}
             </Card.Header>
             <Divider />
             <Card.Description style={{ textAlign: 'justify' }}>
@@ -59,9 +59,15 @@ export const UserStoryCarousel = ({ userStories, ...carouselProps }) => {
             </Card.Description>
           </Card.Content>
           <Card.Content extra>
-            <a href={_get(content, 'url', '')}>
-              <Button size={'tiny'}>Learn more</Button>
-            </a>
+            <Grid fluid>
+              <Grid.Row align={'right'}>
+                <Grid.Column width={16}>
+                  <a href={_get(content, 'links.self_html', '')}>
+                    <Button size={'tiny'}>Learn more</Button>
+                  </a>
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
           </Card.Content>
         </>
       )}

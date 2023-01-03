@@ -1,0 +1,58 @@
+[
+  {
+    "description": "This is an interresting article!",
+    "identifier": "10.1234/foo.bar",
+    "relation_type": {
+      "id": "cites",
+      "title_l10n": "Cites"
+    },
+    "resource_type": {
+      "id": "dataset",
+      "title_l10n": "Dataset"
+    },
+    "scheme": "doi",
+    "title": "Interresting article"
+  },
+  {
+    "description": "This is an interresting article!",
+    "identifier": "10.1234/foo.bar2",
+    "relation_type": {
+      "id": "cites",
+      "title_l10n": "Cites"
+    },
+    "resource_type": {
+      "id": "dataset",
+      "title_l10n": "Dataset"
+    },
+    "scheme": "doi",
+    "title": "Interresting article"
+  },
+  {
+    "description": "This is an interresting article!",
+    "identifier": "10.1234/foo.bar3",
+    "relation_type": {
+      "id": "cites",
+      "title_l10n": "Cites"
+    },
+    "resource_type": {
+      "id": "dataset",
+      "title_l10n": "Dataset"
+    },
+    "scheme": "doi",
+    "title": "Interresting article"
+  },
+  {
+    "description": "This is an interresting article!",
+    "identifier": "10.1234/foo.bar4",
+    "relation_type": {
+      "id": "cites",
+      "title_l10n": "Cites"
+    },
+    "resource_type": {
+      "id": "dataset",
+      "title_l10n": "Dataset"
+    },
+    "scheme": "doi",
+    "title": "Interresting article"
+  }
+]

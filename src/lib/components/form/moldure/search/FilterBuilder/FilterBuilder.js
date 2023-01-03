@@ -27,7 +27,8 @@ import { QsParser, StaticQueryStringSerializer } from './serializers';
  * @param {Object} modalConfig Configuration object for the Modal FilterBuilder.
  * @param {Object} formInitialValues Initial values for the Formik Form.
  * @param {Function} formOnApplyFilter Function to be called when the filters are defined.
- * @param  {Object} serializerFieldTypeNames Object to configure the `QsParser` used during the serialization.
+ * @param {Object} serializerFieldTypeNames Object to configure the `QsParser` used during the serialization.
+ * @param {Object} tabConfigurations Object to configure the `FilterTab` component.
  * @returns {JSX.Element}
  */
 export const FilterBuilder = ({
@@ -37,6 +38,7 @@ export const FilterBuilder = ({
   formInitialValues,
   formOnApplyFilter,
   serializerFieldTypeNames,
+  tabConfigurations,
 }) => {
   // States
   const [modalOpen, setModalOpen] = useState(false);
@@ -76,7 +78,7 @@ export const FilterBuilder = ({
           <Modal.Header>{modalTitle}</Modal.Header>
           <Modal.Content>
             <Form onSubmit={handleSubmit}>
-              <FilterTabs />
+              <FilterTabs {...tabConfigurations} />
             </Form>
           </Modal.Content>
           <Modal.Actions>
@@ -89,14 +91,17 @@ export const FilterBuilder = ({
                 floated={'left'}
               />
             ) : (
-              <Button
-                name={'disableFilter'}
-                onClick={enableAdvancedFilter}
-                icon={'cogs'}
-                content={i18next.t('Advanced mode')}
-                floated={'left'}
-                disabled={true}
-              />
+              <>
+                {/* Disabled until the advanced filter becomes available (#61) */}
+                {/*<Button*/}
+                {/*    name={'disableFilter'}*/}
+                {/*    onClick={enableAdvancedFilter}*/}
+                {/*    icon={'cogs'}*/}
+                {/*    content={i18next.t('Advanced mode')}*/}
+                {/*    floated={'left'}*/}
+                {/*    disabled={true}*/}
+                {/*/>*/}
+              </>
             )}
             <Button color="gray" onClick={closeModal}>
               {i18next.t('Cancel')}
@@ -126,6 +131,7 @@ FilterBuilder.propTypes = {
   formInitialValues: PropTypes.object,
   formOnApplyFilter: PropTypes.func.isRequired,
   serializerFieldTypeNames: PropTypes.func.isRequired,
+  tabConfigurations: PropTypes.object,
 };
 
 FilterBuilder.defaultProps = {
@@ -137,4 +143,5 @@ FilterBuilder.defaultProps = {
     query: 'q',
     filter: 'f',
   },
+  tabConfigurations: {},
 };
