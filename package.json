@@ -1,6 +1,6 @@
 {
   "name": "@geo-knowledge-hub/geo-components-react",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "main": "dist/cjs/index.js",
   "browser": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -53,7 +53,7 @@
     "@emotion/styled": "^11.8.1",
     "react-lazy-load-image-component": "^1.5.4",
     "@turf/bbox": "^6.5.0",
-    "@geo-knowledge-hub/invenio-geographic-components-react": "0.2.1"
+    "@geo-knowledge-hub/invenio-geographic-components-react": "^0.2.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.0",
@@ -117,7 +117,7 @@
     "react-dnd-html5-backend": "^11.1.0",
     "react-dom": "^16.13.0",
     "react-i18next": "^11.11.0",
-    "react-invenio-forms": "^0.10.0",
+    "react-invenio-forms": "^1.0.0",
     "react-lazy-load-image-component": "^1.5.4",
     "react-leaflet": "3.1.0",
     "react-leaflet-fullscreen": "^2.0.2",
