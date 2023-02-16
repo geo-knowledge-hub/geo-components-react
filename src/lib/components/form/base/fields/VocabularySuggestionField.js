@@ -9,6 +9,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import _uniqBy from "lodash/unionBy";
+
 import { getIn, Field } from 'formik';
 import { FieldLabel, RemoteSelectField } from 'react-invenio-forms';
 
@@ -45,12 +47,12 @@ export const VocabularySuggestionField = ({
               <FieldLabel htmlFor={fieldPath} icon={labelIcon} label={label} />
             }
             serializeSuggestions={(data) => {
-              return data.map((obj) => ({
+              return _uniqBy(data.map((obj) => ({
                 id: obj.id,
                 key: obj.id,
                 value: obj.id || obj.value,
                 text: obj.title_l10n || obj.text, // returned by default in the vocabularies when `vnd.inveniordm` is used.
-              }));
+              })), "value");
             }}
             onValueChange={({ formikProps }, selectedSuggestions) => {
               fieldProps.multiple
