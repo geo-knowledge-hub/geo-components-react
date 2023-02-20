@@ -8,6 +8,8 @@
 
 export * from './subjects';
 
+export { RemoteSelectField } from './RemoteSelectField';
+
 export { TargetAudienceField } from './TargetAudienceField';
 export { EngagementPriorityField } from './EngagementPriorityField';
 export { WorkProgrammeActivityField } from './WorkProgrammeActivityField';
