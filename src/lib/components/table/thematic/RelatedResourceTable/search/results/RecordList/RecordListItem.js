@@ -42,6 +42,8 @@ export const RecordListItem = ({ recordData }) => {
   const resourceType = _get(recordData, 'ui.resource_type.title_l10n', null);
 
   // access status
+  const restrictedToUser = _get(recordData, 'status', null) === 'restricted';
+
   const accessStatusID = _get(recordData, 'ui.access_status.id', null);
   const accessStatusIcon = _get(recordData, 'ui.access_status.icon', null);
   const accessStatusTitle = _get(
@@ -53,7 +55,11 @@ export const RecordListItem = ({ recordData }) => {
   return (
     <Item key={recordData.id}>
       <Item.Content>
-        <Item.Header as={'a'} href={recordData.links.self_html}>
+        <Item.Header
+          as={'a'}
+          href={restrictedToUser ? null : recordData.links.self_html}
+          color={restrictedToUser ? 'gray' : 'black'}
+        >
           <ItemHeader>{recordData.metadata.title}</ItemHeader>
         </Item.Header>
         <Item.Meta>
