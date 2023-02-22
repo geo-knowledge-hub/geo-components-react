@@ -44,6 +44,20 @@ export const RecordListItem = ({ recordData }) => {
   // access status
   const restrictedToUser = _get(recordData, 'status', null) === 'restricted';
 
+  // record status
+  const isDraft = _get(recordData, 'is_draft', null);
+  const isPackage = _get(recordData, 'parent.type', null) === 'package';
+
+  // record url
+  const recordId = _get(recordData, 'id', null);
+  const recordUrlPrefix = isPackage ? 'packages' : 'records';
+
+  let recordUrl = `/${recordUrlPrefix}/${recordId}`;
+
+  if (isDraft) {
+    recordUrl = `${recordUrl}?preview=1`;
+  }
+
   const accessStatusID = _get(recordData, 'ui.access_status.id', null);
   const accessStatusIcon = _get(recordData, 'ui.access_status.icon', null);
   const accessStatusTitle = _get(
@@ -57,7 +71,7 @@ export const RecordListItem = ({ recordData }) => {
       <Item.Content>
         <Item.Header
           as={'a'}
-          href={restrictedToUser ? null : recordData.links.self_html}
+          href={restrictedToUser ? null : recordUrl}
           color={restrictedToUser ? 'gray' : 'black'}
         >
           <ItemHeader>{recordData.metadata.title}</ItemHeader>
