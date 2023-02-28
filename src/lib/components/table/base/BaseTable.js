@@ -9,7 +9,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Table } from 'semantic-ui-react';
+import { Tab, Table } from 'semantic-ui-react';
 
 /**
  * Atomic table to be used as basis to create specialized tables.
@@ -22,6 +22,8 @@ export const BaseTable = ({
   prepareRow,
   getTableProps,
   getTableBodyProps,
+  globalFilter,
+  visibleColumns,
   ...uiProps
 }) => {
   return (
@@ -46,6 +48,14 @@ export const BaseTable = ({
           ))}
         </Table.Row>
       </Table.Header>
+
+      {globalFilter && (
+        <Table.Row>
+          <Table.HeaderCell colSpan={visibleColumns.length}>
+            {globalFilter}
+          </Table.HeaderCell>
+        </Table.Row>
+      )}
 
       <Table.Body {...getTableBodyProps()}>
         {rows.map((row, i) => {

@@ -9,8 +9,44 @@
 import React, { useMemo } from 'react';
 import { PaginableTable } from '../../moldure';
 
-import { Grid, Button, Icon } from 'semantic-ui-react';
+import { useAsyncDebounce } from 'react-table';
 
+import { Grid, Button, Icon, Input } from 'semantic-ui-react';
+
+/**
+ * Global filter component for the external resources table.
+ */
+function GlobalFilter({
+  preGlobalFilteredRows,
+  globalFilter,
+  setGlobalFilter,
+}) {
+  const count = preGlobalFilteredRows.length;
+  const [value, setValue] = React.useState(globalFilter);
+  const onChange = useAsyncDebounce((value) => {
+    setGlobalFilter(value || undefined);
+  }, 200);
+
+  return (
+    <Input
+      fluid
+      icon
+      placeholder="Search..."
+      value={value || ''}
+      onChange={(e) => {
+        setValue(e.target.value);
+        onChange(e.target.value);
+      }}
+    >
+      <input />
+      <Icon name="search" />
+    </Input>
+  );
+}
+
+/**
+ * External resource table.
+ */
 export const ExternalResourceTable = ({ tableData }) => {
   const tableColumnsDefinition = useMemo(() => {
     return [
@@ -88,6 +124,17 @@ export const ExternalResourceTable = ({ tableData }) => {
         padded={true}
         data={tableDataMemoized}
         columnsConfiguration={tableColumnsDefinition}
+        globalFilter={(
+          globalFilter,
+          preGlobalFilteredRows,
+          setGlobalFilter
+        ) => (
+          <GlobalFilter
+            globalFilter={globalFilter}
+            setGlobalFilter={setGlobalFilter}
+            preGlobalFilteredRows={preGlobalFilteredRows}
+          />
+        )}
       />
     </>
   );
