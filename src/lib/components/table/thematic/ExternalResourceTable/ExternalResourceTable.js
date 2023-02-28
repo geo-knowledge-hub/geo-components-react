@@ -9,9 +9,11 @@
 import React, { useMemo } from 'react';
 import { PaginableTable } from '../../moldure';
 
+import regeneratorRuntime from 'regenerator-runtime';
 import { useAsyncDebounce } from 'react-table';
 
 import { Grid, Button, Icon, Input } from 'semantic-ui-react';
+
 
 /**
  * Global filter component for the external resources table.
