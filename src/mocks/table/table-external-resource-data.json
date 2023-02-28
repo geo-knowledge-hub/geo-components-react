@@ -1,652 +1,563 @@
 [
-    {
-        "title": "Resource 1",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 0"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Video/Audio"
-            }
-        }
+  {
+    "title": "Resource 1",
+    "description": "This is a good description for this very good link. I'm usually define descriptions for my links. But, have this feature enable is very very useful.",
+    "relation_type": {
+      "title_l10n": "Relation Type 0"
     },
-    {
-        "title": "Resource 2",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 1"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Publication"
-            }
-        }
+    "resource_type": {
+      "title_l10n": "Video/Audio"
     },
-    {
-        "title": "Resource 3",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 2"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Video/Audio"
-            }
-        }
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel",
+    "scheme": "url"
+  },
+  {
+    "title": "Resource 2",
+    "description": "This is a good description for this very good link. I'm usually define descriptions for my links. But, have this feature enable is very very useful.",
+    "relation_type": {
+      "title_l10n": "Relation Type 1"
     },
-    {
-        "title": "Resource 4",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 3"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Database"
-            }
-        }
+    "resource_type": {
+      "title_l10n": "Publication"
     },
-    {
-        "title": "Resource 5",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 4"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Publication"
-            }
-        }
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel",
+    "scheme": "url"
+  },
+  {
+    "title": "Resource 3",
+    "description": "This is a good description for this very good link. I'm usually define descriptions for my links. But, have this feature enable is very very useful.",
+    "relation_type": {
+      "title_l10n": "Relation Type 2"
     },
-    {
-        "title": "Resource 6",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 5"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Software"
-            }
-        }
+    "resource_type": {
+      "title_l10n": "Video/Audio"
     },
-    {
-        "title": "Resource 7",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 6"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Video/Audio"
-            }
-        }
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel",
+    "scheme": "url"
+  },
+  {
+    "title": "Resource 4",
+    "description": "This is a good description for this very good link. I'm usually define descriptions for my links. But, have this feature enable is very very useful.",
+    "relation_type": {
+      "title_l10n": "Relation Type 3"
     },
-    {
-        "title": "Resource 8",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 7"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Software"
-            }
-        }
+    "resource_type": {
+      "title_l10n": "Database"
     },
-    {
-        "title": "Resource 9",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 8"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Software"
-            }
-        }
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel",
+    "scheme": "doi"
+  },
+  {
+    "title": "Resource 5",
+    "description": "This is a good description for this very good link. I'm usually define descriptions for my links. But, have this feature enable is very very useful.",
+    "relation_type": {
+      "title_l10n": "Relation Type 4"
     },
-    {
-        "title": "Resource 10",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 9"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Database"
-            }
-        }
+    "resource_type": {
+      "title_l10n": "Publication"
     },
-    {
-        "title": "Resource 11",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 10"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Video/Audio"
-            }
-        }
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 6",
+    "description": "This is a good description for this very good link. I'm usually define descriptions for my links. But, have this feature enable is very very useful.",
+    "relation_type": {
+      "title_l10n": "Relation Type 5"
     },
-    {
-        "title": "Resource 12",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 11"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Database"
-            }
-        }
+    "resource_type": {
+      "title_l10n": "Software"
     },
-    {
-        "title": "Resource 13",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 12"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Publication"
-            }
-        }
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 7",
+    "description": "This is a good description for this very good link. I'm usually define descriptions for my links. But, have this feature enable is very very useful.",
+    "relation_type": {
+      "title_l10n": "Relation Type 6"
     },
-    {
-        "title": "Resource 14",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 13"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Video/Audio"
-            }
-        }
+    "resource_type": {
+      "title_l10n": "Video/Audio"
     },
-    {
-        "title": "Resource 15",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 14"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Software"
-            }
-        }
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 8",
+    "description": "This is a good description for this very good link. I'm usually define descriptions for my links. But, have this feature enable is very very useful.",
+    "relation_type": {
+      "title_l10n": "Relation Type 7"
     },
-    {
-        "title": "Resource 16",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 15"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Video/Audio"
-            }
-        }
+    "resource_type": {
+      "title_l10n": "Software"
     },
-    {
-        "title": "Resource 17",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 16"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Software"
-            }
-        }
+    "scheme": "url",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 9",
+    "description": "This is a good description for this very good link. I'm usually define descriptions for my links. But, have this feature enable is very very useful.",
+    "relation_type": {
+      "title_l10n": "Relation Type 8"
     },
-    {
-        "title": "Resource 18",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 17"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Publication"
-            }
-        }
+    "resource_type": {
+      "title_l10n": "Software"
     },
-    {
-        "title": "Resource 19",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 18"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Publication"
-            }
-        }
+    "scheme": "url",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 10",
+    "description": "This is a good description for this very good link. I'm usually define descriptions for my links. But, have this feature enable is very very useful.",
+    "relation_type": {
+      "title_l10n": "Relation Type 9"
     },
-    {
-        "title": "Resource 20",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 19"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Database"
-            }
-        }
+    "resource_type": {
+      "title_l10n": "Database"
     },
-    {
-        "title": "Resource 21",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 20"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Video/Audio"
-            }
-        }
+    "scheme": "url",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 11",
+    "description": "This is a good description for this very good link. I'm usually define descriptions for my links. But, have this feature enable is very very useful.",
+    "relation_type": {
+      "title_l10n": "Relation Type 10"
     },
-    {
-        "title": "Resource 22",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 21"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Publication"
-            }
-        }
+    "resource_type": {
+      "title_l10n": "Video/Audio"
     },
-    {
-        "title": "Resource 23",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 22"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Database"
-            }
-        }
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 12",
+    "relation_type": {
+      "title_l10n": "Relation Type 11"
     },
-    {
-        "title": "Resource 24",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 23"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Publication"
-            }
-        }
+    "resource_type": {
+      "title_l10n": "Database"
     },
-    {
-        "title": "Resource 25",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 24"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Publication"
-            }
-        }
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 13",
+    "relation_type": {
+      "title_l10n": "Relation Type 12"
     },
-    {
-        "title": "Resource 26",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 25"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Software"
-            }
-        }
+    "resource_type": {
+      "title_l10n": "Publication"
     },
-    {
-        "title": "Resource 27",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 26"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Software"
-            }
-        }
+    "scheme": "url",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 14",
+    "relation_type": {
+      "title_l10n": "Relation Type 13"
     },
-    {
-        "title": "Resource 28",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 27"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Software"
-            }
-        }
+    "resource_type": {
+      "title_l10n": "Video/Audio"
     },
-    {
-        "title": "Resource 29",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 28"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Publication"
-            }
-        }
+    "scheme": "url",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 15",
+    "relation_type": {
+      "title_l10n": "Relation Type 14"
     },
-    {
-        "title": "Resource 30",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 29"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Database"
-            }
-        }
+    "resource_type": {
+      "title_l10n": "Software"
     },
-    {
-        "title": "Resource 31",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 30"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Database"
-            }
-        }
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 16",
+    "relation_type": {
+      "title_l10n": "Relation Type 15"
     },
-    {
-        "title": "Resource 32",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 31"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Software"
-            }
-        }
+    "resource_type": {
+      "title_l10n": "Video/Audio"
     },
-    {
-        "title": "Resource 33",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 32"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Software"
-            }
-        }
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 17",
+    "relation_type": {
+      "title_l10n": "Relation Type 16"
     },
-    {
-        "title": "Resource 34",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 33"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Video/Audio"
-            }
-        }
+    "resource_type": {
+      "title_l10n": "Software"
     },
-    {
-        "title": "Resource 35",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 34"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Software"
-            }
-        }
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 18",
+    "relation_type": {
+      "title_l10n": "Relation Type 17"
     },
-    {
-        "title": "Resource 36",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 35"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Software"
-            }
-        }
+    "resource_type": {
+      "title_l10n": "Publication"
     },
-    {
-        "title": "Resource 37",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 36"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Software"
-            }
-        }
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 19",
+    "relation_type": {
+      "title_l10n": "Relation Type 18"
     },
-    {
-        "title": "Resource 38",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 37"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Video/Audio"
-            }
-        }
+    "resource_type": {
+      "title_l10n": "Publication"
     },
-    {
-        "title": "Resource 39",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 38"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Software"
-            }
-        }
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 20",
+    "relation_type": {
+      "title_l10n": "Relation Type 19"
     },
-    {
-        "title": "Resource 40",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 39"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Software"
-            }
-        }
+    "resource_type": {
+      "title_l10n": "Database"
     },
-    {
-        "title": "Resource 41",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 40"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Software"
-            }
-        }
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 21",
+    "relation_type": {
+      "title_l10n": "Relation Type 20"
     },
-    {
-        "title": "Resource 42",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 41"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Publication"
-            }
-        }
+    "resource_type": {
+      "title_l10n": "Video/Audio"
     },
-    {
-        "title": "Resource 43",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 42"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Database"
-            }
-        }
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 22",
+    "relation_type": {
+      "title_l10n": "Relation Type 21"
     },
-    {
-        "title": "Resource 44",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 43"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Publication"
-            }
-        }
+    "resource_type": {
+      "title_l10n": "Publication"
     },
-    {
-        "title": "Resource 45",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 44"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Video/Audio"
-            }
-        }
+    "scheme": "url",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 23",
+    "relation_type": {
+      "title_l10n": "Relation Type 22"
     },
-    {
-        "title": "Resource 46",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 45"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Video/Audio"
-            }
-        }
+    "resource_type": {
+      "title_l10n": "Database"
     },
-    {
-        "title": "Resource 47",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 46"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Database"
-            }
-        }
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 24",
+    "relation_type": {
+      "title_l10n": "Relation Type 23"
     },
-    {
-        "title": "Resource 48",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 47"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Publication"
-            }
-        }
+    "resource_type": {
+      "title_l10n": "Publication"
     },
-    {
-        "title": "Resource 49",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 48"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Video/Audio"
-            }
-        }
+    "scheme": "url",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 25",
+    "relation_type": {
+      "title_l10n": "Relation Type 24"
     },
-    {
-        "title": "Resource 50",
-        "relation_type": {
-            "title": {
-                "en": "Relation Type 49"
-            }
-        },
-        "resource_type": {
-            "title": {
-                "en": "Video/Audio"
-            }
-        }
-    }
+    "resource_type": {
+      "title_l10n": "Publication"
+    },
+    "scheme": "url",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 26",
+    "relation_type": {
+      "title_l10n": "Relation Type 25"
+    },
+    "resource_type": {
+      "title_l10n": "Software"
+    },
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 27",
+    "relation_type": {
+      "title_l10n": "Relation Type 26"
+    },
+    "resource_type": {
+      "title_l10n": "Software"
+    },
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 28",
+    "relation_type": {
+      "title_l10n": "Relation Type 27"
+    },
+    "resource_type": {
+      "title_l10n": "Software"
+    },
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 29",
+    "relation_type": {
+      "title_l10n": "Relation Type 28"
+    },
+    "resource_type": {
+      "title_l10n": "Publication"
+    },
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 30",
+    "relation_type": {
+      "title_l10n": "Relation Type 29"
+    },
+    "resource_type": {
+      "title_l10n": "Database"
+    },
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 31",
+    "relation_type": {
+      "title_l10n": "Relation Type 30"
+    },
+    "resource_type": {
+      "title_l10n": "Database"
+    },
+    "scheme": "url",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 32",
+    "relation_type": {
+      "title_l10n": "Relation Type 31"
+    },
+    "resource_type": {
+      "title_l10n": "Software"
+    },
+    "scheme": "url",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 33",
+    "relation_type": {
+      "title_l10n": "Relation Type 32"
+    },
+    "resource_type": {
+      "title_l10n": "Software"
+    },
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 34",
+    "relation_type": {
+      "title_l10n": "Relation Type 33"
+    },
+    "resource_type": {
+      "title_l10n": "Video/Audio"
+    },
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 35",
+    "relation_type": {
+      "title_l10n": "Relation Type 34"
+    },
+    "resource_type": {
+      "title_l10n": "Software"
+    },
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 36",
+    "relation_type": {
+      "title_l10n": "Relation Type 35"
+    },
+    "resource_type": {
+      "title_l10n": "Software"
+    },
+    "scheme": "url",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 37",
+    "relation_type": {
+      "title_l10n": "Relation Type 36"
+    },
+    "resource_type": {
+      "title_l10n": "Software"
+    },
+    "scheme": "url",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 38",
+    "relation_type": {
+      "title_l10n": "Relation Type 37"
+    },
+    "resource_type": {
+      "title_l10n": "Video/Audio"
+    },
+    "scheme": "url",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 39",
+    "relation_type": {
+      "title_l10n": "Relation Type 38"
+    },
+    "resource_type": {
+      "title_l10n": "Software"
+    },
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 40",
+    "relation_type": {
+      "title_l10n": "Relation Type 39"
+    },
+    "resource_type": {
+      "title_l10n": "Software"
+    },
+    "scheme": "url",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 41",
+    "relation_type": {
+      "title_l10n": "Relation Type 40"
+    },
+    "resource_type": {
+      "title_l10n": "Software"
+    },
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 42",
+    "relation_type": {
+      "title_l10n": "Relation Type 41"
+    },
+    "resource_type": {
+      "title_l10n": "Publication"
+    },
+    "scheme": "url",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 43",
+    "relation_type": {
+      "title_l10n": "Relation Type 42"
+    },
+    "resource_type": {
+      "title_l10n": "Database"
+    },
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 44",
+    "relation_type": {
+      "title_l10n": "Relation Type 43"
+    },
+    "resource_type": {
+      "title_l10n": "Publication"
+    },
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 45",
+    "relation_type": {
+      "title_l10n": "Relation Type 44"
+    },
+    "resource_type": {
+      "title_l10n": "Video/Audio"
+    },
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 46",
+    "relation_type": {
+      "title_l10n": "Relation Type 45"
+    },
+    "resource_type": {
+      "title_l10n": "Video/Audio"
+    },
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 47",
+    "relation_type": {
+      "title_l10n": "Relation Type 46"
+    },
+    "resource_type": {
+      "title_l10n": "Database"
+    },
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 48",
+    "relation_type": {
+      "title_l10n": "Relation Type 47"
+    },
+    "resource_type": {
+      "title_l10n": "Publication"
+    },
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 49",
+    "relation_type": {
+      "title_l10n": "Relation Type 48"
+    },
+    "resource_type": {
+      "title_l10n": "Video/Audio"
+    },
+    "scheme": "url",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  },
+  {
+    "title": "Resource 50",
+    "relation_type": {
+      "title_l10n": "Relation Type 49"
+    },
+    "resource_type": {
+      "title_l10n": "Video/Audio"
+    },
+    "scheme": "doi",
+    "identifier": "https://en.wikipedia.org/wiki/Linux_kernel"
+  }
 ]
