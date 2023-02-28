@@ -9,6 +9,8 @@
 import React, { useMemo } from 'react';
 import { PaginableTable } from '../../moldure';
 
+import { Grid, Button, Icon } from 'semantic-ui-react';
+
 export const ExternalResourceTable = ({ tableData }) => {
   const tableColumnsDefinition = useMemo(() => {
     return [
@@ -17,12 +19,61 @@ export const ExternalResourceTable = ({ tableData }) => {
         accessor: 'title',
       },
       {
+        Header: 'Description',
+        accessor: 'description',
+      },
+      {
         Header: 'Relation Type',
-        accessor: 'relation_type.title.en',
+        accessor: 'relation_type.title_l10n',
       },
       {
         Header: 'Resource Type',
-        accessor: 'resource_type.title.en',
+        accessor: 'resource_type.title_l10n',
+      },
+      {
+        Header: () => null,
+        id: 'access-button',
+        Cell: ({ row }) => {
+          // Getting data
+          const { original: rowData } = row;
+
+          return (
+            <Grid stackable columns={2}>
+              <Grid.Row fluid stretched>
+                <Grid.Column width={8}>
+                  <Button
+                    animated
+                    content="Access"
+                    as="a"
+                    size="mini"
+                    target="_blank"
+                    href={rowData.identifier}
+                  >
+                    <Button.Content visible>
+                      <Icon name="external alternate" />
+                    </Button.Content>
+                    <Button.Content hidden>Access</Button.Content>
+                  </Button>
+                </Grid.Column>
+                <Grid.Column width={8}>
+                  <Button
+                    animated
+                    as="a"
+                    size="mini"
+                    onClick={() => {
+                      navigator.clipboard.writeText(rowData.identifier);
+                    }}
+                  >
+                    <Button.Content visible>
+                      <Icon name="copy outline" />
+                    </Button.Content>
+                    <Button.Content hidden>Copy</Button.Content>
+                  </Button>
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
+          );
+        },
       },
     ];
   });
