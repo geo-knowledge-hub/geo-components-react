@@ -9,7 +9,8 @@
       "title_l10n": "Video/Audio"
     },
     "identifier": "https://en.wikipedia.org/wiki/Linux_kernel",
-    "scheme": "url"
+    "scheme": "url",
+    "url": "https://en.wikipedia.org/wiki/Linux_kernel"
   },
   {
     "title": "Resource 2",
@@ -21,7 +22,8 @@
       "title_l10n": "Publication"
     },
     "identifier": "https://en.wikipedia.org/wiki/Linux_kernel",
-    "scheme": "url"
+    "scheme": "url",
+    "url": "https://en.wikipedia.org/wiki/Linux_kernel"
   },
   {
     "title": "Resource 3",

@@ -9,11 +9,13 @@
 import React, { useMemo } from 'react';
 import { PaginableTable } from '../../moldure';
 
+import _get from 'lodash/get';
+import _isNil from 'lodash/isNil';
+
 import regeneratorRuntime from 'regenerator-runtime';
 import { useAsyncDebounce } from 'react-table';
 
 import { Grid, Button, Icon, Input } from 'semantic-ui-react';
-
 
 /**
  * Global filter component for the external resources table.
@@ -75,6 +77,10 @@ export const ExternalResourceTable = ({ tableData }) => {
           // Getting data
           const { original: rowData } = row;
 
+          // Preparing access address
+          const rowUrl = _get(rowData, 'url');
+          const rowIdentifier = _get(rowData, 'identifier');
+
           return (
             <Grid stackable columns={2}>
               <Grid.Row fluid stretched>
@@ -85,7 +91,8 @@ export const ExternalResourceTable = ({ tableData }) => {
                     as="a"
                     size="mini"
                     target="_blank"
-                    href={rowData.identifier}
+                    disabled={_isNil(rowUrl)}
+                    href={rowData.url}
                   >
                     <Button.Content visible>
                       <Icon name="external alternate" />
@@ -99,7 +106,7 @@ export const ExternalResourceTable = ({ tableData }) => {
                     as="a"
                     size="mini"
                     onClick={() => {
-                      navigator.clipboard.writeText(rowData.identifier);
+                      navigator.clipboard.writeText(rowUrl || rowIdentifier);
                     }}
                   >
                     <Button.Content visible>
