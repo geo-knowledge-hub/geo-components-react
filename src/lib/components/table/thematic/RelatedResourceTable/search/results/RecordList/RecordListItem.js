@@ -55,7 +55,7 @@ export const RecordListItem = ({ recordData }) => {
   let recordUrl = `/${recordUrlPrefix}/${recordId}`;
 
   if (isDraft) {
-    recordUrl = `${recordUrl}?preview=1`;
+    recordUrl = `${recordUrl}?preview=1&navigate=1`;
   }
 
   const accessStatusID = _get(recordData, 'ui.access_status.id', null);

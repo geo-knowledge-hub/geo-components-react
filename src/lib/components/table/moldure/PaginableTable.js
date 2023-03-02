@@ -9,7 +9,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { useTable, useSortBy, usePagination } from 'react-table';
+import {
+  useTable,
+  useSortBy,
+  usePagination,
+  useGlobalFilter,
+} from 'react-table';
+
 import { Pagination, Grid, Container, Dropdown } from 'semantic-ui-react';
 
 import { BaseTable } from '../base';
@@ -34,16 +40,32 @@ export const PaginableTable = ({ columnsConfiguration, data, ...uiProps }) => {
     pageOptions,
     gotoPage,
     setPageSize,
-    state: { pageSize },
+    state: { pageSize, globalFilter },
+    preGlobalFilteredRows,
+    setGlobalFilter,
+    visibleColumns,
   } = useTable(
     {
       columns: columnsConfiguration,
       data: data,
       initialState: { pageIndex: 0, pageSize: VALID_PAGE_SIZES[0] },
     },
+    useGlobalFilter,
     useSortBy,
     usePagination
   );
+
+  // Checking for global filters
+  let globalFilterComponent = null;
+  let { globalFilter: globalFilterFnc } = uiProps;
+
+  if (globalFilterFnc) {
+    globalFilterComponent = globalFilterFnc(
+      globalFilter,
+      preGlobalFilteredRows,
+      setGlobalFilter
+    );
+  }
 
   return (
     <Container>
@@ -55,7 +77,8 @@ export const PaginableTable = ({ columnsConfiguration, data, ...uiProps }) => {
         getTableBodyProps={getTableBodyProps}
         selectable={true}
         sortable={true}
-        {...uiProps}
+        visibleColumns={visibleColumns}
+        {...{ ...uiProps, globalFilter: globalFilterComponent }}
       />
       <Grid>
         <Grid.Column>
@@ -78,6 +101,7 @@ export const PaginableTable = ({ columnsConfiguration, data, ...uiProps }) => {
 
       <Grid centered columns={1}>
         <Pagination
+          size="mini"
           siblingRange={1}
           boundaryRange={1}
           firstItem={null}

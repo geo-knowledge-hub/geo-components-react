@@ -9,6 +9,48 @@
 import React, { useMemo } from 'react';
 import { PaginableTable } from '../../moldure';
 
+import _get from 'lodash/get';
+import _isNil from 'lodash/isNil';
+
+import regeneratorRuntime from 'regenerator-runtime';
+import { useAsyncDebounce } from 'react-table';
+
+import { Grid, Button, Icon, Input } from 'semantic-ui-react';
+
+/**
+ * Global filter component for the external resources table.
+ */
+function GlobalFilter({
+  preGlobalFilteredRows,
+  globalFilter,
+  setGlobalFilter,
+}) {
+  const count = preGlobalFilteredRows.length;
+  const [value, setValue] = React.useState(globalFilter);
+  const onChange = useAsyncDebounce((value) => {
+    setGlobalFilter(value || undefined);
+  }, 200);
+
+  return (
+    <Input
+      fluid
+      icon
+      placeholder="Search..."
+      value={value || ''}
+      onChange={(e) => {
+        setValue(e.target.value);
+        onChange(e.target.value);
+      }}
+    >
+      <input />
+      <Icon name="search" />
+    </Input>
+  );
+}
+
+/**
+ * External resource table.
+ */
 export const ExternalResourceTable = ({ tableData }) => {
   const tableColumnsDefinition = useMemo(() => {
     return [
@@ -17,12 +59,66 @@ export const ExternalResourceTable = ({ tableData }) => {
         accessor: 'title',
       },
       {
+        Header: 'Description',
+        accessor: 'description',
+      },
+      {
         Header: 'Relation Type',
-        accessor: 'relation_type.title.en',
+        accessor: 'relation_type.title_l10n',
       },
       {
         Header: 'Resource Type',
-        accessor: 'resource_type.title.en',
+        accessor: 'resource_type.title_l10n',
+      },
+      {
+        Header: () => null,
+        id: 'access-button',
+        Cell: ({ row }) => {
+          // Getting data
+          const { original: rowData } = row;
+
+          // Preparing access address
+          const rowUrl = _get(rowData, 'url');
+          const rowIdentifier = _get(rowData, 'identifier');
+
+          return (
+            <Grid stackable columns={2}>
+              <Grid.Row fluid stretched>
+                <Grid.Column width={8}>
+                  <Button
+                    animated
+                    content="Access"
+                    as="a"
+                    size="mini"
+                    target="_blank"
+                    disabled={_isNil(rowUrl)}
+                    href={rowData.url}
+                  >
+                    <Button.Content visible>
+                      <Icon name="external alternate" />
+                    </Button.Content>
+                    <Button.Content hidden>Access</Button.Content>
+                  </Button>
+                </Grid.Column>
+                <Grid.Column width={8}>
+                  <Button
+                    animated
+                    as="a"
+                    size="mini"
+                    onClick={() => {
+                      navigator.clipboard.writeText(rowUrl || rowIdentifier);
+                    }}
+                  >
+                    <Button.Content visible>
+                      <Icon name="copy outline" />
+                    </Button.Content>
+                    <Button.Content hidden>Copy</Button.Content>
+                  </Button>
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
+          );
+        },
       },
     ];
   });
@@ -37,6 +133,17 @@ export const ExternalResourceTable = ({ tableData }) => {
         padded={true}
         data={tableDataMemoized}
         columnsConfiguration={tableColumnsDefinition}
+        globalFilter={(
+          globalFilter,
+          preGlobalFilteredRows,
+          setGlobalFilter
+        ) => (
+          <GlobalFilter
+            globalFilter={globalFilter}
+            setGlobalFilter={setGlobalFilter}
+            preGlobalFilteredRows={preGlobalFilteredRows}
+          />
+        )}
       />
     </>
   );
