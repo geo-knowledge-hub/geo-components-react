@@ -10,7 +10,6 @@ jest.mock('../../../../../resources/api.js');
 
 import React from 'react';
 
-import { when } from 'jest-when';
 import { http } from '../../../../../resources';
 
 import {
@@ -24,26 +23,15 @@ import engagementPrioritiesTypesSubtypeFalse from '../../../../../../mocks/vocab
 import engagementPrioritiesTypesSubtypeTrue from '../../../../../../mocks/vocabularies/engagementprioritiestypes-issubtype-true-subtype-sdg.json';
 
 describe('EngagementPrioritiesNestedCarousel tests', () => {
-  when(http.get)
-    .calledWith('/api/vocabularies/engagementprioritiestypes', {
-      params: {
-        q: 'props.is_subtype:"false"',
-        size: 25,
-      },
-    })
-    .mockReturnValue({ data: engagementPrioritiesTypesSubtypeFalse });
-
-  when(http.get)
-    .calledWith('/api/vocabularies/engagementprioritiestypes', {
-      params: {
-        q: `props.is_subtype:"true" AND props.subtype:""sdg-goal"`,
-        size: 25,
-      },
-    })
-    .mockReturnValue({ data: engagementPrioritiesTypesSubtypeTrue });
-
   describe('Render tests', () => {
     it('should render with the required props without crashing', () => {
+      http.get.mockImplementation((url, config) => {
+        if (config.params.q === 'props.is_subtype:"false"') {
+          return { data: engagementPrioritiesTypesSubtypeFalse };
+        }
+        return { data: engagementPrioritiesTypesSubtypeTrue };
+      });
+
       renderWithThemeProvider(
         <EngagementPrioritiesNestedCarousel
           nestedCarouselContainerProps={{
