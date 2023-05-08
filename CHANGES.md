@@ -1,5 +1,49 @@
 # Changes
 
+## Version 0.4.10 (2023-05-08)
+
+- Updated package dependencies;
+- Removed `jest-when` dependency.
+
+## Version 0.4.9 (2023-03-13)
+
+- Added `RelatedPackagesTable` component;
+- Removed `RelatedLinksCarousel` component.
+
+## Version 0.4.8 (2023-03-02)
+
+- Added support for a global filter in the  `PaginableTable`;
+- Added support for preview data in the `RelatedResourceTable`;
+- Added support for navigation mode in the `RelatedResourceTable`.
+
+## Version 0.4.7 (2023-02-20)
+
+- Added `RemoteSelectField` to support customized selection from GEO Knowledge Hub APIs;
+- Reviewed `VocabularySuggestionField` unique values.
+
+## Version 0.4.6 (2023-02-16)
+
+- Fixed duplicated values in the `VocabularySuggestionField`
+- Added support to restricted resources in the related table components;
+- Updated Invenio Form version.
+
+## Version 0.4.5 (2022-12-27)
+
+- Updated GitHub Actions environment;
+- Updated dependencies.
+
+## Version 0.4.4 (2022-10-26)
+
+- Updated dependencies;
+- Updated `User stories` component;
+- Added support to initial filter params in the `FilterBuilder` component;
+- Added initial version of the `Related Link` component.
+
+## Version 0.4.3 (2022-10-09)
+
+- Fixed `Related Table` index;
+- Fixed `Related Table` title and link properties.
+
 ## Version 0.4.2 (2022-07-21)
 
 - Changed the order of the fields in the `FilterBuilder` component.
