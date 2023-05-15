@@ -31,11 +31,26 @@ export const RelatedPackagesTable = ({ tableData }) => {
           const { original: rowData } = row;
 
           // Preparing versions of the row
-          const rowVersions = rowData.map((data, index) => ({
-            title: data.metadata.title,
-            version: `Version ${data.versions.index} (${data.ui.created_date_l10n_long})`,
-            url: data.links.self_html,
-          }));
+          const rowVersions = rowData.map((data, index) => {
+            // Defining record url
+            const isDraft = _get(data, 'is_draft', null);
+            const isPackage = _get(data, 'parent.type', null) === 'package';
+
+            const recordId = _get(data, 'id', null);
+            const recordUrlPrefix = isPackage ? 'packages' : 'records';
+
+            let recordUrl =  `/${recordUrlPrefix}/${recordId}`;
+
+            if (isDraft) {
+              recordUrl = `${recordUrl}?preview=1&navigate=1`;
+            }
+
+            return {
+              title: data.metadata.title,
+              version: `Version ${data.versions.index} (${data.ui.created_date_l10n_long})`,
+              url: recordUrl,
+            }
+          });
 
           // Getting the title from the first version
           const rowFirstVersion = _head(_sortBy(rowVersions));
