@@ -1,5 +1,10 @@
 # Changes
 
+## Version 0.4.11 (2023-05-23)
+
+- Updated package dependencies;
+- Fixed preview mode in the `RelatedPackagesTable`.
+
 ## Version 0.4.10 (2023-05-08)
 
 - Updated package dependencies;
