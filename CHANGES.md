@@ -1,5 +1,9 @@
 # Changes
 
+## Version 0.4.12 (2023-06-08)
+
+- Added default values support in the `ExternalResourceTable`.
+
 ## Version 0.4.11 (2023-05-23)
 
 - Updated package dependencies;

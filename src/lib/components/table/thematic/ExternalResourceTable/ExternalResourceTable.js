@@ -11,6 +11,7 @@ import { PaginableTable } from '../../moldure';
 
 import _get from 'lodash/get';
 import _isNil from 'lodash/isNil';
+import _truncate from 'lodash/truncate';
 
 import regeneratorRuntime from 'regenerator-runtime';
 import { useAsyncDebounce } from 'react-table';
@@ -56,11 +57,50 @@ export const ExternalResourceTable = ({ tableData }) => {
     return [
       {
         Header: 'Title',
-        accessor: 'title',
+        id: 'cell-title',
+        Cell: ({ row }) => {
+          // Getting data
+          const { original: rowData } = row;
+
+          // Preparing data
+          const rowTitle = _get(rowData, 'title');
+
+          if (_isNil(rowTitle)) {
+            return <p>External resource</p>;
+          }
+
+          return rowTitle;
+        },
       },
       {
         Header: 'Description',
-        accessor: 'description',
+        id: 'cell-description',
+        Cell: ({ row }) => {
+          // Getting data
+          const { original: rowData } = row;
+
+          // Preparing data
+          const rowUrl = _truncate(_get(rowData, 'url'), {
+            length: 120,
+            omission: '...',
+          });
+          const rowIdentifier = _truncate(_get(rowData, 'identifier'), {
+            length: 120,
+            omission: '...',
+          });
+
+          const rowDescription = _get(rowData, 'description');
+
+          if (_isNil(rowDescription)) {
+            return (
+              <p style={{ overflowWrap: 'break-word' }}>
+                {rowUrl || rowIdentifier}
+              </p>
+            );
+          }
+
+          return rowDescription;
+        },
       },
       {
         Header: 'Relation Type',

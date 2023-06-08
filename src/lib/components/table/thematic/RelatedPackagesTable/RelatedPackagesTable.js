@@ -39,7 +39,7 @@ export const RelatedPackagesTable = ({ tableData }) => {
             const recordId = _get(data, 'id', null);
             const recordUrlPrefix = isPackage ? 'packages' : 'records';
 
-            let recordUrl =  `/${recordUrlPrefix}/${recordId}`;
+            let recordUrl = `/${recordUrlPrefix}/${recordId}`;
 
             if (isDraft) {
               recordUrl = `${recordUrl}?preview=1&navigate=1`;
@@ -49,7 +49,7 @@ export const RelatedPackagesTable = ({ tableData }) => {
               title: data.metadata.title,
               version: `Version ${data.versions.index} (${data.ui.created_date_l10n_long})`,
               url: recordUrl,
-            }
+            };
           });
 
           // Getting the title from the first version
