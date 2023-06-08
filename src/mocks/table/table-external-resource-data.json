@@ -14,7 +14,6 @@
   },
   {
     "title": "Resource 2",
-    "description": "This is a good description for this very good link. I'm usually define descriptions for my links. But, have this feature enable is very very useful.",
     "relation_type": {
       "title_l10n": "Relation Type 1"
     },
@@ -26,7 +25,6 @@
     "url": "https://en.wikipedia.org/wiki/Linux_kernel"
   },
   {
-    "title": "Resource 3",
     "description": "This is a good description for this very good link. I'm usually define descriptions for my links. But, have this feature enable is very very useful.",
     "relation_type": {
       "title_l10n": "Relation Type 2"
@@ -38,8 +36,6 @@
     "scheme": "url"
   },
   {
-    "title": "Resource 4",
-    "description": "This is a good description for this very good link. I'm usually define descriptions for my links. But, have this feature enable is very very useful.",
     "relation_type": {
       "title_l10n": "Relation Type 3"
     },
