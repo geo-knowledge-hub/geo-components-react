@@ -1,0 +1,107 @@
+[
+  {
+    "created": "2023-08-07T12:26:13.638665+00:00",
+    "id": "sdg-goal-10",
+    "links": {},
+    "props": {
+      "description_long": "Reduce inequality within and among countries",
+      "description_short": "Reduced inequalities",
+      "has_subtype": "false",
+      "icon": "/assets/engagement-priorities/sdg/goals/goal-10_icon.png",
+      "is_subtype": "true",
+      "subtype": "sdg-goal",
+      "type": "sdg",
+      "uri": "https://sdgs.un.org/goals/goal10"
+    },
+    "revision_id": 1,
+    "title": {
+      "en": "(SDG) Goal 10 - Reduced inequalities"
+    },
+    "type": "engagementprioritiestypes",
+    "updated": "2023-08-07T12:26:13.682532+00:00"
+  },
+  {
+    "created": "2023-08-07T12:26:13.543312+00:00",
+    "id": "sdg-goal-1",
+    "links": {},
+    "props": {
+      "description_long": "End poverty in all its forms everywhere",
+      "description_short": "No Poverty",
+      "has_subtype": "false",
+      "icon": "/assets/engagement-priorities/sdg/goals/goal-1_icon.png",
+      "is_subtype": "true",
+      "subtype": "sdg-goal",
+      "type": "sdg",
+      "uri": "https://sdgs.un.org/goals/goal1"
+    },
+    "revision_id": 1,
+    "title": {
+      "en": "(SDG) Goal 1 - No Poverty"
+    },
+    "type": "engagementprioritiestypes",
+    "updated": "2023-08-07T12:26:13.581890+00:00"
+  },
+  {
+    "created": "2023-08-07T12:26:13.635861+00:00",
+    "id": "sdg-goal-12",
+    "links": {},
+    "props": {
+      "description_long": "Ensure sustainable consumption and production patterns",
+      "description_short": "Responsible consumption and production",
+      "has_subtype": "false",
+      "icon": "/assets/engagement-priorities/sdg/goals/goal-12_icon.png",
+      "is_subtype": "true",
+      "subtype": "sdg-goal",
+      "type": "sdg",
+      "uri": "https://sdgs.un.org/goals/goal12"
+    },
+    "revision_id": 1,
+    "title": {
+      "en": "(SDG) Goal 12 - Responsible consumption and production"
+    },
+    "type": "engagementprioritiestypes",
+    "updated": "2023-08-07T12:26:13.679546+00:00"
+  },
+  {
+    "created": "2023-08-07T12:26:13.637782+00:00",
+    "id": "sdg-goal-11",
+    "links": {},
+    "props": {
+      "description_long": "Make cities and human settlements inclusive, safe, resilient and sustainable",
+      "description_short": "Sustainable cities and communities",
+      "has_subtype": "false",
+      "icon": "/assets/engagement-priorities/sdg/goals/goal-11_icon.png",
+      "is_subtype": "true",
+      "subtype": "sdg-goal",
+      "type": "sdg",
+      "uri": "https://sdgs.un.org/goals/goal11"
+    },
+    "revision_id": 1,
+    "title": {
+      "en": "(SDG) Goal 11 - Sustainable cities and communities"
+    },
+    "type": "engagementprioritiestypes",
+    "updated": "2023-08-07T12:26:13.678015+00:00"
+  },
+  {
+    "created": "2023-08-07T12:26:13.650725+00:00",
+    "id": "sdg-goal-13",
+    "links": {},
+    "props": {
+      "description_long": "Take urgent action to combat climate change and its impacts",
+      "description_short": "Climate action",
+      "has_subtype": "false",
+      "icon": "/assets/engagement-priorities/sdg/goals/goal-13_icon.png",
+      "is_subtype": "true",
+      "subtype": "sdg-goal",
+      "type": "sdg",
+      "uri": "https://sdgs.un.org/goals/goal13"
+    },
+    "revision_id": 1,
+    "title": {
+      "en": "(SDG) Goal 13 - Climate action"
+    },
+    "type": "engagementprioritiestypes",
+    "updated": "2023-08-07T12:26:13.693083+00:00"
+  }
+]

@@ -1,16 +1,16 @@
 /*
  * This file is part of GEO-Components-React.
- * Copyright (C) 2022-2023 GEO Secretariat.
+ * Copyright (C) 2022 GEO Secretariat.
  *
  * GEO-Components-React is free software; you can redistribute it and/or modify it
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
-.leaflet-container {
-  height: 40vh;
-  z-index: 0;
+.image-carousel .slick-prev:before,
+.image-carousel .slick-next:before {
+  color: gray;
 }
 
-.ui.container.image-container {
-  width: 320px;
+.image-carousel .slick-slider.slick-initialized {
+  margin: 20px;
 }
