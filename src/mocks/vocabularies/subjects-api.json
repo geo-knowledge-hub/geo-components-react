@@ -1,232 +1,232 @@
 {
-    "hits": {
+  "hits": {
     "hits": [
-        {
-            "id": "http://www.oecd.org/science/inno/38235147.pdf?4.4",
-            "created": "2022-07-04T02:21:03.884377+00:00",
-            "revision_id": 1,
-            "links": {
-                "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F4.4"
-            },
-            "updated": "2022-07-04T02:21:03.898910+00:00",
-            "subject": "Agricultural biotechnology",
-            "scheme": "FOS"
+      {
+        "id": "http://www.oecd.org/science/inno/38235147.pdf?4.4",
+        "created": "2022-07-04T02:21:03.884377+00:00",
+        "revision_id": 1,
+        "links": {
+          "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F4.4"
         },
-        {
-            "id": "http://www.oecd.org/science/inno/38235147.pdf?4",
-            "created": "2022-07-04T02:21:03.885752+00:00",
-            "revision_id": 1,
-            "links": {
-                "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F4"
-            },
-            "updated": "2022-07-04T02:21:03.902376+00:00",
-            "subject": "Agricultural sciences",
-            "scheme": "FOS"
+        "updated": "2022-07-04T02:21:03.898910+00:00",
+        "subject": "Agricultural biotechnology",
+        "scheme": "FOS"
+      },
+      {
+        "id": "http://www.oecd.org/science/inno/38235147.pdf?4",
+        "created": "2022-07-04T02:21:03.885752+00:00",
+        "revision_id": 1,
+        "links": {
+          "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F4"
         },
-        {
-            "id": "http://www.oecd.org/science/inno/38235147.pdf?4.1",
-            "created": "2022-07-04T02:21:03.883774+00:00",
-            "revision_id": 1,
-            "links": {
-                "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F4.1"
-            },
-            "updated": "2022-07-04T02:21:03.897494+00:00",
-            "subject": "Agriculture, forestry, and fisheries",
-            "scheme": "FOS"
+        "updated": "2022-07-04T02:21:03.902376+00:00",
+        "subject": "Agricultural sciences",
+        "scheme": "FOS"
+      },
+      {
+        "id": "http://www.oecd.org/science/inno/38235147.pdf?4.1",
+        "created": "2022-07-04T02:21:03.883774+00:00",
+        "revision_id": 1,
+        "links": {
+          "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F4.1"
         },
-        {
-            "id": "http://www.oecd.org/science/inno/38235147.pdf?4.2",
-            "created": "2022-07-04T02:21:03.890846+00:00",
-            "revision_id": 1,
-            "links": {
-                "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F4.2"
-            },
-            "updated": "2022-07-04T02:21:03.906182+00:00",
-            "subject": "Animal and dairy science",
-            "scheme": "FOS"
+        "updated": "2022-07-04T02:21:03.897494+00:00",
+        "subject": "Agriculture, forestry, and fisheries",
+        "scheme": "FOS"
+      },
+      {
+        "id": "http://www.oecd.org/science/inno/38235147.pdf?4.2",
+        "created": "2022-07-04T02:21:03.890846+00:00",
+        "revision_id": 1,
+        "links": {
+          "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F4.2"
         },
-        {
-            "id": "http://www.oecd.org/science/inno/38235147.pdf?6.4",
-            "created": "2022-07-04T02:21:04.974670+00:00",
-            "revision_id": 1,
-            "links": {
-                "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F6.4"
-            },
-            "updated": "2022-07-04T02:21:04.997870+00:00",
-            "subject": "Arts (arts, history of arts, performing arts, music)",
-            "scheme": "FOS"
+        "updated": "2022-07-04T02:21:03.906182+00:00",
+        "subject": "Animal and dairy science",
+        "scheme": "FOS"
+      },
+      {
+        "id": "http://www.oecd.org/science/inno/38235147.pdf?6.4",
+        "created": "2022-07-04T02:21:04.974670+00:00",
+        "revision_id": 1,
+        "links": {
+          "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F6.4"
         },
-        {
-            "id": "http://www.oecd.org/science/inno/38235147.pdf?3.1",
-            "created": "2022-07-04T02:21:03.340449+00:00",
-            "revision_id": 1,
-            "links": {
-                "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F3.1"
-            },
-            "updated": "2022-07-04T02:21:03.373251+00:00",
-            "subject": "Basic medicine",
-            "scheme": "FOS"
+        "updated": "2022-07-04T02:21:04.997870+00:00",
+        "subject": "Arts (arts, history of arts, performing arts, music)",
+        "scheme": "FOS"
+      },
+      {
+        "id": "http://www.oecd.org/science/inno/38235147.pdf?3.1",
+        "created": "2022-07-04T02:21:03.340449+00:00",
+        "revision_id": 1,
+        "links": {
+          "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F3.1"
         },
-        {
-            "id": "http://www.oecd.org/science/inno/38235147.pdf?1.6",
-            "created": "2022-07-04T02:21:02.612955+00:00",
-            "revision_id": 1,
-            "links": {
-                "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F1.6"
-            },
-            "updated": "2022-07-04T02:21:02.631021+00:00",
-            "subject": "Biological sciences",
-            "scheme": "FOS"
+        "updated": "2022-07-04T02:21:03.373251+00:00",
+        "subject": "Basic medicine",
+        "scheme": "FOS"
+      },
+      {
+        "id": "http://www.oecd.org/science/inno/38235147.pdf?1.6",
+        "created": "2022-07-04T02:21:02.612955+00:00",
+        "revision_id": 1,
+        "links": {
+          "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F1.6"
         },
-        {
-            "id": "http://www.oecd.org/science/inno/38235147.pdf?2.4",
-            "created": "2022-07-04T02:21:03.040036+00:00",
-            "revision_id": 1,
-            "links": {
-                "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F2.4"
-            },
-            "updated": "2022-07-04T02:21:03.057782+00:00",
-            "subject": "Chemical engineering",
-            "scheme": "FOS"
+        "updated": "2022-07-04T02:21:02.631021+00:00",
+        "subject": "Biological sciences",
+        "scheme": "FOS"
+      },
+      {
+        "id": "http://www.oecd.org/science/inno/38235147.pdf?2.4",
+        "created": "2022-07-04T02:21:03.040036+00:00",
+        "revision_id": 1,
+        "links": {
+          "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F2.4"
         },
-        {
-            "id": "http://www.oecd.org/science/inno/38235147.pdf?1.4",
-            "created": "2022-07-04T02:21:02.622302+00:00",
-            "revision_id": 1,
-            "links": {
-                "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F1.4"
-            },
-            "updated": "2022-07-04T02:21:02.642855+00:00",
-            "subject": "Chemical sciences",
-            "scheme": "FOS"
+        "updated": "2022-07-04T02:21:03.057782+00:00",
+        "subject": "Chemical engineering",
+        "scheme": "FOS"
+      },
+      {
+        "id": "http://www.oecd.org/science/inno/38235147.pdf?1.4",
+        "created": "2022-07-04T02:21:02.622302+00:00",
+        "revision_id": 1,
+        "links": {
+          "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F1.4"
         },
-        {
-            "id": "http://www.oecd.org/science/inno/38235147.pdf?2.1",
-            "created": "2022-07-04T02:21:03.026057+00:00",
-            "revision_id": 1,
-            "links": {
-                "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F2.1"
-            },
-            "updated": "2022-07-04T02:21:03.045692+00:00",
-            "subject": "Civil engineering",
-            "scheme": "FOS"
+        "updated": "2022-07-04T02:21:02.642855+00:00",
+        "subject": "Chemical sciences",
+        "scheme": "FOS"
+      },
+      {
+        "id": "http://www.oecd.org/science/inno/38235147.pdf?2.1",
+        "created": "2022-07-04T02:21:03.026057+00:00",
+        "revision_id": 1,
+        "links": {
+          "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F2.1"
         },
-        {
-            "id": "http://www.oecd.org/science/inno/38235147.pdf?3.2",
-            "created": "2022-07-04T02:21:03.355162+00:00",
-            "revision_id": 1,
-            "links": {
-                "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F3.2"
-            },
-            "updated": "2022-07-04T02:21:03.385563+00:00",
-            "subject": "Clinical medicine",
-            "scheme": "FOS"
+        "updated": "2022-07-04T02:21:03.045692+00:00",
+        "subject": "Civil engineering",
+        "scheme": "FOS"
+      },
+      {
+        "id": "http://www.oecd.org/science/inno/38235147.pdf?3.2",
+        "created": "2022-07-04T02:21:03.355162+00:00",
+        "revision_id": 1,
+        "links": {
+          "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F3.2"
         },
-        {
-            "id": "http://www.oecd.org/science/inno/38235147.pdf?1.2",
-            "created": "2022-07-04T02:21:02.601890+00:00",
-            "revision_id": 1,
-            "links": {
-                "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F1.2"
-            },
-            "updated": "2022-07-04T02:21:02.623592+00:00",
-            "subject": "Computer and information sciences",
-            "scheme": "FOS"
+        "updated": "2022-07-04T02:21:03.385563+00:00",
+        "subject": "Clinical medicine",
+        "scheme": "FOS"
+      },
+      {
+        "id": "http://www.oecd.org/science/inno/38235147.pdf?1.2",
+        "created": "2022-07-04T02:21:02.601890+00:00",
+        "revision_id": 1,
+        "links": {
+          "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F1.2"
         },
-        {
-            "id": "http://www.oecd.org/science/inno/38235147.pdf?1.5",
-            "created": "2022-07-04T02:21:02.611295+00:00",
-            "revision_id": 1,
-            "links": {
-                "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F1.5"
-            },
-            "updated": "2022-07-04T02:21:02.630943+00:00",
-            "subject": "Earth and related environmental sciences",
-            "scheme": "FOS"
+        "updated": "2022-07-04T02:21:02.623592+00:00",
+        "subject": "Computer and information sciences",
+        "scheme": "FOS"
+      },
+      {
+        "id": "http://www.oecd.org/science/inno/38235147.pdf?1.5",
+        "created": "2022-07-04T02:21:02.611295+00:00",
+        "revision_id": 1,
+        "links": {
+          "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F1.5"
         },
-        {
-            "id": "http://www.oecd.org/science/inno/38235147.pdf?5.2",
-            "created": "2022-07-04T02:21:04.196127+00:00",
-            "revision_id": 1,
-            "links": {
-                "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F5.2"
-            },
-            "updated": "2022-07-04T02:21:04.210844+00:00",
-            "subject": "Economics and business",
-            "scheme": "FOS"
+        "updated": "2022-07-04T02:21:02.630943+00:00",
+        "subject": "Earth and related environmental sciences",
+        "scheme": "FOS"
+      },
+      {
+        "id": "http://www.oecd.org/science/inno/38235147.pdf?5.2",
+        "created": "2022-07-04T02:21:04.196127+00:00",
+        "revision_id": 1,
+        "links": {
+          "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F5.2"
         },
-        {
-            "id": "http://www.oecd.org/science/inno/38235147.pdf?5.3",
-            "created": "2022-07-04T02:21:04.196216+00:00",
-            "revision_id": 1,
-            "links": {
-                "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F5.3"
-            },
-            "updated": "2022-07-04T02:21:04.215665+00:00",
-            "subject": "Educational sciences",
-            "scheme": "FOS"
+        "updated": "2022-07-04T02:21:04.210844+00:00",
+        "subject": "Economics and business",
+        "scheme": "FOS"
+      },
+      {
+        "id": "http://www.oecd.org/science/inno/38235147.pdf?5.3",
+        "created": "2022-07-04T02:21:04.196216+00:00",
+        "revision_id": 1,
+        "links": {
+          "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F5.3"
         },
-        {
-            "id": "http://www.oecd.org/science/inno/38235147.pdf?2.2",
-            "created": "2022-07-04T02:21:03.029264+00:00",
-            "revision_id": 1,
-            "links": {
-                "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F2.2"
-            },
-            "updated": "2022-07-04T02:21:03.049453+00:00",
-            "subject": "Electrical engineering, electronic engineering, information engineering",
-            "scheme": "FOS"
+        "updated": "2022-07-04T02:21:04.215665+00:00",
+        "subject": "Educational sciences",
+        "scheme": "FOS"
+      },
+      {
+        "id": "http://www.oecd.org/science/inno/38235147.pdf?2.2",
+        "created": "2022-07-04T02:21:03.029264+00:00",
+        "revision_id": 1,
+        "links": {
+          "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F2.2"
         },
-        {
-            "id": "http://www.oecd.org/science/inno/38235147.pdf?2",
-            "created": "2022-07-04T02:21:02.873432+00:00",
-            "revision_id": 1,
-            "links": {
-                "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F2"
-            },
-            "updated": "2022-07-04T02:21:02.888410+00:00",
-            "subject": "Engineering and technology",
-            "scheme": "FOS"
+        "updated": "2022-07-04T02:21:03.049453+00:00",
+        "subject": "Electrical engineering, electronic engineering, information engineering",
+        "scheme": "FOS"
+      },
+      {
+        "id": "http://www.oecd.org/science/inno/38235147.pdf?2",
+        "created": "2022-07-04T02:21:02.873432+00:00",
+        "revision_id": 1,
+        "links": {
+          "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F2"
         },
-        {
-            "id": "http://www.oecd.org/science/inno/38235147.pdf?2.8",
-            "created": "2022-07-04T02:21:03.181412+00:00",
-            "revision_id": 1,
-            "links": {
-                "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F2.8"
-            },
-            "updated": "2022-07-04T02:21:03.194589+00:00",
-            "subject": "Environmental biotechnology",
-            "scheme": "FOS"
+        "updated": "2022-07-04T02:21:02.888410+00:00",
+        "subject": "Engineering and technology",
+        "scheme": "FOS"
+      },
+      {
+        "id": "http://www.oecd.org/science/inno/38235147.pdf?2.8",
+        "created": "2022-07-04T02:21:03.181412+00:00",
+        "revision_id": 1,
+        "links": {
+          "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F2.8"
         },
-        {
-            "id": "http://www.oecd.org/science/inno/38235147.pdf?2.7",
-            "created": "2022-07-04T02:21:03.047058+00:00",
-            "revision_id": 1,
-            "links": {
-                "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F2.7"
-            },
-            "updated": "2022-07-04T02:21:03.065126+00:00",
-            "subject": "Environmental engineering",
-            "scheme": "FOS"
+        "updated": "2022-07-04T02:21:03.194589+00:00",
+        "subject": "Environmental biotechnology",
+        "scheme": "FOS"
+      },
+      {
+        "id": "http://www.oecd.org/science/inno/38235147.pdf?2.7",
+        "created": "2022-07-04T02:21:03.047058+00:00",
+        "revision_id": 1,
+        "links": {
+          "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F2.7"
         },
-        {
-            "id": "http://www.oecd.org/science/inno/38235147.pdf?3.4",
-            "created": "2022-07-04T02:21:03.493140+00:00",
-            "revision_id": 1,
-            "links": {
-                "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F3.4"
-            },
-            "updated": "2022-07-04T02:21:03.509618+00:00",
-            "subject": "Health biotechnology",
-            "scheme": "FOS"
-        }
+        "updated": "2022-07-04T02:21:03.065126+00:00",
+        "subject": "Environmental engineering",
+        "scheme": "FOS"
+      },
+      {
+        "id": "http://www.oecd.org/science/inno/38235147.pdf?3.4",
+        "created": "2022-07-04T02:21:03.493140+00:00",
+        "revision_id": 1,
+        "links": {
+          "self": "https://api-mock/api/subjects/http%3A%2F%2Fwww.oecd.org%2Fscience%2Finno%2F38235147.pdf%3F3.4"
+        },
+        "updated": "2022-07-04T02:21:03.509618+00:00",
+        "subject": "Health biotechnology",
+        "scheme": "FOS"
+      }
     ],
-        "total": 48
-},
-    "sortBy": "subject",
-    "links": {
+    "total": 48
+  },
+  "sortBy": "subject",
+  "links": {
     "self": "https://api-mock/api/subjects?page=1&size=20&sort=subject",
-        "next": "https://api-mock/api/subjects?page=2&size=20&sort=subject"
-}
+    "next": "https://api-mock/api/subjects?page=2&size=20&sort=subject"
+  }
 }

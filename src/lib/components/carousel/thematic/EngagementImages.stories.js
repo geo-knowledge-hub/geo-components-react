@@ -25,7 +25,7 @@ export default {
 // Templates
 //
 const Template = (args) => (
-  <Container className='image-container'>
+  <Container className="image-container">
     <EngagementImages {...args} />
   </Container>
 );

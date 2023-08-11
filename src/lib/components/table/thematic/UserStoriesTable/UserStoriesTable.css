@@ -7,7 +7,7 @@
  */
 
 .ui.table.users-stories-table thead {
-    display: none;
+  display: none;
 }
 
 .ui.grid .row .ui.grid.user-stories-metadata {

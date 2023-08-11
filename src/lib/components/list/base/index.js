@@ -6,4 +6,5 @@
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
+export { EventItem } from './EventItem';
 export { RecordItem } from './RecordItem';

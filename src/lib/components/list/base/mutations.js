@@ -44,3 +44,20 @@ export const mutateRecordData = (data) => ({
   ),
   url: _get(data, 'links.self_html'),
 });
+
+/**
+ * Mutate event to a simplified version.
+ * @param {object} data Event data
+ * @returns {{
+ *  title: string,
+ *  category: string,
+ *  date: string,
+ *  location: string
+ * }} Object with the new version of the event.
+ */
+export const mutateEventData = (data) => ({
+  title: _get(data, 'attributes.title'),
+  category: _get(data, 'attributes.category'),
+  date: new Date(_get(data, 'attributes.date')).toUTCString(),
+  location: _get(data, 'attributes.location'),
+});

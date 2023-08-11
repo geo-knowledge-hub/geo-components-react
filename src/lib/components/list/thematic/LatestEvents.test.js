@@ -8,15 +8,14 @@
 
 import React from 'react';
 
-import { render } from '.@tests/renders';
+import { renderWithQueryContext } from '.@tests/renders';
 
-import { ComputerContainer } from './ComputerContainer';
-import carouselData from '@tests/mock/vocabularies/topics-elements-subelements.json';
+import { LatestEvents } from './LatestEvents';
 
-describe('ComputerContainer tests', () => {
+describe('LatestEvents tests', () => {
   describe('Render tests', () => {
     it('should render without errors', () => {
-      render(<ComputerContainer elements={carouselData} />);
+      renderWithQueryContext(<LatestEvents fetchUrl="#" />);
     });
   });
 });

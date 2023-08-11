@@ -24,7 +24,7 @@ describe('Events API (CMS)', () => {
         return Promise.resolve({ data: eventsApiData });
       });
 
-      fetchEvents();
+      fetchEvents('/api/events');
     });
 
     it('should call http.get', () => {
@@ -36,13 +36,10 @@ describe('Events API (CMS)', () => {
     });
 
     it('should return a list of 3 vocabulary items', async () => {
-      const eventsFetched = await fetchEvents();
+      const eventsFetched = await fetchEvents('/api/events');
 
-      expect(eventsFetched).toHaveProperty('data');
-      expect(eventsFetched).toHaveProperty('meta');
-
-      expect(eventsFetched.data).toHaveLength(3);
-      expect(eventsFetched.data[0]).toHaveProperty('id');
+      expect(eventsFetched).toHaveLength(3);
+      expect(eventsFetched[0]).toHaveProperty('id');
     });
   });
 });

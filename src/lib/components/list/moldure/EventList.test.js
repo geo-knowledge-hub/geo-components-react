@@ -10,13 +10,14 @@ import React from 'react';
 
 import { render } from '.@tests/renders';
 
-import { ComputerContainer } from './ComputerContainer';
-import carouselData from '@tests/mock/vocabularies/topics-elements-subelements.json';
+import { EventList } from './EventList';
 
-describe('ComputerContainer tests', () => {
+import events from '@tests/mock/list/events.json';
+
+describe('EventList tests', () => {
   describe('Render tests', () => {
     it('should render without errors', () => {
-      render(<ComputerContainer elements={carouselData} />);
+      render(<EventList events={events} />);
     });
   });
 });

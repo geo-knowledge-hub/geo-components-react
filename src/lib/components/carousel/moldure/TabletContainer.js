@@ -30,7 +30,7 @@ export const TabletContainer = ({ elements }) => {
           {elements.map((element) => {
             return (
               <>
-                <Item key={element.id} className='item-tablet'>
+                <Item key={element.id} className="item-tablet">
                   <LazyImage src={element.image} size={'small'} />
                   <Item.Content verticalAlign={'middle'}>
                     <Item.Header content={element.title} />

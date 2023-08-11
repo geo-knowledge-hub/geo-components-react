@@ -26,12 +26,9 @@ export const fetchVocabulary = async (
     data: {
       hits: { hits: vocabularyData },
     },
-  } = await httpClient.get(
-    `/api/vocabularies/${vocabularyType}`,
-    {
-      params: searchArgs,
-    }
-  );
+  } = await httpClient.get(`/api/vocabularies/${vocabularyType}`, {
+    params: searchArgs,
+  });
 
   return vocabularyData;
 };

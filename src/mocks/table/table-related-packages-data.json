@@ -1,285 +1,284 @@
 [
-    {
-      "access": {
-        "embargo": { "active": false, "reason": null },
-        "files": "public",
-        "record": "public",
-        "status": "metadata-only"
-      },
-      "created": "2023-03-13T16:20:59.586788+00:00",
-      "custom_fields": {},
-      "files": { "enabled": false, "order": [] },
-      "id": "fx2vt-2cr14",
-      "is_draft": false,
-      "is_published": true,
-      "links": {
-        "access_links": "https://gkhub-address/api/packages/fx2vt-2cr14/access/links",
-        "context_associate": "https://gkhub-address/api/packages/fx2vt-2cr14/context/actions/associate",
-        "context_dissociate": "https://gkhub-address/api/packages/fx2vt-2cr14/context/actions/dissociate",
-        "context_html": "https://gkhub-address/packages/fx2vt-2cr14/dashboard",
-        "context_resources": "https://gkhub-address/api/packages/context/srx5d-mgg38/resources",
-        "draft": "https://gkhub-address/api/packages/fx2vt-2cr14/draft",
-        "files": "https://gkhub-address/api/packages/fx2vt-2cr14/files",
-        "latest": "https://gkhub-address/api/packages/fx2vt-2cr14/versions/latest",
-        "latest_html": "https://gkhub-address/packages/fx2vt-2cr14/latest",
-        "reserve_doi": "https://gkhub-address/api/packages/fx2vt-2cr14/draft/pids/doi",
-        "resources": "https://gkhub-address/api/packages/fx2vt-2cr14/resources",
-        "self": "https://gkhub-address/api/packages/fx2vt-2cr14",
-        "self_html": "https://gkhub-address/packages/fx2vt-2cr14",
-        "self_iiif_manifest": "https://gkhub-address/api/iiif/package:fx2vt-2cr14/manifest",
-        "self_iiif_sequence": "https://gkhub-address/api/iiif/package:fx2vt-2cr14/sequence/default",
-        "versions": "https://gkhub-address/api/packages/fx2vt-2cr14/versions"
-      },
-      "metadata": {
-        "publication_date": "2023-03-13",
-        "publisher": "GEO Knowledge Hub",
-        "resource_type": {
-          "id": "knowledge",
-          "title": { "en": "Knowledge Package" }
-        },
-        "title": "First example Knowledge Package"
-      },
-      "parent": {
-        "access": { "links": [], "owned_by": [{ "user": 3 }] },
-        "communities": {},
-        "id": "srx5d-mgg38",
-        "type": "package"
-      },
-      "relationship": { "resources": [{ "id": "3n2bq-t6v28" }] },
-      "revision_id": 3,
-      "status": "published",
-      "ui": {
-        "access_status": {
-          "description_l10n": "No files are available for this record.",
-          "embargo_date_l10n": null,
-          "icon": "tag",
-          "id": "metadata-only",
-          "message_class": "",
-          "title_l10n": "Metadata-only"
-        },
-        "created_date_l10n_long": "March 13, 2023",
-        "custom_fields": {},
-        "is_draft": false,
-        "publication_date_l10n_long": "March 13, 2023",
-        "publication_date_l10n_medium": "Mar 13, 2023",
-        "resource_type": { "id": "knowledge", "title_l10n": "Knowledge Package" },
-        "updated_date_l10n_long": "March 13, 2023",
-        "version": "v1"
-      },
-      "updated": "2023-03-13T16:20:59.775923+00:00",
-      "versions": { "index": 1, "is_latest": false, "is_latest_draft": false }
+  {
+    "access": {
+      "embargo": { "active": false, "reason": null },
+      "files": "public",
+      "record": "public",
+      "status": "metadata-only"
     },
-    {
-      "access": {
-        "embargo": { "active": false, "reason": null },
-        "files": "public",
-        "record": "public",
-        "status": "metadata-only"
-      },
-      "created": "2023-03-13T16:21:36.552206+00:00",
-      "custom_fields": {},
-      "files": { "enabled": false, "order": [] },
-      "id": "tx71b-jj364",
-      "is_draft": false,
-      "is_published": true,
-      "links": {
-        "access_links": "https://gkhub-address/api/packages/tx71b-jj364/access/links",
-        "context_associate": "https://gkhub-address/api/packages/tx71b-jj364/context/actions/associate",
-        "context_dissociate": "https://gkhub-address/api/packages/tx71b-jj364/context/actions/dissociate",
-        "context_html": "https://gkhub-address/packages/tx71b-jj364/dashboard",
-        "context_resources": "https://gkhub-address/api/packages/context/srx5d-mgg38/resources",
-        "draft": "https://gkhub-address/api/packages/tx71b-jj364/draft",
-        "files": "https://gkhub-address/api/packages/tx71b-jj364/files",
-        "latest": "https://gkhub-address/api/packages/tx71b-jj364/versions/latest",
-        "latest_html": "https://gkhub-address/packages/tx71b-jj364/latest",
-        "reserve_doi": "https://gkhub-address/api/packages/tx71b-jj364/draft/pids/doi",
-        "resources": "https://gkhub-address/api/packages/tx71b-jj364/resources",
-        "self": "https://gkhub-address/api/packages/tx71b-jj364",
-        "self_html": "https://gkhub-address/packages/tx71b-jj364",
-        "self_iiif_manifest": "https://gkhub-address/api/iiif/package:tx71b-jj364/manifest",
-        "self_iiif_sequence": "https://gkhub-address/api/iiif/package:tx71b-jj364/sequence/default",
-        "versions": "https://gkhub-address/api/packages/tx71b-jj364/versions"
-      },
-      "metadata": {
-        "publication_date": "2024",
-        "publisher": "GEO Knowledge Hub",
-        "resource_type": {
-          "id": "knowledge",
-          "title": { "en": "Knowledge Package" }
-        },
-        "title": "Knowledge Package (v2)"
-      },
-      "parent": {
-        "access": { "links": [], "owned_by": [{ "user": 3 }] },
-        "communities": {},
-        "id": "srx5d-mgg38",
-        "type": "package"
-      },
-      "relationship": { "resources": [{ "id": "3n2bq-t6v28" }] },
-      "revision_id": 3,
-      "status": "published",
-      "ui": {
-        "access_status": {
-          "description_l10n": "No files are available for this record.",
-          "embargo_date_l10n": null,
-          "icon": "tag",
-          "id": "metadata-only",
-          "message_class": "",
-          "title_l10n": "Metadata-only"
-        },
-        "created_date_l10n_long": "March 13, 2023",
-        "custom_fields": {},
-        "is_draft": false,
-        "publication_date_l10n_long": "2024",
-        "publication_date_l10n_medium": "2024",
-        "resource_type": { "id": "knowledge", "title_l10n": "Knowledge Package" },
-        "updated_date_l10n_long": "March 13, 2023",
-        "version": "v2"
-      },
-      "updated": "2023-03-13T16:21:36.649515+00:00",
-      "versions": { "index": 2, "is_latest": false, "is_latest_draft": false }
+    "created": "2023-03-13T16:20:59.586788+00:00",
+    "custom_fields": {},
+    "files": { "enabled": false, "order": [] },
+    "id": "fx2vt-2cr14",
+    "is_draft": false,
+    "is_published": true,
+    "links": {
+      "access_links": "https://gkhub-address/api/packages/fx2vt-2cr14/access/links",
+      "context_associate": "https://gkhub-address/api/packages/fx2vt-2cr14/context/actions/associate",
+      "context_dissociate": "https://gkhub-address/api/packages/fx2vt-2cr14/context/actions/dissociate",
+      "context_html": "https://gkhub-address/packages/fx2vt-2cr14/dashboard",
+      "context_resources": "https://gkhub-address/api/packages/context/srx5d-mgg38/resources",
+      "draft": "https://gkhub-address/api/packages/fx2vt-2cr14/draft",
+      "files": "https://gkhub-address/api/packages/fx2vt-2cr14/files",
+      "latest": "https://gkhub-address/api/packages/fx2vt-2cr14/versions/latest",
+      "latest_html": "https://gkhub-address/packages/fx2vt-2cr14/latest",
+      "reserve_doi": "https://gkhub-address/api/packages/fx2vt-2cr14/draft/pids/doi",
+      "resources": "https://gkhub-address/api/packages/fx2vt-2cr14/resources",
+      "self": "https://gkhub-address/api/packages/fx2vt-2cr14",
+      "self_html": "https://gkhub-address/packages/fx2vt-2cr14",
+      "self_iiif_manifest": "https://gkhub-address/api/iiif/package:fx2vt-2cr14/manifest",
+      "self_iiif_sequence": "https://gkhub-address/api/iiif/package:fx2vt-2cr14/sequence/default",
+      "versions": "https://gkhub-address/api/packages/fx2vt-2cr14/versions"
     },
-    {
-      "access": {
-        "embargo": { "active": false, "reason": null },
-        "files": "public",
-        "record": "public",
-        "status": "metadata-only"
+    "metadata": {
+      "publication_date": "2023-03-13",
+      "publisher": "GEO Knowledge Hub",
+      "resource_type": {
+        "id": "knowledge",
+        "title": { "en": "Knowledge Package" }
       },
-      "created": "2023-03-13T18:17:38.423746+00:00",
-      "custom_fields": {},
-      "files": { "enabled": false, "order": [] },
-      "id": "44kzr-j2z07",
-      "is_draft": false,
-      "is_published": true,
-      "links": {
-        "access_links": "https://gkhub-address/api/packages/44kzr-j2z07/access/links",
-        "context_associate": "https://gkhub-address/api/packages/44kzr-j2z07/context/actions/associate",
-        "context_dissociate": "https://gkhub-address/api/packages/44kzr-j2z07/context/actions/dissociate",
-        "context_html": "https://gkhub-address/packages/44kzr-j2z07/dashboard",
-        "context_resources": "https://gkhub-address/api/packages/context/srx5d-mgg38/resources",
-        "draft": "https://gkhub-address/api/packages/44kzr-j2z07/draft",
-        "files": "https://gkhub-address/api/packages/44kzr-j2z07/files",
-        "latest": "https://gkhub-address/api/packages/44kzr-j2z07/versions/latest",
-        "latest_html": "https://gkhub-address/packages/44kzr-j2z07/latest",
-        "reserve_doi": "https://gkhub-address/api/packages/44kzr-j2z07/draft/pids/doi",
-        "resources": "https://gkhub-address/api/packages/44kzr-j2z07/resources",
-        "self": "https://gkhub-address/api/packages/44kzr-j2z07",
-        "self_html": "https://gkhub-address/packages/44kzr-j2z07",
-        "self_iiif_manifest": "https://gkhub-address/api/iiif/package:44kzr-j2z07/manifest",
-        "self_iiif_sequence": "https://gkhub-address/api/iiif/package:44kzr-j2z07/sequence/default",
-        "versions": "https://gkhub-address/api/packages/44kzr-j2z07/versions"
-      },
-      "metadata": {
-        "publication_date": "2025",
-        "publisher": "GEO Knowledge Hub",
-        "resource_type": {
-          "id": "knowledge",
-          "title": { "en": "Knowledge Package" }
-        },
-        "title": "package (v2)"
-      },
-      "parent": {
-        "access": { "links": [], "owned_by": [{ "user": 3 }] },
-        "communities": {},
-        "id": "srx5d-mgg38",
-        "type": "package"
-      },
-      "relationship": {
-        "resources": [{ "id": "3n2bq-t6v28" }, { "id": "scrm4-yns59" }]
-      },
-      "revision_id": 3,
-      "status": "published",
-      "ui": {
-        "access_status": {
-          "description_l10n": "No files are available for this record.",
-          "embargo_date_l10n": null,
-          "icon": "tag",
-          "id": "metadata-only",
-          "message_class": "",
-          "title_l10n": "Metadata-only"
-        },
-        "created_date_l10n_long": "March 13, 2023",
-        "custom_fields": {},
-        "is_draft": false,
-        "publication_date_l10n_long": "2025",
-        "publication_date_l10n_medium": "2025",
-        "resource_type": { "id": "knowledge", "title_l10n": "Knowledge Package" },
-        "updated_date_l10n_long": "March 13, 2023",
-        "version": "v3"
-      },
-      "updated": "2023-03-13T18:17:38.527749+00:00",
-      "versions": { "index": 3, "is_latest": true, "is_latest_draft": true }
+      "title": "First example Knowledge Package"
     },
-    {
-      "access": {
-        "embargo": { "active": false, "reason": null },
-        "files": "public",
-        "record": "public",
-        "status": "metadata-only"
+    "parent": {
+      "access": { "links": [], "owned_by": [{ "user": 3 }] },
+      "communities": {},
+      "id": "srx5d-mgg38",
+      "type": "package"
+    },
+    "relationship": { "resources": [{ "id": "3n2bq-t6v28" }] },
+    "revision_id": 3,
+    "status": "published",
+    "ui": {
+      "access_status": {
+        "description_l10n": "No files are available for this record.",
+        "embargo_date_l10n": null,
+        "icon": "tag",
+        "id": "metadata-only",
+        "message_class": "",
+        "title_l10n": "Metadata-only"
       },
-      "created": "2023-03-13T18:18:25.061538+00:00",
+      "created_date_l10n_long": "March 13, 2023",
       "custom_fields": {},
-      "files": { "enabled": false, "order": [] },
-      "id": "8evgm-qtw26",
       "is_draft": false,
-      "is_published": true,
-      "links": {
-        "access_links": "https://gkhub-address/api/packages/8evgm-qtw26/access/links",
-        "context_associate": "https://gkhub-address/api/packages/8evgm-qtw26/context/actions/associate",
-        "context_dissociate": "https://gkhub-address/api/packages/8evgm-qtw26/context/actions/dissociate",
-        "context_html": "https://gkhub-address/packages/8evgm-qtw26/dashboard",
-        "context_resources": "https://gkhub-address/api/packages/context/hkscb-rfm29/resources",
-        "draft": "https://gkhub-address/api/packages/8evgm-qtw26/draft",
-        "files": "https://gkhub-address/api/packages/8evgm-qtw26/files",
-        "latest": "https://gkhub-address/api/packages/8evgm-qtw26/versions/latest",
-        "latest_html": "https://gkhub-address/packages/8evgm-qtw26/latest",
-        "reserve_doi": "https://gkhub-address/api/packages/8evgm-qtw26/draft/pids/doi",
-        "resources": "https://gkhub-address/api/packages/8evgm-qtw26/resources",
-        "self": "https://gkhub-address/api/packages/8evgm-qtw26",
-        "self_html": "https://gkhub-address/packages/8evgm-qtw26",
-        "self_iiif_manifest": "https://gkhub-address/api/iiif/package:8evgm-qtw26/manifest",
-        "self_iiif_sequence": "https://gkhub-address/api/iiif/package:8evgm-qtw26/sequence/default",
-        "versions": "https://gkhub-address/api/packages/8evgm-qtw26/versions"
+      "publication_date_l10n_long": "March 13, 2023",
+      "publication_date_l10n_medium": "Mar 13, 2023",
+      "resource_type": { "id": "knowledge", "title_l10n": "Knowledge Package" },
+      "updated_date_l10n_long": "March 13, 2023",
+      "version": "v1"
+    },
+    "updated": "2023-03-13T16:20:59.775923+00:00",
+    "versions": { "index": 1, "is_latest": false, "is_latest_draft": false }
+  },
+  {
+    "access": {
+      "embargo": { "active": false, "reason": null },
+      "files": "public",
+      "record": "public",
+      "status": "metadata-only"
+    },
+    "created": "2023-03-13T16:21:36.552206+00:00",
+    "custom_fields": {},
+    "files": { "enabled": false, "order": [] },
+    "id": "tx71b-jj364",
+    "is_draft": false,
+    "is_published": true,
+    "links": {
+      "access_links": "https://gkhub-address/api/packages/tx71b-jj364/access/links",
+      "context_associate": "https://gkhub-address/api/packages/tx71b-jj364/context/actions/associate",
+      "context_dissociate": "https://gkhub-address/api/packages/tx71b-jj364/context/actions/dissociate",
+      "context_html": "https://gkhub-address/packages/tx71b-jj364/dashboard",
+      "context_resources": "https://gkhub-address/api/packages/context/srx5d-mgg38/resources",
+      "draft": "https://gkhub-address/api/packages/tx71b-jj364/draft",
+      "files": "https://gkhub-address/api/packages/tx71b-jj364/files",
+      "latest": "https://gkhub-address/api/packages/tx71b-jj364/versions/latest",
+      "latest_html": "https://gkhub-address/packages/tx71b-jj364/latest",
+      "reserve_doi": "https://gkhub-address/api/packages/tx71b-jj364/draft/pids/doi",
+      "resources": "https://gkhub-address/api/packages/tx71b-jj364/resources",
+      "self": "https://gkhub-address/api/packages/tx71b-jj364",
+      "self_html": "https://gkhub-address/packages/tx71b-jj364",
+      "self_iiif_manifest": "https://gkhub-address/api/iiif/package:tx71b-jj364/manifest",
+      "self_iiif_sequence": "https://gkhub-address/api/iiif/package:tx71b-jj364/sequence/default",
+      "versions": "https://gkhub-address/api/packages/tx71b-jj364/versions"
+    },
+    "metadata": {
+      "publication_date": "2024",
+      "publisher": "GEO Knowledge Hub",
+      "resource_type": {
+        "id": "knowledge",
+        "title": { "en": "Knowledge Package" }
       },
-      "metadata": {
-        "publication_date": "2023-03-13",
-        "publisher": "GEO Knowledge Hub",
-        "resource_type": {
-          "id": "knowledge",
-          "title": { "en": "Knowledge Package" }
-        },
-        "title": "Second example Knowledge Package"
+      "title": "Knowledge Package (v2)"
+    },
+    "parent": {
+      "access": { "links": [], "owned_by": [{ "user": 3 }] },
+      "communities": {},
+      "id": "srx5d-mgg38",
+      "type": "package"
+    },
+    "relationship": { "resources": [{ "id": "3n2bq-t6v28" }] },
+    "revision_id": 3,
+    "status": "published",
+    "ui": {
+      "access_status": {
+        "description_l10n": "No files are available for this record.",
+        "embargo_date_l10n": null,
+        "icon": "tag",
+        "id": "metadata-only",
+        "message_class": "",
+        "title_l10n": "Metadata-only"
       },
-      "parent": {
-        "access": { "links": [], "owned_by": [{ "user": 3 }] },
-        "communities": {},
-        "id": "hkscb-rfm29",
-        "type": "package"
+      "created_date_l10n_long": "March 13, 2023",
+      "custom_fields": {},
+      "is_draft": false,
+      "publication_date_l10n_long": "2024",
+      "publication_date_l10n_medium": "2024",
+      "resource_type": { "id": "knowledge", "title_l10n": "Knowledge Package" },
+      "updated_date_l10n_long": "March 13, 2023",
+      "version": "v2"
+    },
+    "updated": "2023-03-13T16:21:36.649515+00:00",
+    "versions": { "index": 2, "is_latest": false, "is_latest_draft": false }
+  },
+  {
+    "access": {
+      "embargo": { "active": false, "reason": null },
+      "files": "public",
+      "record": "public",
+      "status": "metadata-only"
+    },
+    "created": "2023-03-13T18:17:38.423746+00:00",
+    "custom_fields": {},
+    "files": { "enabled": false, "order": [] },
+    "id": "44kzr-j2z07",
+    "is_draft": false,
+    "is_published": true,
+    "links": {
+      "access_links": "https://gkhub-address/api/packages/44kzr-j2z07/access/links",
+      "context_associate": "https://gkhub-address/api/packages/44kzr-j2z07/context/actions/associate",
+      "context_dissociate": "https://gkhub-address/api/packages/44kzr-j2z07/context/actions/dissociate",
+      "context_html": "https://gkhub-address/packages/44kzr-j2z07/dashboard",
+      "context_resources": "https://gkhub-address/api/packages/context/srx5d-mgg38/resources",
+      "draft": "https://gkhub-address/api/packages/44kzr-j2z07/draft",
+      "files": "https://gkhub-address/api/packages/44kzr-j2z07/files",
+      "latest": "https://gkhub-address/api/packages/44kzr-j2z07/versions/latest",
+      "latest_html": "https://gkhub-address/packages/44kzr-j2z07/latest",
+      "reserve_doi": "https://gkhub-address/api/packages/44kzr-j2z07/draft/pids/doi",
+      "resources": "https://gkhub-address/api/packages/44kzr-j2z07/resources",
+      "self": "https://gkhub-address/api/packages/44kzr-j2z07",
+      "self_html": "https://gkhub-address/packages/44kzr-j2z07",
+      "self_iiif_manifest": "https://gkhub-address/api/iiif/package:44kzr-j2z07/manifest",
+      "self_iiif_sequence": "https://gkhub-address/api/iiif/package:44kzr-j2z07/sequence/default",
+      "versions": "https://gkhub-address/api/packages/44kzr-j2z07/versions"
+    },
+    "metadata": {
+      "publication_date": "2025",
+      "publisher": "GEO Knowledge Hub",
+      "resource_type": {
+        "id": "knowledge",
+        "title": { "en": "Knowledge Package" }
       },
-      "relationship": { "resources": [{ "id": "3n2bq-t6v28" }] },
-      "revision_id": 3,
-      "status": "published",
-      "ui": {
-        "access_status": {
-          "description_l10n": "No files are available for this record.",
-          "embargo_date_l10n": null,
-          "icon": "tag",
-          "id": "metadata-only",
-          "message_class": "",
-          "title_l10n": "Metadata-only"
-        },
-        "created_date_l10n_long": "March 13, 2023",
-        "custom_fields": {},
-        "is_draft": false,
-        "publication_date_l10n_long": "March 13, 2023",
-        "publication_date_l10n_medium": "Mar 13, 2023",
-        "resource_type": { "id": "knowledge", "title_l10n": "Knowledge Package" },
-        "updated_date_l10n_long": "March 13, 2023",
-        "version": "v1"
+      "title": "package (v2)"
+    },
+    "parent": {
+      "access": { "links": [], "owned_by": [{ "user": 3 }] },
+      "communities": {},
+      "id": "srx5d-mgg38",
+      "type": "package"
+    },
+    "relationship": {
+      "resources": [{ "id": "3n2bq-t6v28" }, { "id": "scrm4-yns59" }]
+    },
+    "revision_id": 3,
+    "status": "published",
+    "ui": {
+      "access_status": {
+        "description_l10n": "No files are available for this record.",
+        "embargo_date_l10n": null,
+        "icon": "tag",
+        "id": "metadata-only",
+        "message_class": "",
+        "title_l10n": "Metadata-only"
       },
-      "updated": "2023-03-13T18:18:25.173213+00:00",
-      "versions": { "index": 1, "is_latest": true, "is_latest_draft": true }
-    }
-  ]
-  
+      "created_date_l10n_long": "March 13, 2023",
+      "custom_fields": {},
+      "is_draft": false,
+      "publication_date_l10n_long": "2025",
+      "publication_date_l10n_medium": "2025",
+      "resource_type": { "id": "knowledge", "title_l10n": "Knowledge Package" },
+      "updated_date_l10n_long": "March 13, 2023",
+      "version": "v3"
+    },
+    "updated": "2023-03-13T18:17:38.527749+00:00",
+    "versions": { "index": 3, "is_latest": true, "is_latest_draft": true }
+  },
+  {
+    "access": {
+      "embargo": { "active": false, "reason": null },
+      "files": "public",
+      "record": "public",
+      "status": "metadata-only"
+    },
+    "created": "2023-03-13T18:18:25.061538+00:00",
+    "custom_fields": {},
+    "files": { "enabled": false, "order": [] },
+    "id": "8evgm-qtw26",
+    "is_draft": false,
+    "is_published": true,
+    "links": {
+      "access_links": "https://gkhub-address/api/packages/8evgm-qtw26/access/links",
+      "context_associate": "https://gkhub-address/api/packages/8evgm-qtw26/context/actions/associate",
+      "context_dissociate": "https://gkhub-address/api/packages/8evgm-qtw26/context/actions/dissociate",
+      "context_html": "https://gkhub-address/packages/8evgm-qtw26/dashboard",
+      "context_resources": "https://gkhub-address/api/packages/context/hkscb-rfm29/resources",
+      "draft": "https://gkhub-address/api/packages/8evgm-qtw26/draft",
+      "files": "https://gkhub-address/api/packages/8evgm-qtw26/files",
+      "latest": "https://gkhub-address/api/packages/8evgm-qtw26/versions/latest",
+      "latest_html": "https://gkhub-address/packages/8evgm-qtw26/latest",
+      "reserve_doi": "https://gkhub-address/api/packages/8evgm-qtw26/draft/pids/doi",
+      "resources": "https://gkhub-address/api/packages/8evgm-qtw26/resources",
+      "self": "https://gkhub-address/api/packages/8evgm-qtw26",
+      "self_html": "https://gkhub-address/packages/8evgm-qtw26",
+      "self_iiif_manifest": "https://gkhub-address/api/iiif/package:8evgm-qtw26/manifest",
+      "self_iiif_sequence": "https://gkhub-address/api/iiif/package:8evgm-qtw26/sequence/default",
+      "versions": "https://gkhub-address/api/packages/8evgm-qtw26/versions"
+    },
+    "metadata": {
+      "publication_date": "2023-03-13",
+      "publisher": "GEO Knowledge Hub",
+      "resource_type": {
+        "id": "knowledge",
+        "title": { "en": "Knowledge Package" }
+      },
+      "title": "Second example Knowledge Package"
+    },
+    "parent": {
+      "access": { "links": [], "owned_by": [{ "user": 3 }] },
+      "communities": {},
+      "id": "hkscb-rfm29",
+      "type": "package"
+    },
+    "relationship": { "resources": [{ "id": "3n2bq-t6v28" }] },
+    "revision_id": 3,
+    "status": "published",
+    "ui": {
+      "access_status": {
+        "description_l10n": "No files are available for this record.",
+        "embargo_date_l10n": null,
+        "icon": "tag",
+        "id": "metadata-only",
+        "message_class": "",
+        "title_l10n": "Metadata-only"
+      },
+      "created_date_l10n_long": "March 13, 2023",
+      "custom_fields": {},
+      "is_draft": false,
+      "publication_date_l10n_long": "March 13, 2023",
+      "publication_date_l10n_medium": "Mar 13, 2023",
+      "resource_type": { "id": "knowledge", "title_l10n": "Knowledge Package" },
+      "updated_date_l10n_long": "March 13, 2023",
+      "version": "v1"
+    },
+    "updated": "2023-03-13T18:18:25.173213+00:00",
+    "versions": { "index": 1, "is_latest": true, "is_latest_draft": true }
+  }
+]

@@ -17,16 +17,12 @@ import { gkhubClient as http } from './api';
  *
  * @returns {Promise} returns the request promise (generated with axios).
  */
-export const fetchRecords = async (
-  url,
-  searchArgs,
-  httpClient = http
-) => {
+export const fetchRecords = async (url, searchArgs, httpClient = http) => {
   const {
     data: {
-      hits: { hits: vocabularyData },
+      hits: { hits: records },
     },
   } = await httpClient.get(url, searchArgs);
 
-  return vocabularyData;
+  return records;
 };
