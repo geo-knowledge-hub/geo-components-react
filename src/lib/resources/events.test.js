@@ -18,7 +18,7 @@ describe('Events API (CMS)', () => {
     jest.resetAllMocks();
   });
 
-  describe('fetchVocabulary', () => {
+  describe('fetchEvents', () => {
     beforeEach(() => {
       http.get.mockImplementation(() => {
         return Promise.resolve({ data: eventsApiData });

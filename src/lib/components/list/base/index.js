@@ -6,7 +6,4 @@
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
-export { fetchRecords } from './records';
-export { fetchVocabulary } from './vocabularies';
-
-export { gkhubClient, cmsClient, httpFactory } from './api';
+export { RecordItem } from './RecordItem';
