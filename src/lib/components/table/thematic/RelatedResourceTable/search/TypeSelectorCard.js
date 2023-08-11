@@ -24,7 +24,7 @@ export const TypeSelectorCard = () => {
     indexContext.searchContext.faceted.resourceType;
 
   return (
-    <Card.Group itemsPerRow={4} as={List} selection>
+    <Card.Group itemsPerRow={4} as={List} selection stackable>
       {recordTypeCount &&
         recordTypeCount.map((option, index) => (
           <Card
@@ -42,9 +42,18 @@ export const TypeSelectorCard = () => {
             <Card.Content>
               <Card.Header>
                 <Grid relaxed columns={2}>
-                  <Grid.Row>
+                  <Grid.Row only={'tablet computer'}>
                     <Grid.Column width={10}>{option.name}</Grid.Column>
-                    <Grid.Column floated="right" width={6}>
+                    <Grid.Column floated={'right'} width={6}>
+                      <Icon
+                        name={guessRecordGroupIcon(option.name)}
+                        size={'large'}
+                      />
+                    </Grid.Column>
+                  </Grid.Row>
+                  <Grid.Row only={'mobile'}>
+                    <Grid.Column width={12}>{option.name}</Grid.Column>
+                    <Grid.Column floated={'left'} width={1}>
                       <Icon
                         name={guessRecordGroupIcon(option.name)}
                         size={'large'}

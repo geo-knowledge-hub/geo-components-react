@@ -92,20 +92,20 @@ const Template = (args) => (
 /**
  * Component stories
  */
-export const Basic = Template.bind({});
-Basic.args = {
+export const Base = Template.bind({});
+Base.args = {
   placeholder: 'Search for something',
   onSearch: (queryObject) => {
     console.log(queryObject);
   },
 };
 
-Basic.parameters = {
+Base.parameters = {
   mockData: mockApiConfig,
 };
 
-export const BasicWithDefaultValues = Template.bind({});
-BasicWithDefaultValues.args = {
+export const BaseWithDefaultValues = Template.bind({});
+BaseWithDefaultValues.args = {
   placeholder: 'Search for something',
   onSearch: (queryObject) => {
     console.log(queryObject);
@@ -124,6 +124,6 @@ BasicWithDefaultValues.args = {
   },
 };
 
-BasicWithDefaultValues.parameters = {
+BaseWithDefaultValues.parameters = {
   mockData: mockApiConfig,
 };

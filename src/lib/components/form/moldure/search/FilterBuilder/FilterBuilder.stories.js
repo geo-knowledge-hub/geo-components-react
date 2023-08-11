@@ -96,8 +96,8 @@ const Template = (args) => (
 /**
  * Component stories
  */
-export const Basic = Template.bind({});
-Basic.args = {
+export const Base = Template.bind({});
+Base.args = {
   modalTrigger: <Button content={'Open modal'} />,
   formOnApplyFilter: (values) => {
     console.log('User defined values');
@@ -105,12 +105,12 @@ Basic.args = {
   },
 };
 
-Basic.parameters = {
+Base.parameters = {
   mockData: mockApiConfig,
 };
 
-export const BasicWithDefaultValues = Template.bind({});
-BasicWithDefaultValues.args = {
+export const BaseWithDefaultValues = Template.bind({});
+BaseWithDefaultValues.args = {
   modalTrigger: <Button content={'Open modal'} />,
   formOnApplyFilter: (values) => {
     console.log('User defined values');
@@ -130,6 +130,6 @@ BasicWithDefaultValues.args = {
   },
 };
 
-BasicWithDefaultValues.parameters = {
+BaseWithDefaultValues.parameters = {
   mockData: mockApiConfig,
 };
