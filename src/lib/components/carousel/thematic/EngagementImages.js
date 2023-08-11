@@ -9,7 +9,7 @@
 import React from 'react';
 
 import { mutateEngagementsData } from '../base/mutations';
-import { ImageCarousel } from '../base/ImageCarousel';
+import { ImageCarousel } from '../base';
 
 export const EngagementImages = ({ engagements, filterUrl }) => {
   const engagementImageObjects = engagements.map((engagement) =>
