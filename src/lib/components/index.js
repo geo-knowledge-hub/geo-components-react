@@ -9,3 +9,4 @@
 export * from './carousel';
 export * from './table';
 export * from './form';
+export * from './list';
