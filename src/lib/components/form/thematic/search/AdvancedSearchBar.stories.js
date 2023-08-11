@@ -10,8 +10,6 @@ import React from 'react';
 
 import withMock from 'storybook-addon-mock';
 
-import { Global } from '@emotion/react';
-
 import { AdvancedSearchBar as AdvancedSearchBarComponent } from './AdvancedSearchBar';
 
 import subjectsApiData from '@tests/mock/vocabularies/subjects-api.json';
@@ -87,15 +85,6 @@ const mockApiConfig = [
  */
 const Template = (args) => (
   <>
-    <Global
-      styles={{
-        '.leaflet-container': {
-          height: '40vh',
-          zIndex: 0,
-        },
-      }}
-    />
-
     <AdvancedSearchBarComponent {...args} />
   </>
 );

@@ -13,8 +13,6 @@ import withMock from 'storybook-addon-mock';
 import { Formik } from 'formik';
 import { Button } from 'semantic-ui-react';
 
-import { Global } from '@emotion/react';
-
 import subjectsApiData from '@tests/mock/vocabularies/subjects-api.json';
 import resourceTypesApiData from '@tests/mock/vocabularies/resourcetypes-api.json';
 import namesApiData from '@tests/mock/vocabularies/names-api.json';
@@ -89,15 +87,6 @@ const mockApiConfig = [
  */
 const Template = (args) => (
   <>
-    <Global
-      styles={{
-        '.leaflet-container': {
-          height: '40vh',
-          zIndex: 0,
-        },
-      }}
-    />
-
     <Formik initialValues={{}}>
       <FilterBuilderComponent {...args} />
     </Formik>

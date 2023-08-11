@@ -26,6 +26,7 @@ module.exports = {
       '@translations/i18next': path.resolve(__dirname, '../src/lib/i18next'),
       '@tests/setup': path.resolve(__dirname, '../src/setupTests'),
       '@tests/mock': path.resolve(__dirname, '../src/mocks'),
+      '@resources': path.resolve(__dirname, '../src/lib/resources'),
     };
 
     // react-leaflet

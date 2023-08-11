@@ -1,6 +1,6 @@
 /*
  * This file is part of GEO-Components-React.
- * Copyright (C) 2022 GEO Secretariat.
+ * Copyright (C) 2022-2023 GEO Secretariat.
  *
  * GEO-Components-React is free software; you can redistribute it and/or modify it
  * under the terms of the MIT License; see LICENSE file for more details.
@@ -10,10 +10,10 @@ jest.mock('./api.js');
 
 import engagementPrioritiesTypes from '../../mocks/vocabularies/engagementprioritiestypes.json';
 
-import { http } from './api';
+import { gkhubClient as http } from './api';
 import { fetchVocabulary } from './vocabularies';
 
-describe('Vocabulary API', () => {
+describe('Vocabulary API (GEO Knowledge Hub)', () => {
   afterEach(() => {
     jest.resetAllMocks();
   });
@@ -34,7 +34,7 @@ describe('Vocabulary API', () => {
     it('should call http.get with proper URL', () => {
       expect(http.get).toHaveBeenCalledWith(
         '/api/vocabularies/engagementprioritiestypes',
-        undefined
+        { params: undefined }
       );
     });
 

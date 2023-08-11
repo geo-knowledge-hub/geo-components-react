@@ -10,16 +10,9 @@ import React from 'react';
 
 import _get from 'lodash/get';
 
-import styled from '@emotion/styled';
 import { Item, Label } from 'semantic-ui-react';
 
-/**
- * Styled components
- */
-const ItemHeader = styled.div`
-  color: #444447;
-  font-size: 15px;
-`;
+import './RecordListItem.css';
 
 /**
  * Record Item component for the Record List
@@ -74,7 +67,7 @@ export const RecordListItem = ({ recordData }) => {
           href={restrictedToUser ? null : recordUrl}
           color={restrictedToUser ? 'gray' : 'black'}
         >
-          <ItemHeader>{recordData.metadata.title}</ItemHeader>
+          <div className="item-header">{recordData.metadata.title}</div>
         </Item.Header>
         <Item.Meta>
           {creators ? (

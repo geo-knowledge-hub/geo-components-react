@@ -6,32 +6,21 @@
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
-import { gkhubClient as http } from './api';
+import { cmsClient as http } from './api';
 
 /**
- * Fetch vocabulary data from the GEO Knowledge Hub API.
+ * Fetch events data from the CMS API (events endpoint).
  *
- * @param {string} vocabularyType Name of the vocabulary to be retrieved.
  * @param {object} searchArgs Object with the search arguments.
  * @param {object} httpClient Axios object used to request the API.
  *
  * @returns {Promise} returns the request promise (generated with axios).
  */
-export const fetchVocabulary = async (
-  vocabularyType,
-  searchArgs,
-  httpClient = http
-) => {
-  const {
-    data: {
-      hits: { hits: vocabularyData },
-    },
-  } = await httpClient.get(
-    `/api/vocabularies/${vocabularyType}`,
-    {
-      params: searchArgs,
-    }
+export const fetchEvents = async (searchArgs, httpClient = http) => {
+  // ToDo: Fix this
+  const requestResult = await httpClient.get(
+    `/api/events`,
+    searchArgs
   );
-
-  return vocabularyData;
+  return requestResult.data;
 };

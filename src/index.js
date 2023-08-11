@@ -13,7 +13,6 @@ import App from './demos/App';
 
 // Base theme
 import 'semantic-ui-css/semantic.min.css';
-import 'pure-react-carousel/dist/react-carousel.es.css';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 // Leaflet
@@ -31,5 +30,9 @@ import 'leaflet-control-geocoder/dist/Control.Geocoder.css';
 // Geometry editor
 import '@geoman-io/leaflet-geoman-free';
 import '@geoman-io/leaflet-geoman-free/dist/leaflet-geoman.css';
+
+// React slick
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));

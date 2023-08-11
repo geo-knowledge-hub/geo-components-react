@@ -1,0 +1,51 @@
+{
+  "data": [
+    {
+      "id": 2,
+      "attributes": {
+        "title": "Open EO Applications for Food Security - Focus on  GLAM",
+        "category": "Webinar",
+        "date": "2023-10-26T05:00:00.000Z",
+        "location": "Online",
+        "url": "https://earthobservations.org/",
+        "createdAt": "2023-08-08T11:03:54.318Z",
+        "updatedAt": "2023-08-08T11:03:56.217Z",
+        "publishedAt": "2023-08-08T11:03:56.209Z"
+      }
+    },
+    {
+      "id": 1,
+      "attributes": {
+        "title": "Open EO Applications for Food Security - Focus on  ASAP",
+        "category": "Webinar",
+        "date": "2023-08-10T05:10:00.000Z",
+        "location": "Online",
+        "url": "https://earthobservations.org/",
+        "createdAt": "2023-08-02T15:37:10.860Z",
+        "updatedAt": "2023-08-08T11:04:01.701Z",
+        "publishedAt": "2023-08-02T15:37:13.807Z"
+      }
+    },
+    {
+      "id": 3,
+      "attributes": {
+        "title": "GEO Knowledge Hub to preserve and share EO Applications:  Introduction and practice",
+        "category": "Hands-on",
+        "date": "2023-10-09T05:00:00.000Z",
+        "location": "Bolzano, Italy",
+        "url": "https://earthobservations.org/",
+        "createdAt": "2023-08-08T11:04:38.927Z",
+        "updatedAt": "2023-08-08T11:04:44.866Z",
+        "publishedAt": "2023-08-08T11:04:44.859Z"
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 3
+    }
+  }
+}
