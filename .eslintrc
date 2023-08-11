@@ -1,1 +1,5 @@
-{ "extends": "react-app" }
+{
+  "eslintConfig": {
+    "extends": ["react-app", "react-app/jest"]
+  }
+}

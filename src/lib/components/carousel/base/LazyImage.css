@@ -1,0 +1,26 @@
+/*
+ * This file is part of GEO-Components-React.
+ * Copyright (C) 2022 GEO Secretariat.
+ *
+ * GEO-Components-React is free software; you can redistribute it and/or modify it
+ * under the terms of the MIT License; see LICENSE file for more details.
+ */
+
+.ui.image.lazy-image .lazy-load-image-background {
+  /* Overwriting in-line rule from react-slick */
+  display: unset !important;
+}
+
+.lazy-image.ui.image.small .lazy-load-image-background > img {
+  /* Semantic UI: Small image  */
+  max-height: 250px;
+  max-width: 100%;
+  width: auto;
+}
+
+.lazy-image.ui.image.tiny .lazy-load-image-background > img {
+  /* Custom image  */
+  max-height: 200px;
+  max-width: 100%;
+  width: auto;
+}

@@ -1,6 +1,6 @@
 /*
  * This file is part of GEO-Components-React.
- * Copyright (C) 2022 GEO Secretariat.
+ * Copyright (C) 2022-2023 GEO Secretariat.
  *
  * GEO-Components-React is free software; you can redistribute it and/or modify it
  * under the terms of the MIT License; see LICENSE file for more details.
@@ -10,8 +10,8 @@ import React from 'react';
 import { render } from '@testing-library/react';
 
 import { Formik } from 'formik';
-import { ThemeProvider } from '@emotion/react';
-import { CarouselProvider } from 'pure-react-carousel';
+
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 /**
  * Required libraries
@@ -19,7 +19,6 @@ import { CarouselProvider } from 'pure-react-carousel';
 
 // Base theme
 import 'semantic-ui-css/semantic.min.css';
-import 'pure-react-carousel/dist/react-carousel.es.css';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 // Leaflet
@@ -36,13 +35,6 @@ import 'leaflet-control-geocoder/dist/Control.Geocoder.css';
 // Geometry editor
 import '@geoman-io/leaflet-geoman-free';
 import '@geoman-io/leaflet-geoman-free/dist/leaflet-geoman.css';
-
-/**
- * Constants
- */
-const DEFAULT_THEME_OBJECT = {
-  theme: {},
-};
 
 /**
  * @name wrapperGenericContextProvider
@@ -64,37 +56,21 @@ const wrapperGenericContextProvider =
     );
 
 /**
- * @name wrapperGlobalThemeProvider
- * @description This wrapper functions generate a customizable theme provider
+ * @name const wrapperGlobalQueryProvider
+ * @description This wrapper functions generate a ``react-query`` query provider
  *              to be used with the ``testing-library`` ``render`` function.
  *
- * @param object options object for the global theme provider.
+ * @param object options object for the global query provider.
  *
  * @returns function callback to wrap the Rendered component.
  */
-const wrapperGlobalThemeProvider =
-  (options) =>
-  ({ children }) =>
-    <ThemeProvider {...options.themeProvider}>{children}</ThemeProvider>;
-
-/**
- * @name wrapperGlobalCarouselProvider
- * @description This wrapper functions generate a customizable carousel provider
- *              to be used with the ``testing-library`` ``render``function.
- *
- * @param object options object for the global carousel provider
- *
- * @returns function callback to wrap the Rendered component.
- */
-const wrapperGlobalCarouselProvider =
+const wrapperGlobalQueryProvider =
   (options) =>
   ({ children }) =>
     (
-      <ThemeProvider {...options.themeProvider}>
-        <CarouselProvider {...options.carouselProvider}>
-          {children}
-        </CarouselProvider>
-      </ThemeProvider>
+      <QueryClientProvider client={new QueryClient()}>
+        {children}
+      </QueryClientProvider>
     );
 
 /**
@@ -115,30 +91,16 @@ const wrapperFormikProvider =
     <Formik {...options}>{children}</Formik>;
 
 /**
- * @name customThemeRender
+ * @name customQueryContextRender
  * @description Custom render method for the ``testing-library``.
  */
-const customThemeRender = (
+const customQueryContextRender = (
   ui,
-  contextOptions = { themeProvider: DEFAULT_THEME_OBJECT },
+  contextOptions = {},
   renderOptions = {}
 ) =>
   render(ui, {
-    wrapper: wrapperGlobalThemeProvider(contextOptions),
-    ...renderOptions,
-  });
-
-/**
- * @name customCarouselRender
- * @description Custom render method for the ``testing-library``
- */
-const customCarouselRender = (
-  ui,
-  contextOptions = { themeProvider: DEFAULT_THEME_OBJECT },
-  renderOptions = {}
-) =>
-  render(ui, {
-    wrapper: wrapperGlobalCarouselProvider(contextOptions),
+    wrapper: wrapperGlobalQueryProvider(contextOptions),
     ...renderOptions,
   });
 
@@ -174,8 +136,7 @@ const customContextRender = (
 export * from '@testing-library/react';
 export {
   render as render,
-  customThemeRender as renderWithThemeProvider,
   customContextRender as renderWithCustomContext,
-  customCarouselRender as renderWithCarouselProvider,
   customFormikRender as renderWithFormikProvider,
+  customQueryContextRender as renderWithQueryContext,
 };

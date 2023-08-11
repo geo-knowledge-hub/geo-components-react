@@ -17,7 +17,6 @@ import {
   Accordion,
   Transition,
 } from 'semantic-ui-react';
-import styled from '@emotion/styled';
 
 import { useMiniSearch } from 'react-minisearch';
 
@@ -30,6 +29,8 @@ import {
   facetedFilterRecordsFactory,
 } from './operations/record';
 
+import './RelatedResourceTable.css';
+
 /**
  * Constants
  */
@@ -40,13 +41,6 @@ const SEARCH_OPTIONS = {
     fieldName.split('.').reduce((doc, key) => doc && doc[key], document),
   storeFields: ['metadata'],
 };
-
-/**
- * Styled Components
- */
-const StyledContainer = styled(Container)`
-  margin-top: 2em;
-`;
 
 /**
  * Index component to search related resource objects
@@ -103,7 +97,7 @@ export const RelatedResourceTable = ({
   const isCheckbarVisible = activeResourceType !== null;
 
   return (
-    <StyledContainer>
+    <Container className={'related-resource-table'}>
       <IndexContextProvider
         value={{
           searchContext: {
@@ -175,7 +169,7 @@ export const RelatedResourceTable = ({
           </Accordion.Content>
         </Accordion>
       </IndexContextProvider>
-    </StyledContainer>
+    </Container>
   );
 };
 
