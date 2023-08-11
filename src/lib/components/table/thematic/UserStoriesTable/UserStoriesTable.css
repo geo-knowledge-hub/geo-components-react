@@ -1,0 +1,20 @@
+/*
+ * This file is part of GEO-Components-React.
+ * Copyright (C) 2022-2023 GEO Secretariat.
+ *
+ * GEO-Components-React is free software; you can redistribute it and/or modify it
+ * under the terms of the MIT License; see LICENSE file for more details.
+ */
+
+.ui.table.users-stories-table thead {
+    display: none;
+}
+
+.ui.grid .row .ui.grid.user-stories-metadata {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.ui.grid .row .ui.grid.user-stories-metadata .row {
+  padding: 3px;
+}

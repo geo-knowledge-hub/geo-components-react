@@ -25,7 +25,7 @@ const Template = (args) => <ExternalResourceTableComponent {...args} />;
 /**
  * Component stories
  */
-export const ExternalResourceTable = Template.bind({});
-ExternalResourceTable.args = {
+export const Base = Template.bind({});
+Base.args = {
   tableData: externalResourceData,
 };

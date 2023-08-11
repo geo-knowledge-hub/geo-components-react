@@ -1,0 +1,454 @@
+[
+    {
+        "access": {
+            "embargo": {
+                "active": false,
+                "reason": null
+            },
+            "files": "public",
+            "record": "public",
+            "status": "metadata-only"
+        },
+        "created": "2023-01-04T18:51:38.195977+00:00",
+        "custom_fields": {},
+        "files": {
+            "enabled": false,
+            "order": []
+        },
+        "id": "k0ynb-ckd30",
+        "is_draft": false,
+        "is_published": true,
+        "links": {
+            "access_links": "https://gkhub-api/api/records/k0ynb-ckd30/access/links",
+            "archive": "https://gkhub-api/api/records/k0ynb-ckd30/files-archive",
+            "draft": "https://gkhub-api/api/records/k0ynb-ckd30/draft",
+            "files": "https://gkhub-api/api/records/k0ynb-ckd30/files",
+            "latest": "https://gkhub-api/api/records/k0ynb-ckd30/versions/latest",
+            "latest_html": "https://gkhub-api/records/k0ynb-ckd30/latest",
+            "reserve_doi": "https://gkhub-api/api/records/k0ynb-ckd30/draft/pids/doi",
+            "self": "https://gkhub-api/api/records/k0ynb-ckd30",
+            "self_html": "https://gkhub-api/records/k0ynb-ckd30",
+            "self_iiif_manifest": "https://gkhub-api/api/iiif/record:k0ynb-ckd30/manifest",
+            "self_iiif_sequence": "https://gkhub-api/api/iiif/record:k0ynb-ckd30/sequence/default",
+            "versions": "https://gkhub-api/api/records/k0ynb-ckd30/versions"
+        },
+        "metadata": {
+            "contributors": [
+                {
+                    "affiliations": [
+                        {
+                            "name": "Ghana Environmental Agency"
+                        }
+                    ],
+                    "person_or_org": {
+                        "name": "Ghana Environmental Protection Agency",
+                        "type": "organizational"
+                    },
+                    "role": {
+                        "id": "projectmember",
+                        "title": {
+                            "de": "Projektmitglied",
+                            "en": "Project member"
+                        }
+                    }
+                },
+                {
+                    "affiliations": [
+                        {
+                            "name": "Ghana Statistical Service (GSS)"
+                        }
+                    ],
+                    "person_or_org": {
+                        "name": "Ghana Statistical Service",
+                        "type": "organizational"
+                    },
+                    "role": {
+                        "id": "projectmember",
+                        "title": {
+                            "de": "Projektmitglied",
+                            "en": "Project member"
+                        }
+                    }
+                }
+            ],
+            "creators": [
+                {
+                    "person_or_org": {
+                        "name": "Digital Earth Africa",
+                        "type": "organizational"
+                    },
+                    "role": {
+                        "id": "hostinginstitution",
+                        "title": {
+                            "de": "Bereitstellende Institution",
+                            "en": "Hosting institution"
+                        }
+                    }
+                }
+            ],
+            "dates": [
+                {
+                    "date": "2022-12-13",
+                    "type": {
+                        "id": "created",
+                        "title": {
+                            "de": "Erstellt",
+                            "en": "Created"
+                        }
+                    }
+                }
+            ],
+            "description": "<p>The Apamprama Forest Reserve in central Ghana is a forested area housing a portion of the Ofin river, interspersed with volumes of semi-deciduous trees and medicinal herbs. The reserve also contains rich gold deposits. Ghana's Environmental Protection Agency (EPA) and Ghana Statistics&nbsp;Service (GSS) wanted to use electro-optical satellite data to understand the health of the reserve's ecosystem and identify factors that were adversely affecting this ecosystem.&nbsp;</p><p>Land degradation was identified as the primary issue facing Apamprama Forest Reserve, additional data analysis was needed to understand environmental changes in time series and to formulate a plan to halt the degradation. The Vegetation Change and Detection data analysis tools give greater insight into the dramatic sprawl of land degradation in the reserve, highlighting the rapid increase in potential mining activity between 2017 and 2020.</p>",
+            "engagement_priorities": [
+                {
+                    "id": "paris-agreement",
+                    "title": {
+                        "en": "Paris Agreement"
+                    }
+                },
+                {
+                    "id": "sdg",
+                    "title": {
+                        "en": "Sustainable Development Goals (SDGs)"
+                    }
+                }
+            ],
+            "geo_work_programme_activity": {
+                "id": "geo-activities-de-africa",
+                "title": {
+                    "en": "Digital Earth Africa (DE-AFRICA)"
+                }
+            },
+            "languages": [
+                {
+                    "id": "eng",
+                    "title": {
+                        "en": "English"
+                    }
+                }
+            ],
+            "locations": {
+                "features": [
+                    {
+                        "geometry": {
+                            "coordinates": [
+                                [
+                                    [
+                                        -2.235718,
+                                        5.497442
+                                    ],
+                                    [
+                                        -2.235718,
+                                        5.988956
+                                    ],
+                                    [
+                                        -1.689148,
+                                        5.988956
+                                    ],
+                                    [
+                                        -1.689148,
+                                        5.497442
+                                    ],
+                                    [
+                                        -2.235718,
+                                        5.497442
+                                    ]
+                                ]
+                            ],
+                            "type": "Polygon"
+                        },
+                        "place": "Ghana"
+                    }
+                ]
+            },
+            "publication_date": "2022-12-13",
+            "publisher": "GEO Knowledge Hub",
+            "related_identifiers": [
+                {
+                    "identifier": "https://www.digitalearthafrica.org/media-center/blog/detecting-land-degradation-using-geospatial-data",
+                    "relation_type": {
+                        "id": "references",
+                        "title": {
+                            "de": "Referenziert",
+                            "en": "References"
+                        }
+                    },
+                    "resource_type": {
+                        "id": "user-story",
+                        "title": {
+                            "en": "User Story"
+                        }
+                    },
+                    "scheme": "url"
+                }
+            ],
+            "resource_type": {
+                "id": "user-story",
+                "title": {
+                    "en": "User Story"
+                }
+            },
+            "rights": [
+                {
+                    "description": {
+                        "en": "Retains copyright in the data and provides a license that permits the user to use, copy, modify, and redistribute the data for any purpose, provided that the user provides credit to the original data provider."
+                    },
+                    "icon": "cc-by-icon",
+                    "id": "cc-by-4.0",
+                    "props": {
+                        "scheme": "spdx",
+                        "url": "https://creativecommons.org/licenses/by/4.0/legalcode"
+                    },
+                    "title": {
+                        "en": "Creative Commons Attribution 4.0 International"
+                    }
+                }
+            ],
+            "subjects": [
+                {
+                    "subject": "Landsat 8"
+                },
+                {
+                    "subject": "Change Detection"
+                },
+                {
+                    "subject": "EVI"
+                },
+                {
+                    "subject": "NDVI"
+                },
+                {
+                    "subject": "Forestry"
+                },
+                {
+                    "subject": "Analysis"
+                }
+            ],
+            "target_audiences": [
+                {
+                    "id": "tu-data-analyst",
+                    "title": {
+                        "en": "Data Analyst"
+                    }
+                },
+                {
+                    "id": "tu-geo-decisionmaker",
+                    "title": {
+                        "en": "Decision Maker"
+                    }
+                },
+                {
+                    "id": "tu-digital-cartography-technician",
+                    "title": {
+                        "en": "Digital Cartography Technician"
+                    }
+                },
+                {
+                    "id": "tu-agriculture-forest-departments",
+                    "title": {
+                        "en": "Agriculture and Forest Departments"
+                    }
+                },
+                {
+                    "id": "tu-eo-data-practitioners",
+                    "title": {
+                        "en": "EO Data Practitioners"
+                    }
+                },
+                {
+                    "id": "tu-administrative-officer",
+                    "title": {
+                        "en": "Administrative Officer in the spatial planning domain"
+                    }
+                }
+            ],
+            "title": "Detecting Land Degradation Using Geospatial Data"
+        },
+        "pids": {
+            "oai": {
+                "identifier": "oai:geo-knowledge-hub.org:k0ynb-ckd30",
+                "provider": "oai"
+            }
+        },
+        "relationship": {
+            "packages": [
+                {
+                    "id": "9z3th-kac25"
+                }
+            ]
+        },
+        "revision_id": 7,
+        "status": "open",
+        "ui": {
+            "access_status": {
+                "description_l10n": "No files are available for this record.",
+                "embargo_date_l10n": null,
+                "icon": "tag",
+                "id": "metadata-only",
+                "message_class": "",
+                "title_l10n": "Metadata-only"
+            },
+            "contributors": {
+                "affiliations": [
+                    [
+                        1,
+                        "Ghana Environmental Agency",
+                        null
+                    ],
+                    [
+                        2,
+                        "Ghana Statistical Service (GSS)",
+                        null
+                    ]
+                ],
+                "contributors": [
+                    {
+                        "affiliations": [
+                            [
+                                1,
+                                "Ghana Environmental Agency"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "name": "Ghana Environmental Protection Agency",
+                            "type": "organizational"
+                        },
+                        "role": {
+                            "id": "projectmember",
+                            "title": "Project member"
+                        }
+                    },
+                    {
+                        "affiliations": [
+                            [
+                                2,
+                                "Ghana Statistical Service (GSS)"
+                            ]
+                        ],
+                        "person_or_org": {
+                            "name": "Ghana Statistical Service",
+                            "type": "organizational"
+                        },
+                        "role": {
+                            "id": "projectmember",
+                            "title": "Project member"
+                        }
+                    }
+                ]
+            },
+            "created_date_l10n_long": "January 4, 2023",
+            "creators": {
+                "affiliations": [],
+                "creators": [
+                    {
+                        "person_or_org": {
+                            "name": "Digital Earth Africa",
+                            "type": "organizational"
+                        },
+                        "role": {
+                            "id": "hostinginstitution",
+                            "title": "Hosting institution"
+                        }
+                    }
+                ]
+            },
+            "custom_fields": {},
+            "dates": [
+                {
+                    "date": "2022-12-13",
+                    "type": {
+                        "id": "created",
+                        "title_l10n": "Created"
+                    }
+                }
+            ],
+            "description_stripped": "The Apamprama Forest Reserve in central Ghana is a forested area housing a portion of the Ofin river, interspersed with volumes of semi-deciduous trees and medicinal herbs. The reserve also contains rich gold deposits. Ghana's Environmental Protection Agency (EPA) and Ghana Statistics Service (GSS) wanted to use electro-optical satellite data to understand the health of the reserve's ecosystem and identify factors that were adversely affecting this ecosystem. \nLand degradation was identified as the primary issue facing Apamprama Forest Reserve, additional data analysis was needed to understand environmental changes in time series and to formulate a plan to halt the degradation. The Vegetation Change and Detection data analysis tools give greater insight into the dramatic sprawl of land degradation in the reserve, highlighting the rapid increase in potential mining activity between 2017 and 2020.",
+            "engagement_priorities": [
+                {
+                    "id": "paris-agreement",
+                    "title_l10n": "Paris Agreement"
+                },
+                {
+                    "id": "sdg",
+                    "title_l10n": "Sustainable Development Goals (SDGs)"
+                }
+            ],
+            "geo_work_programme_activity": {
+                "id": "geo-activities-de-africa",
+                "title_l10n": "Digital Earth Africa (DE-AFRICA)"
+            },
+            "is_draft": false,
+            "languages": [
+                {
+                    "id": "eng",
+                    "title_l10n": "English"
+                }
+            ],
+            "publication_date_l10n_long": "December 13, 2022",
+            "publication_date_l10n_medium": "Dec 13, 2022",
+            "related_identifiers": [
+                {
+                    "identifier": "https://www.digitalearthafrica.org/media-center/blog/detecting-land-degradation-using-geospatial-data",
+                    "relation_type": {
+                        "id": "references",
+                        "title_l10n": "References"
+                    },
+                    "resource_type": {
+                        "id": "user-story",
+                        "title_l10n": "User Story"
+                    },
+                    "scheme": "url"
+                }
+            ],
+            "resource_type": {
+                "id": "user-story",
+                "title_l10n": "User Story"
+            },
+            "rights": [
+                {
+                    "description_l10n": "Retains copyright in the data and provides a license that permits the user to use, copy, modify, and redistribute the data for any purpose, provided that the user provides credit to the original data provider.",
+                    "icon": "cc-by-icon",
+                    "id": "cc-by-4.0",
+                    "props": {
+                        "scheme": "spdx",
+                        "url": "https://creativecommons.org/licenses/by/4.0/legalcode"
+                    },
+                    "title_l10n": "Creative Commons Attribution 4.0 International"
+                }
+            ],
+            "target_audiences": [
+                {
+                    "id": "tu-data-analyst",
+                    "title_l10n": "Data Analyst"
+                },
+                {
+                    "id": "tu-geo-decisionmaker",
+                    "title_l10n": "Decision Maker"
+                },
+                {
+                    "id": "tu-digital-cartography-technician",
+                    "title_l10n": "Digital Cartography Technician"
+                },
+                {
+                    "id": "tu-agriculture-forest-departments",
+                    "title_l10n": "Agriculture and Forest Departments"
+                },
+                {
+                    "id": "tu-eo-data-practitioners",
+                    "title_l10n": "EO Data Practitioners"
+                },
+                {
+                    "id": "tu-administrative-officer",
+                    "title_l10n": "Administrative Officer in the spatial planning domain"
+                }
+            ],
+            "updated_date_l10n_long": "June 5, 2023",
+            "version": "v1"
+        },
+        "updated": "2023-06-05T16:07:58.903692+00:00",
+        "versions": {
+            "index": 1,
+            "is_latest": true
+        }
+    }
+]

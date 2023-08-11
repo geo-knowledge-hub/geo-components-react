@@ -8,19 +8,19 @@
 
 import React from 'react';
 
-import { RelatedPackagesTable as RelatedPackagesTableComponent } from './RelatedPackagesTable';
+import { UserStoriesTable } from './UserStoriesTable';
 
-import data from '../../../../../mocks/table/table-related-packages-data.json';
+import data from '../../../../../mocks/table/table-user-stories.json';
 
 export default {
-  title: 'Table/Thematic/Related Packages table',
-  component: RelatedPackagesTableComponent,
+  title: 'Table/Thematic/Users stories table',
+  component: UserStoriesTable,
 };
 
 /**
  * Component template
  */
-const Template = (args) => <RelatedPackagesTableComponent {...args} />;
+const Template = (args) => <UserStoriesTable {...args} />;
 
 /**
  * Component stories
