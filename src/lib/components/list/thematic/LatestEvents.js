@@ -9,7 +9,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Grid, Loader, Message } from 'semantic-ui-react';
+import { Button, Container, Grid, Loader, Message } from 'semantic-ui-react';
 
 import { useQuery } from '@tanstack/react-query';
 
@@ -35,7 +35,7 @@ export const LatestEvents = ({ fetchUrl, staleTime }) => {
   return (
     <Grid>
       <Grid.Row centered>
-        <Grid.Column width={10}>
+        <Grid.Column widescreen={10} largeScreen={10} computer={10} mobile={15} tablet={14}>
           {isFetching && <Loader active inline="centered" />}
 
           {!isFetching && !error && (
@@ -44,6 +44,11 @@ export const LatestEvents = ({ fetchUrl, staleTime }) => {
                 <Grid.Column>
                   <EventList events={mutatedRecords} />
                 </Grid.Column>
+              </Grid.Row>
+              <Grid.Row columns={1}>
+                <Container textAlign={'center'}>
+                  <Button href={'/search'}>More</Button>
+                </Container>
               </Grid.Row>
             </Grid>
           )}
@@ -58,6 +63,7 @@ export const LatestEvents = ({ fetchUrl, staleTime }) => {
 
 LatestEvents.propTypes = {
   fetchUrl: PropTypes.string.isRequired,
+  moreUrl: PropTypes.string.isRequired,
   staleTime: PropTypes.number,
 };
 

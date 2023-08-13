@@ -53,6 +53,7 @@ const Template = (args) => (
 export const Base = Template.bind({});
 Base.args = {
   fetchUrl: '/api/packages?sort=newest&size=3',
+  moreUrl: '#'
 };
 
 Base.parameters = {

@@ -39,7 +39,7 @@ export const LatestRecords = ({ fetchUrl, staleTime }) => {
   return (
     <Grid>
       <Grid.Row centered>
-        <Grid.Column width={10}>
+        <Grid.Column widescreen={10} largeScreen={10} computer={10} mobile={15} tablet={14}>
           {isFetching && <Loader active inline="centered" />}
 
           {!isFetching && !error && (
@@ -67,6 +67,7 @@ export const LatestRecords = ({ fetchUrl, staleTime }) => {
 
 LatestRecords.propTypes = {
   fetchUrl: PropTypes.string.isRequired,
+  moreUrl: PropTypes.string.isRequired,
   staleTime: PropTypes.number,
 };
 

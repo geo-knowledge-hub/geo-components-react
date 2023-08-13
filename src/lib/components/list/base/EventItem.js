@@ -31,12 +31,13 @@ export const EventItem = ({ eventData }) => {
       </Grid>
       <Grid padded>
         <Grid.Row columns={2}>
-          <Grid.Column largeScreen={14} widescreen={14} mobile={16} tablet={12}>
+          <Grid.Column largeScreen={12} widescreen={12} computer={12} mobile={16} tablet={12}>
             <Header as={'h3'}>{eventData.title}</Header>
           </Grid.Column>
           <Grid.Column
-            largeScreen={2}
-            widescreen={2}
+            largeScreen={4}
+            widescreen={4}
+            computer={4}
             tablet={4}
             textAlign={'right'}
             only={'tablet computer'}
@@ -45,11 +46,12 @@ export const EventItem = ({ eventData }) => {
           </Grid.Column>
         </Grid.Row>
         <Grid.Row verticalAlign={'bottom'}>
-          <Grid.Column largeScreen={9} widescreen={9} mobile={16} tablet={9}>
+          <Grid.Column largeScreen={9} widescreen={9} computer={9} mobile={16} tablet={9}>
             <Grid doubling>
               <Grid.Column
-                largeScreen={9}
-                widescreen={9}
+                largeScreen={10}
+                widescreen={10}
+                computer={10}
                 mobile={16}
                 tablet={16}
               >
@@ -58,6 +60,7 @@ export const EventItem = ({ eventData }) => {
               <Grid.Column
                 largeScreen={6}
                 widescreen={6}
+                computer={6}
                 mobile={7}
                 tablet={16}
                 textAlign={'left'}

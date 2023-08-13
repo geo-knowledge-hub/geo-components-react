@@ -16,7 +16,7 @@ export const RecordItem = ({ recordData }) => {
   const recordAuthors = recordData.authors.join('; ');
 
   // Preparing initiatives
-  const recordInitiative = recordData.initiative;
+  const recordInitiative = recordData.initiative || "Community";
 
   return (
     <Segment as={Card} link fluid href={recordData.url}>
@@ -29,12 +29,19 @@ export const RecordItem = ({ recordData }) => {
       </Grid>
       <Grid padded>
         <Grid.Row columns={2}>
-          <Grid.Column largeScreen={14} widescreen={14} mobile={16} tablet={12}>
+          <Grid.Column
+            largeScreen={13}
+            widescreen={13}
+            computer={13}
+            mobile={16}
+            tablet={12}
+          >
             <Header as={'h3'}>{recordData.title}</Header>
           </Grid.Column>
           <Grid.Column
-            largeScreen={2}
-            widescreen={2}
+            largeScreen={3}
+            widescreen={3}
+            computer={3}
             tablet={4}
             textAlign={'right'}
             only="tablet computer"
