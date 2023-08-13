@@ -10,6 +10,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useQuery } from '@tanstack/react-query';
 
+import natsort from 'natsort';
 import { Grid, Loader } from 'semantic-ui-react';
 
 import { mutateVocabularyData } from '../base/mutations';
@@ -29,6 +30,9 @@ export const EngagementCarousel = ({
   vocabularyType,
   staleTime,
 }) => {
+  // Utilities
+  const natsorter = natsort({ insensitive: true });
+
   // Hooks
   const { data: topics, isFetching: isFetchingTopics } = useQuery({
     queryKey: ['carousel-topics'],
@@ -38,9 +42,8 @@ export const EngagementCarousel = ({
         size: 30, // We don't have a lot of engagement priorities to handle
       }).then((data) => {
         return data
-          .filter((row) => {
-            return !!row.props.icon;
-          })
+          .sort((a, b) => natsorter(a.id, b.id))
+          .filter((x) => !(['', null].indexOf(x.props.icon) > -1))
           .map((row) => mutateVocabularyData(row, filterUrl));
       });
     },
@@ -71,9 +74,10 @@ export const EngagementCarousel = ({
               size: 30,
             });
 
-            row.subElements = subTopicsData.map((row) =>
-              mutateVocabularyData(row, filterUrl)
-            );
+            row.subElements = subTopicsData
+              .sort((a, b) => natsorter(a.id, b.id))
+              .filter((x) => !(['', null].indexOf(x.props.icon) > -1))
+              .map((row) => mutateVocabularyData(row, filterUrl));
 
             return row;
           }
