@@ -48,9 +48,9 @@ const Template = (args) => (
 /**
  * Component stories
  */
-export const Basic = Template.bind({});
-Basic.args = {};
+export const Base = Template.bind({});
+Base.args = {};
 
-Basic.parameters = {
+Base.parameters = {
   mockData: mockApiConfig,
 };

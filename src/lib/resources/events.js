@@ -11,16 +11,13 @@ import { cmsClient as http } from './api';
 /**
  * Fetch events data from the CMS API (events endpoint).
  *
+ * @param {string} url fetch url
  * @param {object} searchArgs Object with the search arguments.
  * @param {object} httpClient Axios object used to request the API.
  *
  * @returns {Promise} returns the request promise (generated with axios).
  */
-export const fetchEvents = async (searchArgs, httpClient = http) => {
-  // ToDo: Fix this
-  const requestResult = await httpClient.get(
-    `/api/events`,
-    searchArgs
-  );
-  return requestResult.data;
+export const fetchEvents = async (url, searchArgs, httpClient = http) => {
+  const { data } = await httpClient.get(url, searchArgs);
+  return data.data;
 };

@@ -8,3 +8,4 @@
 
 export { LazyImage } from './LazyImage';
 export { CardCarousel } from './CardCarousel';
+export { ImageCarousel } from './ImageCarousel';

@@ -16,7 +16,7 @@ import carouselData from '@tests/mock/vocabularies/topics-elements-subelements.j
 describe('ComputerContainer tests', () => {
   describe('Render tests', () => {
     it('should render without errors', () => {
-        render(<ComputerContainer elements={carouselData} />);
+      render(<ComputerContainer elements={carouselData} />);
     });
   });
 });

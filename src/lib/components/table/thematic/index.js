@@ -9,3 +9,4 @@
 export { ExternalResourceTable } from './ExternalResourceTable';
 export { RelatedResourceTable } from './RelatedResourceTable';
 export { RelatedPackagesTable } from './RelatedPackagesTable';
+export { UserStoriesTable } from './UserStoriesTable';

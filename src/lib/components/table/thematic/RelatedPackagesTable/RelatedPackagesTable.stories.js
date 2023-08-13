@@ -25,7 +25,7 @@ const Template = (args) => <RelatedPackagesTableComponent {...args} />;
 /**
  * Component stories
  */
-export const RelatedPackagesTable = Template.bind({});
-RelatedPackagesTable.args = {
+export const Base = Template.bind({});
+Base.args = {
   tableData: data,
 };

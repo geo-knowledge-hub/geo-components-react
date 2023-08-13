@@ -1,407 +1,347 @@
 {
-    "hits": {
-        "hits": [
-            {
-                "title_l10n": "AWS AMI",
-                "icon": "code",
-                "id": "software-awsami",
-                "props": {
-                    "csl": "article",
-                    "datacite_general": "Software",
-                    "datacite_type": "",
-                    "eurepo": "info:eu-repo/semantics/other",
-                    "openaire_resourceType": "29",
-                    "openaire_type": "software",
-                    "schema.org": "https://schema.org/SoftwareSourceCode",
-                    "subtype": "software-awsami",
-                    "type": "software"
-                },
-                "tags": [
-                    "depositable",
-                    "linkable"
-                ]
-            },
-            {
-                "title_l10n": "Annotation collection",
-                "icon": "file alternate",
-                "id": "publication-annotationcollection",
-                "props": {
-                    "csl": "report",
-                    "datacite_general": "Collection",
-                    "datacite_type": "",
-                    "eurepo": "info:eu-repo/semantics/technicalDocumentation",
-                    "openaire_resourceType": "9",
-                    "openaire_type": "publication",
-                    "schema.org": "https://schema.org/Collection",
-                    "subtype": "publication-annotationcollection",
-                    "type": "publication"
-                },
-                "tags": [
-                    "depositable",
-                    "linkable"
-                ]
-            },
-            {
-                "title_l10n": "Area of Interest",
-                "icon": "table",
-                "id": "dataset-aoi",
-                "props": {
-                    "csl": "dataset",
-                    "datacite_general": "Dataset",
-                    "datacite_type": "",
-                    "eurepo": "info:eu-repo/semantics/other",
-                    "openaire_resourceType": "21",
-                    "openaire_type": "dataset",
-                    "schema.org": "https://schema.org/Dataset",
-                    "subtype": "dataset-aoi",
-                    "type": "dataset"
-                },
-                "tags": [
-                    "depositable",
-                    "linkable"
-                ]
-            },
-            {
-                "title_l10n": "Book",
-                "icon": "file alternate",
-                "id": "publication-book",
-                "props": {
-                    "csl": "book",
-                    "datacite_general": "Text",
-                    "datacite_type": "Book",
-                    "eurepo": "info:eu-repo/semantics/book",
-                    "openaire_resourceType": "2",
-                    "openaire_type": "publication",
-                    "schema.org": "https://schema.org/Book",
-                    "subtype": "publication-book",
-                    "type": "publication"
-                },
-                "tags": [
-                    "depositable",
-                    "linkable"
-                ]
-            },
-            {
-                "title_l10n": "Book section",
-                "icon": "file alternate",
-                "id": "publication-section",
-                "props": {
-                    "csl": "chapter",
-                    "datacite_general": "Text",
-                    "datacite_type": "Book section",
-                    "eurepo": "info:eu-repo/semantics/bookPart",
-                    "openaire_resourceType": "13",
-                    "openaire_type": "publication",
-                    "schema.org": "https://schema.org/ScholarlyArticle",
-                    "subtype": "publication-section",
-                    "type": "publication"
-                },
-                "tags": [
-                    "depositable",
-                    "linkable"
-                ]
-            },
-            {
-                "title_l10n": "Catalog Service",
-                "icon": "code",
-                "id": "software-datacatalog",
-                "props": {
-                    "csl": "article",
-                    "datacite_general": "Software",
-                    "datacite_type": "",
-                    "eurepo": "info:eu-repo/semantics/other",
-                    "openaire_resourceType": "29",
-                    "openaire_type": "software",
-                    "schema.org": "https://schema.org/SoftwareSourceCode",
-                    "subtype": "software-datacatalog",
-                    "type": "software"
-                },
-                "tags": [
-                    "depositable",
-                    "linkable"
-                ]
-            },
-            {
-                "title_l10n": "Computational Environment",
-                "icon": "code",
-                "id": "software-compenv",
-                "props": {
-                    "csl": "article",
-                    "datacite_general": "Software",
-                    "datacite_type": "",
-                    "eurepo": "info:eu-repo/semantics/other",
-                    "openaire_resourceType": "29",
-                    "openaire_type": "software",
-                    "schema.org": "https://schema.org/SoftwareSourceCode",
-                    "subtype": "software-compenv",
-                    "type": "software"
-                },
-                "tags": [
-                    "depositable",
-                    "linkable"
-                ]
-            },
-            {
-                "title_l10n": "Conference paper",
-                "icon": "file alternate",
-                "id": "publication-conferencepaper",
-                "props": {
-                    "csl": "paper-conference",
-                    "datacite_general": "Text",
-                    "datacite_type": "Conference paper",
-                    "eurepo": "info:eu-repo/semantics/conferencePaper",
-                    "openaire_resourceType": "4",
-                    "openaire_type": "publication",
-                    "schema.org": "https://schema.org/ScholarlyArticle",
-                    "subtype": "publication-conferencepaper",
-                    "type": "publication"
-                },
-                "tags": [
-                    "depositable",
-                    "linkable"
-                ]
-            },
-            {
-                "title_l10n": "Data Cube",
-                "icon": "table",
-                "id": "dataset-datacube",
-                "props": {
-                    "csl": "dataset",
-                    "datacite_general": "Dataset",
-                    "datacite_type": "",
-                    "eurepo": "info:eu-repo/semantics/other",
-                    "openaire_resourceType": "21",
-                    "openaire_type": "dataset",
-                    "schema.org": "https://schema.org/Dataset",
-                    "subtype": "dataset-datacube",
-                    "type": "dataset"
-                },
-                "tags": [
-                    "depositable",
-                    "linkable"
-                ]
-            },
-            {
-                "title_l10n": "Data Service",
-                "icon": "code",
-                "id": "software-dataservice",
-                "props": {
-                    "csl": "article",
-                    "datacite_general": "Software",
-                    "datacite_type": "",
-                    "eurepo": "info:eu-repo/semantics/other",
-                    "openaire_resourceType": "29",
-                    "openaire_type": "software",
-                    "schema.org": "https://schema.org/SoftwareSourceCode",
-                    "subtype": "software-dataservice",
-                    "type": "software"
-                },
-                "tags": [
-                    "depositable",
-                    "linkable"
-                ]
-            },
-            {
-                "title_l10n": "Data management plan",
-                "icon": "file alternate",
-                "id": "publication-datamanagementplan",
-                "props": {
-                    "csl": "report",
-                    "datacite_general": "Text",
-                    "datacite_type": "Data management plan",
-                    "eurepo": "info:eu-repo/semantics/technicalDocumentation",
-                    "openaire_resourceType": "9",
-                    "openaire_type": "publication",
-                    "schema.org": "https://schema.org/CreativeWork",
-                    "subtype": "publication-datamanagementplan",
-                    "type": "publication"
-                },
-                "tags": [
-                    "depositable",
-                    "linkable"
-                ]
-            },
-            {
-                "title_l10n": "Dataset",
-                "icon": "table",
-                "id": "dataset",
-                "props": {
-                    "csl": "dataset",
-                    "datacite_general": "Dataset",
-                    "datacite_type": "",
-                    "eurepo": "info:eu-repo/semantics/other",
-                    "openaire_resourceType": "21",
-                    "openaire_type": "dataset",
-                    "schema.org": "https://schema.org/Dataset",
-                    "subtype": "",
-                    "type": "dataset"
-                },
-                "tags": [
-                    "depositable",
-                    "linkable"
-                ]
-            },
-            {
-                "title_l10n": "Diagram",
-                "icon": "chart bar outline",
-                "id": "image-diagram",
-                "props": {
-                    "csl": "figure",
-                    "datacite_general": "Image",
-                    "datacite_type": "Diagram",
-                    "eurepo": "info:eu-repo/semantics/other",
-                    "openaire_resourceType": "25",
-                    "openaire_type": "dataset",
-                    "schema.org": "https://schema.org/ImageObject",
-                    "subtype": "image-diagram",
-                    "type": "image"
-                },
-                "tags": [
-                    "depositable",
-                    "linkable"
-                ]
-            },
-            {
-                "title_l10n": "Docker Image",
-                "icon": "code",
-                "id": "software-dockerimage",
-                "props": {
-                    "csl": "article",
-                    "datacite_general": "Software",
-                    "datacite_type": "",
-                    "eurepo": "info:eu-repo/semantics/other",
-                    "openaire_resourceType": "29",
-                    "openaire_type": "software",
-                    "schema.org": "https://schema.org/SoftwareSourceCode",
-                    "subtype": "software-dockerimage",
-                    "type": "software"
-                },
-                "tags": [
-                    "depositable",
-                    "linkable"
-                ]
-            },
-            {
-                "title_l10n": "DockerFile",
-                "icon": "code",
-                "id": "software-dockerscript",
-                "props": {
-                    "csl": "article",
-                    "datacite_general": "Software",
-                    "datacite_type": "",
-                    "eurepo": "info:eu-repo/semantics/other",
-                    "openaire_resourceType": "29",
-                    "openaire_type": "software",
-                    "schema.org": "https://schema.org/SoftwareSourceCode",
-                    "subtype": "software-dockerscript",
-                    "type": "software"
-                },
-                "tags": [
-                    "depositable",
-                    "linkable"
-                ]
-            },
-            {
-                "title_l10n": "Drawing",
-                "icon": "chart bar outline",
-                "id": "image-drawing",
-                "props": {
-                    "csl": "graphic",
-                    "datacite_general": "Image",
-                    "datacite_type": "Drawing",
-                    "eurepo": "info:eu-repo/semantics/other",
-                    "openaire_resourceType": "25",
-                    "openaire_type": "dataset",
-                    "schema.org": "https://schema.org/ImageObject",
-                    "subtype": "image-drawing",
-                    "type": "image"
-                },
-                "tags": [
-                    "depositable",
-                    "linkable"
-                ]
-            },
-            {
-                "title_l10n": "Figure",
-                "icon": "chart bar outline",
-                "id": "image-figure",
-                "props": {
-                    "csl": "figure",
-                    "datacite_general": "Image",
-                    "datacite_type": "Figure",
-                    "eurepo": "info:eu-repo/semantics/other",
-                    "openaire_resourceType": "25",
-                    "openaire_type": "dataset",
-                    "schema.org": "https://schema.org/ImageObject",
-                    "subtype": "image-figure",
-                    "type": "image"
-                },
-                "tags": [
-                    "depositable",
-                    "linkable"
-                ]
-            },
-            {
-                "title_l10n": "GeoNode",
-                "icon": "map",
-                "id": "software-geonode",
-                "props": {
-                    "csl": "article",
-                    "datacite_general": "Software",
-                    "datacite_type": "",
-                    "eurepo": "info:eu-repo/semantics/other",
-                    "openaire_resourceType": "29",
-                    "openaire_type": "software",
-                    "schema.org": "https://schema.org/SoftwareSourceCode",
-                    "subtype": "software-geonode",
-                    "type": "software"
-                },
-                "tags": [
-                    "depositable",
-                    "linkable"
-                ]
-            },
-            {
-                "title_l10n": "Image",
-                "icon": "chart bar outline",
-                "id": "image",
-                "props": {
-                    "csl": "figure",
-                    "datacite_general": "Image",
-                    "datacite_type": "",
-                    "eurepo": "info:eu-repo/semantics/other",
-                    "openaire_resourceType": "25",
-                    "openaire_type": "dataset",
-                    "schema.org": "https://schema.org/ImageObject",
-                    "subtype": "",
-                    "type": "image"
-                },
-                "tags": [
-                    "depositable",
-                    "linkable"
-                ]
-            },
-            {
-                "title_l10n": "Journal article",
-                "icon": "file alternate",
-                "id": "publication-article",
-                "props": {
-                    "csl": "article-journal",
-                    "datacite_general": "Text",
-                    "datacite_type": "Journal article",
-                    "eurepo": "info:eu-repo/semantics/article",
-                    "openaire_resourceType": "1",
-                    "openaire_type": "publication",
-                    "schema.org": "https://schema.org/ScholarlyArticle",
-                    "subtype": "publication-article",
-                    "type": "publication"
-                },
-                "tags": [
-                    "depositable",
-                    "linkable"
-                ]
-            }
-        ],
-        "total": 61
-    }
+  "hits": {
+    "hits": [
+      {
+        "title_l10n": "AWS AMI",
+        "icon": "code",
+        "id": "software-awsami",
+        "props": {
+          "csl": "article",
+          "datacite_general": "Software",
+          "datacite_type": "",
+          "eurepo": "info:eu-repo/semantics/other",
+          "openaire_resourceType": "29",
+          "openaire_type": "software",
+          "schema.org": "https://schema.org/SoftwareSourceCode",
+          "subtype": "software-awsami",
+          "type": "software"
+        },
+        "tags": ["depositable", "linkable"]
+      },
+      {
+        "title_l10n": "Annotation collection",
+        "icon": "file alternate",
+        "id": "publication-annotationcollection",
+        "props": {
+          "csl": "report",
+          "datacite_general": "Collection",
+          "datacite_type": "",
+          "eurepo": "info:eu-repo/semantics/technicalDocumentation",
+          "openaire_resourceType": "9",
+          "openaire_type": "publication",
+          "schema.org": "https://schema.org/Collection",
+          "subtype": "publication-annotationcollection",
+          "type": "publication"
+        },
+        "tags": ["depositable", "linkable"]
+      },
+      {
+        "title_l10n": "Area of Interest",
+        "icon": "table",
+        "id": "dataset-aoi",
+        "props": {
+          "csl": "dataset",
+          "datacite_general": "Dataset",
+          "datacite_type": "",
+          "eurepo": "info:eu-repo/semantics/other",
+          "openaire_resourceType": "21",
+          "openaire_type": "dataset",
+          "schema.org": "https://schema.org/Dataset",
+          "subtype": "dataset-aoi",
+          "type": "dataset"
+        },
+        "tags": ["depositable", "linkable"]
+      },
+      {
+        "title_l10n": "Book",
+        "icon": "file alternate",
+        "id": "publication-book",
+        "props": {
+          "csl": "book",
+          "datacite_general": "Text",
+          "datacite_type": "Book",
+          "eurepo": "info:eu-repo/semantics/book",
+          "openaire_resourceType": "2",
+          "openaire_type": "publication",
+          "schema.org": "https://schema.org/Book",
+          "subtype": "publication-book",
+          "type": "publication"
+        },
+        "tags": ["depositable", "linkable"]
+      },
+      {
+        "title_l10n": "Book section",
+        "icon": "file alternate",
+        "id": "publication-section",
+        "props": {
+          "csl": "chapter",
+          "datacite_general": "Text",
+          "datacite_type": "Book section",
+          "eurepo": "info:eu-repo/semantics/bookPart",
+          "openaire_resourceType": "13",
+          "openaire_type": "publication",
+          "schema.org": "https://schema.org/ScholarlyArticle",
+          "subtype": "publication-section",
+          "type": "publication"
+        },
+        "tags": ["depositable", "linkable"]
+      },
+      {
+        "title_l10n": "Catalog Service",
+        "icon": "code",
+        "id": "software-datacatalog",
+        "props": {
+          "csl": "article",
+          "datacite_general": "Software",
+          "datacite_type": "",
+          "eurepo": "info:eu-repo/semantics/other",
+          "openaire_resourceType": "29",
+          "openaire_type": "software",
+          "schema.org": "https://schema.org/SoftwareSourceCode",
+          "subtype": "software-datacatalog",
+          "type": "software"
+        },
+        "tags": ["depositable", "linkable"]
+      },
+      {
+        "title_l10n": "Computational Environment",
+        "icon": "code",
+        "id": "software-compenv",
+        "props": {
+          "csl": "article",
+          "datacite_general": "Software",
+          "datacite_type": "",
+          "eurepo": "info:eu-repo/semantics/other",
+          "openaire_resourceType": "29",
+          "openaire_type": "software",
+          "schema.org": "https://schema.org/SoftwareSourceCode",
+          "subtype": "software-compenv",
+          "type": "software"
+        },
+        "tags": ["depositable", "linkable"]
+      },
+      {
+        "title_l10n": "Conference paper",
+        "icon": "file alternate",
+        "id": "publication-conferencepaper",
+        "props": {
+          "csl": "paper-conference",
+          "datacite_general": "Text",
+          "datacite_type": "Conference paper",
+          "eurepo": "info:eu-repo/semantics/conferencePaper",
+          "openaire_resourceType": "4",
+          "openaire_type": "publication",
+          "schema.org": "https://schema.org/ScholarlyArticle",
+          "subtype": "publication-conferencepaper",
+          "type": "publication"
+        },
+        "tags": ["depositable", "linkable"]
+      },
+      {
+        "title_l10n": "Data Cube",
+        "icon": "table",
+        "id": "dataset-datacube",
+        "props": {
+          "csl": "dataset",
+          "datacite_general": "Dataset",
+          "datacite_type": "",
+          "eurepo": "info:eu-repo/semantics/other",
+          "openaire_resourceType": "21",
+          "openaire_type": "dataset",
+          "schema.org": "https://schema.org/Dataset",
+          "subtype": "dataset-datacube",
+          "type": "dataset"
+        },
+        "tags": ["depositable", "linkable"]
+      },
+      {
+        "title_l10n": "Data Service",
+        "icon": "code",
+        "id": "software-dataservice",
+        "props": {
+          "csl": "article",
+          "datacite_general": "Software",
+          "datacite_type": "",
+          "eurepo": "info:eu-repo/semantics/other",
+          "openaire_resourceType": "29",
+          "openaire_type": "software",
+          "schema.org": "https://schema.org/SoftwareSourceCode",
+          "subtype": "software-dataservice",
+          "type": "software"
+        },
+        "tags": ["depositable", "linkable"]
+      },
+      {
+        "title_l10n": "Data management plan",
+        "icon": "file alternate",
+        "id": "publication-datamanagementplan",
+        "props": {
+          "csl": "report",
+          "datacite_general": "Text",
+          "datacite_type": "Data management plan",
+          "eurepo": "info:eu-repo/semantics/technicalDocumentation",
+          "openaire_resourceType": "9",
+          "openaire_type": "publication",
+          "schema.org": "https://schema.org/CreativeWork",
+          "subtype": "publication-datamanagementplan",
+          "type": "publication"
+        },
+        "tags": ["depositable", "linkable"]
+      },
+      {
+        "title_l10n": "Dataset",
+        "icon": "table",
+        "id": "dataset",
+        "props": {
+          "csl": "dataset",
+          "datacite_general": "Dataset",
+          "datacite_type": "",
+          "eurepo": "info:eu-repo/semantics/other",
+          "openaire_resourceType": "21",
+          "openaire_type": "dataset",
+          "schema.org": "https://schema.org/Dataset",
+          "subtype": "",
+          "type": "dataset"
+        },
+        "tags": ["depositable", "linkable"]
+      },
+      {
+        "title_l10n": "Diagram",
+        "icon": "chart bar outline",
+        "id": "image-diagram",
+        "props": {
+          "csl": "figure",
+          "datacite_general": "Image",
+          "datacite_type": "Diagram",
+          "eurepo": "info:eu-repo/semantics/other",
+          "openaire_resourceType": "25",
+          "openaire_type": "dataset",
+          "schema.org": "https://schema.org/ImageObject",
+          "subtype": "image-diagram",
+          "type": "image"
+        },
+        "tags": ["depositable", "linkable"]
+      },
+      {
+        "title_l10n": "Docker Image",
+        "icon": "code",
+        "id": "software-dockerimage",
+        "props": {
+          "csl": "article",
+          "datacite_general": "Software",
+          "datacite_type": "",
+          "eurepo": "info:eu-repo/semantics/other",
+          "openaire_resourceType": "29",
+          "openaire_type": "software",
+          "schema.org": "https://schema.org/SoftwareSourceCode",
+          "subtype": "software-dockerimage",
+          "type": "software"
+        },
+        "tags": ["depositable", "linkable"]
+      },
+      {
+        "title_l10n": "DockerFile",
+        "icon": "code",
+        "id": "software-dockerscript",
+        "props": {
+          "csl": "article",
+          "datacite_general": "Software",
+          "datacite_type": "",
+          "eurepo": "info:eu-repo/semantics/other",
+          "openaire_resourceType": "29",
+          "openaire_type": "software",
+          "schema.org": "https://schema.org/SoftwareSourceCode",
+          "subtype": "software-dockerscript",
+          "type": "software"
+        },
+        "tags": ["depositable", "linkable"]
+      },
+      {
+        "title_l10n": "Drawing",
+        "icon": "chart bar outline",
+        "id": "image-drawing",
+        "props": {
+          "csl": "graphic",
+          "datacite_general": "Image",
+          "datacite_type": "Drawing",
+          "eurepo": "info:eu-repo/semantics/other",
+          "openaire_resourceType": "25",
+          "openaire_type": "dataset",
+          "schema.org": "https://schema.org/ImageObject",
+          "subtype": "image-drawing",
+          "type": "image"
+        },
+        "tags": ["depositable", "linkable"]
+      },
+      {
+        "title_l10n": "Figure",
+        "icon": "chart bar outline",
+        "id": "image-figure",
+        "props": {
+          "csl": "figure",
+          "datacite_general": "Image",
+          "datacite_type": "Figure",
+          "eurepo": "info:eu-repo/semantics/other",
+          "openaire_resourceType": "25",
+          "openaire_type": "dataset",
+          "schema.org": "https://schema.org/ImageObject",
+          "subtype": "image-figure",
+          "type": "image"
+        },
+        "tags": ["depositable", "linkable"]
+      },
+      {
+        "title_l10n": "GeoNode",
+        "icon": "map",
+        "id": "software-geonode",
+        "props": {
+          "csl": "article",
+          "datacite_general": "Software",
+          "datacite_type": "",
+          "eurepo": "info:eu-repo/semantics/other",
+          "openaire_resourceType": "29",
+          "openaire_type": "software",
+          "schema.org": "https://schema.org/SoftwareSourceCode",
+          "subtype": "software-geonode",
+          "type": "software"
+        },
+        "tags": ["depositable", "linkable"]
+      },
+      {
+        "title_l10n": "Image",
+        "icon": "chart bar outline",
+        "id": "image",
+        "props": {
+          "csl": "figure",
+          "datacite_general": "Image",
+          "datacite_type": "",
+          "eurepo": "info:eu-repo/semantics/other",
+          "openaire_resourceType": "25",
+          "openaire_type": "dataset",
+          "schema.org": "https://schema.org/ImageObject",
+          "subtype": "",
+          "type": "image"
+        },
+        "tags": ["depositable", "linkable"]
+      },
+      {
+        "title_l10n": "Journal article",
+        "icon": "file alternate",
+        "id": "publication-article",
+        "props": {
+          "csl": "article-journal",
+          "datacite_general": "Text",
+          "datacite_type": "Journal article",
+          "eurepo": "info:eu-repo/semantics/article",
+          "openaire_resourceType": "1",
+          "openaire_type": "publication",
+          "schema.org": "https://schema.org/ScholarlyArticle",
+          "subtype": "publication-article",
+          "type": "publication"
+        },
+        "tags": ["depositable", "linkable"]
+      }
+    ],
+    "total": 61
+  }
 }

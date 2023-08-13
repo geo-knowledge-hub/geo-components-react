@@ -10,3 +10,7 @@
   height: 40vh;
   z-index: 0;
 }
+
+.ui.container.image-container {
+  width: 320px;
+}

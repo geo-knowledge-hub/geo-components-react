@@ -26,8 +26,8 @@ const Template = (args) => <RelatedResourceTableComponent {...args} />;
 /**
  * Component stories
  */
-export const RelatedResourceTable = Template.bind({});
-RelatedResourceTable.args = {
+export const Base = Template.bind({});
+Base.args = {
   records: relatedRecordsData,
   resourceTypeDefinitions: resourceTypeData,
 };

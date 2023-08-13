@@ -1,0 +1,249 @@
+{
+  "hits": {
+    "hits": [
+      {
+        "created": "2023-08-11T11:04:06.166022+00:00",
+        "custom_fields": {},
+        "metadata": {
+          "publisher": "GEO Knowledge Hub",
+          "languages": [{ "title": { "en": "English" }, "id": "eng" }],
+          "title": "This is a very useful Knowledge Package",
+          "geo_work_programme_activity": {
+            "title": {
+              "en": "GEO Global Agricultural Monitoring (GEOGLAM)"
+            },
+            "id": "geo-activities-geoglam"
+          },
+          "engagement_priorities": [
+            {
+              "title": { "en": "(SDG) Goal 1 - No Poverty" },
+              "id": "sdg-goal-1"
+            },
+            {
+              "title": { "en": "(SDG) Goal 10 - Reduced inequalities" },
+              "id": "sdg-goal-10"
+            },
+            {
+              "title": {
+                "en": "(SDG) Goal 11 - Sustainable cities and communities"
+              },
+              "id": "sdg-goal-11"
+            },
+            {
+              "title": {
+                "en": "(SDG) Goal 12 - Responsible consumption and production"
+              },
+              "id": "sdg-goal-12"
+            },
+            {
+              "title": { "en": "(SDG) Goal 13 - Climate action" },
+              "id": "sdg-goal-13"
+            }
+          ],
+          "rights": [
+            {
+              "icon": "cc-by-icon",
+              "props": {
+                "scheme": "spdx",
+                "url": "https://creativecommons.org/licenses/by/4.0/legalcode"
+              },
+              "title": {
+                "en": "Creative Commons Attribution 4.0 International"
+              },
+              "id": "cc-by-4.0",
+              "description": {
+                "en": "Retains copyright in the data and provides a license that permitsthe user to use, copy, modify, and redistribute the data for any purpose, provided that the user provides credit to the original data provider."
+              }
+            }
+          ],
+          "resource_type": {
+            "title": { "en": "Knowledge Package" },
+            "id": "knowledge"
+          },
+          "creators": [
+            {
+              "person_or_org": {
+                "family_name": "Researcher",
+                "name": "Researcher, Researcher",
+                "type": "personal",
+                "given_name": "Researcher"
+              },
+              "affiliations": [{ "name": "University" }]
+            }
+          ],
+          "publication_date": "2023-08-11"
+        },
+        "updated": "2023-08-11T11:04:06.334394+00:00",
+        "access": {
+          "record": "public",
+          "embargo": { "active": false, "reason": null },
+          "status": "metadata-only",
+          "files": "public"
+        },
+        "files": { "enabled": false, "order": [] },
+        "assistance_requests": [],
+        "links": {
+          "self": "https://gkhub-api/api/packages/g41gr-w6691",
+          "self_html": "https://gkhub-api/packages/g41gr-w6691",
+          "self_doi": "https://gkhub-api/doi/10.5072/g41gr-w6691",
+          "doi": "https://doi.org/10.5072/g41gr-w6691",
+          "self_iiif_manifest": "https://gkhub-api/api/iiif/package:g41gr-w6691/manifest",
+          "self_iiif_sequence": "https://gkhub-api/api/iiif/package:g41gr-w6691/sequence/default",
+          "files": "https://gkhub-api/api/packages/g41gr-w6691/files",
+          "latest": "https://gkhub-api/api/packages/g41gr-w6691/versions/latest",
+          "latest_html": "https://gkhub-api/packages/g41gr-w6691/latest",
+          "draft": "https://gkhub-api/api/packages/g41gr-w6691/draft",
+          "versions": "https://gkhub-api/api/packages/g41gr-w6691/versions",
+          "access_links": "https://gkhub-api/api/packages/g41gr-w6691/access/links",
+          "reserve_doi": "https://gkhub-api/api/packages/g41gr-w6691/draft/pids/doi",
+          "context_html": "https://gkhub-api/packages/g41gr-w6691/dashboard",
+          "context_resources": "https://gkhub-api/api/packages/context/a4j80-8sv02/resources",
+          "context_associate": "https://gkhub-api/api/packages/g41gr-w6691/context/actions/associate",
+          "context_dissociate": "https://gkhub-api/api/packages/g41gr-w6691/context/actions/dissociate",
+          "resources": "https://gkhub-api/api/packages/g41gr-w6691/resources",
+          "feed": "https://gkhub-api/api/packages/g41gr-w6691/feed"
+        },
+        "status": "published",
+        "revision_id": 3,
+        "id": "g41gr-w6691",
+        "relationship": { "resources": [] },
+        "is_published": true,
+        "versions": { "is_latest": true, "index": 1, "is_latest_draft": true },
+        "ui": {
+          "updated_date_l10n_long": "August 11, 2023",
+          "languages": [{ "title_l10n": "English", "id": "eng" }],
+          "custom_fields": {},
+          "publication_date_l10n_long": "August 11, 2023",
+          "publication_date_l10n_medium": "Aug 11, 2023",
+          "access_status": {
+            "id": "metadata-only",
+            "title_l10n": "Metadata-only",
+            "description_l10n": "No files are available for this record.",
+            "icon": "tag",
+            "embargo_date_l10n": null,
+            "message_class": ""
+          },
+          "engagement_priorities": [
+            { "title_l10n": "(SDG) Goal 1 - No Poverty", "id": "sdg-goal-1" },
+            {
+              "title_l10n": "(SDG) Goal 10 - Reduced inequalities",
+              "id": "sdg-goal-10"
+            },
+            {
+              "title_l10n": "(SDG) Goal 11 - Sustainable cities and communities",
+              "id": "sdg-goal-11"
+            },
+            {
+              "title_l10n": "(SDG) Goal 12 - Responsible consumption and production",
+              "id": "sdg-goal-12"
+            },
+            {
+              "title_l10n": "(SDG) Goal 13 - Climate action",
+              "id": "sdg-goal-13"
+            }
+          ],
+          "version": "v1",
+          "rights": [
+            {
+              "icon": "cc-by-icon",
+              "props": {
+                "scheme": "spdx",
+                "url": "https://creativecommons.org/licenses/by/4.0/legalcode"
+              },
+              "title_l10n": "Creative Commons Attribution 4.0 International",
+              "id": "cc-by-4.0",
+              "description_l10n": "Retains copyright in the data and provides a license that permitsthe user to use, copy, modify, and redistribute the data for any purpose, provided that the user provides credit to the original data provider."
+            }
+          ],
+          "resource_type": {
+            "title_l10n": "Knowledge Package",
+            "id": "knowledge"
+          },
+          "creators": {
+            "creators": [
+              {
+                "person_or_org": {
+                  "family_name": "Researcher",
+                  "name": "Researcher, Researcher",
+                  "type": "personal",
+                  "given_name": "Researcher"
+                },
+                "affiliations": [[1, "University"]]
+              }
+            ],
+            "affiliations": [[1, "University", null]]
+          },
+          "is_draft": false,
+          "created_date_l10n_long": "August 11, 2023"
+        }
+      }
+    ],
+    "total": 1
+  },
+  "aggregations": {
+    "is_published": {
+      "buckets": [
+        {
+          "key": "true",
+          "doc_count": 1,
+          "label": "Published",
+          "is_selected": false
+        }
+      ],
+      "label": "Status"
+    },
+    "resource_type": {
+      "buckets": [
+        {
+          "key": "knowledge",
+          "doc_count": 1,
+          "label": "Knowledge Package",
+          "is_selected": false,
+          "inner": { "buckets": [] }
+        }
+      ],
+      "label": "Resource types"
+    },
+    "geo_work_programme_activity": {
+      "buckets": [],
+      "label": "GEO Work Programme Activities"
+    },
+    "target_audience": { "buckets": [], "label": "Target Audience" },
+    "engagement_priority": {
+      "buckets": [
+        {
+          "key": "sdg-goal-1",
+          "doc_count": 1,
+          "label": "(SDG) Goal 1 - No Poverty",
+          "is_selected": false
+        },
+        {
+          "key": "sdg-goal-10",
+          "doc_count": 1,
+          "label": "(SDG) Goal 10 - Reduced inequalities",
+          "is_selected": false
+        },
+        {
+          "key": "sdg-goal-11",
+          "doc_count": 1,
+          "label": "(SDG) Goal 11 - Sustainable cities and communities",
+          "is_selected": false
+        },
+        {
+          "key": "sdg-goal-12",
+          "doc_count": 1,
+          "label": "(SDG) Goal 12 - Responsible consumption and production",
+          "is_selected": false
+        },
+        {
+          "key": "sdg-goal-13",
+          "doc_count": 1,
+          "label": "(SDG) Goal 13 - Climate action",
+          "is_selected": false
+        }
+      ],
+      "label": "Engagement Priorities"
+    },
+    "subject": { "buckets": [], "label": "Subjects" }
+  }
+}

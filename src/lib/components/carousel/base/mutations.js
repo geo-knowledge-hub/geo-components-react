@@ -14,3 +14,10 @@ export const mutateVocabularyData = (data, url) => ({
   subElements: [],
   hasSubElements: data.props.has_subtype === 'true',
 });
+
+export const mutateEngagementsData = (data, url) => ({
+  id: data.id,
+  title: data.title.en,
+  image: url === '#' ? data.props.icon : `/static/${data.props.icon}`,
+  url: `${url}:${data.id}`,
+});
