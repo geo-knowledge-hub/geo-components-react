@@ -35,10 +35,10 @@ export const UserStoriesTable = ({ tableData }) => {
           return (
             <Grid>
               <Grid.Row verticalAlign="middle">
-                <Grid.Column width={1}>
+                <Grid.Column widescreen={1} largeScreen={1} computer={1} tablet={1} mobile={3}>
                   <Icon name="user" size="big" />
                 </Grid.Column>
-                <Grid.Column width={12}>
+                <Grid.Column widescreen={12} largeScreen={12} computer={12} tablet={12} mobile={11}>
                   <Grid className={'user-stories-metadata'}>
                     <Grid.Row columns={1}>
                       <Grid.Column>
@@ -50,7 +50,7 @@ export const UserStoriesTable = ({ tableData }) => {
                     </Grid.Row>
                   </Grid>
                 </Grid.Column>
-                <Grid.Column width={3}>
+                <Grid.Column widescreen={3} largeScreen={3} computer={3} tablet={3} mobile={2}>
                   <Button
                     icon={'arrow right'}
                     floated={'right'}
@@ -68,12 +68,16 @@ export const UserStoriesTable = ({ tableData }) => {
   // Memoizing data
   const tableDataMemoized = useMemo(() => tableData);
 
+  // Defining valid page sizes
+  const pageSizes = [3, 5, 10];
+
   return (
     <>
       <PaginableTable
         unstackable
         fixed={false}
         padded={true}
+        pageSizes={pageSizes}
         data={tableDataMemoized}
         columnsConfiguration={tableColumnsDefinition}
         className={'users-stories-table'}

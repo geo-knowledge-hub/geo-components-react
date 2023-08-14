@@ -21,16 +21,11 @@ import { Pagination, Grid, Container, Dropdown } from 'semantic-ui-react';
 import { BaseTable } from '../base';
 
 /**
- * Constants
- */
-const VALID_PAGE_SIZES = [5, 10, 20, 30, 40, 50];
-
-/**
  * Atomic table to be used as basis to create specialized tables.
  *
  * @returns
  */
-export const PaginableTable = ({ columnsConfiguration, data, ...uiProps }) => {
+export const PaginableTable = ({ columnsConfiguration, data, pageSizes, ...uiProps }) => {
   const {
     getTableProps,
     getTableBodyProps,
@@ -48,7 +43,7 @@ export const PaginableTable = ({ columnsConfiguration, data, ...uiProps }) => {
     {
       columns: columnsConfiguration,
       data: data,
-      initialState: { pageIndex: 0, pageSize: VALID_PAGE_SIZES[0] },
+      initialState: { pageIndex: 0, pageSize: pageSizes[0] },
     },
     useGlobalFilter,
     useSortBy,
@@ -90,7 +85,7 @@ export const PaginableTable = ({ columnsConfiguration, data, ...uiProps }) => {
             onChange={(_, data) => {
               setPageSize(data.value);
             }}
-            options={VALID_PAGE_SIZES.map((v) => ({
+            options={pageSizes.map((v) => ({
               key: v,
               text: v,
               value: v,
@@ -124,3 +119,7 @@ PaginableTable.propTypes = {
   data: PropTypes.array.isRequired,
   uiProps: PropTypes.object,
 };
+
+PaginableTable.defaultProps = {
+  pageSizes: [5, 10, 20, 30, 40, 50]
+}

@@ -41,19 +41,18 @@ export const TypeSelectorCard = () => {
           >
             <Card.Content>
               <Card.Header>
-                <Grid relaxed columns={2}>
-                  <Grid.Row only={'tablet computer'}>
-                    <Grid.Column width={10}>{option.name}</Grid.Column>
-                    <Grid.Column floated={'right'} width={6}>
-                      <Icon
-                        name={guessRecordGroupIcon(option.name)}
-                        size={'large'}
-                      />
+                <Grid relaxed>
+                  <Grid.Row>
+                    <Grid.Column
+                      widescreen={10}
+                      largeScreen={10}
+                      computer={10}
+                      tablet={10}
+                      mobile={12}
+                    >
+                      {option.name}
                     </Grid.Column>
-                  </Grid.Row>
-                  <Grid.Row only={'mobile'}>
-                    <Grid.Column width={12}>{option.name}</Grid.Column>
-                    <Grid.Column floated={'left'} width={1}>
+                    <Grid.Column width={2}>
                       <Icon
                         name={guessRecordGroupIcon(option.name)}
                         size={'large'}
