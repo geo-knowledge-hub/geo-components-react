@@ -52,7 +52,8 @@ export const mutateRecordData = (data) => ({
  *  title: string,
  *  category: string,
  *  date: string,
- *  location: string
+ *  location: string,
+ *  url: string
  * }} Object with the new version of the event.
  */
 export const mutateEventData = (data) => ({
@@ -60,4 +61,5 @@ export const mutateEventData = (data) => ({
   category: _get(data, 'attributes.category'),
   date: new Date(_get(data, 'attributes.date')).toUTCString(),
   location: _get(data, 'attributes.location'),
+  url: _get(data, 'attributes.url'),
 });

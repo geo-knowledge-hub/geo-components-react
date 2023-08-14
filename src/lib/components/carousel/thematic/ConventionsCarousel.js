@@ -10,6 +10,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useQuery } from '@tanstack/react-query';
 
+import natsort from 'natsort';
 import { Grid, Loader } from 'semantic-ui-react';
 
 import { mutateVocabularyData } from '../base/mutations';
@@ -29,6 +30,9 @@ export const ConventionsCarousel = ({
   vocabularyType,
   staleTime,
 }) => {
+  // Utilities
+  const natsorter = natsort({ insensitive: true });
+
   // Hooks
   const { data: conventions, isFetching } = useQuery({
     queryKey: ['carousel-conventions'],
@@ -37,7 +41,8 @@ export const ConventionsCarousel = ({
         q: 'props.is_subtype:"false" AND props.engagement_type:convention',
       }).then((data) =>
         data
-          .filter((row) => !!row.props.icon)
+          .filter((x) => !(['', null].indexOf(x.props.icon) > -1))
+          .sort((a, b) => natsorter(a.id, b.id))
           .map((row) => mutateVocabularyData(row, filterUrl))
       );
     },
