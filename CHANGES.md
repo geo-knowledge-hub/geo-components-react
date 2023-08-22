@@ -1,5 +1,13 @@
 # Changes
 
+## Version 0.5.0 (2023-08-22)
+
+- Carousel components refactored using [React Slick](https://react-slick.neostack.com/) and [React Query v4](https://tanstack.com/query/v4);
+- User stories component recreated as a `PaginableTable` (`UserStoriesTable`);
+- Reviewed Storybook documentation and tests;
+- Fixed responsivity in the `FilterBuilder` form;
+- Emotion and Pure React Carousel removed.
+
 ## Version 0.4.12 (2023-06-08)
 
 - Added default values support in the `ExternalResourceTable`.
