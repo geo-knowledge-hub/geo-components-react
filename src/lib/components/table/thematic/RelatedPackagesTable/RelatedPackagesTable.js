@@ -17,6 +17,8 @@ import _groupBy from 'lodash/groupBy';
 
 import { Icon, Dropdown, Grid } from 'semantic-ui-react';
 
+import './RelatedPackagesTable.css';
+
 /**
  * External resource table.
  */
@@ -58,13 +60,13 @@ export const RelatedPackagesTable = ({ tableData }) => {
           return (
             <Grid>
               <Grid.Row verticalAlign="middle">
-                <Grid.Column width={1}>
+                <Grid.Column widescreen={1} largeScreen={1} computer={1} mobile={2} tablet={1}>
                   <Icon name="box" size="big" />
                 </Grid.Column>
-                <Grid.Column width={11}>
+                <Grid.Column widescreen={11} largeScreen={11} computer={11} mobile={14} tablet={11}>
                   <p>{rowFirstVersion.title}</p>
                 </Grid.Column>
-                <Grid.Column width={4}>
+                <Grid.Column widescreen={4} largeScreen={4} computer={4} mobile={16} tablet={4}>
                   <Dropdown
                     icon={'history'}
                     floating
@@ -97,7 +99,7 @@ export const RelatedPackagesTable = ({ tableData }) => {
   const tableDataMemoized = useMemo(() => Object.values(tableDataGroups));
 
   return (
-    <>
+    <div className='related-packages-table'>
       <PaginableTable
         unstackable
         fixed={false}
@@ -105,6 +107,6 @@ export const RelatedPackagesTable = ({ tableData }) => {
         data={tableDataMemoized}
         columnsConfiguration={tableColumnsDefinition}
       />
-    </>
+    </div>
   );
 };
