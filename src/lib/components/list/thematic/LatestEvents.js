@@ -17,7 +17,7 @@ import { EventList } from '../moldure';
 import { fetchEvents } from '../../../resources';
 import { mutateEventData } from '../base/mutations';
 
-export const LatestEvents = ({ fetchUrl, staleTime }) => {
+export const LatestEvents = ({ fetchUrl, moreUrl, staleTime }) => {
   const {
     data: records,
     isFetching,
@@ -47,7 +47,7 @@ export const LatestEvents = ({ fetchUrl, staleTime }) => {
               </Grid.Row>
               <Grid.Row columns={1}>
                 <Container textAlign={'center'}>
-                  <Button href={'/search'}>More</Button>
+                  <Button as={'a'} href={moreUrl} target={'_blank'}>More</Button>
                 </Container>
               </Grid.Row>
             </Grid>
