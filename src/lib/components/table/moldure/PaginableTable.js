@@ -25,7 +25,13 @@ import { BaseTable } from '../base';
  *
  * @returns
  */
-export const PaginableTable = ({ columnsConfiguration, data, pageSizes, ...uiProps }) => {
+export const PaginableTable = ({
+  columnsConfiguration,
+  data,
+  pageSizes,
+  initialState,
+  ...uiProps
+}) => {
   const {
     getTableProps,
     getTableBodyProps,
@@ -43,7 +49,7 @@ export const PaginableTable = ({ columnsConfiguration, data, pageSizes, ...uiPro
     {
       columns: columnsConfiguration,
       data: data,
-      initialState: { pageIndex: 0, pageSize: pageSizes[0] },
+      initialState: { pageIndex: 0, pageSize: pageSizes[0], ...initialState },
     },
     useGlobalFilter,
     useSortBy,
@@ -66,13 +72,12 @@ export const PaginableTable = ({ columnsConfiguration, data, pageSizes, ...uiPro
     <Container>
       <BaseTable
         rows={page}
-        columns={columns}
+        columns={visibleColumns}
         prepareRow={prepareRow}
         getTableProps={getTableProps}
         getTableBodyProps={getTableBodyProps}
         selectable={true}
         sortable={true}
-        visibleColumns={visibleColumns}
         {...{ ...uiProps, globalFilter: globalFilterComponent }}
       />
       <Grid>
@@ -121,5 +126,5 @@ PaginableTable.propTypes = {
 };
 
 PaginableTable.defaultProps = {
-  pageSizes: [5, 10, 20, 30, 40, 50]
-}
+  pageSizes: [5, 10, 20, 30, 40, 50],
+};
