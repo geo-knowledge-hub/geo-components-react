@@ -117,8 +117,8 @@ export const ExternalResourceTable = ({ tableData }) => {
                   mobile={12}
                 >
                   <div>
-                    <Label size={'tiny'}>{rowResourceType}</Label>
-                    <Label size={'tiny'}>{rowRelationType}</Label>
+                    {rowRelationType && <Label size={'tiny'}>Relation: {rowRelationType}</Label>}
+                    {rowResourceType && <Label size={'tiny'}>Resource type: {rowResourceType}</Label>}
                   </div>
 
                   <Grid className={'user-stories-metadata'}>
