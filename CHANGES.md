@@ -1,5 +1,9 @@
 # Changes
 
+## Version 0.5.2 (2023-09-14)
+
+- Updated `ExternalResourceTable` style.
+
 ## Version 0.5.1 (2023-08-31)
 
 - Updated `RelatedPackages` behavior on mobile;
