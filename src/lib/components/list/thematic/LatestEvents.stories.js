@@ -53,7 +53,7 @@ const Template = (args) => (
 export const Base = Template.bind({});
 Base.args = {
   fetchUrl: '/api/events?sort[0]=date',
-  moreUrl: '#'
+  moreUrl: 'https://gkhub.earthobservations.org/doc/events'
 };
 
 Base.parameters = {

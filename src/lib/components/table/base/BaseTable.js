@@ -23,7 +23,6 @@ export const BaseTable = ({
   getTableProps,
   getTableBodyProps,
   globalFilter,
-  visibleColumns,
   ...uiProps
 }) => {
   return (
@@ -51,7 +50,7 @@ export const BaseTable = ({
 
       {globalFilter && (
         <Table.Row>
-          <Table.HeaderCell colSpan={visibleColumns.length}>
+          <Table.HeaderCell colSpan={columns.length}>
             {globalFilter}
           </Table.HeaderCell>
         </Table.Row>

@@ -16,7 +16,9 @@ import _truncate from 'lodash/truncate';
 import regeneratorRuntime from 'regenerator-runtime';
 import { useAsyncDebounce } from 'react-table';
 
-import { Grid, Button, Icon, Input } from 'semantic-ui-react';
+import { Grid, Button, Icon, Input, Header, Label } from 'semantic-ui-react';
+
+import './ExternalResourceTable.css';
 
 /**
  * Global filter component for the external resources table.
@@ -36,7 +38,7 @@ function GlobalFilter({
     <Input
       fluid
       icon
-      placeholder="Search..."
+      placeholder={'Type to search...'}
       value={value || ''}
       onChange={(e) => {
         setValue(e.target.value);
@@ -44,7 +46,7 @@ function GlobalFilter({
       }}
     >
       <input />
-      <Icon name="search" />
+      <Icon name={'search'} />
     </Input>
   );
 }
@@ -55,105 +57,161 @@ function GlobalFilter({
 export const ExternalResourceTable = ({ tableData }) => {
   const tableColumnsDefinition = useMemo(() => {
     return [
+      // Defining invisible columns that are used as the index for the table filter
       {
-        Header: 'Title',
-        id: 'cell-title',
-        Cell: ({ row }) => {
-          // Getting data
-          const { original: rowData } = row;
-
-          // Preparing data
-          const rowTitle = _get(rowData, 'title');
-
-          if (_isNil(rowTitle)) {
-            return <p>External resource</p>;
-          }
-
-          return rowTitle;
-        },
+        Header: () => null,
+        id: 'idx_title',
+        accessor: 'title',
       },
       {
-        Header: 'Description',
-        id: 'cell-description',
+        Header: () => null,
+        id: 'idx_relation_type',
+        accessor: 'relation_type.title_l10n',
+      },
+      {
+        Header: () => null,
+        id: 'idx_resource_type',
+        accessor: 'resource_type.title_l10n',
+      },
+      {
+        Header: () => null,
+        id: 'idx_scheme',
+        accessor: 'scheme',
+      },
+      // Content column
+      {
+        Header: () => null,
+        id: 'external-resources-table',
         Cell: ({ row }) => {
           // Getting data
           const { original: rowData } = row;
 
           // Preparing data
+          // Title and description
+          const rowTitle = _get(rowData, 'title');
+          const rowDescription = _get(rowData, 'description');
+
+          // URL and Identifier
           const rowUrl = _truncate(_get(rowData, 'url'), {
             length: 120,
             omission: '...',
           });
+
           const rowIdentifier = _truncate(_get(rowData, 'identifier'), {
             length: 120,
             omission: '...',
           });
 
-          const rowDescription = _get(rowData, 'description');
-
-          if (_isNil(rowDescription)) {
-            return (
-              <p style={{ overflowWrap: 'break-word' }}>
-                {rowUrl || rowIdentifier}
-              </p>
-            );
-          }
-
-          return rowDescription;
-        },
-      },
-      {
-        Header: 'Relation Type',
-        accessor: 'relation_type.title_l10n',
-      },
-      {
-        Header: 'Resource Type',
-        accessor: 'resource_type.title_l10n',
-      },
-      {
-        Header: () => null,
-        id: 'access-button',
-        Cell: ({ row }) => {
-          // Getting data
-          const { original: rowData } = row;
-
-          // Preparing access address
-          const rowUrl = _get(rowData, 'url');
-          const rowIdentifier = _get(rowData, 'identifier');
+          // Resource Type and Relation Type
+          const rowResourceType = _get(rowData, 'resource_type.title_l10n');
+          const rowRelationType = _get(rowData, 'relation_type.title_l10n');
 
           return (
-            <Grid stackable columns={2}>
-              <Grid.Row fluid stretched>
-                <Grid.Column width={8}>
-                  <Button
-                    animated
-                    content="Access"
-                    as="a"
-                    size="mini"
-                    target="_blank"
-                    disabled={_isNil(rowUrl)}
-                    href={rowData.url}
-                  >
-                    <Button.Content visible>
-                      <Icon name="external alternate" />
-                    </Button.Content>
-                    <Button.Content hidden>Access</Button.Content>
-                  </Button>
+            <Grid>
+              <Grid.Row verticalAlign="middle">
+                <Grid.Column
+                  widescreen={13}
+                  largeScreen={13}
+                  computer={13}
+                  tablet={13}
+                  mobile={12}
+                >
+                  <div>
+                    {rowRelationType && <Label size={'tiny'}>Relation: {rowRelationType}</Label>}
+                    {rowResourceType && <Label size={'tiny'}>Resource type: {rowResourceType}</Label>}
+                  </div>
+
+                  <Grid className={'user-stories-metadata'}>
+                    <Grid.Row columns={1}>
+                      <Grid.Column>
+                        <Header>{rowTitle}</Header>
+                      </Grid.Column>
+                    </Grid.Row>
+                    <Grid.Row columns={1}>
+                      <Grid.Column>
+                        <p className="content-description">
+                          {rowDescription || rowUrl || rowIdentifier}
+                        </p>
+                      </Grid.Column>
+                    </Grid.Row>
+                  </Grid>
                 </Grid.Column>
-                <Grid.Column width={8}>
-                  <Button
-                    animated
-                    as="a"
-                    size="mini"
-                    onClick={() => {
-                      navigator.clipboard.writeText(rowUrl || rowIdentifier);
-                    }}
-                  >
-                    <Button.Content visible>
-                      <Icon name="copy outline" />
-                    </Button.Content>
-                    <Button.Content hidden>Copy</Button.Content>
-                  </Button>
+                <Grid.Column
+                  widescreen={3}
+                  largeScreen={3}
+                  computer={3}
+                  tablet={3}
+                  only={'computer tablet'}
+                >
+                  <Button.Group size={'mini'} floated={'right'}>
+                    <Button
+                      animated
+                      content={'Access'}
+                      as={'a'}
+                      size={'mini'}
+                      target={'_blank'}
+                      disabled={_isNil(rowUrl)}
+                      href={rowUrl}
+                    >
+                      <Button.Content visible>
+                        <Icon name="external alternate" />
+                      </Button.Content>
+                      <Button.Content hidden>Access</Button.Content>
+                    </Button>
+                    <Button
+                      animated
+                      as={'a'}
+                      size={'mini'}
+                      onClick={() => {
+                        navigator.clipboard.writeText(rowUrl || rowIdentifier);
+                      }}
+                    >
+                      <Button.Content visible>
+                        <Icon name={'copy outline'} />
+                      </Button.Content>
+                      <Button.Content hidden>Copy</Button.Content>
+                    </Button>
+                  </Button.Group>
+                </Grid.Column>
+
+                <Grid.Column only="mobile">
+                  <Grid stackable>
+                    <Grid.Row>
+                      <Grid.Column mobile={2}>
+                        <Button
+                          animated
+                          content={'Access'}
+                          as={'a'}
+                          size={'mini'}
+                          target={'_blank'}
+                          disabled={_isNil(rowUrl)}
+                          href={rowUrl}
+                        >
+                          <Button.Content visible>
+                            <Icon name="external alternate" />
+                          </Button.Content>
+                          <Button.Content hidden>Access</Button.Content>
+                        </Button>
+                      </Grid.Column>
+                      <Grid.Column mobile={2}>
+                        <Button
+                          animated
+                          as={'a'}
+                          size={'mini'}
+                          onClick={() => {
+                            navigator.clipboard.writeText(
+                              rowUrl || rowIdentifier
+                            );
+                          }}
+                        >
+                          <Button.Content visible>
+                            <Icon name={'copy outline'} />
+                          </Button.Content>
+                          <Button.Content hidden>Copy</Button.Content>
+                        </Button>
+                      </Grid.Column>
+                    </Grid.Row>
+                  </Grid>
                 </Grid.Column>
               </Grid.Row>
             </Grid>
@@ -166,13 +224,21 @@ export const ExternalResourceTable = ({ tableData }) => {
   const tableDataMemoized = useMemo(() => tableData);
 
   return (
-    <>
+    <div className={'table-external-resources'}>
       <PaginableTable
         unstackable
         fixed={true}
         padded={true}
         data={tableDataMemoized}
         columnsConfiguration={tableColumnsDefinition}
+        initialState={{
+          hiddenColumns: [
+            'idx_title',
+            'idx_relation_type',
+            'idx_resource_type',
+            'idx_scheme',
+          ],
+        }}
         globalFilter={(
           globalFilter,
           preGlobalFilteredRows,
@@ -185,6 +251,6 @@ export const ExternalResourceTable = ({ tableData }) => {
           />
         )}
       />
-    </>
+    </div>
   );
 };

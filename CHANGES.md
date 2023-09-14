@@ -1,5 +1,14 @@
 # Changes
 
+## Version 0.5.2 (2023-09-14)
+
+- Updated `ExternalResourceTable` style.
+
+## Version 0.5.1 (2023-08-31)
+
+- Updated `RelatedPackages` behavior on mobile;
+- Fixed props usage of the `LatestEvents` component.
+
 ## Version 0.5.0 (2023-08-22)
 
 - Carousel components refactored using [React Slick](https://react-slick.neostack.com/) and [React Query v4](https://tanstack.com/query/v4);
