@@ -20,6 +20,7 @@ export const RecordList = () => {
   const indexContext = useContext(IndexContext);
 
   const records = indexContext.searchContext.index.results;
+  const packageId = indexContext.package.id;
 
   return (
     <>
@@ -27,7 +28,7 @@ export const RecordList = () => {
         <Segment attached="bottom">
           <Item.Group divided>
             {records.map((record) => (
-              <RecordListItem key={record.id} recordData={record} />
+              <RecordListItem key={record.id} recordData={record} packageId={packageId} />
             ))}
           </Item.Group>
         </Segment>

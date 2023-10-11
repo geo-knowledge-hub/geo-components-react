@@ -48,14 +48,18 @@ const SEARCH_OPTIONS = {
  */
 export const RelatedResourceTable = ({
   records,
+  packageId,
   resourceTypeDefinitions,
   paginationSizes,
   transitionProps,
 }) => {
+  // default config
+  const defaultPageSize = paginationSizes[0];
+
   // search state
   const [paginationConfig, setPaginationConfig] = useState({
     currentPage: 1,
-    pageSize: 3,
+    pageSize: defaultPageSize,
   });
   const [searchBarContent, setSearchBarContent] = useState('');
   const [activeResourceType, setActiveResourceType] = useState(null);
@@ -127,6 +131,9 @@ export const RelatedResourceTable = ({
           records: {
             data: records,
           },
+          package: {
+            id: packageId
+          }
         }}
       >
         <TypeSelectorCard />
@@ -175,11 +182,13 @@ export const RelatedResourceTable = ({
 
 RelatedResourceTable.propTypes = {
   records: PropTypes.array.isRequired,
-  paginationSizes: PropTypes.array,
+  packageId: PropTypes.string.isRequired,
+  paginationSizes: PropTypes.array.isRequired,
   transitionProps: PropTypes.object,
 };
 
 RelatedResourceTable.defaultProps = {
+  packageId: "#",
   paginationSizes: [3, 5, 10, 15, 50, 100],
   transitionProps: {
     type: 'fade down',
