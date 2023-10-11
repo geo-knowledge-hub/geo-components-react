@@ -17,7 +17,7 @@ import './RecordListItem.css';
 /**
  * Record Item component for the Record List
  */
-export const RecordListItem = ({ recordData }) => {
+export const RecordListItem = ({ recordData, packageId }) => {
   // extracting the informations
   const creators = _get(recordData, 'ui.creators.creators', null);
   const publicationDate = _get(
@@ -45,10 +45,10 @@ export const RecordListItem = ({ recordData }) => {
   const recordId = _get(recordData, 'id', null);
   const recordUrlPrefix = isPackage ? 'packages' : 'records';
 
-  let recordUrl = `/${recordUrlPrefix}/${recordId}`;
+  let recordUrl = `/${recordUrlPrefix}/${recordId}?package=${packageId}`;
 
   if (isDraft) {
-    recordUrl = `${recordUrl}?preview=1&navigate=1`;
+    recordUrl = `${recordUrl}&preview=1&navigate=1`;
   }
 
   const accessStatusID = _get(recordData, 'ui.access_status.id', null);

@@ -10,7 +10,7 @@ import React, { useMemo } from 'react';
 import { PaginableTable } from '../../moldure';
 
 import _get from 'lodash/get';
-import _head from 'lodash/head';
+import _last from 'lodash/last';
 import _isNil from 'lodash/isNil';
 import _sortBy from 'lodash/sortBy';
 import _groupBy from 'lodash/groupBy';
@@ -54,8 +54,8 @@ export const RelatedPackagesTable = ({ tableData }) => {
             };
           });
 
-          // Getting the title from the first version
-          const rowFirstVersion = _head(_sortBy(rowVersions));
+          // Getting the title from the latest version
+          const rowLastVersion = _last(_sortBy(rowVersions));
 
           return (
             <Grid>
@@ -76,7 +76,9 @@ export const RelatedPackagesTable = ({ tableData }) => {
                   mobile={14}
                   tablet={11}
                 >
-                  <p>{rowFirstVersion.title}</p>
+                  <a href={rowLastVersion.url}>
+                    {rowLastVersion.title}
+                  </a>
                 </Grid.Column>
                 <Grid.Column
                   widescreen={4}

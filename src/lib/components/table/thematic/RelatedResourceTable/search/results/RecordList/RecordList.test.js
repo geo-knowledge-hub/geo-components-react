@@ -28,6 +28,9 @@ describe('RecordList tests', () => {
               results: relatedRecordsData,
             },
           },
+          package: {
+            id: "#"
+          }
         },
       });
 
