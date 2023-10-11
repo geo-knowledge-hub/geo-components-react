@@ -1,5 +1,10 @@
 # Changes
 
+## Version 0.5.3 (2023-10-11)
+
+- Improved `RelatedPackagesTable` to enable users to select the latest version of the package by clicking on its title;
+- Added support for Package specification in the links from the `RelatedResourceTable`.
+
 ## Version 0.5.2 (2023-09-14)
 
 - Updated `ExternalResourceTable` style.
