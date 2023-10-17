@@ -7,6 +7,8 @@
  */
 
 import React, { useMemo } from 'react';
+import PropTypes from 'prop-types';
+
 import { PaginableTable } from '../../moldure';
 
 import _get from 'lodash/get';
@@ -18,7 +20,7 @@ import './UserStoriesTable.css';
 /**
  * Users Stories table.
  */
-export const UserStoriesTable = ({ tableData }) => {
+export const UserStoriesTable = ({ tableData, packageId }) => {
   const tableColumnsDefinition = useMemo(() => {
     return [
       {
@@ -31,6 +33,9 @@ export const UserStoriesTable = ({ tableData }) => {
           const rowTitle = _get(rowData, 'metadata.title', 'No title');
           const rowDate = _get(rowData, 'ui.created_date_l10n_long', 'No date');
           const rowUrl = _get(rowData, 'links.self_html');
+
+          // Customizing the url
+          const rowCompleteUrl = `${rowUrl}?package=${packageId}`
 
           return (
             <Grid>
@@ -72,7 +77,7 @@ export const UserStoriesTable = ({ tableData }) => {
                   <Button
                     icon={'arrow right'}
                     floated={'right'}
-                    href={rowUrl}
+                    href={rowCompleteUrl}
                   />
                 </Grid.Column>
               </Grid.Row>
@@ -102,4 +107,13 @@ export const UserStoriesTable = ({ tableData }) => {
       />
     </>
   );
+};
+
+UserStoriesTable.propTypes = {
+  tableData: PropTypes.array.isRequired,
+  packageId: PropTypes.string.isRequired,
+};
+
+UserStoriesTable.defaultProps = {
+  packageId: "#",
 };
