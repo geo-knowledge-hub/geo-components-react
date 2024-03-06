@@ -28,7 +28,8 @@ RecordList.propTypes = {
     PropTypes.shape({
       title: PropTypes.string.isRequired,
       authors: PropTypes.arrayOf(PropTypes.string).isRequired,
-      initiative: PropTypes.string,
+      label: PropTypes.string.isRequired,
+      labelColor: PropTypes.string.isRequired,
       date: PropTypes.string.isRequired,
     })
   ).isRequired,
