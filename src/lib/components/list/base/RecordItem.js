@@ -16,14 +16,15 @@ export const RecordItem = ({ recordData }) => {
   const recordAuthors = recordData.authors.join('; ');
 
   // Preparing initiatives
-  const recordInitiative = recordData.initiative || "Community";
+  const recordLabel = recordData.label;
+  const recordLabelColor = recordData.labelColor;
 
   return (
     <Segment as={Card} link fluid href={recordData.url}>
       <Grid padded>
         <Grid.Row only={'mobile'}>
-          <Label size={'small'} attached={'top'}>
-            {recordInitiative}
+          <Label size={'small'} attached={'top'} color={recordLabelColor}>
+            {recordLabel}
           </Label>
         </Grid.Row>
       </Grid>
@@ -46,7 +47,7 @@ export const RecordItem = ({ recordData }) => {
             textAlign={'right'}
             only="tablet computer"
           >
-            <Label>{recordInitiative}</Label>
+            <Label color={recordLabelColor}>{recordLabel}</Label>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row columns={2}>
@@ -66,7 +67,8 @@ RecordItem.propTypes = {
   recordData: PropTypes.shape({
     title: PropTypes.string.isRequired,
     authors: PropTypes.arrayOf(PropTypes.string).isRequired,
-    initiative: PropTypes.string,
+    label: PropTypes.string.isRequired,
+    labelColor: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
   }).isRequired,
 };
