@@ -8,6 +8,7 @@
 
 import React, { useMemo } from 'react';
 import { PaginableTable } from '../../moldure';
+import { YouTubeViewer, isUrlFromYouTube } from './youtube';
 
 import _get from 'lodash/get';
 import _isNil from 'lodash/isNil';
@@ -19,6 +20,7 @@ import { useAsyncDebounce } from 'react-table';
 import { Grid, Button, Icon, Input, Header, Label } from 'semantic-ui-react';
 
 import './ExternalResourceTable.css';
+
 
 /**
  * Global filter component for the external resources table.
@@ -54,7 +56,7 @@ function GlobalFilter({
 /**
  * External resource table.
  */
-export const ExternalResourceTable = ({ tableData }) => {
+export const ExternalResourceTable = ({ tableData, tableConfig }) => {
   const tableColumnsDefinition = useMemo(() => {
     return [
       // Defining invisible columns that are used as the index for the table filter
@@ -102,6 +104,9 @@ export const ExternalResourceTable = ({ tableData }) => {
             omission: '...',
           });
 
+          // Checking youtube video
+          const rowIsYoutubeVideo = isUrlFromYouTube(rowUrl);
+
           // Resource Type and Relation Type
           const rowResourceType = _get(rowData, 'resource_type.title_l10n');
           const rowRelationType = _get(rowData, 'relation_type.title_l10n');
@@ -144,6 +149,9 @@ export const ExternalResourceTable = ({ tableData }) => {
                   only={'computer tablet'}
                 >
                   <Button.Group size={'mini'} floated={'right'}>
+                    {rowIsYoutubeVideo && (
+                      <YouTubeViewer url={rowUrl}/>
+                    )}
                     <Button
                       animated
                       content={'Access'}
@@ -177,6 +185,11 @@ export const ExternalResourceTable = ({ tableData }) => {
                 <Grid.Column only="mobile">
                   <Grid stackable>
                     <Grid.Row>
+                      <Grid.Column mobile={2}>
+                        {rowIsYoutubeVideo && (
+                          <YouTubeViewer url={rowUrl}/>
+                        )}
+                      </Grid.Column>
                       <Grid.Column mobile={2}>
                         <Button
                           animated
@@ -250,6 +263,7 @@ export const ExternalResourceTable = ({ tableData }) => {
             preGlobalFilteredRows={preGlobalFilteredRows}
           />
         )}
+        {...tableConfig}
       />
     </div>
   );
