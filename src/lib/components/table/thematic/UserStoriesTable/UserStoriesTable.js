@@ -7,6 +7,8 @@
  */
 
 import React, { useMemo } from 'react';
+import PropTypes from 'prop-types';
+
 import { PaginableTable } from '../../moldure';
 
 import _get from 'lodash/get';
@@ -18,7 +20,7 @@ import './UserStoriesTable.css';
 /**
  * Users Stories table.
  */
-export const UserStoriesTable = ({ tableData }) => {
+export const UserStoriesTable = ({ tableData, packageId }) => {
   const tableColumnsDefinition = useMemo(() => {
     return [
       {
@@ -28,9 +30,22 @@ export const UserStoriesTable = ({ tableData }) => {
           // Getting data
           const { original: rowData } = row;
 
+          // record status
+          const isDraft = _get(rowData, 'is_draft', null);
+          const isPackage = _get(rowData, 'parent.type', null) === 'package';
+
           const rowTitle = _get(rowData, 'metadata.title', 'No title');
           const rowDate = _get(rowData, 'ui.created_date_l10n_long', 'No date');
-          const rowUrl = _get(rowData, 'links.self_html');
+
+          // Record url
+          const recordId = _get(rowData, 'id', null);
+          const recordUrlPrefix = isPackage ? 'packages' : 'records';
+
+          let rowUrl = `/${recordUrlPrefix}/${recordId}?package=${packageId}`;
+
+          if (isDraft) {
+            rowUrl = `${rowUrl}&preview=1&navigate=1`;
+          }
 
           return (
             <Grid>
@@ -102,4 +117,13 @@ export const UserStoriesTable = ({ tableData }) => {
       />
     </>
   );
+};
+
+UserStoriesTable.propTypes = {
+  tableData: PropTypes.array.isRequired,
+  packageId: PropTypes.string.isRequired,
+};
+
+UserStoriesTable.defaultProps = {
+  packageId: "#",
 };

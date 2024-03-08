@@ -35,7 +35,13 @@ export const LatestEvents = ({ fetchUrl, moreUrl, staleTime }) => {
   return (
     <Grid>
       <Grid.Row centered>
-        <Grid.Column widescreen={10} largeScreen={10} computer={10} mobile={15} tablet={14}>
+        <Grid.Column
+          widescreen={10}
+          largeScreen={10}
+          computer={10}
+          mobile={15}
+          tablet={14}
+        >
           {isFetching && <Loader active inline="centered" />}
 
           {!isFetching && !error && (
@@ -47,7 +53,9 @@ export const LatestEvents = ({ fetchUrl, moreUrl, staleTime }) => {
               </Grid.Row>
               <Grid.Row columns={1}>
                 <Container textAlign={'center'}>
-                  <Button as={'a'} href={moreUrl} target={'_blank'}>More</Button>
+                  <Button as={'a'} href={moreUrl} target={'_blank'}>
+                    More
+                  </Button>
                 </Container>
               </Grid.Row>
             </Grid>

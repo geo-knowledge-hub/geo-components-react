@@ -22,28 +22,45 @@ export const extractProgrammeActivityAcronym = (programmeActivityName) =>
 /**
  * Mutate record to a simplified version.
  * @param {object} data Record data
+ * @param {string} labelType Type of label (``initiative`` or ``resourceType``)
+ * @param {string} labelColor Color used to present the table.
  * @returns {{
  *  title: string,
  *  authors: string[],
- *  initiative: string,
+ *  label: string,
+ *  labelColor: string,
  *  date: string
  * }} Object with the new version of the record.
  */
-export const mutateRecordData = (data) => ({
-  title: _get(data, 'metadata.title', 'No title'),
-  authors: data.ui.creators.creators
-    .slice(0, 3)
-    .map((creator) => creator.person_or_org.name),
-  initiative: extractProgrammeActivityAcronym(
+export const mutateRecordData = (data, labelType = "initiative", labelColor = "primary") => {
+  // Extracting labels
+  let label = extractProgrammeActivityAcronym(
     _get(data, 'metadata.geo_work_programme_activity.title.en')
-  ),
-  date: _get(
-    data,
-    'ui.publication_date_l10n_long',
-    'No publication date found.'
-  ),
-  url: _get(data, 'links.self_html'),
-});
+  ) || "Community";
+
+  if (labelType === "resourceType") {
+    label = _get(
+      data,
+      "ui.resource_type.title_l10n",
+      "No resource type"
+    );
+  }
+
+  return ({
+    title: _get(data, 'metadata.title', 'No title'),
+    authors: data.ui.creators.creators
+      .slice(0, 3)
+      .map((creator) => creator.person_or_org.name),
+    label: label,
+    date: _get(
+      data,
+      'ui.publication_date_l10n_long',
+      'No publication date found.'
+    ),
+    labelColor: labelColor || "primary",
+    url: _get(data, 'links.self_html'),
+  })
+};
 
 /**
  * Mutate event to a simplified version.
