@@ -32,7 +32,7 @@
     "@babel/runtime": "^7.9.0",
     "@ckeditor/ckeditor5-build-classic": "^16.0.0",
     "@ckeditor/ckeditor5-react": "^2.1.0",
-    "@geo-knowledge-hub/invenio-geographic-components-react": "^0.2.4",
+    "@geo-knowledge-hub/invenio-geographic-components-react": "^0.2.5",
     "@turf/bbox": "^6.5.0",
     "axios": "^0.21.0",
     "formik": "^2.1.0",
@@ -61,7 +61,7 @@
     "@babel/core": "^7.18.6",
     "@ckeditor/ckeditor5-build-classic": "^16.0.0",
     "@ckeditor/ckeditor5-react": "^2.1.0",
-    "@geo-knowledge-hub/invenio-geographic-components-react": "^0.2.4",
+    "@geo-knowledge-hub/invenio-geographic-components-react": "^0.2.5",
     "@geoman-io/leaflet-geoman-free": "^2.13.0",
     "@mapbox/geojsonhint": "^3.0.1",
     "@react-leaflet/core": "1.0.2",
@@ -80,6 +80,7 @@
     "@storybook/manager-webpack4": "^6.5.3",
     "@storybook/react": "^6.5.3",
     "@storybook/testing-library": "0.0.11",
+    "@tanstack/react-query": "^4.32.6",
     "@testing-library/jest-dom": "^4.2.0",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.0",
@@ -134,8 +135,7 @@
     "slick-carousel": "^1.8.1",
     "storybook-addon-mock": "^2.4.0",
     "webpack": "4.42.0",
-    "yup": "^0.32.11",
-    "@tanstack/react-query": "^4.32.6"
+    "yup": "^0.32.11"
   },
   "browserslist": {
     "production": [
