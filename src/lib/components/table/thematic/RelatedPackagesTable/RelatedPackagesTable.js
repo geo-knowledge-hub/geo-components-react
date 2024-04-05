@@ -76,9 +76,7 @@ export const RelatedPackagesTable = ({ tableData }) => {
                   mobile={14}
                   tablet={11}
                 >
-                  <a href={rowLastVersion.url}>
-                    {rowLastVersion.title}
-                  </a>
+                  <a href={rowLastVersion.url}>{rowLastVersion.title}</a>
                 </Grid.Column>
                 <Grid.Column
                   widescreen={4}

@@ -29,8 +29,8 @@ describe('RecordList tests', () => {
             },
           },
           package: {
-            id: "#"
-          }
+            id: '#',
+          },
         },
       });
 
