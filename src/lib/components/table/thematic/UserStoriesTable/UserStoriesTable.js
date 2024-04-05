@@ -51,20 +51,11 @@ export const UserStoriesTable = ({ tableData, packageId }) => {
             <Grid>
               <Grid.Row verticalAlign="middle">
                 <Grid.Column
-                  widescreen={1}
-                  largeScreen={1}
-                  computer={1}
-                  tablet={1}
-                  mobile={3}
-                >
-                  <Icon name="user" size="big" />
-                </Grid.Column>
-                <Grid.Column
-                  widescreen={12}
-                  largeScreen={12}
-                  computer={12}
-                  tablet={12}
-                  mobile={11}
+                  widescreen={13}
+                  largeScreen={13}
+                  computer={13}
+                  tablet={13}
+                  mobile={13}
                 >
                   <Grid className={'user-stories-metadata'}>
                     <Grid.Row columns={1}>
@@ -82,13 +73,18 @@ export const UserStoriesTable = ({ tableData, packageId }) => {
                   largeScreen={3}
                   computer={3}
                   tablet={3}
-                  mobile={2}
+                  mobile={3}
                 >
-                  <Button
-                    icon={'arrow right'}
-                    floated={'right'}
-                    href={rowUrl}
-                  />
+                  <Button.Group size={'mini'} floated={'right'}>
+                    <Button
+                      content={'Access'}
+                      as={'a'}
+                      size={'mini'}
+                      href={rowUrl}
+                    >
+                      Access
+                    </Button>
+                  </Button.Group>
                 </Grid.Column>
               </Grid.Row>
             </Grid>
@@ -114,6 +110,7 @@ export const UserStoriesTable = ({ tableData, packageId }) => {
         data={tableDataMemoized}
         columnsConfiguration={tableColumnsDefinition}
         className={'users-stories-table'}
+        showHeader={false}
       />
     </>
   );

@@ -89,7 +89,6 @@ export const RelatedPackagesTable = ({ tableData }) => {
                     icon={'history'}
                     floating
                     button
-                    basic
                     labeled
                     text={'Versions'}
                     className="icon right floated"
@@ -122,6 +121,7 @@ export const RelatedPackagesTable = ({ tableData }) => {
         unstackable
         fixed={false}
         padded={true}
+        showHeader={false}
         data={tableDataMemoized}
         columnsConfiguration={tableColumnsDefinition}
       />

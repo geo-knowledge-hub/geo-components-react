@@ -15,16 +15,43 @@ import { Item, Label } from 'semantic-ui-react';
 import './RecordListItem.css';
 
 /**
+ * Extract Record badge.
+ *
+ * @param {string} recordType String containing the type of record.
+ */
+export const extractRecordBadge = (recordType) => {
+  let recordBadge = {
+    name: "Open",
+    color: "primary",
+    icon: "lock open"
+  };
+
+  // Currently, we only have "Marketplace Item" as closed records
+  if (recordType === "marketplace-item") {
+    recordBadge = {
+      name: "Marketplace",
+      color: "primary",
+      icon: "building"
+    }
+  }
+
+  return recordBadge;
+}
+
+
+/**
  * Record Item component for the Record List
  */
 export const RecordListItem = ({ recordData, packageId }) => {
-  // extracting the informations
+  const recordBadge = extractRecordBadge(recordData.parent.type);
+
   const creators = _get(recordData, 'ui.creators.creators', null);
   const publicationDate = _get(
     recordData,
     'ui.publication_date_l10n_medium',
     null
   );
+  const version = _get(recordData, "ui.version", null);
 
   const programmeActivity = _get(
     recordData,
@@ -51,14 +78,6 @@ export const RecordListItem = ({ recordData, packageId }) => {
     recordUrl = `${recordUrl}&preview=1&navigate=1`;
   }
 
-  const accessStatusID = _get(recordData, 'ui.access_status.id', null);
-  const accessStatusIcon = _get(recordData, 'ui.access_status.icon', null);
-  const accessStatusTitle = _get(
-    recordData,
-    'ui.access_status.title_l10n',
-    null
-  );
-
   return (
     <Item key={recordData.id}>
       <Item.Content>
@@ -81,38 +100,26 @@ export const RecordListItem = ({ recordData, packageId }) => {
           ) : null}
         </Item.Meta>
         <Item.Extra>
-          {publicationDate ? (
-            <Label size={'tiny'} color="blue" content={publicationDate} />
-          ) : null}
+          <Label size="mini" color={recordBadge.color}>
+            <i className={`icon ${recordBadge.icon}`}></i>{recordBadge.name}
+          </Label>
+          <Label size="mini" color={"gray"}>
+            {publicationDate} ({version})
+          </Label>
+          <Label size="mini" color={"gray"}>
+            {resourceType}
+          </Label>
 
           {programmeActivity ? (
             <Label
-              size={'tiny'}
-              color="grey"
+              size={'mini'}
+              color={"gray"}
               content={_get(
                 // getting only the acronym (between '(' and ')')
                 programmeActivity.match(/\(([^)]+)\)/),
                 1,
                 null
               )}
-            />
-          ) : null}
-
-          {resourceType ? (
-            <Label size={'tiny'} color="grey" content={resourceType} />
-          ) : null}
-
-          {accessStatusID && accessStatusIcon && accessStatusTitle ? (
-            <Label
-              size={'tiny'}
-              color="grey"
-              className={`access-status ${accessStatusID}`}
-              content={
-                <>
-                  <i className={`icon ${accessStatusIcon}`}></i>{' '}
-                  {accessStatusTitle}
-                </>
-              }
             />
           ) : null}
         </Item.Extra>
