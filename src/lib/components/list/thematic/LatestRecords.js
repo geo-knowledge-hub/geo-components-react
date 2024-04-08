@@ -17,7 +17,7 @@ import { RecordList } from '../moldure/RecordList';
 import { fetchRecords } from '../../../resources';
 import { mutateRecordData } from '../base/mutations';
 
-export const LatestRecords = ({ fetchUrl, staleTime }) => {
+export const LatestRecords = ({ fetchUrl, moreUrl, staleTime }) => {
   const {
     data: records,
     isFetching,
@@ -57,7 +57,7 @@ export const LatestRecords = ({ fetchUrl, staleTime }) => {
               </Grid.Row>
               <Grid.Row columns={1}>
                 <Container textAlign={'center'}>
-                  <Button href={'/search'}>More</Button>
+                  <Button href={moreUrl}>More</Button>
                 </Container>
               </Grid.Row>
             </Grid>
