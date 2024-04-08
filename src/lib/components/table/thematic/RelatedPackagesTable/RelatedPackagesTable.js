@@ -76,9 +76,7 @@ export const RelatedPackagesTable = ({ tableData }) => {
                   mobile={14}
                   tablet={11}
                 >
-                  <a href={rowLastVersion.url}>
-                    {rowLastVersion.title}
-                  </a>
+                  <a href={rowLastVersion.url}>{rowLastVersion.title}</a>
                 </Grid.Column>
                 <Grid.Column
                   widescreen={4}
@@ -91,7 +89,6 @@ export const RelatedPackagesTable = ({ tableData }) => {
                     icon={'history'}
                     floating
                     button
-                    basic
                     labeled
                     text={'Versions'}
                     className="icon right floated"
@@ -124,6 +121,7 @@ export const RelatedPackagesTable = ({ tableData }) => {
         unstackable
         fixed={false}
         padded={true}
+        showHeader={false}
         data={tableDataMemoized}
         columnsConfiguration={tableColumnsDefinition}
       />

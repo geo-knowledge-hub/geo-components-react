@@ -8,4 +8,3 @@
 
 export { LatestEvents } from './LatestEvents';
 export { LatestRecords } from './LatestRecords';
-export { MoreLikeThisRecords } from './MoreLikeThisRecords';

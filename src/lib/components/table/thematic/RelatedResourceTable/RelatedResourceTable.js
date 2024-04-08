@@ -53,8 +53,12 @@ export const RelatedResourceTable = ({
   paginationSizes,
   transitionProps,
 }) => {
+  const pageSizeSorted = paginationSizes.sort((a, b) => {
+    return a - b;
+  });
+
   // default config
-  const defaultPageSize = paginationSizes[0];
+  const defaultPageSize = pageSizeSorted[0];
 
   // search state
   const [paginationConfig, setPaginationConfig] = useState({
@@ -100,6 +104,9 @@ export const RelatedResourceTable = ({
   // checking if the sidebar is visible
   const isCheckbarVisible = activeResourceType !== null;
 
+  // checking if pagination is required (e.g., pagination)
+  const isPaginationRequired = records.length > pageSizeSorted[0];
+
   return (
     <Container className={'related-resource-table'}>
       <IndexContextProvider
@@ -132,8 +139,8 @@ export const RelatedResourceTable = ({
             data: records,
           },
           package: {
-            id: packageId
-          }
+            id: packageId,
+          },
         }}
       >
         <TypeSelectorCard />
@@ -143,34 +150,36 @@ export const RelatedResourceTable = ({
           <Accordion.Content active={true}>
             <Transition visible={isCheckbarVisible} {...transitionProps}>
               <div>
-                <SearchMenu size={'mini'} />
+                {isPaginationRequired && <SearchMenu size={'mini'} />}
                 <RecordList />
-
-                <Grid>
-                  <Grid.Column>
-                    <Dropdown
-                      item
-                      simple
-                      text={`Page size: ${paginationConfig.pageSize}`}
-                      direction={'right'}
-                      onChange={(_, data) => {
-                        setPaginationConfig({
-                          ...paginationConfig,
-                          pageSize: data.value,
-                        });
-                      }}
-                      options={paginationSizes.map((v) => ({
-                        key: v,
-                        text: v,
-                        value: v,
-                      }))}
-                    />
-                  </Grid.Column>
-                </Grid>
-
-                <Grid centered columns={1}>
-                  <Pagination />
-                </Grid>
+                {isPaginationRequired && (
+                  <>
+                    <Grid>
+                      <Grid.Column>
+                        <Dropdown
+                          item
+                          simple
+                          text={`Page size: ${paginationConfig.pageSize}`}
+                          direction={'right'}
+                          onChange={(_, data) => {
+                            setPaginationConfig({
+                              ...paginationConfig,
+                              pageSize: data.value,
+                            });
+                          }}
+                          options={pageSizeSorted.map((v) => ({
+                            key: v,
+                            text: v,
+                            value: v,
+                          }))}
+                        />
+                      </Grid.Column>
+                    </Grid>
+                    <Grid centered columns={1}>
+                      <Pagination />
+                    </Grid>
+                  </>
+                )}
               </div>
             </Transition>
           </Accordion.Content>
@@ -188,7 +197,7 @@ RelatedResourceTable.propTypes = {
 };
 
 RelatedResourceTable.defaultProps = {
-  packageId: "#",
+  packageId: '#',
   paginationSizes: [3, 5, 10, 15, 50, 100],
   transitionProps: {
     type: 'fade down',

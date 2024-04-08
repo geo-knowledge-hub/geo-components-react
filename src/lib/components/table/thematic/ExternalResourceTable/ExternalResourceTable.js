@@ -263,6 +263,7 @@ export const ExternalResourceTable = ({ tableData, tableConfig }) => {
             preGlobalFilteredRows={preGlobalFilteredRows}
           />
         )}
+        showHeader={false}
         {...tableConfig}
       />
     </div>

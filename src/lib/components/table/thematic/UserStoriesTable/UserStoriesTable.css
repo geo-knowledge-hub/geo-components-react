@@ -6,10 +6,6 @@
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
-.ui.table.users-stories-table thead {
-  display: none;
-}
-
 .ui.grid .row .ui.grid.user-stories-metadata {
   margin-top: 5px;
   margin-bottom: 5px;
