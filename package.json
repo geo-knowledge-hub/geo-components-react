@@ -33,6 +33,7 @@
     "@ckeditor/ckeditor5-build-classic": "^16.0.0",
     "@ckeditor/ckeditor5-react": "^2.1.0",
     "@geo-knowledge-hub/invenio-geographic-components-react": "^0.2.5",
+    "@tanstack/react-query": "^4.32.6",
     "@turf/bbox": "^6.5.0",
     "axios": "^0.21.0",
     "formik": "^2.1.0",
@@ -53,8 +54,7 @@
     "semantic-ui-css": "^2.4.0",
     "semantic-ui-react": "^2.1.0",
     "slick-carousel": "^1.8.1",
-    "yup": "^0.32.11",
-    "@tanstack/react-query": "^4.32.6"
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.0",
