@@ -6,10 +6,4 @@
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
-export { ExternalResourceTable } from './ExternalResourceTable';
-export { RelatedResourceTable } from './RelatedResourceTable';
-export { RelatedPackagesTable } from './RelatedPackagesTable';
-export { UserStoriesTable } from './UserStoriesTable';
-export { RecordsTable } from './RecordsTable';
-
 export { PricingPlansTable } from './PricingPlansTable';
