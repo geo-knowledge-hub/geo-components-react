@@ -16,3 +16,5 @@ export { WorkProgrammeActivityField } from './WorkProgrammeActivityField';
 
 export { ResourceTypeField } from './ResourceTypeField';
 export { AuthorsField } from './AuthorsField';
+
+export { MarketplacePricingPlansField } from './MarketplacePricingPlansField';
