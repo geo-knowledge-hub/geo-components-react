@@ -122,5 +122,5 @@ UserStoriesTable.propTypes = {
 };
 
 UserStoriesTable.defaultProps = {
-  packageId: "#",
+  packageId: '#',
 };

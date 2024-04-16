@@ -9,3 +9,7 @@
 .table-records .ui.container .grid p {
   overflow-wrap: break-word;
 }
+
+.table-records .pt-0 {
+  padding-top: 0 !important;
+}

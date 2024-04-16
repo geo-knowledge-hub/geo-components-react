@@ -21,7 +21,6 @@ import { Grid, Button, Icon, Input, Header, Label } from 'semantic-ui-react';
 
 import './ExternalResourceTable.css';
 
-
 /**
  * Global filter component for the external resources table.
  */
@@ -118,12 +117,18 @@ export const ExternalResourceTable = ({ tableData, tableConfig }) => {
                   widescreen={13}
                   largeScreen={13}
                   computer={13}
-                  tablet={13}
-                  mobile={12}
+                  tablet={16}
+                  mobile={16}
                 >
                   <div>
-                    {rowRelationType && <Label size={'tiny'}>Relation: {rowRelationType}</Label>}
-                    {rowResourceType && <Label size={'tiny'}>Resource type: {rowResourceType}</Label>}
+                    {rowRelationType && (
+                      <Label size={'tiny'}>Relation: {rowRelationType}</Label>
+                    )}
+                    {rowResourceType && (
+                      <Label size={'tiny'}>
+                        Resource type: {rowResourceType}
+                      </Label>
+                    )}
                   </div>
 
                   <Grid className={'user-stories-metadata'}>
@@ -145,13 +150,10 @@ export const ExternalResourceTable = ({ tableData, tableConfig }) => {
                   widescreen={3}
                   largeScreen={3}
                   computer={3}
-                  tablet={3}
-                  only={'computer tablet'}
+                  only={'computer'}
                 >
                   <Button.Group size={'mini'} floated={'right'}>
-                    {rowIsYoutubeVideo && (
-                      <YouTubeViewer url={rowUrl}/>
-                    )}
+                    {rowIsYoutubeVideo && <YouTubeViewer url={rowUrl} />}
                     <Button
                       animated
                       content={'Access'}
@@ -181,47 +183,52 @@ export const ExternalResourceTable = ({ tableData, tableConfig }) => {
                     </Button>
                   </Button.Group>
                 </Grid.Column>
-
-                <Grid.Column only="mobile">
+              </Grid.Row>
+              <Grid.Row only={'mobile tablet'} className={'mt-0'}>
+                <Grid.Column className={'pt-0'}>
                   <Grid stackable>
                     <Grid.Row>
-                      <Grid.Column mobile={2}>
-                        {rowIsYoutubeVideo && (
-                          <YouTubeViewer url={rowUrl}/>
-                        )}
-                      </Grid.Column>
-                      <Grid.Column mobile={2}>
+                      {rowIsYoutubeVideo && (
+                        <Grid.Column width={16} className={'pt-1'}>
+                          <YouTubeViewer
+                            fluid
+                            url={rowUrl}
+                            content={'Watch'}
+                            as={'a'}
+                            size={'mini'}
+                            target={'_blank'}
+                            icon={'youtube'}
+                            animated={false}
+                          />
+                        </Grid.Column>
+                      )}
+                      <Grid.Column width={16} className={'pt-1'}>
                         <Button
                           animated
+                          fluid
                           content={'Access'}
                           as={'a'}
                           size={'mini'}
                           target={'_blank'}
                           disabled={_isNil(rowUrl)}
                           href={rowUrl}
-                        >
-                          <Button.Content visible>
-                            <Icon name="external alternate" />
-                          </Button.Content>
-                          <Button.Content hidden>Access</Button.Content>
-                        </Button>
+                          icon={'external alternate'}
+                        />
                       </Grid.Column>
-                      <Grid.Column mobile={2}>
+                      <Grid.Column width={16} className={'pt-1'}>
                         <Button
                           animated
+                          fluid
                           as={'a'}
                           size={'mini'}
+                          content={'Copy'}
                           onClick={() => {
                             navigator.clipboard.writeText(
                               rowUrl || rowIdentifier
                             );
                           }}
-                        >
-                          <Button.Content visible>
-                            <Icon name={'copy outline'} />
-                          </Button.Content>
-                          <Button.Content hidden>Copy</Button.Content>
-                        </Button>
+                          icon={'copy outline'}
+                        />
                       </Grid.Column>
                     </Grid.Row>
                   </Grid>

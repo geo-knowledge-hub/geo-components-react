@@ -108,7 +108,7 @@ export const RelatedResourceTable = ({
   const isPaginationRequired = records.length > pageSizeSorted[0];
 
   return (
-    <Container className={'related-resource-table'}>
+    <div className={'related-resource-table'}>
       <IndexContextProvider
         value={{
           searchContext: {
@@ -185,7 +185,7 @@ export const RelatedResourceTable = ({
           </Accordion.Content>
         </Accordion>
       </IndexContextProvider>
-    </Container>
+    </div>
   );
 };
 

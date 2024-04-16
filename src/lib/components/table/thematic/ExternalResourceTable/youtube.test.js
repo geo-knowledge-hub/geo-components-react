@@ -15,7 +15,9 @@ import { render } from '../../../../../setupTestRenders';
 describe('YouTube Viewer tests', () => {
   describe('Render tests', () => {
     it('should render with the required props without crashing', () => {
-      render(<YouTubeViewer url={"https://www.youtube.com/watch?v=cM47L5RddsM"} />);
+      render(
+        <YouTubeViewer url={'https://www.youtube.com/watch?v=cM47L5RddsM'} />
+      );
     });
   });
 });

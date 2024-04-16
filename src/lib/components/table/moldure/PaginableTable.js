@@ -48,12 +48,16 @@ export const PaginableTable = ({
     state: { pageSize, globalFilter },
     preGlobalFilteredRows,
     setGlobalFilter,
-    visibleColumns
+    visibleColumns,
   } = useTable(
     {
       columns: columnsConfiguration,
       data: data,
-      initialState: { pageIndex: 0, pageSize: pageSizeSorted[0], ...initialState },
+      initialState: {
+        pageIndex: 0,
+        pageSize: pageSizeSorted[0],
+        ...initialState,
+      },
     },
     useGlobalFilter,
     useSortBy,
@@ -76,7 +80,7 @@ export const PaginableTable = ({
   }
 
   return (
-    <Container>
+    <>
       <BaseTable
         rows={page}
         columns={visibleColumns}
@@ -126,7 +130,7 @@ export const PaginableTable = ({
           </Grid>
         </>
       )}
-    </Container>
+    </>
   );
 };
 

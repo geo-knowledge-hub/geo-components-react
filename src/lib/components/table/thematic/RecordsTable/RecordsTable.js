@@ -19,7 +19,6 @@ import { Grid, Button, Icon, Input, Header, Label } from 'semantic-ui-react';
 import './RecordsTable.css';
 import { mutateRecordData } from '../../../list/base/mutations';
 
-
 /**
  * Table of Records component.
  */
@@ -74,8 +73,8 @@ export const RecordsTable = ({ tableData, tableConfig }) => {
                   widescreen={13}
                   largeScreen={13}
                   computer={13}
-                  tablet={13}
-                  mobile={12}
+                  tablet={16}
+                  mobile={16}
                 >
                   <div>
                     <Label size={'tiny'} color={rowLabelColor}>
@@ -91,9 +90,7 @@ export const RecordsTable = ({ tableData, tableConfig }) => {
                     </Grid.Row>
                     <Grid.Row columns={1}>
                       <Grid.Column>
-                        <p className="content-description">
-                          {rowDate}
-                        </p>
+                        <p className="content-description">{rowDate}</p>
                       </Grid.Column>
                     </Grid.Row>
                   </Grid>
@@ -103,8 +100,7 @@ export const RecordsTable = ({ tableData, tableConfig }) => {
                   widescreen={3}
                   largeScreen={3}
                   computer={3}
-                  tablet={3}
-                  mobile={3}
+                  only={'computer'}
                 >
                   <Button.Group size={'mini'} floated={'right'}>
                     <Button
@@ -117,7 +113,19 @@ export const RecordsTable = ({ tableData, tableConfig }) => {
                     </Button>
                   </Button.Group>
                 </Grid.Column>
-
+              </Grid.Row>
+              <Grid.Row only={'tablet mobile'} className={'pt-0'}>
+                <Grid.Column width={16} className={'pt-0'}>
+                  <Button
+                    content={'Access'}
+                    as={'a'}
+                    size={'mini'}
+                    href={rowUrl}
+                    fluid
+                  >
+                    Access
+                  </Button>
+                </Grid.Column>
               </Grid.Row>
             </Grid>
           );
@@ -126,9 +134,9 @@ export const RecordsTable = ({ tableData, tableConfig }) => {
     ];
   });
 
-  const tableDataMemoized = useMemo(() => tableData.map((row) =>
-    mutateRecordData(row, 'resourceType', 'gray')
-  ));
+  const tableDataMemoized = useMemo(() =>
+    tableData.map((row) => mutateRecordData(row, 'resourceType', 'gray'))
+  );
 
   return (
     <div className={'table-records'}>
