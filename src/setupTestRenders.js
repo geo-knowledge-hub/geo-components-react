@@ -48,9 +48,12 @@ import '@geoman-io/leaflet-geoman-free/dist/leaflet-geoman.css';
  */
 const wrapperGenericContextProvider =
   (ContextProviderComponent, options) =>
-  ({ children }) => (
-    <ContextProviderComponent {...options}>{children}</ContextProviderComponent>
-  );
+  ({ children }) =>
+    (
+      <ContextProviderComponent {...options}>
+        {children}
+      </ContextProviderComponent>
+    );
 
 /**
  * @name const wrapperGlobalQueryProvider
@@ -63,11 +66,12 @@ const wrapperGenericContextProvider =
  */
 const wrapperGlobalQueryProvider =
   (options) =>
-  ({ children }) => (
-    <QueryClientProvider client={new QueryClient()}>
-      {children}
-    </QueryClientProvider>
-  );
+  ({ children }) =>
+    (
+      <QueryClientProvider client={new QueryClient()}>
+        {children}
+      </QueryClientProvider>
+    );
 
 /**
  * @name wrapperFormikProvider
@@ -83,7 +87,8 @@ const wrapperGlobalQueryProvider =
  */
 const wrapperFormikProvider =
   (options) =>
-  ({ children }) => <Formik {...options}>{children}</Formik>;
+  ({ children }) =>
+    <Formik {...options}>{children}</Formik>;
 
 /**
  * @name customQueryContextRender

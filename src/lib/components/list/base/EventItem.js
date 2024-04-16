@@ -31,7 +31,13 @@ export const EventItem = ({ eventData }) => {
       </Grid>
       <Grid padded>
         <Grid.Row columns={2}>
-          <Grid.Column largeScreen={12} widescreen={12} computer={12} mobile={16} tablet={12}>
+          <Grid.Column
+            largeScreen={12}
+            widescreen={12}
+            computer={12}
+            mobile={16}
+            tablet={12}
+          >
             <Header as={'h3'}>{eventData.title}</Header>
           </Grid.Column>
           <Grid.Column
@@ -46,7 +52,13 @@ export const EventItem = ({ eventData }) => {
           </Grid.Column>
         </Grid.Row>
         <Grid.Row verticalAlign={'bottom'}>
-          <Grid.Column largeScreen={9} widescreen={9} computer={9} mobile={16} tablet={9}>
+          <Grid.Column
+            largeScreen={9}
+            widescreen={9}
+            computer={9}
+            mobile={16}
+            tablet={9}
+          >
             <Grid doubling>
               <Grid.Column
                 largeScreen={10}
