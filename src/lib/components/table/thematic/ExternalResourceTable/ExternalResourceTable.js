@@ -17,7 +17,15 @@ import _truncate from 'lodash/truncate';
 import regeneratorRuntime from 'regenerator-runtime';
 import { useAsyncDebounce } from 'react-table';
 
-import { Grid, Button, Icon, Input, Header, Label } from 'semantic-ui-react';
+import {
+  Grid,
+  Button,
+  Icon,
+  Input,
+  Header,
+  Label,
+  Dropdown,
+} from 'semantic-ui-react';
 
 import './ExternalResourceTable.css';
 
@@ -188,47 +196,46 @@ export const ExternalResourceTable = ({ tableData, tableConfig }) => {
                 <Grid.Column className={'pt-0'}>
                   <Grid stackable>
                     <Grid.Row>
-                      {rowIsYoutubeVideo && (
-                        <Grid.Column width={16} className={'pt-1'}>
-                          <YouTubeViewer
-                            fluid
-                            url={rowUrl}
-                            content={'Watch'}
-                            as={'a'}
-                            size={'mini'}
-                            target={'_blank'}
-                            icon={'youtube'}
-                            animated={false}
-                          />
-                        </Grid.Column>
-                      )}
-                      <Grid.Column width={16} className={'pt-1'}>
-                        <Button
-                          animated
+                      <Grid.Column className={'pt-0'}>
+                        <Dropdown
+                          icon={'caret square down outline'}
+                          floating
+                          button
+                          labeled
                           fluid
-                          content={'Access'}
-                          as={'a'}
-                          size={'mini'}
-                          target={'_blank'}
-                          disabled={_isNil(rowUrl)}
-                          href={rowUrl}
-                          icon={'external alternate'}
-                        />
-                      </Grid.Column>
-                      <Grid.Column width={16} className={'pt-1'}>
-                        <Button
-                          animated
-                          fluid
-                          as={'a'}
-                          size={'mini'}
-                          content={'Copy'}
-                          onClick={() => {
-                            navigator.clipboard.writeText(
-                              rowUrl || rowIdentifier
-                            );
-                          }}
-                          icon={'copy outline'}
-                        />
+                          text={'Options'}
+                          className={'icon right floated tiny'}
+                        >
+                          <Dropdown.Menu>
+                            {rowIsYoutubeVideo && (
+                              <YouTubeViewer
+                                fluid
+                                url={rowUrl}
+                                content={'Watch'}
+                                as={Dropdown.Item}
+                                icon={'youtube'}
+                              />
+                            )}
+
+                            <Dropdown.Item href={rowUrl} target={'_blank'}>
+                              <p>
+                                <Icon name={'external alternate'} /> Access
+                              </p>
+                            </Dropdown.Item>
+
+                            <Dropdown.Item
+                              onClick={() => {
+                                navigator.clipboard.writeText(
+                                  rowUrl || rowIdentifier
+                                );
+                              }}
+                            >
+                              <p>
+                                <Icon name={'copy outline'} /> Copy
+                              </p>
+                            </Dropdown.Item>
+                          </Dropdown.Menu>
+                        </Dropdown>
                       </Grid.Column>
                     </Grid.Row>
                   </Grid>

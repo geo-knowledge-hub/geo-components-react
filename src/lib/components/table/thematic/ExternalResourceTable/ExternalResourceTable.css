@@ -17,3 +17,7 @@
 .table-external-resources .ui.grid .row .column.pt-1 {
   padding-top: 1px !important;
 }
+
+.table-external-resources .ui.table td {
+  overflow: visible;
+}
