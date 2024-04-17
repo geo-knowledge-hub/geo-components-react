@@ -79,11 +79,35 @@ export const RelatedPackagesTable = ({ tableData }) => {
                   <a href={rowLastVersion.url}>{rowLastVersion.title}</a>
                 </Grid.Column>
                 <Grid.Column
+                  mobile={16}
+                  tablet={16}
+                  only={'tablet mobile'}
+                  className={'rel-mt-1'}
+                >
+                  <Dropdown
+                    icon={'history'}
+                    floating
+                    button
+                    labeled
+                    fluid
+                    text={'Versions'}
+                    className="icon right floated tiny"
+                  >
+                    <Dropdown.Menu>
+                      {rowVersions.map((rowVersion) => (
+                        <Dropdown.Item href={rowVersion.url}>
+                          {rowVersion.version}
+                        </Dropdown.Item>
+                      ))}
+                    </Dropdown.Menu>
+                  </Dropdown>
+                </Grid.Column>
+
+                <Grid.Column
                   widescreen={4}
                   largeScreen={4}
                   computer={4}
-                  mobile={16}
-                  tablet={4}
+                  only={'computer'}
                 >
                   <Dropdown
                     icon={'history'}
@@ -91,7 +115,7 @@ export const RelatedPackagesTable = ({ tableData }) => {
                     button
                     labeled
                     text={'Versions'}
-                    className="icon right floated"
+                    className="icon right floated tiny"
                   >
                     <Dropdown.Menu>
                       {rowVersions.map((rowVersion) => (

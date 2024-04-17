@@ -9,3 +9,15 @@
 .table-external-resources .ui.container .grid p {
   overflow-wrap: break-word;
 }
+
+.table-external-resources .ui.grid .row .column.pt-0 {
+  padding-top: 0 !important;
+}
+
+.table-external-resources .ui.grid .row .column.pt-1 {
+  padding-top: 1px !important;
+}
+
+.table-external-resources .ui.table td {
+  overflow: visible;
+}

@@ -17,10 +17,17 @@ import _truncate from 'lodash/truncate';
 import regeneratorRuntime from 'regenerator-runtime';
 import { useAsyncDebounce } from 'react-table';
 
-import { Grid, Button, Icon, Input, Header, Label } from 'semantic-ui-react';
+import {
+  Grid,
+  Button,
+  Icon,
+  Input,
+  Header,
+  Label,
+  Dropdown,
+} from 'semantic-ui-react';
 
 import './ExternalResourceTable.css';
-
 
 /**
  * Global filter component for the external resources table.
@@ -118,12 +125,18 @@ export const ExternalResourceTable = ({ tableData, tableConfig }) => {
                   widescreen={13}
                   largeScreen={13}
                   computer={13}
-                  tablet={13}
-                  mobile={12}
+                  tablet={16}
+                  mobile={16}
                 >
                   <div>
-                    {rowRelationType && <Label size={'tiny'}>Relation: {rowRelationType}</Label>}
-                    {rowResourceType && <Label size={'tiny'}>Resource type: {rowResourceType}</Label>}
+                    {rowRelationType && (
+                      <Label size={'tiny'}>Relation: {rowRelationType}</Label>
+                    )}
+                    {rowResourceType && (
+                      <Label size={'tiny'}>
+                        Resource type: {rowResourceType}
+                      </Label>
+                    )}
                   </div>
 
                   <Grid className={'user-stories-metadata'}>
@@ -145,13 +158,10 @@ export const ExternalResourceTable = ({ tableData, tableConfig }) => {
                   widescreen={3}
                   largeScreen={3}
                   computer={3}
-                  tablet={3}
-                  only={'computer tablet'}
+                  only={'computer'}
                 >
                   <Button.Group size={'mini'} floated={'right'}>
-                    {rowIsYoutubeVideo && (
-                      <YouTubeViewer url={rowUrl}/>
-                    )}
+                    {rowIsYoutubeVideo && <YouTubeViewer url={rowUrl} />}
                     <Button
                       animated
                       content={'Access'}
@@ -181,47 +191,51 @@ export const ExternalResourceTable = ({ tableData, tableConfig }) => {
                     </Button>
                   </Button.Group>
                 </Grid.Column>
-
-                <Grid.Column only="mobile">
+              </Grid.Row>
+              <Grid.Row only={'mobile tablet'} className={'mt-0'}>
+                <Grid.Column className={'pt-0'}>
                   <Grid stackable>
                     <Grid.Row>
-                      <Grid.Column mobile={2}>
-                        {rowIsYoutubeVideo && (
-                          <YouTubeViewer url={rowUrl}/>
-                        )}
-                      </Grid.Column>
-                      <Grid.Column mobile={2}>
-                        <Button
-                          animated
-                          content={'Access'}
-                          as={'a'}
-                          size={'mini'}
-                          target={'_blank'}
-                          disabled={_isNil(rowUrl)}
-                          href={rowUrl}
+                      <Grid.Column className={'pt-0'}>
+                        <Dropdown
+                          icon={'caret square down outline'}
+                          floating
+                          button
+                          labeled
+                          fluid
+                          text={'Options'}
+                          className={'icon right floated tiny'}
                         >
-                          <Button.Content visible>
-                            <Icon name="external alternate" />
-                          </Button.Content>
-                          <Button.Content hidden>Access</Button.Content>
-                        </Button>
-                      </Grid.Column>
-                      <Grid.Column mobile={2}>
-                        <Button
-                          animated
-                          as={'a'}
-                          size={'mini'}
-                          onClick={() => {
-                            navigator.clipboard.writeText(
-                              rowUrl || rowIdentifier
-                            );
-                          }}
-                        >
-                          <Button.Content visible>
-                            <Icon name={'copy outline'} />
-                          </Button.Content>
-                          <Button.Content hidden>Copy</Button.Content>
-                        </Button>
+                          <Dropdown.Menu>
+                            {rowIsYoutubeVideo && (
+                              <YouTubeViewer
+                                fluid
+                                url={rowUrl}
+                                content={'Watch'}
+                                as={Dropdown.Item}
+                                icon={'youtube'}
+                              />
+                            )}
+
+                            <Dropdown.Item href={rowUrl} target={'_blank'}>
+                              <p>
+                                <Icon name={'external alternate'} /> Access
+                              </p>
+                            </Dropdown.Item>
+
+                            <Dropdown.Item
+                              onClick={() => {
+                                navigator.clipboard.writeText(
+                                  rowUrl || rowIdentifier
+                                );
+                              }}
+                            >
+                              <p>
+                                <Icon name={'copy outline'} /> Copy
+                              </p>
+                            </Dropdown.Item>
+                          </Dropdown.Menu>
+                        </Dropdown>
                       </Grid.Column>
                     </Grid.Row>
                   </Grid>

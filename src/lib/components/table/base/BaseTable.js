@@ -28,7 +28,6 @@ export const BaseTable = ({
 }) => {
   return (
     <Table {...uiProps} {...getTableProps()}>
-
       {showHeader && (
         <Table.Header>
           <Table.Row>
@@ -42,7 +41,9 @@ export const BaseTable = ({
                     : null
                 }
                 {...column.getHeaderProps(
-                  column.getSortByToggleProps ? column.getSortByToggleProps() : {}
+                  column.getSortByToggleProps
+                    ? column.getSortByToggleProps()
+                    : {}
                 )}
               >
                 {column.render('Header')}
@@ -91,5 +92,5 @@ BaseTable.propTypes = {
 };
 
 BaseTable.defaultProps = {
-  showHeader: true
+  showHeader: true,
 };

@@ -21,23 +21,22 @@ import './RecordListItem.css';
  */
 export const extractRecordBadge = (recordType) => {
   let recordBadge = {
-    name: "Open",
-    color: "primary",
-    icon: "lock open"
+    name: 'Open',
+    color: 'primary',
+    icon: 'lock open',
   };
 
   // Currently, we only have "Marketplace Item" as closed records
-  if (recordType === "marketplace-item") {
+  if (recordType === 'marketplace-item') {
     recordBadge = {
-      name: "Marketplace",
-      color: "primary",
-      icon: "building"
-    }
+      name: 'Marketplace',
+      color: 'primary',
+      icon: 'building',
+    };
   }
 
   return recordBadge;
-}
-
+};
 
 /**
  * Record Item component for the Record List
@@ -51,7 +50,7 @@ export const RecordListItem = ({ recordData, packageId }) => {
     'ui.publication_date_l10n_medium',
     null
   );
-  const version = _get(recordData, "ui.version", null);
+  const version = _get(recordData, 'ui.version', null);
 
   const programmeActivity = _get(
     recordData,
@@ -101,19 +100,20 @@ export const RecordListItem = ({ recordData, packageId }) => {
         </Item.Meta>
         <Item.Extra>
           <Label size="mini" color={recordBadge.color}>
-            <i className={`icon ${recordBadge.icon}`}></i>{recordBadge.name}
+            <i className={`icon ${recordBadge.icon}`}></i>
+            {recordBadge.name}
           </Label>
-          <Label size="mini" color={"gray"}>
+          <Label size="mini" color={'gray'}>
             {publicationDate} ({version})
           </Label>
-          <Label size="mini" color={"gray"}>
+          <Label size="mini" color={'gray'}>
             {resourceType}
           </Label>
 
           {programmeActivity ? (
             <Label
               size={'mini'}
-              color={"gray"}
+              color={'gray'}
               content={_get(
                 // getting only the acronym (between '(' and ')')
                 programmeActivity.match(/\(([^)]+)\)/),
