@@ -100,7 +100,7 @@ export const AdvancedSearchBar = ({
 
             <FilterBuilder
               modalTrigger={
-                <Button icon>
+                <Button icon as={'a'}>
                   <Icon name={'filter'} />
                 </Button>
               }

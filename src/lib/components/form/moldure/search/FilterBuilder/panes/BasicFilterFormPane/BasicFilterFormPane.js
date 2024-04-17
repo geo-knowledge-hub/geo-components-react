@@ -24,7 +24,7 @@ import { BasicFilterForm as BasicFilterFormField } from './BasicFilterForm';
  * @returns {{menuItem: *, render: (function())}}
  */
 export const BasicFilterFormPane = ({
-  paneTitle = i18next.t('Basic properties'),
+  paneTitle = i18next.t('Metadata filter'),
   paneConfig = {},
   fieldConfig = {},
 }) => {
