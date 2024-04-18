@@ -7,3 +7,4 @@
  */
 
 export { BaseTable } from './BaseTable';
+export { BaseGlobalFilter } from './BaseGlobalFilter';
