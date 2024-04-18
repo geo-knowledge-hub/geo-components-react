@@ -7,6 +7,7 @@
  */
 
 import React, { useMemo } from 'react';
+import { BaseGlobalFilter } from '../../base';
 import { PaginableTable } from '../../moldure';
 import { YouTubeViewer, isUrlFromYouTube } from './youtube';
 
@@ -17,48 +18,9 @@ import _truncate from 'lodash/truncate';
 import regeneratorRuntime from 'regenerator-runtime';
 import { useAsyncDebounce } from 'react-table';
 
-import {
-  Grid,
-  Button,
-  Icon,
-  Input,
-  Header,
-  Label,
-  Dropdown,
-} from 'semantic-ui-react';
+import { Grid, Button, Icon, Header, Label, Dropdown } from 'semantic-ui-react';
 
 import './ExternalResourceTable.css';
-
-/**
- * Global filter component for the external resources table.
- */
-function GlobalFilter({
-  preGlobalFilteredRows,
-  globalFilter,
-  setGlobalFilter,
-}) {
-  const count = preGlobalFilteredRows.length;
-  const [value, setValue] = React.useState(globalFilter);
-  const onChange = useAsyncDebounce((value) => {
-    setGlobalFilter(value || undefined);
-  }, 200);
-
-  return (
-    <Input
-      fluid
-      icon
-      placeholder={'Type to search...'}
-      value={value || ''}
-      onChange={(e) => {
-        setValue(e.target.value);
-        onChange(e.target.value);
-      }}
-    >
-      <input />
-      <Icon name={'search'} />
-    </Input>
-  );
-}
 
 /**
  * External resource table.
@@ -271,7 +233,7 @@ export const ExternalResourceTable = ({ tableData, tableConfig }) => {
           preGlobalFilteredRows,
           setGlobalFilter
         ) => (
-          <GlobalFilter
+          <BaseGlobalFilter
             globalFilter={globalFilter}
             setGlobalFilter={setGlobalFilter}
             preGlobalFilteredRows={preGlobalFilteredRows}

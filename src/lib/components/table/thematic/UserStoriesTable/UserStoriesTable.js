@@ -9,6 +9,7 @@
 import React, { useMemo } from 'react';
 import PropTypes from 'prop-types';
 
+import { BaseGlobalFilter } from '../../base';
 import { PaginableTable } from '../../moldure';
 
 import _get from 'lodash/get';
@@ -23,6 +24,18 @@ import './UserStoriesTable.css';
 export const UserStoriesTable = ({ tableData, packageId }) => {
   const tableColumnsDefinition = useMemo(() => {
     return [
+      // Defining invisible columns that are used as the index for the table filter
+      {
+        Header: () => null,
+        id: 'idx_title',
+        accessor: 'metadata.title',
+      },
+      {
+        Header: () => null,
+        id: 'idx_description',
+        accessor: 'metadata.description',
+      },
+      // Content column
       {
         Header: () => null,
         id: 'users-stories-version',
@@ -72,8 +85,7 @@ export const UserStoriesTable = ({ tableData, packageId }) => {
                   widescreen={3}
                   largeScreen={3}
                   computer={3}
-                  tablet={3}
-                  mobile={3}
+                  only={'computer'}
                 >
                   <Button.Group size={'mini'} floated={'right'}>
                     <Button
@@ -85,6 +97,19 @@ export const UserStoriesTable = ({ tableData, packageId }) => {
                       Access
                     </Button>
                   </Button.Group>
+                </Grid.Column>
+              </Grid.Row>
+              <Grid.Row only={'tablet mobile'} className={'pt-0'}>
+                <Grid.Column width={16} className={'pt-0'}>
+                  <Button
+                    content={'Access'}
+                    as={'a'}
+                    size={'mini'}
+                    href={rowUrl}
+                    fluid
+                  >
+                    Access
+                  </Button>
                 </Grid.Column>
               </Grid.Row>
             </Grid>
@@ -111,6 +136,20 @@ export const UserStoriesTable = ({ tableData, packageId }) => {
         columnsConfiguration={tableColumnsDefinition}
         className={'users-stories-table'}
         showHeader={false}
+        initialState={{
+          hiddenColumns: ['idx_title', 'idx_description'],
+        }}
+        globalFilter={(
+          globalFilter,
+          preGlobalFilteredRows,
+          setGlobalFilter
+        ) => (
+          <BaseGlobalFilter
+            globalFilter={globalFilter}
+            setGlobalFilter={setGlobalFilter}
+            preGlobalFilteredRows={preGlobalFilteredRows}
+          />
+        )}
       />
     </>
   );
