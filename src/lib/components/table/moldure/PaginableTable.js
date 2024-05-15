@@ -32,6 +32,10 @@ export const PaginableTable = ({
   initialState,
   ...uiProps
 }) => {
+  const pageSizeSorted = pageSizes.sort((a, b) => {
+    return a - b;
+  });
+
   const {
     getTableProps,
     getTableBodyProps,
@@ -49,18 +53,25 @@ export const PaginableTable = ({
     {
       columns: columnsConfiguration,
       data: data,
-      initialState: { pageIndex: 0, pageSize: pageSizes[0], ...initialState },
+      initialState: {
+        pageIndex: 0,
+        pageSize: pageSizeSorted[0],
+        ...initialState,
+      },
     },
     useGlobalFilter,
     useSortBy,
     usePagination
   );
 
+  // Number of elements to control what will be rendered (e.g., pagination)
+  const isPaginationRequired = data.length > pageSizeSorted[0];
+
   // Checking for global filters
   let globalFilterComponent = null;
   let { globalFilter: globalFilterFnc } = uiProps;
 
-  if (globalFilterFnc) {
+  if (globalFilterFnc && isPaginationRequired) {
     globalFilterComponent = globalFilterFnc(
       globalFilter,
       preGlobalFilteredRows,
@@ -69,53 +80,57 @@ export const PaginableTable = ({
   }
 
   return (
-    <Container>
+    <>
       <BaseTable
         rows={page}
         columns={visibleColumns}
         prepareRow={prepareRow}
         getTableProps={getTableProps}
         getTableBodyProps={getTableBodyProps}
-        selectable={true}
+        selectable={false}
         sortable={true}
         {...{ ...uiProps, globalFilter: globalFilterComponent }}
       />
-      <Grid>
-        <Grid.Column>
-          <Dropdown
-            item
-            simple
-            text={`Page size: ${pageSize}`}
-            direction={'right'}
-            onChange={(_, data) => {
-              setPageSize(data.value);
-            }}
-            options={pageSizes.map((v) => ({
-              key: v,
-              text: v,
-              value: v,
-            }))}
-          />
-        </Grid.Column>
-      </Grid>
 
-      <Grid centered columns={1}>
-        <Pagination
-          size="mini"
-          siblingRange={1}
-          boundaryRange={1}
-          firstItem={null}
-          lastItem={null}
-          ellipsisItem={null}
-          totalPages={pageOptions.length}
-          onPageChange={(_, data) => {
-            // `-1`: semantic-ui indexes starting in `1` and `react-table`
-            // starts in `0`. So, here, we subtract `-1` to avoid errors.
-            gotoPage(data.activePage - 1);
-          }}
-        />
-      </Grid>
-    </Container>
+      {isPaginationRequired && (
+        <>
+          <Grid>
+            <Grid.Column>
+              <Dropdown
+                item
+                simple
+                text={`Page size: ${pageSize}`}
+                direction={'right'}
+                onChange={(_, data) => {
+                  setPageSize(data.value);
+                }}
+                options={pageSizes.map((v) => ({
+                  key: v,
+                  text: v,
+                  value: v,
+                }))}
+              />
+            </Grid.Column>
+          </Grid>
+          <Grid centered columns={1}>
+            <Pagination
+              size="mini"
+              siblingRange={1}
+              boundaryRange={1}
+              firstItem={null}
+              lastItem={null}
+              ellipsisItem={null}
+              totalPages={pageOptions.length}
+              onPageChange={(_, data) => {
+                // `-1`: semantic-ui indexes starting in `1` and `react-table`
+                // starts in `0`. So, here, we subtract `-1` to avoid errors.
+                gotoPage(data.activePage - 1);
+              }}
+            />
+          </Grid>
+        </>
+      )}
+    </>
   );
 };
 

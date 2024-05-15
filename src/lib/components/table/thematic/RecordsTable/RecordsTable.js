@@ -7,58 +7,64 @@
  */
 
 import React, { useMemo } from 'react';
-import PropTypes from 'prop-types';
-
-import { BaseGlobalFilter } from '../../base';
 import { PaginableTable } from '../../moldure';
 
 import _get from 'lodash/get';
 
-import { Icon, Grid, Button, Header } from 'semantic-ui-react';
+import regeneratorRuntime from 'regenerator-runtime';
+import { useAsyncDebounce } from 'react-table';
 
-import './UserStoriesTable.css';
+import { Grid, Button, Icon, Input, Header, Label } from 'semantic-ui-react';
+
+import './RecordsTable.css';
+import { mutateRecordData } from '../../../list/base/mutations';
 
 /**
- * Users Stories table.
+ * Table of Records component.
  */
-export const UserStoriesTable = ({ tableData, packageId }) => {
+export const RecordsTable = ({ tableData, tableConfig }) => {
   const tableColumnsDefinition = useMemo(() => {
     return [
       // Defining invisible columns that are used as the index for the table filter
       {
         Header: () => null,
         id: 'idx_title',
-        accessor: 'metadata.title',
+        accessor: 'title',
       },
       {
         Header: () => null,
-        id: 'idx_description',
-        accessor: 'metadata.description',
+        id: 'idx_relation_type',
+        accessor: 'relation_type.title_l10n',
+      },
+      {
+        Header: () => null,
+        id: 'idx_resource_type',
+        accessor: 'resource_type.title_l10n',
+      },
+      {
+        Header: () => null,
+        id: 'idx_scheme',
+        accessor: 'scheme',
       },
       // Content column
       {
         Header: () => null,
-        id: 'users-stories-version',
+        id: 'table-see-also-records',
         Cell: ({ row }) => {
           // Getting data
           const { original: rowData } = row;
 
-          // record status
-          const isDraft = _get(rowData, 'is_draft', null);
-          const isPackage = _get(rowData, 'parent.type', null) === 'package';
+          // Preparing data
+          // Title and date
+          const rowTitle = _get(rowData, 'title');
+          const rowDate = _get(rowData, 'date');
 
-          const rowTitle = _get(rowData, 'metadata.title', 'No title');
-          const rowDate = _get(rowData, 'ui.created_date_l10n_long', 'No date');
+          // URL
+          const rowUrl = _get(rowData, 'url');
 
-          // Record url
-          const recordId = _get(rowData, 'id', null);
-          const recordUrlPrefix = isPackage ? 'packages' : 'records';
-
-          let rowUrl = `/${recordUrlPrefix}/${recordId}?package=${packageId}`;
-
-          if (isDraft) {
-            rowUrl = `${rowUrl}&preview=1&navigate=1`;
-          }
+          // Resource Type
+          const rowLabel = _get(rowData, 'label');
+          const rowLabelColor = _get(rowData, 'labelColor');
 
           return (
             <Grid>
@@ -67,9 +73,15 @@ export const UserStoriesTable = ({ tableData, packageId }) => {
                   widescreen={13}
                   largeScreen={13}
                   computer={13}
-                  tablet={13}
-                  mobile={13}
+                  tablet={16}
+                  mobile={16}
                 >
+                  <div>
+                    <Label size={'tiny'} color={rowLabelColor}>
+                      {rowLabel}
+                    </Label>
+                  </div>
+
                   <Grid className={'user-stories-metadata'}>
                     <Grid.Row columns={1}>
                       <Grid.Column>
@@ -77,10 +89,13 @@ export const UserStoriesTable = ({ tableData, packageId }) => {
                       </Grid.Column>
                     </Grid.Row>
                     <Grid.Row columns={1}>
-                      <Grid.Column>{rowDate}</Grid.Column>
+                      <Grid.Column>
+                        <p className="content-description">{rowDate}</p>
+                      </Grid.Column>
                     </Grid.Row>
                   </Grid>
                 </Grid.Column>
+
                 <Grid.Column
                   widescreen={3}
                   largeScreen={3}
@@ -119,47 +134,29 @@ export const UserStoriesTable = ({ tableData, packageId }) => {
     ];
   });
 
-  // Memoizing data
-  const tableDataMemoized = useMemo(() => tableData);
-
-  // Defining valid page sizes
-  const pageSizes = [3, 5, 10];
+  const tableDataMemoized = useMemo(() =>
+    tableData.map((row) => mutateRecordData(row, 'resourceType', 'gray'))
+  );
 
   return (
-    <>
+    <div className={'table-records'}>
       <PaginableTable
         unstackable
-        fixed={false}
+        fixed={true}
         padded={true}
-        pageSizes={pageSizes}
         data={tableDataMemoized}
         columnsConfiguration={tableColumnsDefinition}
-        className={'users-stories-table'}
-        showHeader={false}
         initialState={{
-          hiddenColumns: ['idx_title', 'idx_description'],
+          hiddenColumns: [
+            'idx_title',
+            'idx_relation_type',
+            'idx_resource_type',
+            'idx_scheme',
+          ],
         }}
-        globalFilter={(
-          globalFilter,
-          preGlobalFilteredRows,
-          setGlobalFilter
-        ) => (
-          <BaseGlobalFilter
-            globalFilter={globalFilter}
-            setGlobalFilter={setGlobalFilter}
-            preGlobalFilteredRows={preGlobalFilteredRows}
-          />
-        )}
+        showHeader={false}
+        {...tableConfig}
       />
-    </>
+    </div>
   );
-};
-
-UserStoriesTable.propTypes = {
-  tableData: PropTypes.array.isRequired,
-  packageId: PropTypes.string.isRequired,
-};
-
-UserStoriesTable.defaultProps = {
-  packageId: '#',
 };

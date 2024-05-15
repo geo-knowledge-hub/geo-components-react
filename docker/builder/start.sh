@@ -33,27 +33,34 @@ extract_from_quotes() {
 #
 # 1. Configuring the required services to build
 #
-docker-compose -f docker/builder/docker-compose.yml up -d
+docker compose -f docker/builder/docker-compose.yml up -d
 
 #
 # 2. Authenticating on registry
 #
 
 # installing utility tool to auth
-npm install -g npm-cli-login
+npm install -g npm-cli-adduser
 
 # authenticating
-npm-cli-login \
+npm-cli-adduser \
     -u $VERDACCIO_USERNAME \
     -p $VERDACCIO_PASSWORD \
     -e $VERDACCIO_EMAIL \
     -r $VERDACCIO_LOCAL_REGISTRY
 
-echo @geo-knowledge-hub:registry=${VERDACCIO_DOCKER_REGISTRY} > ~/.npmrc
-
 #
 # 3. Publishing JavaScript dependencies from `geo-components-react` to verdaccio
 #
+
+# build required dependencies
+npm install -g rimraf json rollup
+
+# registering the local registry
+echo "@geo-knowledge-hub:registry=${VERDACCIO_DOCKER_REGISTRY}" >> ~/.npmrc
+
+# configuring npm to be compatible with Node 16
+echo "legacy-peer-deps=true" >> ~/.npmrc
 
 # extract the dependencies from the `geo-knowledge-hub`
 # note: `@geo-knowledge-hub` is the scope defined to the `geo-knowledge-hub` packages

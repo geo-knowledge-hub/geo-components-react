@@ -6,6 +6,4 @@
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
-.related-resource-table .ui.accordion .title {
-    padding: 0;
-}
+export { RecordsTable } from './RecordsTable';

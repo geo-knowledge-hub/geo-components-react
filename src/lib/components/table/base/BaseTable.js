@@ -23,30 +23,35 @@ export const BaseTable = ({
   getTableProps,
   getTableBodyProps,
   globalFilter,
+  showHeader,
   ...uiProps
 }) => {
   return (
     <Table {...uiProps} {...getTableProps()}>
-      <Table.Header>
-        <Table.Row>
-          {columns.map((column) => (
-            <Table.HeaderCell
-              sorted={
-                column.isSorted
-                  ? column.isSortedDesc
-                    ? 'descending'
-                    : 'ascending'
-                  : null
-              }
-              {...column.getHeaderProps(
-                column.getSortByToggleProps ? column.getSortByToggleProps() : {}
-              )}
-            >
-              {column.render('Header')}
-            </Table.HeaderCell>
-          ))}
-        </Table.Row>
-      </Table.Header>
+      {showHeader && (
+        <Table.Header>
+          <Table.Row>
+            {columns.map((column) => (
+              <Table.HeaderCell
+                sorted={
+                  column.isSorted
+                    ? column.isSortedDesc
+                      ? 'descending'
+                      : 'ascending'
+                    : null
+                }
+                {...column.getHeaderProps(
+                  column.getSortByToggleProps
+                    ? column.getSortByToggleProps()
+                    : {}
+                )}
+              >
+                {column.render('Header')}
+              </Table.HeaderCell>
+            ))}
+          </Table.Row>
+        </Table.Header>
+      )}
 
       {globalFilter && (
         <Table.Row>
@@ -82,5 +87,10 @@ BaseTable.propTypes = {
   prepareRow: PropTypes.func,
   getTableProps: PropTypes.func,
   getTableBodyProps: PropTypes.func,
+  showHeader: PropTypes.bool,
   uiProps: PropTypes.object,
+};
+
+BaseTable.defaultProps = {
+  showHeader: true,
 };

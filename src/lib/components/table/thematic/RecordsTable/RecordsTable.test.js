@@ -8,16 +8,16 @@
 
 import React from 'react';
 
-import { YouTubeViewer } from './youtube';
+import { RecordsTable } from './RecordsTable';
 
 import { render } from '../../../../../setupTestRenders';
 
-describe('YouTube Viewer tests', () => {
+import recordsApiData from '../../../../../mocks/list/records-api.json';
+
+describe('RecordsTable tests', () => {
   describe('Render tests', () => {
     it('should render with the required props without crashing', () => {
-      render(
-        <YouTubeViewer url={'https://www.youtube.com/watch?v=cM47L5RddsM'} />
-      );
+      render(<RecordsTable tableData={recordsApiData.hits.hits} />);
     });
   });
 });

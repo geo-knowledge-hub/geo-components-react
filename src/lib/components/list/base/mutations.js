@@ -32,21 +32,22 @@ export const extractProgrammeActivityAcronym = (programmeActivityName) =>
  *  date: string
  * }} Object with the new version of the record.
  */
-export const mutateRecordData = (data, labelType = "initiative", labelColor = "primary") => {
+export const mutateRecordData = (
+  data,
+  labelType = 'initiative',
+  labelColor = 'primary'
+) => {
   // Extracting labels
-  let label = extractProgrammeActivityAcronym(
-    _get(data, 'metadata.geo_work_programme_activity.title.en')
-  ) || "Community";
+  let label =
+    extractProgrammeActivityAcronym(
+      _get(data, 'metadata.geo_work_programme_activity.title.en')
+    ) || 'Community';
 
-  if (labelType === "resourceType") {
-    label = _get(
-      data,
-      "ui.resource_type.title_l10n",
-      "No resource type"
-    );
+  if (labelType === 'resourceType') {
+    label = _get(data, 'ui.resource_type.title_l10n', 'No resource type');
   }
 
-  return ({
+  return {
     title: _get(data, 'metadata.title', 'No title'),
     authors: data.ui.creators.creators
       .slice(0, 3)
@@ -57,9 +58,9 @@ export const mutateRecordData = (data, labelType = "initiative", labelColor = "p
       'ui.publication_date_l10n_long',
       'No publication date found.'
     ),
-    labelColor: labelColor || "primary",
+    labelColor: labelColor || 'primary',
     url: _get(data, 'links.self_html'),
-  })
+  };
 };
 
 /**

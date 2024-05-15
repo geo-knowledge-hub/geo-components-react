@@ -28,7 +28,11 @@ export const RecordList = () => {
         <Segment attached="bottom">
           <Item.Group divided>
             {records.map((record) => (
-              <RecordListItem key={record.id} recordData={record} packageId={packageId} />
+              <RecordListItem
+                key={record.id}
+                recordData={record}
+                packageId={packageId}
+              />
             ))}
           </Item.Group>
         </Segment>

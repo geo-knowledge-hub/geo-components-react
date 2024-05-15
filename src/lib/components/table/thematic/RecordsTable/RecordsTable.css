@@ -6,6 +6,10 @@
  * under the terms of the MIT License; see LICENSE file for more details.
  */
 
-.related-resource-table .ui.accordion .title {
-    padding: 0;
+.table-records .ui.container .grid p {
+  overflow-wrap: break-word;
+}
+
+.table-records .pt-0 {
+  padding-top: 0 !important;
 }
