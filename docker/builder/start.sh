@@ -40,10 +40,10 @@ docker compose -f docker/builder/docker-compose.yml up -d
 #
 
 # installing utility tool to auth
-npm install -g npm-cli-adduser
+npm install -g npm-cli-login
 
 # authenticating
-npm-cli-adduser \
+npm-cli-login \
     -u $VERDACCIO_USERNAME \
     -p $VERDACCIO_PASSWORD \
     -e $VERDACCIO_EMAIL \
