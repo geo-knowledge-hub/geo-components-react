@@ -14,5 +14,7 @@ export { TargetAudienceField } from './TargetAudienceField';
 export { EngagementPriorityField } from './EngagementPriorityField';
 export { WorkProgrammeActivityField } from './WorkProgrammeActivityField';
 
+export { RecordTypeField } from './RecordTypeField';
 export { ResourceTypeField } from './ResourceTypeField';
+
 export { AuthorsField } from './AuthorsField';

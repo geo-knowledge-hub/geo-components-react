@@ -38,6 +38,11 @@ export class StaticQueryStringSerializer extends QueryStringSerializer {
       'OR',
       'value'
     ),
+    recordTypes: new ValueField(
+      'form.recordTypes',
+      'parent.type',
+      'OR'
+    ),
     resourceTypes: new ValueField(
       'form.resourceTypes',
       'metadata.resource_type.id',

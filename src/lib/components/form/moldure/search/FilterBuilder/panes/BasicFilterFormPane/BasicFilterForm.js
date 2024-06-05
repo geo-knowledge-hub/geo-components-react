@@ -17,6 +17,7 @@ import {
   TargetAudienceField,
   WorkProgrammeActivityField,
   ResourceTypeField,
+  RecordTypeField,
   AuthorsField,
 } from '../../../../../base';
 
@@ -42,6 +43,17 @@ export const BasicFilterForm = ({ fieldPathPrefix, ...fieldConfig }) => {
   return (
     <>
       <Grid verticalAlign="middle" centered>
+        <Grid.Row>
+          <Grid.Column width={16}>
+            <RecordTypeField
+              fluid
+              multiple={true}
+              clearable={true}
+              required={false}
+              fieldPath={generateFieldPathWithPrefix('recordTypes')}
+            />
+          </Grid.Column>
+        </Grid.Row>
         <Grid.Row>
           <Grid.Column width={16}>
             <ResourceTypeField
