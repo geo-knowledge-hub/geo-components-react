@@ -1,0 +1,38 @@
+[
+  {
+    "key": "File Name.zip",
+    "checksum": "md5:afea585e933b456af6e1686byuhg212",
+    "size": 60740526,
+    "mimetype": "application/zip",
+    "metadata": null,
+    "url_download": "https://link-to-zenodo.org/records-file-link",
+    "url_preview": "https://link-to-zenodo.org/preview-file-link"
+  },
+  {
+    "key": "File Name.json",
+    "checksum": "md5:afea585e933b456af6e1686byuhg212",
+    "size": 60740526,
+    "mimetype": "application/json",
+    "metadata": null,
+    "url_download": "https://link-to-zenodo.org/records-file-link",
+    "url_preview": "https://link-to-zenodo.org/preview-file-link"
+  },
+  {
+    "key": "File Name.pdf",
+    "checksum": "md5:afea585e933b456af6e1686byuhg212",
+    "size": 60740526,
+    "mimetype": "application/pdf",
+    "metadata": null,
+    "url_download": "https://link-to-zenodo.org/records-file-link",
+    "url_preview": "https://link-to-zenodo.org/preview-file-link"
+  },
+  {
+    "key": "File Name.tif",
+    "checksum": "md5:afea585e933b456af6e1686byuhg212",
+    "size": 60740526,
+    "mimetype": "image/tiff",
+    "metadata": null,
+    "url_download": "https://link-to-zenodo.org/records-file-link",
+    "url_preview": "https://link-to-zenodo.org/preview-file-link"
+  }
+]

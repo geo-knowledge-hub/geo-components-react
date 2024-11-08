@@ -1,0 +1,23 @@
+/*
+ * This file is part of GEO-Components-React.
+ * Copyright (C) 2022 GEO Secretariat.
+ *
+ * GEO-Components-React is free software; you can redistribute it and/or modify it
+ * under the terms of the MIT License; see LICENSE file for more details.
+ */
+
+.table-external-files .ui.container .grid p {
+  overflow-wrap: break-word;
+}
+
+.table-external-files .ui.grid .row .column.pt-0 {
+  padding-top: 0 !important;
+}
+
+.table-external-files .ui.grid .row .column.pt-1 {
+  padding-top: 1px !important;
+}
+
+.table-external-files .ui.table td {
+  overflow: visible;
+}
