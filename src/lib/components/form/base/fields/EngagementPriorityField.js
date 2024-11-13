@@ -43,13 +43,13 @@ EngagementPriorityField.propTypes = {
 
 EngagementPriorityField.defaultProps = {
   fieldPath: 'metadata.engagement_priorities',
-  label: i18next.t('Engagement Priorities'),
+  label: i18next.t('GEO Theme'),
   labelIcon: 'flag',
   multiple: true,
   clearable: true,
   required: true,
-  placeholder: i18next.t('Search for Engagement Priorities'),
+  placeholder: i18next.t('Search for a GEO Theme'),
   noQueryMessage: i18next.t(
-    'Start typing to search for an engagement priority'
+    'Start typing to search for a GEO Theme (e.g., engagement priorities, thematic areas)'
   ),
 };
