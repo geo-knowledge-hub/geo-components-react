@@ -9,3 +9,4 @@
 export { EngagementCarousel } from './EngagementCarousel';
 export { ConventionsCarousel } from './ConventionsCarousel';
 export { EngagementImages } from './EngagementImages';
+export { FocusAreasCarousel } from './FocusAreasCarousel';

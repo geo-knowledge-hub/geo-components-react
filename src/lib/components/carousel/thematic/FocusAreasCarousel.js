@@ -24,8 +24,7 @@ import { fetchVocabulary } from '../../../resources';
 //
 // Components
 //
-
-export const ConventionsCarousel = ({
+export const FocusAreasCarousel = ({
   filterUrl,
   vocabularyType,
   staleTime,
@@ -35,10 +34,10 @@ export const ConventionsCarousel = ({
 
   // Hooks
   const { data: conventions, isFetching } = useQuery({
-    queryKey: ['carousel-conventions'],
+    queryKey: ['carousel-focus-areas'],
     queryFn: () => {
       return fetchVocabulary(vocabularyType, {
-        q: 'props.is_subtype:"false" AND props.engagement_type:convention',
+        q: 'props.is_subtype:"false" AND props.theme:focus-areas',
       }).then((data) =>
         data
           .filter((x) => !(['', null].indexOf(x.props.icon) > -1))
@@ -54,7 +53,7 @@ export const ConventionsCarousel = ({
       {isFetching ? (
         <Loader />
       ) : (
-        <Grid className={'carousel-container'}>
+        <Grid className={'carousel-container carousel-paginated'}>
           <MobileContainer elements={conventions} />
           <TabletContainer elements={conventions} />
           <ComputerContainer elements={conventions} />
@@ -64,13 +63,13 @@ export const ConventionsCarousel = ({
   );
 };
 
-ConventionsCarousel.propTypes = {
+FocusAreasCarousel.propTypes = {
   filterUrl: PropTypes.string.isRequired,
   vocabularyType: PropTypes.string.isRequired,
   staleTime: PropTypes.number,
 };
 
-ConventionsCarousel.defaultProps = {
+FocusAreasCarousel.defaultProps = {
   staleTime: 300000, // 5 minutes
   vocabularyType: 'engagementprioritiestypes',
 };
