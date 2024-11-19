@@ -38,7 +38,7 @@ export const EngagementCarousel = ({
     queryKey: ['carousel-topics'],
     queryFn: () => {
       return fetchVocabulary(vocabularyType, {
-        q: 'props.is_subtype:"false" AND (NOT props.engagement_type:convention)',
+        q: 'props.is_subtype:"false" AND (NOT props.engagement_type:convention) AND (NOT props.theme:focus-areas)',
         size: 30, // We don't have a lot of engagement priorities to handle
       }).then((data) => {
         return data
@@ -97,7 +97,7 @@ export const EngagementCarousel = ({
       {isInProgress ? (
         <Loader />
       ) : (
-        <Grid>
+        <Grid className={'carousel-container'}>
           <MobileContainer elements={completeData} />
           <TabletContainer elements={completeData} />
           <ComputerContainer elements={completeData} />
