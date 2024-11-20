@@ -31,23 +31,25 @@ export const RecordItem = ({ recordData }) => {
       <Grid padded>
         <Grid.Row columns={2}>
           <Grid.Column
-            largeScreen={13}
-            widescreen={13}
-            computer={13}
+            largeScreen={11}
+            widescreen={11}
+            computer={11}
             mobile={16}
-            tablet={12}
+            tablet={11}
           >
             <Header as={'h3'}>{recordData.title}</Header>
           </Grid.Column>
           <Grid.Column
-            largeScreen={3}
-            widescreen={3}
-            computer={3}
-            tablet={4}
+            largeScreen={5}
+            widescreen={5}
+            computer={5}
+            tablet={5}
             textAlign={'right'}
             only="tablet computer"
           >
-            <Label color={recordLabelColor}>{recordLabel}</Label>
+            <Label color={recordLabelColor} style={{ fontSize: '11px' }}>
+              {recordLabel}
+            </Label>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row columns={2}>
