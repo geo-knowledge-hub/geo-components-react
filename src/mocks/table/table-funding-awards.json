@@ -1,0 +1,23 @@
+[
+  {
+    "funder": {
+      "id": "00k4n6c32",
+      "name": "European Commission"
+    },
+    "award": {
+      "id": "00k4n6c32::314335",
+      "number": "314335",
+      "title": {
+        "en": "Japanese-European De-Icing Aircraft Collaborative Exploration"
+      },
+      "identifiers": [
+        {
+          "identifier": "https://cordis.europa.eu/projects/314335",
+          "scheme": "url"
+        }
+      ],
+      "icon": "eu-ng-fundedby-2021-2027",
+      "disclaimer": "Sample text"
+    }
+  }
+]
