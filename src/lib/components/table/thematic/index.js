@@ -13,3 +13,5 @@ export { UserStoriesTable } from './UserStoriesTable';
 export { RecordsTable } from './RecordsTable';
 
 export { ExternalFilesTable } from './ExternalFilesTable';
+
+export { FundingAwardsTable } from './FundingAwardsTable';
