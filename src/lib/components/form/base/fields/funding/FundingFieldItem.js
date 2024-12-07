@@ -28,6 +28,7 @@ export const FundingFieldItem = ({
   replaceFunding,
   removeFunding,
   searchConfig,
+  extraConfig,
   deserializeAward,
   deserializeFunder,
   computeFundingContents,
@@ -91,6 +92,7 @@ export const FundingFieldItem = ({
             deserializeFunder={deserializeFunder}
             computeFundingContents={computeFundingContents}
             initialFunding={fundingItem}
+            extraConfig={extraConfig}
           />
           <Button
             size="mini"

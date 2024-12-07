@@ -6,32 +6,37 @@
 // under the terms of the MIT License; see LICENSE file for more details.
 
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+
+import _get from 'lodash/get';
+
 import { Button, Grid, Image, Modal, List, Segment } from 'semantic-ui-react';
 
 import { Field } from 'formik';
 import { FieldLabel, RichInputField } from 'react-invenio-forms';
 
-import {
-  EUFundingLogos,
-  EUFundingVisibilityDocument,
-} from './EUFundingModalData';
-
 /**
  * EU logo selector.
- * @param logos {Object} List of logo objects.
+ * @param fieldPath {string} Field path.
+ * @param label {string} Field label.
+ * @param labelIcon {string} Field icon.
+ * @param required {bool} Flag indicating if the field is required.
+ * @param options {list} List of options to be displayed.
  * @constructor
  */
-const EUFundingLogoSelector = ({ logos }) => {
+const EUFundingLogoSelector = ({
+  fieldPath,
+  label,
+  labelIcon,
+  required,
+  options,
+}) => {
   {
     const [selectedLogo, setSelectedLogo] = useState({});
 
     const handleSelect = (logo) => {
       setSelectedLogo(logo);
     };
-
-    const fieldPath = 'selectedFunding.award.icon';
-    const labelIcon = 'image';
-    const label = 'EU Emblem';
 
     return (
       <Field name={fieldPath}>
@@ -51,7 +56,7 @@ const EUFundingLogoSelector = ({ logos }) => {
                       }}
                     >
                       <List selection divided relaxed>
-                        {logos.map((item) => (
+                        {options.map((item) => (
                           <List.Item
                             key={item.id}
                             active={selectedLogo.id === item.id}
@@ -112,36 +117,85 @@ const EUFundingLogoSelector = ({ logos }) => {
   }
 };
 
+EUFundingLogoSelector.propTypes = {
+  fieldPath: PropTypes.string.isRequired,
+  label: PropTypes.string,
+  labelIcon: PropTypes.string,
+  required: PropTypes.bool,
+  options: PropTypes.array.isRequired,
+};
+
+EUFundingLogoSelector.defaultProps = {
+  fieldPath: 'selectedFunding.award.icon',
+  label: 'EU Funding Emblem',
+  labelIcon: 'image',
+  required: true,
+};
+
 /**
- * EU logo selector.
- * @param logos {Object} List of logo objects.
+ * EU Funding statement.
+ * @param fieldPath {string} Field path.
+ * @param label {string} Field label.
+ * @param labelIcon {string} Field icon.
+ * @param required {bool} Flag indicating if the field is required.
  * @constructor
  */
-const EUFundingFundingStatement = () => {
-  const fieldPath = 'selectedFunding.award.disclaimer';
-  const labelIcon = 'write';
-  const label = 'Funding Statement';
+export const EUFundingStatement = ({
+  fieldPath,
+  label,
+  labelIcon,
+  required,
+}) => {
   return (
     <RichInputField
       className="description-field rel-mb-1"
       fieldPath={fieldPath}
-      editorConfig={{}}
       label={<FieldLabel htmlFor={fieldPath} icon={labelIcon} label={label} />}
+      required={required}
       optimized
+      editorConfig={{
+        removePlugins: [
+          'Image',
+          'ImageCaption',
+          'ImageStyle',
+          'ImageToolbar',
+          'ImageUpload',
+          'MediaEmbed',
+          'Table',
+          'TableToolbar',
+          'TableProperties',
+          'TableCellProperties',
+        ],
+      }}
     />
   );
 };
 
-const EUFundingDescription = () => {
+EUFundingStatement.propTypes = {
+  fieldPath: PropTypes.string.isRequired,
+  label: PropTypes.string,
+  labelIcon: PropTypes.string,
+  required: PropTypes.bool,
+};
+
+EUFundingStatement.defaultProps = {
+  fieldPath: 'selectedFunding.award.disclaimer',
+  label: 'Funding Statement',
+  labelIcon: 'write',
+  required: true,
+};
+
+/**
+ * EU Funding description.
+ * @param referenceDocument {string} Reference document to be displayed.
+ * @constructor
+ */
+export const EUFundingDescription = ({ referenceDocument }) => {
   return (
     <>
       <p>
         For EU-funded projects, as outlined in the guidelines on{' '}
-        <a
-          href={EUFundingVisibilityDocument}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={referenceDocument} target="_blank" rel="noopener noreferrer">
           Communicating and raising EU visibility
         </a>
         , it is mandatory to include a funding statement and the EU emblem in
@@ -156,7 +210,20 @@ const EUFundingDescription = () => {
   );
 };
 
-export const EUFundingModal = ({ isOpen, setIsOpen, handleSubmit }) => {
+EUFundingDescription.propTypes = {
+  referenceDocument: PropTypes.string.isRequired,
+};
+
+export const EUFundingModal = ({
+  isOpen,
+  setIsOpen,
+  handleSubmit,
+  extraConfig,
+}) => {
+  // Extra configurations for the EU-related projects
+  const EUFundingLogos = _get(extraConfig, 'eu-funding-logos');
+  const EUFundingVisibilityDocument = _get(extraConfig, 'eu-visibility-doc');
+
   return (
     <Modal
       onClose={() => setIsOpen(false)}
@@ -169,9 +236,11 @@ export const EUFundingModal = ({ isOpen, setIsOpen, handleSubmit }) => {
       <Modal.Content>
         <div>
           <div>
-            <EUFundingDescription />
-            <EUFundingFundingStatement />
-            <EUFundingLogoSelector logos={EUFundingLogos} />
+            <EUFundingDescription
+              referenceDocument={EUFundingVisibilityDocument}
+            />
+            <EUFundingStatement />
+            <EUFundingLogoSelector options={EUFundingLogos} />
           </div>
         </div>
       </Modal.Content>
@@ -194,4 +263,11 @@ export const EUFundingModal = ({ isOpen, setIsOpen, handleSubmit }) => {
       </Modal.Actions>
     </Modal>
   );
+};
+
+EUFundingModal.propTypes = {
+  fieldPath: PropTypes.bool.isRequired,
+  setIsOpen: PropTypes.func.isRequired,
+  handleSubmit: PropTypes.func.isRequired,
+  extraConfig: PropTypes.object.isRequired,
 };

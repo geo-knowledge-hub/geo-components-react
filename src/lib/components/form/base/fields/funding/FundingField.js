@@ -39,6 +39,7 @@ function FundingFieldForm(props) {
     deserializeFunder: deserializeFunderFunc,
     computeFundingContents: computeFundingContentsFunc,
     searchConfig,
+    extraConfig,
   } = props;
 
   const deserializeAward = deserializeAwardFunc
@@ -111,6 +112,7 @@ function FundingFieldForm(props) {
                   replaceFunding: formikArrayReplace,
                   removeFunding: formikArrayRemove,
                   searchConfig: searchConfig,
+                  extraConfig: extraConfig,
                   computeFundingContents: computeFundingContents,
                   deserializeAward: deserializeAward,
                   deserializeFunder: deserializeFunder,
@@ -140,6 +142,7 @@ function FundingFieldForm(props) {
             deserializeAward={deserializeAward}
             deserializeFunder={deserializeFunder}
             computeFundingContents={computeFundingContents}
+            extraConfig={extraConfig}
           />
           <FundingModal
             searchConfig={searchConfig}
@@ -157,6 +160,7 @@ function FundingFieldForm(props) {
             deserializeAward={deserializeAward}
             deserializeFunder={deserializeFunder}
             computeFundingContents={computeFundingContents}
+            extraConfig={extraConfig}
           />
         </List>
       </Form.Field>

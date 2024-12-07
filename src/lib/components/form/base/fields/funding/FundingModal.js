@@ -123,6 +123,7 @@ function FundingModal({
   deserializeAward,
   deserializeFunder,
   computeFundingContents,
+  extraConfig,
   ...props
 }) {
   const [open, setOpen] = useState(false);
@@ -160,7 +161,7 @@ function FundingModal({
       validateOnBlur={false}
       enableReinitialize
     >
-      {({ values, resetForm, handleSubmit, ...formikProps }) => (
+      {({ values, resetForm, handleSubmit }) => (
         <Modal
           role="dialog"
           centered={false}
@@ -261,9 +262,12 @@ function FundingModal({
                 // Extract Funder ID
                 const funderId = _get(values, 'selectedFunding.funder.id');
 
+                // Get valid funder IDs
+                const validFunderIds = _get(extraConfig, 'eu-funder-ids', []);
+
                 // Special case: For EU-related projects, it is required to
                 // show a modal to include funding disclaimer and icon
-                if (isEUFunder(funderId)) {
+                if (isEUFunder(funderId, validFunderIds)) {
                   // submit handling is done in the specialized modal.
                   setEUModalIsOpen(true);
                 } else {
@@ -284,6 +288,7 @@ function FundingModal({
             isOpen={isEUModalOpen}
             setIsOpen={setEUModalIsOpen}
             handleSubmit={handleSubmit}
+            extraConfig={extraConfig}
           />
         </Modal>
       )}
