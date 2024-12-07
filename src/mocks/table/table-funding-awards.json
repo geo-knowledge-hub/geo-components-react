@@ -1,0 +1,109 @@
+[
+  {
+    "award": {
+      "disclaimer": "Sample text",
+      "icon": "eu-fundedby-2014-2020",
+      "id": "00k4n6c32::293973",
+      "identifiers": [
+        {
+          "identifier": "https://cordis.europa.eu/projects/293973",
+          "scheme": "url"
+        }
+      ],
+      "number": "293973",
+      "title": {
+        "en": "Unraveling the therapeutic potential of cancer-associated fibroblasts (CAF) in cancer using cell-specific targeting technology"
+      }
+    },
+    "funder": {
+      "id": "00k4n6c32",
+      "name": "European Commission"
+    }
+  },
+  {
+    "award": {
+      "disclaimer": "Sample text",
+      "icon": "eu-ng-fundedby-2021-2027",
+      "id": "00k4n6c32::223791",
+      "identifiers": [
+        {
+          "identifier": "https://cordis.europa.eu/projects/223791",
+          "scheme": "url"
+        }
+      ],
+      "number": "223791",
+      "title": {
+        "en": "Towards a common e-Science infrastrcucture for the European and Asian Grids"
+      }
+    },
+    "funder": {
+      "id": "00k4n6c32",
+      "name": "European Commission"
+    }
+  },
+  {
+    "award": {
+      "id": "01cwqze88::5R01AI073204-02",
+      "number": "5R01AI073204-02",
+      "title": {
+        "en": "In vivo regulation of M. tuberculosis cell wall lipids"
+      }
+    },
+    "funder": {
+      "id": "01cwqze88",
+      "name": "National Institutes of Health"
+    }
+  },
+  {
+    "award": {
+      "identifiers": [
+        {
+          "identifier": "https://google.com",
+          "scheme": "url"
+        }
+      ],
+      "number": "454745",
+      "title": {
+        "en": "A randomised trial of surgery versus surgery plus radiotherapy for regional control in patients with stage 3 melanoma"
+      }
+    },
+    "funder": {
+      "id": "03n51vw80",
+      "name": "Croatian Science Foundation"
+    }
+  },
+  {
+    "award": {
+      "id": "01cwqze88::5T23MH018955-03",
+      "number": "5T23MH018955-03",
+      "title": {
+        "en": "HUMAN RESOURCE DEVELOPMENT DEMO PROJECT NURSE ED. PROG."
+      }
+    },
+    "funder": {
+      "id": "01cwqze88",
+      "name": "National Institutes of Health"
+    }
+  },
+  {
+    "award": {
+      "disclaimer": "Sample text",
+      "icon": "eu-cofundedby-2021-2027",
+      "id": "00k4n6c32::618105",
+      "identifiers": [
+        {
+          "identifier": "https://cordis.europa.eu/projects/618105",
+          "scheme": "url"
+        }
+      ],
+      "number": "618105",
+      "title": {
+        "en": "Food security, Agriculture, Climate Change ERA-NET plus"
+      }
+    },
+    "funder": {
+      "id": "00k4n6c32",
+      "name": "European Commission"
+    }
+  }
+]
