@@ -7,6 +7,7 @@
  */
 
 export * from './subjects';
+export * from './funding';
 
 export { RemoteSelectField } from './RemoteSelectField';
 
