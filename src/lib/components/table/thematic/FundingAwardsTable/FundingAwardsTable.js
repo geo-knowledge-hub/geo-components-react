@@ -39,13 +39,17 @@ const FundingAwardItem = ({
           mobile={16}
         >
           <div>
-            <Label size={'mini'} basic className={'ml-0 mr-5'}>
-              {rowFunder}
-            </Label>
+            {rowFunder && (
+              <Label size={'mini'} basic className={'ml-0 mr-5'}>
+                {rowFunder}
+              </Label>
+            )}
 
-            <Label size={'mini'} basic className={'ml-0 mr-5'}>
-              {rowNumber}
-            </Label>
+            {rowNumber && (
+              <Label size={'mini'} basic className={'ml-0 mr-5'}>
+                ID: {rowNumber}
+              </Label>
+            )}
           </div>
 
           <Grid className={'user-stories-metadata'}>
@@ -118,13 +122,17 @@ const FundingAwardItemWithEmblem = ({
           mobile={16}
         >
           <div>
-            <Label size={'mini'} basic className={'ml-0 mr-5'}>
-              {rowFunder}
-            </Label>
+            {rowFunder && (
+              <Label size={'mini'} basic className={'ml-0 mr-5'}>
+                {rowFunder}
+              </Label>
+            )}
 
-            <Label size={'mini'} basic className={'ml-0 mr-5'}>
-              {rowNumber}
-            </Label>
+            {rowNumber && (
+              <Label size={'mini'} basic className={'ml-0 mr-5'}>
+                ID: {rowNumber}
+              </Label>
+            )}
 
             {rowUrl && (
               <Grid style={{ display: 'inline-flex' }}>

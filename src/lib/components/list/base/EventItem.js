@@ -48,9 +48,7 @@ export const EventItem = ({ eventData }) => {
             textAlign={'right'}
             only={'tablet computer'}
           >
-            <Label style={{ fontSize: '11px' }}>
-              {eventData.category}
-            </Label>
+            <Label style={{ fontSize: '11px' }}>{eventData.category}</Label>
           </Grid.Column>
         </Grid.Row>
         <Grid.Row verticalAlign={'bottom'}>
